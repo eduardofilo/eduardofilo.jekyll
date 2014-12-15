@@ -298,6 +298,7 @@ Ahora se respaldará el home de los usuarios, suponiendo que se encuentra bajo e
 {% endhighlight %}
 
 En el que las banderas:
+
 *  c = crea el archivo
 *  p = preserva los permisos
 *  z = comprime el archivo .tar generado
