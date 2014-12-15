@@ -109,8 +109,7 @@ sudo swapon /var/swap
 
 ### SSH
 
-[Fuente](http://cuadernodelviaje.blogspot.com.es/2013/01/protegiendo-un-poco-nuestra-raspberry.html)  
-Editar el fichero `/etc/ssh/sshd_config` y modificar/añadir las siguientes líneas:
+Editar el fichero `/etc/ssh/sshd_config` y modificar/añadir las siguientes líneas ([fuente](http://cuadernodelviaje.blogspot.com.es/2013/01/protegiendo-un-poco-nuestra-raspberry.html)):
 
 {% highlight text %}
 PermitRootLogin no
