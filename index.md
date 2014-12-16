@@ -9,6 +9,7 @@ layout: default
 * [Dokuwiki](desarrollo/dokuwiki.html)
 * [Eclipse](desarrollo/eclipse.html)
 * [SVN](desarrollo/svn.html)
+* [Git](desarrollo/git.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
