@@ -13,3 +13,5 @@ layout: default
 * [Aplicaciones interesantes](sistemas/soft_imprescindible.html)
 * [Impresoras](sistemas/impresoras.html)
 * [Redes](sistemas/redes.html)
+* [Mandrake](sistemas/mandrake.html)
+* [e-mail](sistemas/email.html)
