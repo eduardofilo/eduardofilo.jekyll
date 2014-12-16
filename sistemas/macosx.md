@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /sistemas/macosx.html
+---
+
 # Mac OS X
 
 ## Comandos útiles
