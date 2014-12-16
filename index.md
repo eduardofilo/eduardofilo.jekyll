@@ -11,3 +11,5 @@ layout: default
 * [Windows](sistemas/trucos_windows.html)
 * [Office](sistemas/office.html)
 * [Aplicaciones interesantes](sistemas/soft_imprescindible.html)
+* [Impresoras](sistemas/impresoras.html)
+* [Redes](sistemas/redes.html)
