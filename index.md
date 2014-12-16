@@ -5,6 +5,7 @@ layout: default
 # Desarrollo
 * [Joomla](desarrollo/joomla.html)
 * [Java](desarrollo/java.html)
+* [JavaEE](desarrollo/javaee.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
