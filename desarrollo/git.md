@@ -17,7 +17,7 @@ permalink: /desarrollo/git.html
 Config:
 {% highlight bash %}
 git config --global user.name "Eduardo Moreno"
-git config --global user.email sistemas@sanelmann.es
+git config --global user.email user@dominio.com
 git config --global alias.co checkout
 git config --global core.editor "subl -w"
 {% endhighlight %}
