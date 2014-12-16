@@ -3,7 +3,7 @@ title: Apuntes de eduardofilo
 email: hmitsurugi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Apuntes varios sobre algunas de las cosas que necesito recordar,
-  principalmente sobre Programación y Sistemas.
+  principalmente sobre Desarrollo y Sistemas.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://eduardofilo.github.io" # the base hostname & protocol for your site
 twitter_username: eduardofilo
