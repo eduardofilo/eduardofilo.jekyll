@@ -8,6 +8,7 @@ layout: default
 * [JavaEE](desarrollo/javaee.html)
 * [Dokuwiki](desarrollo/dokuwiki.html)
 * [Eclipse](desarrollo/eclipse.html)
+* [SVN](desarrollo/svn.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
