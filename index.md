@@ -2,6 +2,9 @@
 layout: default
 ---
 
+# Desarrollo
+* [Joomla](desarrollo/joomla.html)
+
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
 * [UNIX](sistemas/unix.html)
