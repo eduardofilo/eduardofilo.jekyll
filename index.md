@@ -10,6 +10,7 @@ layout: default
 * [Eclipse](desarrollo/eclipse.html)
 * [SVN](desarrollo/svn.html)
 * [Git](desarrollo/git.html)
+* [JavaScript](desarrollo/javascript.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
