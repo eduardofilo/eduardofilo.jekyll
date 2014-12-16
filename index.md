@@ -8,3 +8,4 @@ layout: default
 * [Ubuntu](sistemas/ubuntu.html)
 * [Mac OS X](sistemas/macosx.html)
 * [Android](sistemas/android_system.html)
+* [Windows](sistemas/trucos_windows.html)
