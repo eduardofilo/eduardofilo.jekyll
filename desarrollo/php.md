@@ -15,12 +15,14 @@ Se pueden definir de tres formas:
 ##### Con comillas simples
 
 ```php
+<?php
 $cadena = 'Esto es una cadena.';
 ```
 
 Para incluir el caracter comilla simple hay que escaparlo:
 
 ```php
+<?php
 $cadena = 'Esto es una comilla: \'.';
 ```
 
@@ -29,6 +31,7 @@ $cadena = 'Esto es una comilla: \'.';
 Permiten incluir variables:
 
 ```php
+<?php
 $i = 12;
 $cadena = "Un año tiene $i meses.";
 ```
@@ -45,6 +48,7 @@ También permite escapar una serie de caracteres como:
 Ejemplo:
 
 ```php
+<?php
 $i = 12;
 $cadena = <<<CADENA
 Esto es una cadena
