@@ -13,6 +13,7 @@ layout: default
 * [JavaScript](desarrollo/javascript.html)
 * [Android](desarrollo/android.html)
 * [Diseño](desarrollo/diseno.html)
+* [HTML+CSS](desarrollo/html.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
