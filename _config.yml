@@ -11,3 +11,6 @@ github_username:  eduardofilo
 
 # Build settings
 markdown: kramdown
+timezone: Europe/Madrid
+kramdown:
+    input: GFM

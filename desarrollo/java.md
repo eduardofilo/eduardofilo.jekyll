@@ -21,8 +21,9 @@ find . -name "*.java" | xargs wc -l
 
 ## Iterar un Map
 
-Para el caso de un ''Map`<String, String>`:
-{% highlight java %}
+Para el caso de un `Map<String, String>`:
+
+```java
 Iterator it = mapa.entrySet().iterator();
 while (it.hasNext()) {
     Map.Entry e = (Map.Entry) it.next();
@@ -30,14 +31,14 @@ while (it.hasNext()) {
     String value = (String) e.getValue();
     //...
 }
-{% endhighlight %}
+```
 
 ## log4j
 
 ([Fuente](http://es.wikipedia.org/wiki/Log4j))
 
 
-El proyecto FHoSS utiliza la librería log4j como casi todos los proyectos Java actuales. **Log4j**  es una librería open source desarrollada en [Java](http://es.wikipedia.org/wiki/Java platform) por la [Apache Software Foundation](http://es.wikipedia.org/wiki/Apache_Software_Foundation) que permite a los desarrolladores de software elegir la salida y el nivel de granularidad de los mensajes o “logs” a tiempo de ejecución y no a tiempo de compilación como es comúnmente realizado.  La configuración de salida y granularidad de los mensajes es realizada a tiempo de ejecución mediante el uso de archivos de configuración externos. Log4J ha sido implementado en otros lenguajes como: [C](http://es.wikipedia.org/wiki/Lenguaje de programación C), [C++](http://es.wikipedia.org/wiki/C++), [C#](http://es.wikipedia.org/wiki/C Sostenido), [Perl](http://es.wikipedia.org/wiki/Perl), [Python](http://es.wikipedia.org/wiki/Python), [Ruby](http://es.wikipedia.org/wiki/Ruby) y [Eiffel](http://es.wikipedia.org/wiki/Lenguaje de programación Eiffel).
+~~El proyecto~~ FHoSS utiliza la librería log4j como casi todos los proyectos Java actuales. **Log4j**  es una librería open source desarrollada en [Java](http://es.wikipedia.org/wiki/Java platform) por la [Apache Software Foundation](http://es.wikipedia.org/wiki/Apache_Software_Foundation) que permite a los desarrolladores de software elegir la salida y el nivel de granularidad de los mensajes o “logs” a tiempo de ejecución y no a tiempo de compilación como es comúnmente realizado.  La configuración de salida y granularidad de los mensajes es realizada a tiempo de ejecución mediante el uso de archivos de configuración externos. Log4J ha sido implementado en otros lenguajes como: [C](http://es.wikipedia.org/wiki/Lenguaje de programación C), [C++](http://es.wikipedia.org/wiki/C++), [C#](http://es.wikipedia.org/wiki/C Sostenido), [Perl](http://es.wikipedia.org/wiki/Perl), [Python](http://es.wikipedia.org/wiki/Python), [Ruby](http://es.wikipedia.org/wiki/Ruby) y [Eiffel](http://es.wikipedia.org/wiki/Lenguaje de programación Eiffel).
 
 
 ### Conceptos
@@ -113,7 +114,7 @@ Para el caso de utilizar PatternLayout, la definición de las piezas de informac
 
 Si se desea únicamente log de las clases pertenecientes a un paquete (es una forma de evitar los logs del servidor de aplicación en una aplicación J2EE), se indica de añadiendo esta línea:
 {% highlight java %}
-log4j.logger.`<paquete>`=`<nivel_de_trazas>`
+log4j.logger.<paquete>=<nivel_de_trazas>
 {% endhighlight %}
 por ejemplo:
 {% highlight java %}
