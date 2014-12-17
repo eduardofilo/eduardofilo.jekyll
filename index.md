@@ -12,6 +12,7 @@ layout: default
 * [Git](desarrollo/git.html)
 * [JavaScript](desarrollo/javascript.html)
 * [Android](desarrollo/android.html)
+* [Diseño](desarrollo/diseno.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
