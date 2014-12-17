@@ -8,16 +8,18 @@ permalink: /desarrollo/java.html
 ## Reempaquetar un jar
 
 Para re-enlatar un jar que hemos explotado para retocar su contendido, hay que ejecutar el siguiente comando desde el directorio raíz donde descomprimimos el jar original:
-{% highlight bash %}
+
+```bash
 jar cvf nombre.jar *
-{% endhighlight %}
+```
 
 ## Contar lineas
 
 Para contar las lineas de un proyecto, lanzar desde la raíz del proyecto ( el directorio src/java de un proyecto NetBeans, por ejemplo):
-{% highlight bash %}
+
+```bash
 find . -name "*.java" | xargs wc -l
-{% endhighlight %}
+```
 
 ## Iterar un Map
 
@@ -37,8 +39,7 @@ while (it.hasNext()) {
 
 ([Fuente](http://es.wikipedia.org/wiki/Log4j))
 
-
-~~El proyecto~~ FHoSS utiliza la librería log4j como casi todos los proyectos Java actuales. **Log4j**  es una librería open source desarrollada en [Java](http://es.wikipedia.org/wiki/Java platform) por la [Apache Software Foundation](http://es.wikipedia.org/wiki/Apache_Software_Foundation) que permite a los desarrolladores de software elegir la salida y el nivel de granularidad de los mensajes o “logs” a tiempo de ejecución y no a tiempo de compilación como es comúnmente realizado.  La configuración de salida y granularidad de los mensajes es realizada a tiempo de ejecución mediante el uso de archivos de configuración externos. Log4J ha sido implementado en otros lenguajes como: [C](http://es.wikipedia.org/wiki/Lenguaje de programación C), [C++](http://es.wikipedia.org/wiki/C++), [C#](http://es.wikipedia.org/wiki/C Sostenido), [Perl](http://es.wikipedia.org/wiki/Perl), [Python](http://es.wikipedia.org/wiki/Python), [Ruby](http://es.wikipedia.org/wiki/Ruby) y [Eiffel](http://es.wikipedia.org/wiki/Lenguaje de programación Eiffel).
+El proyecto FHoSS utiliza la librería log4j como casi todos los proyectos Java actuales. **Log4j**  es una librería open source desarrollada en [Java](http://es.wikipedia.org/wiki/Java platform) por la [Apache Software Foundation](http://es.wikipedia.org/wiki/Apache_Software_Foundation) que permite a los desarrolladores de software elegir la salida y el nivel de granularidad de los mensajes o “logs” a tiempo de ejecución y no a tiempo de compilación como es comúnmente realizado.  La configuración de salida y granularidad de los mensajes es realizada a tiempo de ejecución mediante el uso de archivos de configuración externos. Log4J ha sido implementado en otros lenguajes como: [C](http://es.wikipedia.org/wiki/Lenguaje de programación C), [C++](http://es.wikipedia.org/wiki/C++), [C#](http://es.wikipedia.org/wiki/C Sostenido), [Perl](http://es.wikipedia.org/wiki/Perl), [Python](http://es.wikipedia.org/wiki/Python), [Ruby](http://es.wikipedia.org/wiki/Ruby) y [Eiffel](http://es.wikipedia.org/wiki/Lenguaje de programación Eiffel).
 
 
 ### Conceptos
@@ -82,7 +83,7 @@ En el siguiente ejemplo implementamos un fichero properties de configuración, y
 *  CONSOLE imprimirá los mensajes en la consola por líneas (%m%n).
 *  LOGFILE añadirá (append) los mensajes a un fichero (aplicacion.log), reservando los primeros 4 caracteres para los milisegundos en que se generó el mensaje (%-4r), entre corchetes quién generó el mensaje ( [%t]), cinco espacios para la prioridad del mensaje (%-5p), la categoría del mensaje (%c) y finalmente el propio mensaje junto con un retorno de carro (%m%n).
 
-{% highlight text %}
+```
 ################################################################
 ### Configuración para LOCAL                                 ###
 ###   Nivel de trazas máximo                                 ###
@@ -108,15 +109,17 @@ log4j.appender.LOGFILE.append=true
 log4j.appender.LOGFILE.DatePattern='.'yyyy-MM-dd
 log4j.appender.LOGFILE.layout=org.apache.log4j.PatternLayout
 log4j.appender.LOGFILE.layout.ConversionPattern=%-4r [%t] %-5p %c - %m%n
-{% endhighlight %}
+```
 
 Para el caso de utilizar PatternLayout, la definición de las piezas de información que se pueden incorporar al patrón se encuentra en [esta página](http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html).
 
 Si se desea únicamente log de las clases pertenecientes a un paquete (es una forma de evitar los logs del servidor de aplicación en una aplicación J2EE), se indica de añadiendo esta línea:
-{% highlight java %}
+
+```java
 log4j.logger.<paquete>=<nivel_de_trazas>
-{% endhighlight %}
+```
 por ejemplo:
-{% highlight java %}
+
+```java
 log4j.logger.es.eduardofilo.ccm=DEBUG
-{% endhighlight %}
+```

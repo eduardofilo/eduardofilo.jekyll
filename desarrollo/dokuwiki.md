@@ -22,38 +22,44 @@ Además de instalar la plantilla y configurarla, es necesario instalar el plugin
 Se puede añadir al menú de herramientas el enlace "Cambios recientes" haciendo lo siguiente:
 
 * Añadir las siguientes lineas al fichero `$DOKU_BASE/lib/tpl/monobook/context.php`:
-{% highlight php %}
+
+```php
 $monobook['defaulttoolbox']['recent']['href'] = DOKU_BASE."doku.php?do=recent";
 $monobook['defaulttoolbox']['recent']['text'] = $lang['monobook_recent'];
 $monobook['defaulttoolbox']['recent']['rel'] = "nofollow";
-{% endhighlight %}
+```
 * Inmediatamente antes de la linea (en la versión de 2007-10-03 es la linea #354):
-{% highlight php %}
+
+```php
 $monobook['defaulttoolbox']['whatlinkshere']['href'] = DOKU_BASE."doku.php?id=".$ID."&amp;do=backlink";
-{% endhighlight %}
+```
 * Añadir la linea siguiente al fichero `$DOKU_BASE/lib/tpl/monobook/lang/es/lang.php`:
-{% highlight php %}
+
+```php
 $lang['monobook_recent'] = "Cambios recientes";
-{% endhighlight %}
+```
 
 ### Índice
 
 Se puede añadir al menú de herramientas el enlace "Índice" haciendo lo siguiente:
 
 * Añadir las siguientes lineas al fichero `$DOKU_BASE/lib/tpl/monobook/context.php`:
-{% highlight php %}
+
+```php
 $monobook['defaulttoolbox']['index']['href'] = DOKU_BASE."doku.php?do=index";
 $monobook['defaulttoolbox']['index']['text'] = $lang['monobook_index'];
 $monobook['defaulttoolbox']['index']['rel'] = "nofollow";
-{% endhighlight %}
+```
 * Inmediatamente antes de la linea (en la versión de 2007-10-03 es la linea #354):
-{% highlight php %}
+
+```php
 $monobook['defaulttoolbox']['whatlinkshere']['href'] = DOKU_BASE."doku.php?id=".$ID."&amp;do=backlink";
-{% endhighlight %}
+```
 *Añadir la linea siguiente al fichero `$DOKU_BASE/lib/tpl/monobook/lang/es/lang.php`:
-{% highlight php %}
+
+```php
 $lang['monobook_index'] = "Índice";
-{% endhighlight %}
+```
 
 ### Logo
 
@@ -62,7 +68,8 @@ El logo que aparece arriba a la izquierda es el fichero `logo.png` que se encuen
 ## Backup automático
 
 Programar diariamente el script siguiente:
-{% highlight bash %}
+
+```bash
 #!/bin/bash
 
 # Backup de IMSWiki.
@@ -87,6 +94,6 @@ ssh aire@192.168.11.3 rm /tmp/backupWiki$fecha.tgz
 
 # Purgamos los backups de hace más de un mes en nuestra máquina
 find $HOME/.backupWiki -name 'backupWiki*.tgz' -mtime +30 -type f|xargs rm -rf
-{% endhighlight %}
+```
 
 El script anterior tal y como está diseñado deposita el backup sobre el directorio `$HOME/.backupWiki` por lo que deberá existir dicho directorio. La programación se puede hacer de muchas maneras (por ejemplo en Gnome añadiendo una entrada al panel de control Sesiones, solapa "Programas de inicio").

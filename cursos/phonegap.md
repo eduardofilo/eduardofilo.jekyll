@@ -60,16 +60,16 @@ Módulos necesarios:
 * [Vagrant](https://www.vagrantup.com/) (opcional): Empaquetador de entornos de desarrollo
 
 ### Creación de proyecto Phonegap
-{% highlight bash %}
+```bash
 phonegap create 00HolaMundo --name HolaMundo --id es.eduardofilo.hm
-{% endhighlight %}
+```
 
 ### Compilación y ejecución de proyecto Phonegap
-{% highlight bash %}
+```bash
 cd 00HolaMundo
 phonegap build android
 phonegap run android
-{% endhighlight %}
+```
 
 En realidad la tarea `run` hace `build`.
 
@@ -84,23 +84,25 @@ Servidor mock ([mockable](http://www.mockable.io/)): demo0034470.mockable.io
 * *dataType*: json
 
 Respuesta:
-{% highlight json %}
+
+```json
 {
 	"votosTotal": 6000,
 	"votosPositivos": 3500,
 	"votosNegativos": 2500,
 	"fecha": "2013-04-17T12:32:12"
 }
-{% endhighlight %}
+```
 
 ### jQuery
 Hay una convención por la cual cuando invocamos jQuery ($) para localizar un elemento del DOM, la variable donde se carga se pone con el prefijo $. Por ejemplo:
-{% highlight javascript %}
+
+```javascript
 var $paragrafos = $('p');
-{% endhighlight %}
+```
 
 #### Ejemplo1
-{% highlight javascript %}
+```javascript
 var $paragraphs = $('p');
 for (var i=0; i < $paragraphs.length ; i++) {
     console.log(i, $paragraphs[i]);
@@ -116,10 +118,10 @@ $firstp = $('p:first');
 //$firstp = $('p').first();
 //$firstp = $('p').eq(0);
 $firstp.addClass('importante');
-{% endhighlight %}
+```
 
 #### Ejemplo2
-{% highlight javascript %}
+```javascript
 var $firstp = $('p:first');
 var texto = $firstp.text();
 $firstp.text(texto.toUpperCase());
@@ -130,10 +132,10 @@ $firstp.text(texto.toUpperCase());
 $('<strong>')
     .text('contenido')
     .prependTo($firstp);
-{% endhighlight %}
+```
 
 #### Ejemplo3
-{% highlight javascript %}
+```javascript
 var colores = ['Rojo', 'Verde', 'Azul'];
 var $ol = $('ol');
 $ol.empty();
@@ -141,25 +143,25 @@ for (var i=0; i<colores.length; i++) {
     $ol.append($('<li>').text(colores[i]));
     //$('<li>').text(colores[i]).appendTo($ol);
 }
-{% endhighlight %}
+```
 
 #### Ejemplo4
-{% highlight javascript %}
+```javascript
 $('p').on('click', function(evt) {
     evt.preventDefault();
     $(this).css('background-color', 'green');
 });
-{% endhighlight %}
+```
 
 #### Ejemplo5
-{% highlight javascript %}
+```javascript
 $('p').on('click', function(evt) {
     $(this).fadeOut(function() {
         $(this).text($(this).text().toUpperCase());
         $(this).fadeIn();
     });
 });
-{% endhighlight %}
+```
 
 ## Día 6: Martes 25/11/2014
 
@@ -281,18 +283,20 @@ Hay un orden de prioridad entre los selectores de CSS. Algunos detalles:
 
 *Display*  
 El `display` de un `div` por defecto (useragent stylesheet rules) es `block`. El de `span` es `inline`. Se puede modificar tanto un caso como el otro. Por ejemplo si ponemos `display: inline` a un `div`, pasa a comportarse como un `span`. El `display: inline` hace que se ignore el `width`. Con `display: inline-block` sí que se tiene en cuenta el `width`. Hay un truco para conservar la indentación en el código HTML mientras se evita que se introduzca un carácter espacio que ocupa sitio y descoloca la maquetación y es introducir un comentario entre líneas de esta forma:
-{% highlight html %}
+
+```html
    <section>
    …
    </section><!--
 --><section>
    …
    </section>
-{% endhighlight %}
+```
 
 *Float*  
 La propiedad `clear` sólo funciona si el `display` no es `inline`. Se usa mucho el apaño del clearfix para solucionar la pérdida de dimensión vertical de un contenedor cuando todo su contenido más alto flota. El selector `:after` selecciona después del contenido al que se aplica el estilo, no el contenido del siguiente elemento en el DOM. El clearfix favorito de Javier es:
-{% highlight css %}
+
+```css
 .clearfix:after {
     content: ".";
     visibility: hidden;
@@ -300,7 +304,7 @@ La propiedad `clear` sólo funciona si el `display` no es `inline`. Se usa mucho
     height: 0;
     clear: both;
 }
-{% endhighlight %}
+```
 
 *viewport*  
 Diferencia entre layout-viewport y display-viewport. La relación entre ambos es el nivel de zoom. El layout-viewport predeterminado es 960px. Se definió pixel-ratio cuando apareció iPhone 4, inicialmente con un valor de 2 (pantalla retina de 640px de ancho por los 320px del iPhone original). Terminales con pantallas QuadHD tienen un pixel-ratio de alrededor de 4. Tiene el inconveniente de que hace que las imágenes se redimensionen, lo que en terminales con mucha densidad de pixel produce desenfoque. La solución es enviar la imagen adecuada a cada dispositivo. De momento se hace con condiciones en CSS.
@@ -354,11 +358,12 @@ El menú superior del sitio de Bootstrap está bien estructurado en cuanto a la 
 Bootstrap utiliza CDN para minimizar la latencia.  
 Si vamos a utilizar Angular, en lugar de poner bootstrap normal hay que integrar UI Bootstrap que no utiliza jQuery.  
 Es importante meter en la cabecera lo siguiente (aparece en [Basic Template](http://getbootstrap.com/getting-started/#template)):
-{% highlight html %}
+
+```html
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{% endhighlight %}
+```
 
 Importante leer todo el [documento sobre CSS](http://getbootstrap.com/css/), sobre todo lo relativo al [Grid System](http://getbootstrap.com/css/#grid) y a los [Forms](http://getbootstrap.com/css/#forms).  
 Los componentes que no encontremos en Bootstrap buscarlos en [Bootsnipp](http://bootsnipp.com/).  
@@ -369,13 +374,14 @@ Interesa poner siempre un label en los campos de formulario por accesibilidad, p
 
 ### JavaScript
 Almacenamiento de un conjunto de variables en localStorage:
-{% highlight javascript %}
+
+```javascript
 var l1 = ["Alice", "Bob", "Charly"];
 var l2 = [1, 2, 3]
 var listas = { listaPrincipal: l1, listaSecundaria: l2};
 var listasComoCadena = JSON.stringify(listas);
 localStorage.setItem('listas', listasComoCadena);
-{% endhighlight %}
+```
 
 ### Deberes para el fin de semana
 * Landing page con tres zonas y call for action superior (= jumbotron).
@@ -431,10 +437,11 @@ Todo lo que no tenga que ver con esto irá al modelo/servicio.
 
 ### Proyecto
 Vamos a programar el envío del voto al servidor (mockable) en un POST. El voto va en la URL por lo que aunque utilicemos https no ocultamos la información. Sería más correcto enviar el voto en el cuerpo del POST, por ejemplo:
-{% highlight javascript %}
+
+```javascript
 var url = this.URL_POST_NUEVO_VOTO.replace('{value}', tipoDeVoto);
 var promesa = $.post(url, {value: ‘yes’});
-{% endhighlight %}
+```
 
 En segundo lugar programamos la gestión de la navegación, es decir cómo cambia la aplicación de pantalla, ya sea hacia delante o hacia atrás (incluyendo por ejemplo el evento “Back” del dispositivo que equivale al botón “Atrás” del navegador). Javier nos comenta el truco de añadir anchors (#) a la URL. Con esto se consigue que no se recargue el documento y que sí afecte al historial. Como nuestra app es SPA nos viene muy bien este truco. En Phonegap, la tecla “Atrás” de los dispositivos equivale al Back del WebView. La gestión del historial la vamos a hacer con [history.js](https://github.com/browserstate/history.js/).
 
@@ -447,11 +454,12 @@ En segundo lugar programamos la gestión de la navegación, es decir cómo cambi
 Con history.js manejamos el historial del navegador/webview por medio del objeto `History`. El objeto `history` sería la parte nativa del navegador. En muchas ocasiones se comportan igual.
 
 Los parámetros de la función `pushState` tanto de `history` como de `History` son:
-{% highlight javascript %}
+
+```javascript
 history.pushState({
     id: idDestino
 }, $('#' + idDestion).attr('data-title'), idDestion);
-{% endhighlight %}
+```
 
 1. Objeto arbitrario en el que podemos almacenar datos
 2. Descripción o Título de esa entrada en el historial 
@@ -487,16 +495,18 @@ Instalamos [jQuery-Color](https://github.com/jquery/jquery-color/) para hacer un
   * `<script src="bower_components/jquery-color/jquery.color.js"></script>`
 
 Hasta ahora había algo mal en el proyecto. No esperábamos a que cargara el DOM ni jQuery. Para conseguirlo envolvemos la función de inicialización de la siguiente forma:
-{% highlight javascript %}
+
+```javascript
 $(document).ready(function () {
     controlador.inicializar();
 });
-{% endhighlight %}
+```
 
 Vemos una forma de [desactivar](http://stackoverflow.com/questions/12665511/eliminate-tap-highlight-in-windows-phone-7) el highlight en el tap que hace el sistema operativo en WindowsPhone. Se consigue añadiendo la siguiente etiqueta `meta` en el `head` del HTML:
-{% highlight html %}
+
+```html
 <meta name="msapplication-tap-highlight" content="no"/>
-{% endhighlight %}
+```
 
 Vamos a programar un gesto para volver a la pantalla de votaciones desde resultados.  
 Instalamos [TouchSwipe-Jquery-Plugin](https://github.com/mattbryson/TouchSwipe-Jquery-Plugin):
@@ -506,7 +516,8 @@ Instalamos [TouchSwipe-Jquery-Plugin](https://github.com/mattbryson/TouchSwipe-J
   * `bower install --save jquery-touchswipe`
 
 Sustituimos el servicio votar para que guarde en local. Hay que generar promesa. Se puede hacer con la librería [Q](http://documentup.com/kriskowal/q/) o con [jQuery](http://api.jquery.com/category/deferred-object/). Lo hacemos así:
-{% highlight javascript %}
+
+```javascript
 var servicioPreguntas = {
     //...
 
@@ -522,7 +533,7 @@ var servicioPreguntas = {
         return promesa;
     }
 };
-{% endhighlight %}
+```
 
 ## Día 13: Jueves 4/12/2014
 
@@ -583,51 +594,57 @@ Vamos a hacer un pequeño proyecto que controlará un pequeño cuadrado por pant
     1. `phonegap plugin add org.apache.cordova.device-motion`
 
 Por defecto `watchAcceleration` llama al callback cada 10 segundos:
-{% highlight javascript %}
+
+```javascript
 var watchID = navigator.accelerometer.watchAcceleration(
       accelerometerSuccess,
       accelerometerError,
       accelerometerOptions);
-{% endhighlight %}
+```
 
 * **accelerometerOptions**: An object with the following optional keys:
   * **period**: requested period of calls to accelerometerSuccess with acceleration data in Milliseconds.(Number) (Default: 10000)
 
 Para conseguir que la aplicación sea más "responsiva", se puede cambiar el periodo de consulta pasando un objeto con un parámetro de clave frecuency en su interior (aunque la documentación menciona `period`, es `frecuency`). Hubiera funcionado cada segundo por ejemplo llamando al watchAcceleration así:
-{% highlight javascript %}
+
+```javascript
 var options = { frequency: 1000 };
 var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
-{% endhighlight %}
+```
 
 ### Subir a Google Play
 Para generar un certificado con que firmar las aplicaciones:
-{% highlight bash %}
+
+```bash
 keytool -genkey -alias demoiconos -keyalg RSA -validity 20000 -keystore demoiconos.keystore
-{% endhighlight %}
+```
 
 ### Compilar en Adobe PhoneGap Build
 Para delegar la construcción del proyecto en el [servicio de compilación de Adobe en la nube](https://build.phonegap.com/):
-{% highlight bash %}
+
+```bash
 phonegap remote build android
-{% endhighlight %}
+```
 Se puede firmar la aplicación desde Adobe subiendo el fichero keystore que hemos creado antes.
 
 ### Inicialización del controlador
 Si usamos jQuery:
-{% highlight javascript %}
+
+```javascript
 $(document).ready(function () {
     document.addEventListener('deviceready', function () {
         controlador.inicializar();
     });
 });
-{% endhighlight %}
+```
 
 Si no usamos jQuery:
-{% highlight javascript %}
+
+```javascript
 document.addEventListener('deviceready', function () {
     controlador.inicializar();
 });
-{% endhighlight %}
+```
 
 ### Pendiente de preguntar:
 * [JSONP vs CORS](http://stackoverflow.com/questions/12296910/so-jsonp-or-cors)

@@ -25,7 +25,8 @@ permalink: /sistemas/raspi.html
 ### Comprobar asignaciones de cliente No-IP
 
 Las asignaciones dejan marca en el log `syslog`:
-{% highlight bash %}
+
+```bash
 edumoreno@raspi-git /var/log $ sudo fgrep noip syslog
 Oct 16 12:18:57 raspi-git noip2[2165]: v2.1.9 daemon ended.
 Oct 16 12:19:19 raspi-git noip2[2186]: v2.1.9 daemon started with NAT enabled
@@ -33,64 +34,73 @@ Oct 16 12:19:35 raspi-git noip2[2186]: eduardofilo.no-ip.biz set to 88.19.216.95
 Oct 16 12:53:06 raspi-git noip2[2186]: v2.1.9 daemon ended.
 Oct 16 13:15:23 raspi-git noip2[2217]: v2.1.9 daemon started with NAT enabled
 Oct 16 13:15:25 raspi-git noip2[2217]: eduardofilo.no-ip.biz was already set to 88.19.216.95.
-{% endhighlight %}
+```
 
 ### Upgrade de Raspbian
-{% highlight bash %}
+
+```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade -y
-{% endhighlight %}
+```
 
 ### Utilidad de configuración
-{% highlight bash %}
+
+```bash
 $ sudo raspi-config
-{% endhighlight %}
+```
 
 ### Backup de la SD (comprimiendo al vuelo)
-{% highlight bash %}
+
+```bash
 #Backup:
 $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
 #Restauración:
 $ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
-{% endhighlight %}
+```
 
 ### Backup de la SD (comprimiendo al vuelo y diviendo en trozos el fichero resultante)
-{% highlight bash %}
+
+```bash
 #Backup:
 $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - | split --bytes=2G - Rpi_8gb_backup.img.gz.part_
 #Restauración:
 $ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | sudo dd of=/dev/mmcblk0 bs=2M
-{% endhighlight %}
+```
 
 ### Gestión de la SWAP
 Para redimensionar la Swap predeterminada (fichero de 100MB en `/var/swap`):
-{% highlight bash %}
+
+```bash
 sudo nano /etc/dphys-swapfile
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
-{% endhighlight %}
+```
 
 Para consultar el estado de la swap:
-{% highlight bash %}
+
+```bash
 swapon -s
-{% endhighlight %}
+```
 
 Para dejar de usar swap:
-{% highlight bash %}
+
+```bash
 sudo swapoff -a
-{% endhighlight %}
+```
 
 Para activar la swap tal y como está definida en ''/etc/fstab'':
-{% highlight bash %}
+
+```bash
 sudo swapon -a
-{% endhighlight %}
+```
 
 Para activar swap con un fichero en concreto:
-{% highlight bash %}
-sudo swapon /var/swap
-{% endhighlight %}
 
-## Artículos interesantes de TheMagPi
+```bash
+sudo swapon /var/swap
+```
+
+## Artículos interesantes de [TheMagPi](http://www.themagpi.com/)
 * Librería Python para controlar un puerto USB: Página 14 de #3 de TheMagPi
 * Buffer de dispositivos controlados con el GPIO de RPi: Página 19 de #4 de TheMagPi
 * Librería wiringPi: Sirve para comandar y leer el GPIO desde bash. Página 14 de #6 de TheMagPi
@@ -111,12 +121,12 @@ sudo swapon /var/swap
 
 Editar el fichero `/etc/ssh/sshd_config` y modificar/añadir las siguientes líneas ([fuente](http://cuadernodelviaje.blogspot.com.es/2013/01/protegiendo-un-poco-nuestra-raspberry.html)):
 
-{% highlight text %}
+```
 PermitRootLogin no
 MaxAuthTries 3
 MaxStartups 5
 AllowUsers edumoreno
-{% endhighlight %}
+```
 
 Medidas de protección:
 

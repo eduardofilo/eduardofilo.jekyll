@@ -10,7 +10,18 @@ twitter_username: eduardofilo
 github_username:  eduardofilo
 
 # Build settings
-markdown: kramdown
 timezone: Europe/Madrid
-kramdown:
-    input: GFM
+    
+markdown: redcarpet
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript","tables", "with_toc_data"]
+
+#markdown: kramdown
+
+kramdown: 
+  input: GFM 
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: true
+    coderay_css: class

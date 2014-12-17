@@ -8,7 +8,8 @@ permalink: /desarrollo/javaee.html
 ## DisplayTag & Struts2
 
 ### Subtabla en base a lista anidada
-{% highlight xml %}
+
+```xml
 <display:table name="platformList" id="platform" pagesize="0" requestURI="" class="displaytag">
 <display:column property="name" title="Platform" />
 <s:set name="formats" value="#attr.platform.formats" />
@@ -22,10 +23,11 @@ permalink: /desarrollo/javaee.html
 </display:table>
 </display:column>
 </display:table>
-{% endhighlight %}
+```
     
 ###  SessionID en Action
-{% highlight java %}
+
+```java
 public class MyActionClass extends ActionSupport implements ServletRequestAware {
    //...
 
@@ -55,10 +57,11 @@ public class MyActionClass extends ActionSupport implements ServletRequestAware 
        //...
    }
 }
-{% endhighlight %}
+```
 
 ### Mapa de Session
-{% highlight java %}
+
+```java
 public class MyActionClass extends ActionSupport implements SessionAware {
    //...
 
@@ -89,16 +92,18 @@ public class MyActionClass extends ActionSupport implements SessionAware {
        //...
    }
 }
-{% endhighlight %}
+```
 
 ## JSP
 
 ### Prepoblado de combo desde el propio JSP
-{% highlight jsp %}
+
+```jsp
 <s:select label="Priority" name="wallpaper_priority" list="#{-2:'Very Low',-1:'Low',0:'Normal',1:'High',2:'Very High'}" />
-{% endhighlight %}
+```
 
 ### Inyectar cabecera HTTP en JSP
-{% highlight jsp %}
+
+```jsp
 <% response.setHeader("P3P", "CP=\"HONK\""); %>
-{% endhighlight %}
+```

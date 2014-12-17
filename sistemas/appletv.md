@@ -13,10 +13,11 @@ permalink: /sistemas/appletv.html
 
 ### Trucos
 Comando para escanear frecuencias:
-{% highlight bash %}
+
+```bash
 sudo apt-get install w-scan
 sudo w_scan -f a -c ES -X
-{% endhighlight %}
+```
 
 ### Enlaces
 

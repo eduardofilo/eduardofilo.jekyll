@@ -12,21 +12,27 @@ permalink: /sistemas/mysql.html
 ## Instalación
 
 Instalamos el paquete `mysql-server`:
-{% highlight bash %}
+
+```bash
 apt-get install mysql-server
-{% endhighlight %}
+```
+
 En caso de no haberlo configurado durante la instalación del paquete, ajustar el password de root con el comando:
-{% highlight bash %}
+
+```bash
 mysql -u root
 mysql> SET PASSWORD FOR 'root'@'localhost" = PASSWORD('new_password');
-{% endhighlight %}
+```
+
 Por defecto sólo podemos entrar con el usuario root en local. Para permitir el acceso remoto ejecutar el siguiente comando:
-{% highlight text %}
+
+```
 mysql -u root -p
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 mysql> FLUSH PRIVILEGES;
 mysql> exit
-{% endhighlight %}
+```
+
 También hay que permitir las conexiones remotas a nivel de red comentando la siguiente linea del fichero de configuración `/etc/mysql/my.cnf`:
 
 	bind-address = 127.0.0.1
@@ -37,7 +43,7 @@ También hay que permitir las conexiones remotas a nivel de red comentando la si
 ### MySQL Client
     mysql -u <usuario> -h <host> -P <puerto> <database> -p
 
-{% highlight text %}
+```
 $ mysql -u root -p 
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -46,26 +52,29 @@ Your MySQL connection id is 89 to server version: 4.1.11-Debian_4-log
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 
 mysql>  
-{% endhighlight %}
+```
 
 ## Trabajando con Bases de Datos
 
 ### Creación de BBDD
-{% highlight sql %}
+
+```sql
 mysql> CREATE DATABASE irontec_db;
 Query OK, 1 row affected (0.03 sec)
-{% endhighlight %}
+```
 
 ### Selección de BBDD
 
 Cambiar o elegir base de datos a utilizar:
-{% highlight sql %}
+
+```sql
 mysql> USE irontec_db; 
 Database changed
-{% endhighlight %}
+```
 
 Ver la base de datos seleccionada:
-{% highlight sql %}
+
+```sql
 mysql> SELECT DATABASE();
 +------------+
 | database() |
@@ -73,45 +82,51 @@ mysql> SELECT DATABASE();
 | irontec_db |
 +------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### Eliminación de BBDD
-{% highlight sql %}
+
+```sql
 mysql> DROP DATABASE irontec_db;
 Query OK, 0 rows affected (0.60 sec)
-{% endhighlight %}
+```
 
 ## Trabajando con Usuarios / Privilegios
 
 ### Creación de Usuarios
 Usuarios con **todos** los privilegios:
-{% highlight sql %}
+
+```sql
 mysql> GRANT ALL PRIVILEGES ON irontec_db.* TO irontec_user_allpriv@localhost IDENTIFIED BY 'irontec_pass';
 Query OK, 0 rows affected (0.14 sec)
-{% endhighlight %}
+```
 
 Usuarios **sin privilegios** (solo introduce el usuario en la tabla `mysql.user`):
-{% highlight sql %}
+
+```sql
 mysql> GRANT USAGE ON irontec_db.* TO irontec_user_nopriv@localhost IDENTIFIED BY 'irontec_pass';
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 Usuarios con privilegios de **solo lectura** en registros:
-{% highlight sql %}
+
+```sql
 mysql> GRANT SELECT ON irontec_db.* TO irontec_user_ro@localhost IDENTIFIED BY 'irontec_pass';
 Query OK, 0 rows affected (0.02 sec)
-{% endhighlight %}
+```
 
 Usuarios con priligegios de **solo inserción o modificación** de registros:
-{% highlight sql %}
+
+```sql
 mysql> GRANT INSERT,UPDATE on irontec_db.* TO irontec_user_wo@localhost IDENTIFIED BY 'irontec_pass';
 Query OK, 0 rows affected (0.01 sec)
-{% endhighlight %}
+```
 
 ### Selección de Usuarios
 
-Ver el usuario con el que se está trabajando
-{% highlight sql %}
+Ver el usuario con el que se está trabajando:
+
+```sql
 mysql> SELECT user();
 +------------------------+
 | user()                 |
@@ -119,10 +134,11 @@ mysql> SELECT user();
 | irontec_user@localhost |
 +------------------------+
 1 row in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### Visualización de Privilegios de Usuarios
-{% highlight sql %}
+
+```sql
 mysql> show grants for 'irontec_user_allpriv'@'localhost';
 +------------------------------------------------------------------------------------------------+
 | Grants for irontec_user_allpriv@localhost                                                      |
@@ -131,10 +147,11 @@ mysql> show grants for 'irontec_user_allpriv'@'localhost';
 | GRANT ALL PRIVILEGES ON `irontec_db`.* TO 'irontec_user_allpriv'@'localhost'                   |
 +------------------------------------------------------------------------------------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 ### Eliminación de Usuarios
-{% highlight sql %}
+
+```sql
 mysql> REVOKE ALL PRIVILEGES ON irontec_db.* from 'irontec_user_allpriv'@'localhost';
 Query OK, 0 rows affected (0.00 sec)
 
@@ -151,7 +168,7 @@ Query OK, 0 rows affected (0.00 sec)
 
 mysql> drop user 'irontec_user_allpriv'@'localhost';
 Query OK, 0 rows affected (0.00 sec)
-{% endhighlight %}
+```
 
 ## Trabajando con Tablas
 
@@ -166,7 +183,8 @@ Query OK, 0 rows affected (0.00 sec)
 ### Creación Tablas
 
 #### MyISAM
-{% highlight sql %}
+
+```sql
 mysql> CREATE TABLE clientes (
   -> id_cliente INT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   -> razon_social VARCHAR (50) NOT NULL,
@@ -184,10 +202,11 @@ mysql> CREATE TABLE presupuestos (
   -> fecha DATE,
   -> ) ENGINE=MyISAM;
 Query OK, 0 rows affected (0.20 sec)
-{% endhighlight %}
+```
 
 #### InnoDB
-{% highlight sql %}
+
+```sql
 mysql> CREATE TABLE clientes (
   -> id_cliente INT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   -> razon_social VARCHAR (50) NOT NULL,
@@ -207,12 +226,13 @@ mysql> CREATE TABLE presupuestos (
   -> FOREIGN KEY (empresa) REFERENCES clientes(id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
   -> ) ENGINE=InnoDB;
 Query OK, 0 rows affected (0.06 sec)
-{% endhighlight %}
+```
 
 ### Visualización Tablas
 
 Tablas contenidas en una Base de Datos:
-{% highlight sql %}
+
+```sql
 mysql> show tables;
 +------------------+
 | Tables_in_prueba |
@@ -221,10 +241,11 @@ mysql> show tables;
 | presupuestos     |
 +------------------+
 2 rows in set (0.00 sec)
-{% endhighlight %}
+```
 
 Estructura de una tabla:
-{% highlight sql %}
+
+```sql
 mysql> DESC presupuestos;
 +----------------+-------------+------+-----+---------+----------------+
 | Field          | Type        | Null | Key | Default | Extra          |
@@ -236,12 +257,13 @@ mysql> DESC presupuestos;
 | fecha          | date        | YES  |     | NULL    |                |
 +----------------+-------------+------+-----+---------+----------------+
 5 rows in set (0.01 sec)
-{% endhighlight %}
+```
 
 Estado de todas las tablas:
-{% highlight sql %}
+
+```sql
 mysql> show table status;
-{% endhighlight %}
+```
 
 ### Modificación Tablas
 
@@ -251,49 +273,49 @@ mysql> show table status;
 
     mysql> ALTER TABLE [database.]tabla ADD campo_nuevo tipo AFTER campo_viejo;
 
-{% highlight sql %}
+```sql
 mysql> ALTER TABLE presupuestos ADD adjunto BLOB AFTER fecha ;
 Query OK, 0 rows affected (0.06 sec)
 Registros: 0  Duplicados: 0  Peligros: 0
-{% endhighlight %}
+```
 
 #### Cambiar el nombre de una tabla
 
     mysql> ALTER TABLE [database.]tabla RENAME tabla_nueva;
 
-{% highlight sql %}
+```sql
 mysql> ALTER TABLE presupuestos RENAME proyectos;
 Query OK, 0 rows affected (0.03 sec)
-{% endhighlight %}
+```
 
 #### Cambiar el tipo de dato de un campo
 
     mysql> ALTER TABLE [database.]tabla CHANGE campo campo nuevo_tipo;
 
-{% highlight sql %}
+```sql
 mysql> ALTER TABLE presupuestos CHANGE asunto asunto VARCHAR(100);
 Query OK, 0 rows affected (0.23 sec)
 Registros: 0  Duplicados: 0  Peligros: 0
-{% endhighlight %}
+```
 
 #### Eliminar un campo existente
 
     mysql> ALTER TABLE [database.]tabla DROP campo;
 
-{% highlight sql %}
+```sql
 mysql> ALTER TABLE presupuestos DROP adjunto;
 Query OK, 0 rows affected (0.05 sec)
 Registros: 0  Duplicados: 0  Peligros: 0
-{% endhighlight %}
+```
 
 ### Eliminación Tablas
 
     mysql> DROP TABLE [database.]tabla;
 
-{% highlight sql %}
+```sql
 mysql> DROP TABLE presupuestos;
 Query OK, 0 rows affected (0.44 sec)
-{% endhighlight %}
+```
 
 ## Trabajando con Registros
 
@@ -303,37 +325,37 @@ Query OK, 0 rows affected (0.44 sec)
 
     mysql> SELECT campo1,campo2,.. FROM [database.]tabla;
 
-{% highlight sql %}
+```sql
 mysql> SELECT * FROM proyectos;
 Empty set (0.10 sec)
-{% endhighlight %}
+```
 
 
 ### Inserción de datos
 
     mysql> INSERT INTO [database.]tabla (campo1,campo2,..) VALUES ('valor_campo1','valor_campo2',..);
 
-{% highlight sql %}
+```sql
 mysql> INSERT INTO presupuestos (empresa,asunto,precio,fecha) VALUES ('UPV','Formación GNU/Linux','600','2005-07-01');
 Query OK, 1 row affected (0.00 sec)
-{% endhighlight %}
+```
 
 ### Modificación de datos
 
     mysql> UPDATE [database.]tabla SET campo1='valor_nuevo_campo1',campo2='valor_nuevo_campo2' WHERE condición;
 
-{% highlight sql %}
+```sql
 mysql> UPDATE presupuestos SET empresa='UPV/EHU' WHERE empresa='UPV';
-{% endhighlight %}
+```
 
 ### Eliminación de datos
 
     mysql> DELETE FROM [database.]tabla WHERE condición;
 
-{% highlight sql %}
+```sql
 mysql> DELETE FROM presupuestos WHERE id='1';
 Query OK, 1 row affected (0.04 sec)
-{% endhighlight %}
+```
 
 
 ## Trabajando con MySQL
@@ -342,7 +364,7 @@ Query OK, 1 row affected (0.04 sec)
 
 Ver variables de sistema:
 
-{% highlight sql %}
+```sql
 mysql> SHOW VARIABLES;
 +---------------------------------+----------------------------------------------------------+
 | Variable_name                   | Value                                                    |
@@ -366,7 +388,7 @@ mysql> SHOW VARIABLES;
 | wait_timeout                    | 28800                                                    |
 +---------------------------------+----------------------------------------------------------+
 196 rows in set (0.01 sec)
-{% endhighlight %}
+```
 
 ## Configuración
 
@@ -439,27 +461,27 @@ Programa incluído en el paquete `mysql-client`
 
 Backup de todas las bases de datos:
 
-{% highlight bash %}
+```bash
 $ mysqldump --opt -d -h host --all-databases --user=root --password=contraseña > backup_irontec_mysql.sql
-{% endhighlight %}
+```
 
 Para cargar un backup hecho previamente:
 
-{% highlight bash %}
+```bash
 $ mysql -h host --user=root --password=contraseña < backup_irontec_mysql.sql
-{% endhighlight %}
+```
 
 Backup de una base de datos (database):
 
-{% highlight bash %}
+```bash
 $ mysqldump --opt -d -h host --user=root --password=contraseña database > backup_irontec_mysql.sql
-{% endhighlight %}
+```
 
 Para cargar un backup hecho previamente:
 
-{% highlight bash %}
+```bash
 $ mysql -h host --user=root --password=contraseña database < backup_irontec_mysql.sql
-{% endhighlight %}
+```
 
 Si se quita la opción `-d` en el volcado se incluirán los datos que contengan las tablas.
 
@@ -469,9 +491,9 @@ El comando equivalente al `bcp` de otros gestores es `mysqlimport`. [Aquí](http
 
 Un ejemplo de uso sería:
 
-{% highlight bash %}
+```bash
 mysqlimport -h localhost -u adw -p -v -L --delete adw keywords.csv
-{% endhighlight %}
+```
 
 Para que no de errores hay que guardar el fichero en formato UTF8 (revisar con el comando `od -c fichero.csv` si no hay caracteres extraños al principio). Por defecto se espera el carácter TAB como separador de columnas y el retorno de carro como separador de registros. El fichero será un CSV con las columnas en el mismo orden que la tabla en que se desea cargar los datos. El nombre del fichero sin extensión se debe corresponder con el nombre de la tabla. En el ejemplo anterior, la tabla sería `keywords`.
 
@@ -482,19 +504,19 @@ Para indicar un separador de campos y registros diferentes se pueden usar las op
 
 El mismo efecto se consigue con la siguiente query:
 
-{% highlight sql %}
+```sql
 LOAD DATA LOCAL INFILE 'keywords_clean.csv'
 INTO TABLE keywords
 FIELDS
   TERMINATED BY ','
   ENCLOSED BY '\"';
-{% endhighlight %}
+```
 
 Para que el cliente acepte la opción `LOCAL` debe ser ejecutado con la opción `--local-infile`, por ejemplo:
 
-{% highlight bash %}
+```bash
 mysql -h localhost --local-infile -u adw -p adw
-{% endhighlight %}
+```
 
 ## Otras Herramientas
 
@@ -512,21 +534,21 @@ Muestra las variables del gestor:
 ### Tabla de Schrödinger
 La única forma de solucionar un caso de [tablas de Schrödingers](http://stackoverflow.com/questions/10538908/schrodingers-mysql-table-exists-yet-it-does-not) fue purgando la instalación de MySQL y borrando el directorio de datos:
 
-{% highlight bash %}
+```bash
 sudo dpkg --purge mysql-server-5.5 mysql-server-core-5.5 mysql-server
 sudo mv /var/lib/mysql /var/lib/mysql.bak
 sudo apt-get install mysql-server-5.5 mysql-server-core-5.5 mysql-server
-{% endhighlight %}
+```
 
 Otra forma menos agresiva fue encontrada [aquí](http://www.randombugs.com/linux/crash-innodb-table.html) y consiste en borrar los ficheros siguientes con el servidor parado y luego arrancarlo:
 
-{% highlight bash %}
+```bash
 sudo service mysql stop
 sudo rm /var/lib/mysql/ibdata1
 sudo rm /var/lib/mysql/ib_logfile0
 sudo rm /var/lib/mysql/ib_logfile1
 sudo service mysql start
-{% endhighlight %}
+```
 
 La última vez que sucedió borré todas las tablas. Ver si borrando estos ficheros en cuanto ocurre se restituyen todas las tablas.
 
@@ -534,8 +556,8 @@ La última vez que sucedió borré todas las tablas. Ver si borrando estos fiche
 
 Para tener más información de un error, si es sobre tablas InnoDB, se puede lanzar el siguiente comando:
 
-{% highlight mysql %}
+```mysql
 SHOW ENGINE INNODB STATUS;
-{% endhighlight %}
+```
 
 Concretamente la sección `LATEST FOREIGN KEY ERROR` muestra más detalle en los errores relacionados con foreign keys.

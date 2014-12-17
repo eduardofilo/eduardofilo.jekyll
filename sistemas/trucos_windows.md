@@ -7,9 +7,10 @@ permalink: /sistemas/trucos_windows.html
 
 ## Acelerar la exploración de equipos en red e incrementar el rendimiento general
 Borrar la clave siguiente ([fuente](http://www.pc-soluciones.com.ar/acelerarequiposenredxp.htm)):
-{% highlight text %}
+
+```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{D6277990-4C6A-11CF-8D87-00AA0060F5BF}
-{% endhighlight %}
+```
 
 ## Cambiar la clave de producto en Windows XP
 Proceder como sigue ([fuente](http://www.pc-soluciones.com.ar/cambiarclavexp.htm)):
@@ -34,9 +35,10 @@ Por medio de alguno de estos programas:
 
 "inuse.exe” es una herramienta que antaño formaba parte del kit de recursos de Windows 2000, y que con la liberación de Windows XP Microsoft ha decidido ponerla a disposición de forma gratuita.  
 Su cometido es permitir la sustitución de archivos que estén en uso por parte del Sistema Operativo y que de otra manera no podrían ser sustituidos. Su sintaxis es:
-{% highlight text %}
+
+```
 INUSE origen destino /y
-{% endhighlight %}
+```
 
 *  origen: especifica el nombre del archivo actualizado
 *  destino: especifica el nombre del archivo existente que será reemplazado
@@ -60,36 +62,43 @@ Como es bien sabido Windows XP debe ser activado después de su instalación, po
 ## Evitar colapsos de conexión de red
 
 Activar el servicio "Programador de paquetes QoS". Se puede configurar el valor de reserva de ancho de banda con:
-{% highlight text %}
+
+```
 gpedit.msc / Configuración del equipo / Plantillas administrativas /
 Red / Programador de paquetes QoS / Limitar ancho de banda reservado
-{% endhighlight %}
+```
 
 ## Reparar registro de Windows
 ([Fuente](http://support.microsoft.com/kb/307545/es))
 
 *  Arrancar con la consola de reparación del CD de instalación.
 *  Copiar los archivos del registro de la versión de instalación:
-{% highlight text %}
+
+```
 copy c:\windows\repair\system c:\windows\system32\config\system
 copy c:\windows\repair\software c:\windows\system32\config\software
 copy c:\windows\repair\sam c:\windows\system32\config\sam
 copy c:\windows\repair\security c:\windows\system32\config\security
 copy c:\windows\repair\default c:\windows\system32\config\default
-{% endhighlight %}
+```
+
 *  Con esta configuración se puede arrancar en Modo a Prueba de Fallos. Elegir un conjunto de archivos de un punto de restauración en la ruta:
-{% highlight text %}
+
+```
 C:\System Volume Information\_restore{27BBF476-A824-438F-93A9-39BC37483C34}\RPn\Snapshot
 (el ClassID y el n de RPn son variables)
-{% endhighlight %}
+```
+
 *  Copiar los siguientes ficheros a una carpeta accesible como C:\Windows\tmp renombrándolos como se indica:
-{% highlight text %}
+
+```
 _REGISTRY_USER_.DEFAULT -> default
 _REGISTRY_MACHINE_SECURITY -> security
 _REGISTRY_MACHINE_SOFTWARE -> software
 _REGISTRY_MACHINE_SYSTEM -> system
 _REGISTRY_MACHINE_SAM -> sam
-{% endhighlight %}
+```
+
 *  Volver a arrancar con la consola de reparación y sustituir los ficheros de C:\Windows\tmp a c:\windows\system32\config.
 
 ## Clonado de equipos
@@ -107,57 +116,70 @@ _REGISTRY_MACHINE_SAM -> sam
 ## Comandos útiles
 
 *  Mostrar lista de procesos con servicios asociados:
-{% highlight text %}
+
+```
 tasklist /svc
-{% endhighlight %}
+```
+
 *  Lista de conexiones con PID de procesos asociados:
-{% highlight text %}
+
+```
 netstat -aon
-{% endhighlight %}
+```
+
 *  Eliminar unidades de red:
-{% highlight text %}
+
+```
 net use /d A:
-{% endhighlight %}
+```
+
 *  Añadir unidades de red:
-{% highlight text %}
+
+```
 net use A: \\Servidor\Directorio
-{% endhighlight %}
+```
+
 *  Muestra la diferencia de hora del sistema con un servidor NTP externo:
-{% highlight text %}
+
+```
 w32tm /stripchart /computer:es.pool.ntp.org /samples:3 /dataonly
-{% endhighlight %}
+```
+
 *  Utilidad de configuración del sistema (WinXP):
-{% highlight text %}
+
+```
 msconfig
-{% endhighlight %}
+```
 
 ## Bloqueo y desbloqueo del Registro
 
 Para deshabilitarlo, accedemos al registro, nos situamos en HKEY_CURENT_USER/Software/Microsoft/Windows/CurrentVersion/Policies/System. En la parte de la derecha creamos un nuevo valor DWORD y le damos el nombre DisableRegistryTools, otorgándole el 1 para deshabilitar las funciones de edición del Registro.  
 Una vez realizada esta operación, nadie podrá acceder a él hasta que no lo volvamos a activar. Para habilitarlo, abrimos un editor de texto y escribimos:
-{% highlight text %}
+
+```
 Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\system] "DisableRegistryTools"=dword:00000000
-{% endhighlight %}
+```
+
 Ahora, guardamos el archivo con el nombre unlock.reg y, a partir de ese momento, cuando queramos activar el Registro de Windows, después de haberlo deshabilitado, sólo tendremos que hacer doble clic sobre el archivo que acabamos de crear.
 
 ## Escritorio Remoto / Editar registro con comandos
 
 La funcionalidad "Escritorio Remoto" se encuentra desactivada por defecto. Se puede activar editando el registro del ordenador que nos interese. Esto se puede hacer remotamente por medio del siguiente comando:
-{% highlight text %}
+
+```
 reg add \\[NombreEquipo]\HKLM\SYSTEM\CurrentControlSet\Services\PolicyAgent /V EnableRemoteMgmt /T REG_DWORD /F /D 1
-{% endhighlight %}
+```
 
 ## Edición ficheros BKS de la utilidad Copia de Seguridad
 
 En estos ficheros se almacena la selección de directorios/ficheros que entran en el backup. Hay que respetar el formato que les da la utilidad cuando los genera. Es texto Unicode, pero si se edita con Notepad no queda exactamente en el formato esperado y luego aparece en el log el error "No se encontró el archivo de selección...". Una forma de conseguirlo es editando con Notepad, guardando en formato "Codificación: Unicode" y luego usar un editor hexadecimal para eliminar los dos primeros bytes que se incluyen con este formato.
 
-
-
 ## Procesos de inicio
 
 En las siguientes rutas del registro:
-{% highlight text %}
+
+```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
@@ -165,26 +187,34 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunServices
 HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
-{% endhighlight %}
+```
 
 En el caso de Windows 98 y Windows ME será necesario revisar también en los 2 archivos:
-{% highlight text %}
+
+```
 WIN.INI
-{% endhighlight %}
+```
+
 Son las entradas que inician con "run=" o "load="
-{% highlight text %}
+
+```
 SYSTEM.INI
-{% endhighlight %}
+```
+
 Son las entradas que inician con "shell=" . Hay que tener en cuenta que la única entrada legal es shell=Explorer.exe y que algún virus podría agregar una línea del tipo shell=Explorer.exe %Windows% ombredelviruse.exe
 
 Otro lugar donde se debería revisar son las carpetas de los programas de inicio que por ejemplo en Windows XP serán:
-{% highlight text %}
+
+```
 C:\Documents and Settings\tucuenta\Menú Inicio\Programas\Inicio
 
 C:\Documents and Settings\All Users\Menú Inicio\Programas\Inicio
-{% endhighlight %}
+```
+
 y en Windows 98 será:
-{% highlight text %}
+
+```
 C:\Windows\Menú Inicio\Programas\Inicio 
-{% endhighlight %}
+```
+
 ([Fuente](http://www.trucoswindows.net/explicapro.html))

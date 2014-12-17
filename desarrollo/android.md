@@ -62,13 +62,13 @@ Esta clave es válida para todas las aplicaciones firmadas con el certificado cu
     
 Incluimos un diseño xml de ejemplo para que puedas iniciarte por los senderos de la creación de mapas:
 
-{% highlight xml %}
+```xml
 <com.google.android.maps.MapView
    android:layout_width="fill_parent"
    android:layout_height="fill_parent"
    android:apiKey="0V21y2J7NRVSVKA...5C9Ag"
    />
-{% endhighlight %}
+```
 
 ## Depurar
 
@@ -85,9 +85,9 @@ Solicitar el permiso siguiente:
 
 Ejemplo de una expresión de filtrado que suprime (silencia) todos los mensajes de log excepto los que tienen el tag "ActivityManager" con una prioridad Info o superior, y los que tienen el tag "MyApp" con una prioridad Debug o superior:
 
-{% highlight bash %}
+```bash
 adb logcat ActivityManager:I MyApp:D *:S
-{% endhighlight %}
+```
 
 Las prioridades de log son:
 
@@ -103,24 +103,24 @@ Las prioridades de log son:
 
 Hace un volcado de los datos del sistema. Viene bien para encontrar componentes instalados (Aplicaciones, ContentProvider's, etc.):
 
-{% highlight bash %}
+```bash
 adb shell dumpsys
-{% endhighlight %}
+```
 
-{% highlight bash %}
+```bash
 adb shell dumpstate
-{% endhighlight %}
+```
 
 ## Buscar CallerID
 
-{% highlight java %}
+```java
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
 
 Uri uri = Uri.withAppendedPath(ContactsContract.PhoneLookup.CONTENT_FILTER_URI, Uri.encode("+34976010101"));
 Cursor c = getContentResolver().query(uri, new String[]{ContactsContract.PhoneLookup.DISPLAY_NAME}, null, null, null);
-{% endhighlight %}
+```
 
 ## Manejo de URI's de contactos
 
@@ -133,56 +133,56 @@ Se manejan dos tipos de URI's:
 
 ### URI de la tabla raíz Contacts
 
-{% highlight java %}
+```java
 import android.net.Uri;
 import android.provider.ContactsContract;
 Uri contactsUri = ContactsContract.Contacts.CONTENT_URI;
-{% endhighlight %}
+```
 
 ### URI de la subtabla RawContacts
 
-{% highlight java %}
+```java
 import android.net.Uri;
 import android.provider.ContactsContract;
 Uri rawContactsUri = ContactsContract.RawContacts.CONTENT_URI;
-{% endhighlight %}
+```
 
 ### URI de la subtabla Data
 
-{% highlight java %}
+```java
 import android.net.Uri;
 import android.provider.ContactsContract;
 Uri datasUri = ContactsContract.Data.CONTENT_URI;
-{% endhighlight %}
+```
 
 ### URI de la subtabla Data sólo con los registros de un RawContact concreto
 
-{% highlight java %}
+```java
 import android.net.Uri;
 import android.provider.ContactsContract;
 // Tenemos en rawContactUri el URI de un RawContact. Será del tipo content://com.android.contacts/raw_contacts/_id
 Uri datasUri = Uri.withAppendedPath(rawContactUri, RawContacts.Entity.CONTENT_DIRECTORY);
-{% endhighlight %}
+```
 
 ### Obtener ID a partir de una URI de tipo item
 
 Por ejemplo el método para insertar un RawContact devuelve una URI de tipo item (no tabla). Para obtener el ID de dicho elemento podemos usar algunas funciones que hay en la clase ''android.content.ContentUris''.
 
-{% highlight java %}
+```java
 import android.content.ContentUris;
 long rawContactId = ContentUris.parseId(rawContactUri);
-{% endhighlight %}
+```
 
 ### Obtener la URI de tipo item de un elemento concreto a partir de la tabla
 
 Por ejemplo tenemos el ID de un elemento y queremos una URI para él.
 
-{% highlight java %}
+```java
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.content.ContentUris;
 Uri rawContactUri = ContentUris.withAppendedId(ContactsContract.RawContacts.CONTENT_URI, rawContactId);
-{% endhighlight %}
+```
 
 Resumiendo:
 
@@ -194,7 +194,7 @@ Resumiendo:
 
 ## Obtener el ID de un recurso en el ContentProvider de audio externo
 
-{% highlight java %}
+```java
 String outText = "";
 Uri externalMediaUri = android.provider.MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
 String[] projection = new String[] {android.provider.BaseColumns._ID};
@@ -206,11 +206,11 @@ while (c.moveToNext()) {
         outText += c.getColumnName(i) + "= " + c.getString(i) + "\n";
     }
 }
-{% endhighlight %}
+```
 
 ## Inserción de un RawContact de tipo "vnd.sec.contact.phone"
 
-{% highlight java %}
+```java
 ArrayList<ContentProviderOperation> operationList = new ArrayList<ContentProviderOperation>();
 Builder builder = ContentProviderOperation.newInsert(RawContacts.CONTENT_URI);
 builder.withValue(RawContacts.ACCOUNT_NAME, "vnd.sec.contact.phone");
@@ -247,11 +247,11 @@ try {
 } catch (OperationApplicationException e) {
     e.printStackTrace();
 }
-{% endhighlight %}
+```
 
 ## Extraer el nombre, el número y la foto de los Contacts de tipo "vnd.sec.contact.phone"
 
-{% highlight java %}
+```java
 Uri rawContactsUri = ContactsContract.RawContacts.CONTENT_URI;
 String[] projection = new String[] { ContactsContract.RawContacts._ID };
 String where = ContactsContract.RawContacts.ACCOUNT_TYPE + "=? AND "
@@ -307,28 +307,28 @@ while (c.moveToNext()) {
     outText += "\n";
 }
 c.close();
-{% endhighlight %}
+```
 
 ## Borrado de los contactos de un tipo
 
-{% highlight java %}
+```java
 Uri rawContacts = ContactsContract.RawContacts.CONTENT_URI;
 String where = ContactsContract.RawContacts.ACCOUNT_TYPE + "=?";
 String[] whereArgs = new String[] { "es.eduardofilo.app" };
 getContentResolver().delete(rawContacts, where, whereArgs);
-{% endhighlight %}
+```
 
 ## Borrado de un contacto
 
-{% highlight java %}
+```java
 Uri rawContacts = ContactsContract.RawContacts.CONTENT_URI;
 Uri rawContactUri = ContentUris.withAppendedId(ContactsContract.RawContacts.CONTENT_URI, 13);
 getContentResolver().delete(rawContactUri, null, null);
-{% endhighlight %}
+```
 
 ## Actualizar el nombre de un contacto
 
-{% highlight java %}
+```java
 long rawContactId = 14;
 Uri data = ContactsContract.Data.CONTENT_URI;
 ContentValues values = new ContentValues();
@@ -336,11 +336,11 @@ values.put(CommonDataKinds.StructuredName.DISPLAY_NAME, "Jorgito");
 String where = Data.MIMETYPE + "=? AND " + ContactsContract.Data.RAW_CONTACT_ID + "=?";
 String[] whereArgs = new String[] { CommonDataKinds.StructuredName.CONTENT_ITEM_TYPE, Long.toString(rawContactId) };
 getContentResolver().update(data, values, where, whereArgs);
-{% endhighlight %}
+```
 
 ## Inserción de un RawContact de tipo "vnd.sec.contact.phone"
 
-{% highlight java %}
+```java
 ContentValues values = new ContentValues();
 values.put(RawContacts.ACCOUNT_TYPE, "vnd.sec.contact.phone");
 values.put(RawContacts.ACCOUNT_NAME, "vnd.sec.contact.phone");
@@ -359,13 +359,13 @@ values.put(Data.MIMETYPE, CommonDataKinds.Phone.CONTENT_ITEM_TYPE);
 values.put(CommonDataKinds.Phone.TYPE, CommonDataKinds.Phone.TYPE_MAIN);
 values.put(CommonDataKinds.Phone.NUMBER, "976010101");
 Uri data2Uri = getContentResolver().insert(ContactsContract.Data.CONTENT_URI, values);
-{% endhighlight %}
+```
 
 ## Inserción de un RawContact de tipo "vnd.sec.contact.phone"
 
 Igual que antes pero hecho con el sistema de operaciones por lotes de los ContentProvider's.
 
-{% highlight java %}
+```java
 ArrayList<ContentProviderOperation> operationList = new ArrayList<ContentProviderOperation>();
 Builder builder = ContentProviderOperation.newInsert(RawContacts.CONTENT_URI);
 builder.withValue(RawContacts.ACCOUNT_NAME, "vnd.sec.contact.phone");
@@ -393,11 +393,11 @@ try {
 } catch (OperationApplicationException e) {
     e.printStackTrace();
 }
-{% endhighlight %}
+```
 
 ## Localizar un Launcher que no sea el nuestro
 
-{% highlight java %}
+```java
 PackageManager pm = getPackageManager();
 Intent intent = new Intent(Intent.ACTION_MAIN);
 intent.addCategory(Intent.CATEGORY_HOME);
@@ -415,11 +415,11 @@ for (ResolveInfo ri : launchers) {
 Intent myIntent = new Intent();
 myIntent.setClassName(packageName, name);
 startActivity(myIntent);
-{% endhighlight %}
+```
 
 ## Obtener un authToken de un Account
 
-{% highlight java %}
+```java
 mAccountManager = AccountManager.get(this);
 Account[] accounts = mAccountManager.getAccountsByType(ACCOUNT_TYPE);
 for (Account account : accounts) {
@@ -443,4 +443,4 @@ for (Account account : accounts) {
         outText += token + "\n";
     }
 }
-{% endhighlight %}
+```
