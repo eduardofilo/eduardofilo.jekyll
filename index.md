@@ -14,6 +14,7 @@ layout: default
 * [Android](desarrollo/android.html)
 * [Diseño](desarrollo/diseno.html)
 * [HTML+CSS](desarrollo/html.html)
+* [PHP](desarrollo/php.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
