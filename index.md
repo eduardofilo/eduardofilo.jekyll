@@ -15,6 +15,7 @@ layout: default
 * [Diseño](desarrollo/diseno.html)
 * [HTML+CSS](desarrollo/html.html)
 * [PHP](desarrollo/php.html)
+* [Yii](desarrollo/yii.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
