@@ -49,6 +49,7 @@ layout: default
 
 * [Impresión 3D de ecografías](/proyectos/dicom.html)
 * [Headset Commander](/proyectos/headsetcomm.html)
+* [Minecraft](/proyectos/minecraft.html)
 
 # Varios
 
