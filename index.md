@@ -21,6 +21,7 @@ layout: default
 * [Spree](desarrollo/spree.html)
 * [Python](desarrollo/python.html)
 * [Gestión de Proyectos](desarrollo/projects.html)
+* [Sublime Text 2](desarrollo/subl.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
