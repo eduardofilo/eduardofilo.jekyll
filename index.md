@@ -20,6 +20,7 @@ layout: default
 * [Ruby on Rails](desarrollo/ror.html)
 * [Spree](desarrollo/spree.html)
 * [Python](desarrollo/python.html)
+* [Gestión de Proyectos](desarrollo/projects.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
