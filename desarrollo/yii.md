@@ -623,7 +623,7 @@ Estas relaciones se declaran en el método `CActiveRecord::relations()` definien
 'VarName'=>array('RelationType', 'ClassName', 'ForeignKey', ...opciones adicionales)
 ```
 
-donde `VarName` es el nombre de la relación, `RelationType` indica el tipo de relación (se pueden aprovechar las siguientes constantes: `self::BELONGS_TO`, `self::HAS_ONE`, `self::HAS_MANY` y `self::MANY_MANY`), `ClassName` es el nombre de la clase AR con que se está estableciendo la relación y `ForeignKey` indica la foreign key implicada en la relación. Las opciones adicionales se explicarán en la sección [Opciones de consultas relacionales](#opciones_de_consultas_relacionales).
+donde `VarName` es el nombre de la relación, `RelationType` indica el tipo de relación (se pueden aprovechar las siguientes constantes: `self::BELONGS_TO`, `self::HAS_ONE`, `self::HAS_MANY` y `self::MANY_MANY`), `ClassName` es el nombre de la clase AR con que se está estableciendo la relación y `ForeignKey` indica la foreign key implicada en la relación. Las opciones adicionales se explicarán en la sección [Opciones de consultas relacionales](#opciones-de-consultas-relacionales).
 
 A continuación se definen las relaciones en los modelos User y Post:
 
@@ -692,7 +692,7 @@ $users=User::model()->with(array(
 
 ##### Opciones de consultas relacionales
 
-Las opciones adicionales que se pueden indicar cuando se definen las relaciones que se mencionaban en el apartado [Declaración de relaciones](#declaracion_de_relaciones) son las siguientes (consultar su funcionamiento en la [documentación oficial](http://www.yiiframework.com/doc/guide/1.1/en/database.arr#relational-query-options)):
+Las opciones adicionales que se pueden indicar cuando se definen las relaciones que se mencionaban en el apartado [Declaración de relaciones](#declaración-de-relaciones) son las siguientes (consultar su funcionamiento en la [documentación oficial](http://www.yiiframework.com/doc/guide/1.1/en/database.arr#relational-query-options)):
 
 *  select
 *  condition
