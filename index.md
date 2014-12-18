@@ -3,6 +3,7 @@ layout: default
 ---
 
 # Desarrollo
+
 * [Joomla](desarrollo/joomla.html)
 * [Java](desarrollo/java.html)
 * [JavaEE](desarrollo/javaee.html)
@@ -24,6 +25,7 @@ layout: default
 * [Sublime Text 2](desarrollo/subl.html)
 
 # Sistemas
+
 * [Raspberry Pi](sistemas/raspi.html)
 * [UNIX](sistemas/unix.html)
 * [Ubuntu](sistemas/ubuntu.html)
@@ -40,4 +42,9 @@ layout: default
 * [MySQL](sistemas/mysql.html)
 
 # Cursos
+
 * [Phonegap](cursos/phonegap.html)
+
+# Proyectos
+
+* [Impresión 3D de ecografías](proyectos/dicom.html)
