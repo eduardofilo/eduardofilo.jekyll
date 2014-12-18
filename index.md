@@ -18,6 +18,7 @@ layout: default
 * [Yii](desarrollo/yii.html)
 * [Bases de Datos](desarrollo/db.html)
 * [Ruby on Rails](desarrollo/ror.html)
+* [Spree](desarrollo/spree.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
