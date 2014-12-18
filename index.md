@@ -17,6 +17,7 @@ layout: default
 * [PHP](desarrollo/php.html)
 * [Yii](desarrollo/yii.html)
 * [Bases de Datos](desarrollo/db.html)
+* [Ruby on Rails](desarrollo/ror.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
