@@ -53,3 +53,4 @@ layout: default
 # Varios
 
 * [Enlaces](/varios/links.html)
+* [Inglés](/varios/english.html)
