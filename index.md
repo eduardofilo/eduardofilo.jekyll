@@ -19,6 +19,7 @@ layout: default
 * [Bases de Datos](desarrollo/db.html)
 * [Ruby on Rails](desarrollo/ror.html)
 * [Spree](desarrollo/spree.html)
+* [Python](desarrollo/python.html)
 
 # Sistemas
 * [Raspberry Pi](sistemas/raspi.html)
