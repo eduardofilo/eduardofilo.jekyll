@@ -4,7 +4,7 @@ title: Directorio Podcasts
 permalink: /podcasts.html
 ---
 
-Esta es la lista de podcasts que escucho/recomiendo (en el enlace asociado al nombre de cada podcast se incluye el feed RSS):
+Esta es la lista de podcasts que escucho/recomiendo (el enlace asociado al nombre de cada podcast es el feed RSS):
 
 # Español
 
