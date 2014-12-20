@@ -136,10 +136,10 @@ bypass-list-uuids: []
 fill-memory-tolerance: 500
 worlds:
   taller1:  # Nombre del mundo a limitar
-    x: 249.0
-    z: -850.0
-    radiusX: 100
-    radiusZ: 100
+    x: 0
+    z: 0
+    radiusX: 80
+    radiusZ: 80
     wrapping: false
 ```
 
