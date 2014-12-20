@@ -150,6 +150,7 @@ worlds:
 * `gamerule doDaylightCycle false`: Paramos el reloj.
 * `time set 6000`: Pone el reloj al mediodía # Fijamos el reloj al mediodía.
 * `tp <jugador> <x> <y> <z>`: Teleporta a un jugador a una posición.
+* `setworldspawn 0 20 0`: Definimos el punto de spawn del mundo.
 
 #### Plugins
 
@@ -168,7 +169,7 @@ worlds:
 ##### WorldEdit
 
 * `//wand`: Te otorga la herramienta para definir regiones cúbicas o planas.
-* `//walls <material>`: Rellena la región definida con `wand`.
+* `//walls <material>`: Rellena la región definida con `wand` con el material indicado.
 
 ### Montaje de un mundo plano para talleres
 
