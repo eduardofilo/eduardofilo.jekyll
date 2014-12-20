@@ -24,6 +24,6 @@ Hasta ahora los únicos proyectos que he puesto en marcha han sido de computaci�
 * Gestor de descargas.
 * Servidor git para proyectos personales privados que no quiera tener en [GitHub](https://github.com/eduardofilo).
 
-Raspi consume 3.5W como máximo, así que con ella se puede uno permitir que estos servicios funcionen las 24 horas del día. Ya no sólo por la ventaja de cara a la factura eléctrica, sino también por evitar "quemar" un caro PC en tareas de proceso puntual pero que requieren alta disponibilidad (se ve muy claro en el caso del servidor git).
+Raspi consume 3.5W como máximo, así que con ella se puede uno permitir que estos servicios funcionen las 24 horas del día. Ya no sólo por las ventajas que tiene de cara a la factura eléctrica, sino también por evitar "quemar" un caro PC en tareas de proceso puntual pero que requieren alta disponibilidad (se ve muy claro en el caso del servidor git).
 
 Pero a partir de mayo de 2015 tengo el plan de que este tipo de placas se conviertan en mis procesadores principales de propósito general, es decir que sustituyan a mi actual portátil. Y es que he financiado el proyecto [Pi-Top](http://pi-top.com/) por el cual recibiré las piezas en esa fecha para montar mi propio portátil a medida. Y para construirlos/mejorarlos desde entonces, ya que el kit incluye los planos/archivos para poder imprimir la carcasa en una impresora 3D. La última versión de Pi-Top está anunciado que soporte de serie al menos UDOO, BeagleBone, ODROID y Banana Pi, aparte por supuesto de Raspberry Pi.
