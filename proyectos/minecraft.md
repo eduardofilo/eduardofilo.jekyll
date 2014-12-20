@@ -19,6 +19,10 @@ permalink: /proyectos/minecraft.html
 *  [How to Run Low-Cost Minecraft on a Raspberry Pi for Block Building on the Cheap](http://www.howtogeek.com/173044/how-to-run-low-cost-minecraft-on-a-raspberry-pi-for-block-building-on-the-cheap/) (!)
 *  [MineCraftPi - A Raspberry Pi MineCraft Server Image!](http://everyday-tech.com/minecraftpi-a-raspberry-pi-minecraft-server-image/): Minecraft se arranca automáticamente desde `/etc/rc.local`.
 
+### Mecanismos
+
+* [http://minecraft-es.gamepedia.com/Tutoriales/Mecanismos](Tutoriales/Mecanismos)
+
 ### Servidores
 
 *  [MCServer](http://mc-server.org/)
@@ -40,6 +44,7 @@ permalink: /proyectos/minecraft.html
 *  [NoLagg](http://dev.bukkit.org/bukkit-plugins/nolagg/)
 *  [pTweaks](http://dev.bukkit.org/bukkit-plugins/ptweaks-remove-all-server-lag/): pTweaks is a server optimization tool. This plugin will redefine how your server loads, stores and manages chunks.
 *  [Dynmap](http://dev.bukkit.org/bukkit-plugins/dynmap/): Mapa 2D dinámico.
+*  [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
 
 ## Ejecución Servidor en Raspberry Pi
 
@@ -108,4 +113,91 @@ settings:
 world-settings:
   default:
     view-distance: 4
+```
+
+*plugins/WorldBorder/config.yml*
+
+```
+cfg-version: 11
+message: Has alcanzado el límite de este mundo.
+round-border: false
+debug-mode: false
+whoosh-effect: true
+portal-redirection: true
+knock-back-dist: 3.0
+timer-delay-ticks: 5
+remount-delay-ticks: 0
+dynmap-border-enabled: true
+dynmap-border-message: Has alcanzado el límite de este mundo.
+player-killed-bad-spawn: false
+deny-enderpearl: true
+fill-autosave-frequency: 30
+bypass-list-uuids: []
+fill-memory-tolerance: 500
+worlds:
+  taller1:  # Nombre del mundo a limitar
+    x: 249.0
+    z: -850.0
+    radiusX: 100
+    radiusZ: 100
+    wrapping: false
+```
+
+### Comandos útiles
+
+#### Servidor
+
+* `gamerule doDaylightCycle false`: Paramos el reloj.
+* `time set 6000`: Pone el reloj al mediodía # Fijamos el reloj al mediodía.
+* `tp <jugador> <x> <y> <z>`: Teleporta a un jugador a una posición.
+
+#### Plugins
+
+##### WorldBorder
+
+* `wb shape square`: Ajustamos el tipo de borde a cuadrado.
+* `wb <nombre_mundo> set 100 spawn`: Ajustamos el radio del borde del mundo.
+* `wb <nombre_mundo> fill`: Forzamos la generación del mundo dentro del límite.
+* `wb <nombre_mundo> trim`: Eliminamos el mapeado del mundo que queda fuera del límite.
+* `wb setmsg "Has alcanzado el límite de este mundo."`: Ajustamos el mensaje que ven los jugadores al alcanzar el límite.
+
+##### Dynmap
+
+* `dynmap fullrender <world-name>`: Genera el mapa que inicialmente aparece en negro.
+
+##### WorldEdit
+
+* `//wand`: Te otorga la herramienta para definir regiones cúbicas o planas.
+* `//walls <material>`: Rellena la región definida con `wand`.
+
+### Montaje de un mundo plano para talleres
+
+Antes de empezar paramos el servidor. Generamos un mundo nuevo cambiando lo siguiente en `server.properties`:
+
+```
+level-type=FLAT
+level-name=taller1
+allow-nether=false
+gamemode=1 #Creative
+difficulty=0 #Peaceful
+generate-structures=false #No se generan estructuras (como ciudades)
+spawn-npcs=false #No se generan vecinos (villagers)
+online-mode=false
+spawn-animals=false #No se generan animales
+force-gamemode=true #Fuerza la configuración del servidor a cada jugador
+```
+
+Arrancamos el servidor. Por medio de comandos lo modelamos:
+
+```
+setworldspawn 0 20 0
+wb shape square
+wb taller1 set 80 spawn # Lo limitamos a un cuadrado de 160x160 en torno al punto de spawn
+wb taller1 fill # Generamos el mundo
+wb fill confirm
+wb taller1 trim # Eliminamos lo que sobra
+wb trim confirm
+wb setmsg "Has alcanzado el límite de este mundo." # Ajustamos mensajes
+gamerule doDaylightCycle false # Paramos el reloj
+time set 6000 # Pone el reloj al mediodía # Fijamos el reloj al mediodía
 ```
