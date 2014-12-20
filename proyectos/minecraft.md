@@ -152,6 +152,9 @@ worlds:
 * `time set 6000`: Pone el reloj al mediodía # Fijamos el reloj al mediodía.
 * `tp <jugador> <x> <y> <z>`: Teleporta a un jugador a una posición.
 * `setworldspawn 0 20 0`: Definimos el punto de spawn del mundo.
+* `toggledownfall`: Activa/desactiva la lluvia.
+* `gamerule doFireTick false`: Evita que se propague el fuego.
+* `gamerule doMobSpawning false`: Evita que se generen Mobs (pasivos y enemigos). Util en modo creativo para evitar distracciones.
 
 #### Plugins
 
@@ -202,4 +205,5 @@ wb trim confirm
 wb setmsg "Has alcanzado el límite de este mundo." # Ajustamos mensajes
 gamerule doDaylightCycle false # Paramos el reloj
 time set 6000 # Pone el reloj al mediodía # Fijamos el reloj al mediodía
+toggledownfall # Desactivamos la lluvia
 ```
