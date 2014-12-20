@@ -28,10 +28,10 @@ Profesor: [@ciberado](https://github.com/ciberado)
   * [Digital Ocean](https://www.digitalocean.com/)
   * [AWS](http://aws.amazon.com/es/): Una máquina micro (estilo Raspberry Pi) gratis durante un año.
   * [AWS Lambda](http://aws.amazon.com/es/lambda/)
-  * Google AppEngine: Gratis hasta un umbral. [Especial](http://wedevelopers.com/2014/11/06/we-developers-036-google-app-engine/) sobre AppEngine de We.Developers.
+  * [Google AppEngine](https://cloud.google.com/appengine/): Gratis hasta un umbral. [Especial](http://wedevelopers.com/2014/11/06/we-developers-036-google-app-engine/) sobre AppEngine de We.Developers.
 * [DonDominio.com](http://www.dondominio.com/): Proveedor de dominios recomendado por alumno curso.
 * [json.org](http://json.org/): Definición/documentación de JSON.
-* Firefox REST Easy addon: Cliente de servicios REST para testeos.
+* [Firefox REST Easy addon](https://addons.mozilla.org/en-US/firefox/addon/rest-easy/): Cliente de servicios REST para testeos.
 * [jQuery](http://jquery.com/): Librería Javascript.
 * [Angular](https://angularjs.org/): Framework Javascript.
 * [CanIUse](http://caniuse.com/): Indica las tecnologías soportadas por los distintos navegadores.
