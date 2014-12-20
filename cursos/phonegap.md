@@ -46,6 +46,7 @@ Profesor: [@ciberado](https://github.com/ciberado)
 * [Heroku](https://www.heroku.com/): Cloud Application Platform con soporte a Node.js
 
 ### Instalación entorno
+
 Módulos necesarios:
 
 * JDK (instalado en `C:\jdk1.8`)
@@ -60,11 +61,13 @@ Módulos necesarios:
 * [Vagrant](https://www.vagrantup.com/) (opcional): Empaquetador de entornos de desarrollo
 
 ### Creación de proyecto Phonegap
+
 ```bash
 phonegap create 00HolaMundo --name HolaMundo --id es.eduardofilo.hm
 ```
 
 ### Compilación y ejecución de proyecto Phonegap
+
 ```bash
 cd 00HolaMundo
 phonegap build android
@@ -74,9 +77,11 @@ phonegap run android
 En realidad la tarea `run` hace `build`.
 
 ### Inspeccionar dispositivos externos en Chrome
+
     about:inspect
 
 ### REST WebServices
+
 Servidor mock ([mockable](http://www.mockable.io/)): demo0034470.mockable.io
 
 * *url*: http://demo0034470.mockable.io/votaciones/38/yes
@@ -95,6 +100,7 @@ Respuesta:
 ```
 
 ### jQuery
+
 Hay una convención por la cual cuando invocamos jQuery ($) para localizar un elemento del DOM, la variable donde se carga se pone con el prefijo $. Por ejemplo:
 
 ```javascript
@@ -102,6 +108,7 @@ var $paragrafos = $('p');
 ```
 
 #### Ejemplo1
+
 ```javascript
 var $paragraphs = $('p');
 for (var i=0; i < $paragraphs.length ; i++) {
@@ -121,6 +128,7 @@ $firstp.addClass('importante');
 ```
 
 #### Ejemplo2
+
 ```javascript
 var $firstp = $('p:first');
 var texto = $firstp.text();
@@ -135,6 +143,7 @@ $('<strong>')
 ```
 
 #### Ejemplo3
+
 ```javascript
 var colores = ['Rojo', 'Verde', 'Azul'];
 var $ol = $('ol');
@@ -146,6 +155,7 @@ for (var i=0; i<colores.length; i++) {
 ```
 
 #### Ejemplo4
+
 ```javascript
 $('p').on('click', function(evt) {
     evt.preventDefault();
@@ -154,6 +164,7 @@ $('p').on('click', function(evt) {
 ```
 
 #### Ejemplo5
+
 ```javascript
 $('p').on('click', function(evt) {
     $(this).fadeOut(function() {
@@ -229,6 +240,7 @@ $('p').on('click', function(evt) {
 * [Genymotion with Google Play Services](https://gist.github.com/wbroek/9321145): Instalación de Google Play Services en Genymotion.
 
 ### Bower
+
 La diferencia con npm es que éste instala cosas en máquina; Bower añade librerías al proyecto. Lo vamos a manejar con los siguientes comandos por terminal:
  
 * `bower search leaflet`: Busca las librerías que contienen “leaflet”.
@@ -237,15 +249,19 @@ La diferencia con npm es que éste instala cosas en máquina; Bower añade libre
 * `bower uninstall --save leaflet`: Desinstala la librería leaflet.
 
 ### Grunt
+
 El fichero de configuración tiene forma de script Javascript. Es el fichero `Gruntfile.js`.
 
 ### git
+
 Vamos a hacer el merge de la feature que creamos ayer en la rama develop:
+
 1. SourceTree / Commit / Marcamos “Unstage all” para pasar a stage todos los ficheros modificados / Incluimos el comentario del commit en la caja de abajo.
 2. SourceTree / Gitflow / Finish Feature (marcamos Delete branch)
 3. SourceTree / Push (marcamos las dos ramas: develop y master)
 
 ### Phonegap app developer
+
 1. Se instala en el emulador o dispositivo la aplicación.
 2. Se abre la aplicación “PhoneGap” en el dispositivo o emulador.
 3. Se configura poniendo la URL que aparece al arrancar el servidor phonegap en la máquina de desarrollo:
@@ -266,22 +282,27 @@ Vamos a hacer el merge de la feature que creamos ayer en la rama develop:
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/): 479 iconos vectorizados. Recomendado por Merche.
 
 ### CSS
+
 Siguiendo la [lección sobre CSS del curso de HTML5 de Javier](https://github.com/ciberado/javiermoreno-dominahtml5-intro/tree/master/05_css).
 
-*Unidades de medida*  
+#### Unidades de medida
+
 `em` es una de las más interesantes. Procede del mundo de la tipografía y es la anchura de la M mayúscula en un tamaño que se considera legible con facilidad por un usuario normal. Las `em` se basan en el tamaño de letra del elemento y son relativas entre elementos que se contienen, es decir, si un elemento tiene `2em` pero está afectado por un contenedor en el que se aplica `2em`, el tamaño resultante será equivalente a `6em`. Para evitar la acumulación está la unidad `rem` (=root em).
 
-*Preferencias*  
+#### Preferencias
+
 Hay un orden de prioridad entre los selectores de CSS. Algunos detalles:
  
 * Prioridades generales de menos a más: Reglas definidas por el navegador (useragent stylesheet rules) -> Reglas que seleccionan elementos -> Reglas que seleccionan atributos (`id` o `class`).
 * `id` prioriza sobre `class`.
 * `!important` se salta las prioridades, es decir se aplica siempre.
 
-*Position*  
+#### Position
+
 `top` y `left` no aplican si `position` es `static`. El `position: absolute` toma el origen de coordenadas del primer contenedor que no es `static`.
 
-*Display*  
+#### Display
+
 El `display` de un `div` por defecto (useragent stylesheet rules) es `block`. El de `span` es `inline`. Se puede modificar tanto un caso como el otro. Por ejemplo si ponemos `display: inline` a un `div`, pasa a comportarse como un `span`. El `display: inline` hace que se ignore el `width`. Con `display: inline-block` sí que se tiene en cuenta el `width`. Hay un truco para conservar la indentación en el código HTML mientras se evita que se introduzca un carácter espacio que ocupa sitio y descoloca la maquetación y es introducir un comentario entre líneas de esta forma:
 
 ```html
@@ -293,7 +314,8 @@ El `display` de un `div` por defecto (useragent stylesheet rules) es `block`. El
    </section>
 ```
 
-*Float*  
+#### Float
+
 La propiedad `clear` sólo funciona si el `display` no es `inline`. Se usa mucho el apaño del clearfix para solucionar la pérdida de dimensión vertical de un contenedor cuando todo su contenido más alto flota. El selector `:after` selecciona después del contenido al que se aplica el estilo, no el contenido del siguiente elemento en el DOM. El clearfix favorito de Javier es:
 
 ```css
@@ -306,10 +328,12 @@ La propiedad `clear` sólo funciona si el `display` no es `inline`. Se usa mucho
 }
 ```
 
-*viewport*  
+#### viewport
+
 Diferencia entre layout-viewport y display-viewport. La relación entre ambos es el nivel de zoom. El layout-viewport predeterminado es 960px. Se definió pixel-ratio cuando apareció iPhone 4, inicialmente con un valor de 2 (pantalla retina de 640px de ancho por los 320px del iPhone original). Terminales con pantallas QuadHD tienen un pixel-ratio de alrededor de 4. Tiene el inconveniente de que hace que las imágenes se redimensionen, lo que en terminales con mucha densidad de pixel produce desenfoque. La solución es enviar la imagen adecuada a cada dispositivo. De momento se hace con condiciones en CSS.
 
-*mediaqueries*  
+#### mediaqueries
+
 Permite hacer condiciones en CSS. `@media` es un if. En las mediaqueries los `em` son siempre `rem` es decir son absolutos, no relativos. Más que hablar de resoluciones debemos pensar en tamaños. Se suelen considerar cuatro tamaños:
  
 * Móvil: 360 px CSS
@@ -318,6 +342,7 @@ Permite hacer condiciones en CSS. `@media` es un if. En las mediaqueries los `em
 * TV
 
 ### Tipografía
+
 La tipografía cada vez tiene más importancia. Para pantalla, Javier no recomienda Helvetica. Existen muchos tipos buenos, muy legibles y gratuitos, como:
 
 * [Mozilla Fira](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/)
@@ -332,6 +357,7 @@ Javier recomienda no descartar las fuentes de pago. La inversión puede tener un
 Nos describe el uso de [Google Fonts](http://www.google.com/fonts) usando el sitio para definir un paquete con dos fuentes.
 
 ### Frameworks
+
 Algunos framewoks:
 
 * [Bootstrap](http://getbootstrap.com/): es el más importante ahora mismo. El favorito de Javier, sobre todo por su ecosistema.
@@ -352,6 +378,7 @@ Algunos framewoks:
 * [Couchbase Mobile](http://www.couchbase.com/nosql-databases/couchbase-mobile): Plugin Phonegap para tener una base de datos noSQL local con opción de sincronizar con el servidor.
 
 ### Bootstrap
+
 En [Customize](http://getbootstrap.com/customize/) se puede compilar una versión personalizada (sólo con los componentes que vayamos a utilizar, lo que además hace más pequeña la librería). Dentro de este Customize se pueden cambiar por ejemplo los Media queries breakpoints que son los que hacen que el diseño cambie entre los distintos tamaños de pantalla.  
 Es recomendable instalarlo con Bower si se va a integrar en Phonegap (para tenerlo en local y minimizar la latencia que supondría el descargarlo).  
 El menú superior del sitio de Bootstrap está bien estructurado en cuanto a la dificultad de menor a mayor de izquierda a derecha. Conviene leer por lo menos la sección [Getting Started](http://getbootstrap.com/getting-started/).  
@@ -370,9 +397,11 @@ Los componentes que no encontremos en Bootstrap buscarlos en [Bootsnipp](http://
 Si utilizamos la parte de JS de Bootstrap hay que integrar jQuery.
 
 ### Buenas prácticas con Bootstrap
+
 Interesa poner siempre un label en los campos de formulario por accesibilidad, pero en pantallas pequeñas se suele usar un placeholder, lo que es redundante. Para evitarlo se oculta añadiendo la clase `sr-only` (sr de Screen Reader), lo que mantiene el label en el código pero no lo muestra.
 
 ### JavaScript
+
 Almacenamiento de un conjunto de variables en localStorage:
 
 ```javascript
@@ -384,6 +413,7 @@ localStorage.setItem('listas', listasComoCadena);
 ```
 
 ### Deberes para el fin de semana
+ 
 * Landing page con tres zonas y call for action superior (= jumbotron).
   * Qué hacemos
   * Por qué somos buenos
@@ -399,6 +429,7 @@ localStorage.setItem('listas', listasComoCadena);
 * [EggHead](https://egghead.io/): Screencasts.
 
 ### Proyecto
+
 Vamos a montar el proyecto poniéndolo todo junto desde cero:
 
 1. Creamos el proyecto dentro del directorio \curso:
@@ -436,6 +467,7 @@ Todo lo que no tenga que ver con esto irá al modelo/servicio.
 * [history.js](https://github.com/browserstate/history.js/)
 
 ### Proyecto
+
 Vamos a programar el envío del voto al servidor (mockable) en un POST. El voto va en la URL por lo que aunque utilicemos https no ocultamos la información. Sería más correcto enviar el voto en el cuerpo del POST, por ejemplo:
 
 ```javascript
@@ -465,7 +497,6 @@ history.pushState({
 2. Descripción o Título de esa entrada en el historial 
 3. Dirección/URL
 
-
 ## Día 12: Miércoles 3/12/2014
 
 ### Enlaces
@@ -484,6 +515,7 @@ history.pushState({
 * [Q](http://documentup.com/kriskowal/q/): Librería js para la gestión de promesas.
 
 ### Proyecto
+
 `document` recibe todos los eventos. Implementamos un cartel “Cargando…” que aparece/desaparece cuando hay peticiones AJAX mientras se espera la respuesta del servidor. Se gestiona mediante los eventos `ajaxStart` y `ajaxStop`.
 
 Instalamos [jQuery-Color](https://github.com/jquery/jquery-color/) para hacer un efecto de transición al jumbotron:
@@ -546,6 +578,7 @@ var servicioPreguntas = {
 * [InfoTelefonoPlugin](https://github.com/ciberado/domina-phonegap-infotelefonoplugin): Plugin de Javier para obtener datos de identificación del teléfono.
 
 ### Proyecto Plugins
+
 Vamos a hacer una pequeña aplicación para consultar la geolocalización:
 
 1. Creamos el proyecto:
@@ -580,12 +613,14 @@ Vamos a ver cómo se crearía un plugin. Para ello instalamos un plugin hecho po
 * [c9](https://c9.io/): IDE web.
 
 ### Proyecto Plugins
+
 Continuamos con el proyecto de ayer:
 
 3. Comprobamos la instalación:
     1. `phonegap plugin list`
 
 ### Proyecto Acelerómetro
+
 Vamos a hacer un pequeño proyecto que controlará un pequeño cuadrado por pantalla con los acelerómetros del teléfono. En el proyecto haremos uso del [plugin oficial de Phonegap](http://plugins.cordova.io/#/package/org.apache.cordova.device-motion) que se encarga de acceder al dispositivo.
 
 1. Creamos el proyecto:
@@ -613,6 +648,7 @@ var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, opti
 ```
 
 ### Subir a Google Play
+
 Para generar un certificado con que firmar las aplicaciones:
 
 ```bash
@@ -620,6 +656,7 @@ keytool -genkey -alias demoiconos -keyalg RSA -validity 20000 -keystore demoicon
 ```
 
 ### Compilar en Adobe PhoneGap Build
+
 Para delegar la construcción del proyecto en el [servicio de compilación de Adobe en la nube](https://build.phonegap.com/):
 
 ```bash
@@ -628,6 +665,7 @@ phonegap remote build android
 Se puede firmar la aplicación desde Adobe subiendo el fichero keystore que hemos creado antes.
 
 ### Inicialización del controlador
+
 Si usamos jQuery:
 
 ```javascript
@@ -646,6 +684,7 @@ document.addEventListener('deviceready', function () {
 });
 ```
 
-### Pendiente de preguntar:
+### Pendiente de preguntar
+
 * [JSONP vs CORS](http://stackoverflow.com/questions/12296910/so-jsonp-or-cors)
 * Workspaces en Chrome.
