@@ -21,7 +21,8 @@ permalink: /proyectos/minecraft.html
 
 ### Mecanismos
 
-* [http://minecraft-es.gamepedia.com/Tutoriales/Mecanismos](Tutoriales/Mecanismos)
+* [Tutoriales/Mecanismos](http://minecraft-es.gamepedia.com/Tutoriales/Mecanismos)
+* [Introduction to Redstone](http://www.minecraft101.net/redstone/redstone-basics.html)
 
 ### Servidores
 
