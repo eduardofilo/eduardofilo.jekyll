@@ -6,6 +6,8 @@ categories: placas raspberry_pi
 published: true
 ---
 
+![Raspberry Pi Logo](/images/Raspi_Colour_R.png)
+
 Llevo un tiempo pendiente del relativamente nuevo mundo de las micro placas popularizadas gracias a Arduino y Raspberry Pi. De entre las dos anteriores me quedo con la segunda al ser más una persona de soft que de hard y tener Raspberry Pi más potencial en este sentido. Además siendo que la diferencia de precio es pequeña, por qué resistirse a tener un Linux completo corriendo en la placa. Está claro que esto tiene repercusiones en cuanto a estabilidad, seguridad y sobre todo autonomía energética, pero como digo, en mi caso es más habitual que esto pese menos que las ventajas que me aporta construir sobre Linux.
 
 A continuación una lista con algunas de las placas de este tipo que me llaman la atención:
