@@ -2,7 +2,6 @@
 layout: post
 title: "Presentación"
 date: 2014-12-15 18:25:00
-categories: 
 published: false
 ---
 

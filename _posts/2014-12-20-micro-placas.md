@@ -2,7 +2,6 @@
 layout: post
 title: "Micro placas"
 date: 2014-12-20 12:52:00
-categories: placas raspberry_pi
 published: true
 ---
 

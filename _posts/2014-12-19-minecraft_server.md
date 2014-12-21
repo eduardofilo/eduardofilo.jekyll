@@ -2,7 +2,6 @@
 layout: post
 title: "Servidor Minecraft sobre Raspberry Pi"
 date: 2014-12-19 00:25:00
-categories: minecraft raspberry_pi
 published: false
 ---
 
