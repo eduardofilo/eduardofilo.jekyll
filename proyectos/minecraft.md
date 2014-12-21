@@ -42,8 +42,6 @@ permalink: /proyectos/minecraft.html
 * [NoSpawnChunks](http://dev.bukkit.org/bukkit-plugins/nospawnchunks/): Prevents spawn chunks being loaded into memory for all worlds on the server.
 * [WorldBorder](http://dev.bukkit.org/bukkit-plugins/worldborder/)
 * [ClearLagg](http://dev.bukkit.org/bukkit-plugins/clearlagg/)
-* [NoLagg](http://dev.bukkit.org/bukkit-plugins/nolagg/)
-* [pTweaks](http://dev.bukkit.org/bukkit-plugins/ptweaks-remove-all-server-lag/): pTweaks is a server optimization tool. This plugin will redefine how your server loads, stores and manages chunks.
 * [Dynmap](http://dev.bukkit.org/bukkit-plugins/dynmap/): Mapa 2D dinámico.
 * [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
 * [StopRain](http://dev.bukkit.org/bukkit-plugins/stoprain/): Desactiva la lluvia.
