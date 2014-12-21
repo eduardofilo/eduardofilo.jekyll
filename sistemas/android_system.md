@@ -141,6 +141,7 @@ Aug 10 2010,17:52:18
 
 #### Enlaces
 
+* [Unlock your boot loader](http://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/)
 * [Full rooting guide for xperia t lt30p build 7.0.A.3.195](http://forum.xda-developers.com/showthread.php?t=2000188)
 * [Xperia Roms](http://uploaded.net/f/bd4cif)
 * [Creacion de perfiles completos con Smart Tags + NFC Task Launcker + Tasker](http://www.htcmania.com/showthread.php?t=371570)
@@ -207,8 +208,14 @@ chmod 0770 sdcard0
 
 #### Enlaces
 
+* [Unlock your boot loader](http://developer.sonymobile.com/unlockbootloader/unlock-yourboot-loader/)
 * [DESBLOQUEAR COMPLETAMENTE tu Xperia y poder ROOTEARLO★Aplicar MODS★ROMS](http://www.htcmania.com/showthread.php?t=396318)
 * [Sobre el Bootloader](http://comunidad.movistar.es/t5/Ayuda-Gestiones-Contratos-y/Desbloquear-Bootloader-Sony-Xperia-S/m-p/640867#M85761)
+
+#### ROMS
+
+* [XDA-Developers Rom List](http://forum.xda-developers.com/xperia-u/#romList)
+* [(ROM)(UB)(4.4.4)(W37-S4)(XperiaSTE Team) CyanogenMod 11.0](http://forum.xda-developers.com/xperia-u/u-development/rom-cyanogenmod-11-0-t2528466)
 
 ### Rikomagic MK802-IIIs
 
