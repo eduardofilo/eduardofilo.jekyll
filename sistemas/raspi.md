@@ -20,7 +20,7 @@ permalink: /sistemas/raspi.html
 
 * [Lista de hardware verificado](http://elinux.org/RPi_VerifiedPeripherals)
 * [Quick2Wire](http://Quick2Wire.com)
-* [ESP8266 Serial Esp- 01](http://espressif.com/en/products/esp8266/): Módulo Wifi [por 2,25€](http://es.aliexpress.com/item/2PCS-ESP8266-Serial-Esp-01-WIFI-Wireless-Transceiver-Module-Send-Receive-LWIP-AP-STA/32232009463.html?recommendVersion=1) recomendado por [Fernando](https://twitter.com/m_trombone). [Listado de recursos](http://www.xess.com/blog/esp8266-resources/).
+* [ESP8266 Serial Esp- 01](http://espressif.com/en/products/esp8266/): Módulo Wifi [por 2,25€](http://es.aliexpress.com/item/2PCS-ESP8266-Serial-Esp-01-WIFI-Wireless-Transceiver-Module-Send-Receive-LWIP-AP-STA/32232009463.html?recommendVersion=1) recomendado por [Fernando](https://twitter.com/m_trombone). [Listado de recursos](http://www.xess.com/blog/esp8266-resources/). Tutorial [conexión a Raspi](http://www.extragsm.com/blog/2014/12/03/connect-esp8266-to-raspberry-pi/).
 
 ## Distribuciones
 
