@@ -182,9 +182,9 @@ Como siempre que se tocan las preferencias, hay que vigilar si ya existe versió
 
 Luego deberemos acudir en el backend a la siguiente ruta: "Configuraciones / Preferencias métodos de email". Hay que tener en cuenta que este grupo de opciones sólo aparece si la opción `override_actionmailer_config` tiene el valor true. A continuación se muestran pantallazos de un par de configuraciones que se ha probado que funcionan:
 
-![Conf con GMail](/images/conf_gmail.png "Configuración con GMail")
+![Conf con GMail](/images/pages/conf_gmail.png "Configuración con GMail")
 
-![Conf con DH](/images/conf_dh.png "Configuración con DinaHosting")
+![Conf con DH](/images/pages/conf_dh.png "Configuración con DinaHosting")
 
 ### Configuración según entorno
 

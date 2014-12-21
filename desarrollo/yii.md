@@ -601,7 +601,7 @@ public function defaultScope() {
 ##### Declaración de relaciones
 
 Para ilustrar los ejemplos de esta sección se utilizará el siguiente modelo de datos:
-![er.png](/images/er.png)
+![er.png](/images/pages/er.png)
 
 Las relaciones entre dos clases AR tienen que ver con la relación entre las tablas en base de datos. En base de datos tendremos las relaciones:
 
@@ -840,7 +840,7 @@ donde en array('key1'=>'key2'):
 `through` puede utilizarse en relaciones `HAS_ONE` y `HAS_MANY`.
 
 Para ilustrar el caso HAS_MANY se utilizará el siguiente modelo de datos:
-![has_many_through.png](/images/has_many_through.png)
+![has_many_through.png](/images/pages/has_many_through.png)
 
 Por ejemplo, para obtener los usuarios de un grupo en concreto:
 
@@ -868,7 +868,7 @@ Un caso más complicado sería obtener todos los comentarios de todos los usuari
 ```
 
 Una variante del `HAS_MANY through` es cuando el modelo origen y destino es el mismo. Por ejemplo, dado el siguiente modelo de datos:
-![through_self.png](/images/through_self.png)
+![through_self.png](/images/pages/through_self.png)
 
 Podríamos definir las siguientes relaciones:
 
@@ -899,7 +899,7 @@ $students=$teacher->students;
 ```
 
 Para ilustrar el caso de `HAS_ONE through` nos basaremos en:
-![has_one_through.png](/images/has_one_through.png)
+![has_one_through.png](/images/pages/has_one_through.png)
 
 Por ejemplo, obtener la dirección de un usuario cuando ésta está relacionada con el usuario por medio de un profile:
 
