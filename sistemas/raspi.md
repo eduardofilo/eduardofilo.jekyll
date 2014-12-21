@@ -18,6 +18,8 @@ permalink: /sistemas/raspi.html
 
 ## Hardware
 
+* [Lista de hardware verificado](http://elinux.org/RPi_VerifiedPeripherals)
+* [Quick2Wire](http://Quick2Wire.com)
 * [ESP8266 Resources](http://es.aliexpress.com/item/2PCS-ESP8266-Serial-Esp-01-WIFI-Wireless-Transceiver-Module-Send-Receive-LWIP-AP-STA/32232009463.html?recommendVersion=1): Módulo Wifi por 4,5€ recomendado por [Fernando](https://twitter.com/m_trombone). [Listado de recursos](http://www.xess.com/blog/esp8266-resources/).
 
 ## Distribuciones
@@ -112,12 +114,6 @@ sudo swapon /var/swap
 * Uso de interrupciones para chequear GPIO sin bucles: Página 12 de #7 de TheMagPi
 * Librería Nanpy para comunicar RaspPi y Arduino por USB: Página 10 de #8 de TheMagPi
 * WebIOPi - Framework REST para controlar el GPIO: Página 8 de #9 de TheMagPi
-
-
-## Hardware
-
-* [Lista de hardware verificado](http://elinux.org/RPi_VerifiedPeripherals)
-* [Quick2Wire](http://Quick2Wire.com)
 
 ## Seguridad
 
