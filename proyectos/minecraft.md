@@ -37,15 +37,16 @@ permalink: /proyectos/minecraft.html
 *  [Bukkit.yml fichero de configuración de Craftbukkit y Spigot](http://wiki.bukkit.org/Bukkit.yml/es)
 *  [spigot.yml fichero de configuración de Spigot](http://www.spigotmc.org/wiki/spigot-configuration-spigot-yml/)
 
-### Plugins recomendables
+### Plugins interesantes
 
-*  [NoSpawnChunks](http://dev.bukkit.org/bukkit-plugins/nospawnchunks/): Prevents spawn chunks being loaded into memory for all worlds on the server.
-*  [WorldBorder](http://dev.bukkit.org/bukkit-plugins/worldborder/)
-*  [ClearLagg](http://dev.bukkit.org/bukkit-plugins/clearlagg/)
-*  [NoLagg](http://dev.bukkit.org/bukkit-plugins/nolagg/)
-*  [pTweaks](http://dev.bukkit.org/bukkit-plugins/ptweaks-remove-all-server-lag/): pTweaks is a server optimization tool. This plugin will redefine how your server loads, stores and manages chunks.
-*  [Dynmap](http://dev.bukkit.org/bukkit-plugins/dynmap/): Mapa 2D dinámico.
-*  [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
+* [NoSpawnChunks](http://dev.bukkit.org/bukkit-plugins/nospawnchunks/): Prevents spawn chunks being loaded into memory for all worlds on the server.
+* [WorldBorder](http://dev.bukkit.org/bukkit-plugins/worldborder/)
+* [ClearLagg](http://dev.bukkit.org/bukkit-plugins/clearlagg/)
+* [NoLagg](http://dev.bukkit.org/bukkit-plugins/nolagg/)
+* [pTweaks](http://dev.bukkit.org/bukkit-plugins/ptweaks-remove-all-server-lag/): pTweaks is a server optimization tool. This plugin will redefine how your server loads, stores and manages chunks.
+* [Dynmap](http://dev.bukkit.org/bukkit-plugins/dynmap/): Mapa 2D dinámico.
+* [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
+* [StopRain](http://dev.bukkit.org/bukkit-plugins/stoprain/): Desactiva la lluvia.
 
 ## Ejecución Servidor en Raspberry Pi
 
@@ -144,6 +145,13 @@ worlds:
     wrapping: false
 ```
 
+*plugins/ClearLag/config.yml*
+
+```
+auto-removal:
+  broadcast-warning: false
+```
+
 ### Comandos útiles
 
 #### Servidor
@@ -153,6 +161,8 @@ worlds:
 * `tp <jugador> [<x> <y> <z>]`: Teleporta a un jugador a una posición.
 * `setworldspawn <x> <y> <z>`: Definimos el punto de spawn del mundo.
 * `toggledownfall`: Activa/desactiva la lluvia.
+* `weather rain <segundos>`: Activa la lluvia durante los segundos indicados.
+* `weather clear <segundos>`: Desactiva la lluvia/nieve durante los segundos indicados.
 * `gamerule doFireTick false`: Evita que se propague el fuego.
 * `gamerule doMobSpawning false`: Evita que se generen Mobs (pasivos y enemigos). Util en modo creativo para evitar distracciones.
 * `give <jugador> <elemento> [cantidad] [data] [dataTag]`: Dar un elemento a un jugador.
@@ -193,6 +203,13 @@ spawn-animals=false #No se generan animales
 force-gamemode=true #Fuerza la configuración del servidor a cada jugador
 ```
 
+Instalamos los siguientes plugins:
+
+* [StopRain](http://dev.bukkit.org/bukkit-plugins/stoprain/): Desactiva la lluvia.
+* [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
+* [NoSpawnChunks](http://dev.bukkit.org/bukkit-plugins/nospawnchunks/): Prevents spawn chunks being loaded into memory for all worlds on the server.
+* [WorldBorder](http://dev.bukkit.org/bukkit-plugins/worldborder/)
+
 Arrancamos el servidor. Por medio de comandos lo modelamos:
 
 ```
@@ -206,5 +223,4 @@ wb trim confirm
 wb setmsg "Has alcanzado el límite de este mundo." # Ajustamos mensajes
 gamerule doDaylightCycle false # Paramos el reloj
 time set 6000 # Pone el reloj al mediodía # Fijamos el reloj al mediodía
-toggledownfall # Desactivamos la lluvia
 ```
