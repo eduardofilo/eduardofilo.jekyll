@@ -23,6 +23,7 @@ permalink: /sistemas/raspi.html
 * [ESP8266 Resources](http://es.aliexpress.com/item/2PCS-ESP8266-Serial-Esp-01-WIFI-Wireless-Transceiver-Module-Send-Receive-LWIP-AP-STA/32232009463.html?recommendVersion=1): Módulo Wifi por 4,5€ recomendado por [Fernando](https://twitter.com/m_trombone). [Listado de recursos](http://www.xess.com/blog/esp8266-resources/).
 
 ## Distribuciones
+
 * [PiMAME](http://pimame.org/): Raspbian con un frontend para lanzar emuladores.
 * [Lakka](http://www.lakka.tv/): Lakka is a lightweight Linux distribution that transforms a credit card sized computer into a full blown emulation console.
 
@@ -74,6 +75,7 @@ $ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Gestión de la SWAP
+
 Para redimensionar la Swap predeterminada (fichero de 100MB en `/var/swap`):
 
 ```bash
@@ -107,6 +109,7 @@ sudo swapon /var/swap
 ```
 
 ## Artículos interesantes de [TheMagPi](http://www.themagpi.com/)
+
 * Librería Python para controlar un puerto USB: Página 14 de #3 de TheMagPi
 * Buffer de dispositivos controlados con el GPIO de RPi: Página 19 de #4 de TheMagPi
 * Librería wiringPi: Sirve para comandar y leer el GPIO desde bash. Página 14 de #6 de TheMagPi
