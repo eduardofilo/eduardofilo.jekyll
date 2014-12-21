@@ -12,7 +12,7 @@ Llevo un tiempo pendiente del relativamente nuevo mundo de las micro placas, pop
 A continuación una lista con algunas de las placas de este tipo que se pueden encontrar:
 
 * [Raspberry Pi](http://www.raspberrypi.org/)
-* [Banana Pi](http://www.bananapi.org/)
+* [Banana Pi](http://www.bananapi.org/p/product.html)
 * [Hummingboard](http://www.solid-run.com/products/hummingboard/)
 * [BeagleBoard](http://beagleboard.org/)
 * [pdDuino](http://www.pcduino.com/)
