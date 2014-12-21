@@ -16,6 +16,10 @@ permalink: /sistemas/raspi.html
 * [Java JDK para ARM](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-arm-downloads-2187472.html)
 * [Cylon.js para Raspberry Pi](http://cylonjs.com/documentation/platforms/raspberry-pi/)
 
+## Hardware
+
+* [ESP8266 Resources](http://es.aliexpress.com/item/2PCS-ESP8266-Serial-Esp-01-WIFI-Wireless-Transceiver-Module-Send-Receive-LWIP-AP-STA/32232009463.html?recommendVersion=1): Módulo Wifi por 4,5€ recomendado por [Fernando](https://twitter.com/m_trombone). [Listado de recursos](http://www.xess.com/blog/esp8266-resources/).
+
 ## Distribuciones
 * [PiMAME](http://pimame.org/): Raspbian con un frontend para lanzar emuladores.
 * [Lakka](http://www.lakka.tv/): Lakka is a lightweight Linux distribution that transforms a credit card sized computer into a full blown emulation console.
