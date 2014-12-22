@@ -9,15 +9,24 @@ permalink: /proyectos/minecraft.html
 
 ### Varios
 
-*  [How to Create A Minecraft Server Like Mine on your Raspberry Pi](http://picraftbukkit.webs.com/pi-minecraft-server-how-to)
-*  [Video de educador que usa Minecraft](https///www.youtube.com/watch?v=-mTf3j2koJA)
-*  [Minecraft Edu](http://minecraftedu.com/)
-*  [Minecraft Edu Wiki](http://services.minecraftedu.com/wiki/Main_Page)
-*  [Tutorials/Setting up a server](http://minecraft.gamepedia.com/Setting_up_a_server)
-*  [Server Commands](http://minecraft.gamepedia.com/Server_commands)
-*  [Minecraft Server Manager](http://msmhq.com/)
-*  [How to Run Low-Cost Minecraft on a Raspberry Pi for Block Building on the Cheap](http://www.howtogeek.com/173044/how-to-run-low-cost-minecraft-on-a-raspberry-pi-for-block-building-on-the-cheap/) (!)
-*  [MineCraftPi - A Raspberry Pi MineCraft Server Image!](http://everyday-tech.com/minecraftpi-a-raspberry-pi-minecraft-server-image/): Minecraft se arranca automáticamente desde `/etc/rc.local`.
+* [How to Create A Minecraft Server Like Mine on your Raspberry Pi](http://picraftbukkit.webs.com/pi-minecraft-server-how-to)
+* [Tutorials/Setting up a server](http://minecraft.gamepedia.com/Setting_up_a_server)
+* [Server Commands](http://minecraft.gamepedia.com/Server_commands)
+* [Minecraft Server Manager](http://msmhq.com/)
+* [How to Run Low-Cost Minecraft on a Raspberry Pi for Block Building on the Cheap](http://www.howtogeek.com/173044/how-to-run-low-cost-minecraft-on-a-raspberry-pi-for-block-building-on-the-cheap/) (!)
+* [MineCraftPi - A Raspberry Pi MineCraft Server Image!](http://everyday-tech.com/minecraftpi-a-raspberry-pi-minecraft-server-image/): Minecraft se arranca automáticamente desde `/etc/rc.local`.
+
+### Educación
+
+* [Video de educador que usa Minecraft](https///www.youtube.com/watch?v=-mTf3j2koJA)
+* [Minecraft Edu](http://minecraftedu.com/)
+* [Minecraft Edu Wiki](http://services.minecraftedu.com/wiki/Main_Page)
+* [MinecraftEdu World Library](http://services.minecraftedu.com/worlds/)
+* [Logic Gates](http://services.minecraftedu.com/worlds/node/75): Mundo MinecraftEdu que explica las puertas lógicas básicas.
+* [Paleontology](http://services.minecraftedu.com/worlds/node/57): Mundo MinecraftEdu en el que hay un esqueleto de dinosaurio enterrado.
+* [Obstacle Course](http://services.minecraftedu.com/worlds/node/58): Yincana.
+* [Escape from Everest](http://services.minecraftedu.com/worlds/node/27)
+* [Tutorial World](http://services.minecraftedu.com/worlds/node/26)
 
 ### Mecanismos
 
@@ -26,16 +35,16 @@ permalink: /proyectos/minecraft.html
 
 ### Servidores
 
-*  [MCServer](http://mc-server.org/)
-*  [Mineserver](http://mineserver.be/)
-*  [Descarga servidor oficial](https///minecraft.net/download)
-*  [Mirror de Bukkit y Spigot para sortear DMCA](https///savebukkit.org/)
+* [MCServer](http://mc-server.org/)
+* [Mineserver](http://mineserver.be/)
+* [Descarga servidor oficial](https///minecraft.net/download)
+* [Mirror de Bukkit y Spigot para sortear DMCA](https///savebukkit.org/)
 
 ### Configuraciones
 
-*  [server.properties](http://minecraft.gamepedia.com/Server.properties)
-*  [Bukkit.yml fichero de configuración de Craftbukkit y Spigot](http://wiki.bukkit.org/Bukkit.yml/es)
-*  [spigot.yml fichero de configuración de Spigot](http://www.spigotmc.org/wiki/spigot-configuration-spigot-yml/)
+* [server.properties](http://minecraft.gamepedia.com/Server.properties)
+* [Bukkit.yml fichero de configuración de Craftbukkit y Spigot](http://wiki.bukkit.org/Bukkit.yml/es)
+* [spigot.yml fichero de configuración de Spigot](http://www.spigotmc.org/wiki/spigot-configuration-spigot-yml/)
 
 ### Plugins interesantes
 
@@ -141,13 +150,6 @@ worlds:
     radiusX: 80
     radiusZ: 80
     wrapping: false
-```
-
-*plugins/ClearLag/config.yml*
-
-```
-auto-removal:
-  broadcast-warning: false
 ```
 
 ### Comandos útiles
