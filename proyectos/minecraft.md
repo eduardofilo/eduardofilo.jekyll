@@ -21,6 +21,7 @@ permalink: /proyectos/minecraft.html
 * [Video de educador que usa Minecraft](https///www.youtube.com/watch?v=-mTf3j2koJA)
 * [Minecraft Edu](http://minecraftedu.com/)
 * [Minecraft Edu Wiki](http://services.minecraftedu.com/wiki/Main_Page)
+* [Teaching with MinecraftEdu](http://services.minecraftedu.com/wiki/index.php?title=Teaching_with_MinecraftEdu)
 * [MinecraftEdu World Library](http://services.minecraftedu.com/worlds/)
 * [Logic Gates](http://services.minecraftedu.com/worlds/node/75): Mundo MinecraftEdu que explica las puertas lógicas básicas.
 * [Paleontology](http://services.minecraftedu.com/worlds/node/57): Mundo MinecraftEdu en el que hay un esqueleto de dinosaurio enterrado.
@@ -28,9 +29,11 @@ permalink: /proyectos/minecraft.html
 * [Escape from Everest](http://services.minecraftedu.com/worlds/node/27)
 * [Tutorial World](http://services.minecraftedu.com/worlds/node/26)
 * Opciones:
-  * Mecanismos Redstone
-  * Construcción con recursos limitados
-  * Yincana
+  * [Mecanismos Redstone](http://minecraft-es.gamepedia.com/Tutoriales/Mecanismos)
+  * Construcción con recursos limitados (como lo que hace [Joel Levin](https://www.youtube.com/watch?v=AJk_js4e6jE))
+  * Yincana (tipo [Obstacle Course](http://services.minecraftedu.com/worlds/node/58))
+  * Aventura (tipo [Escape from Everest](http://services.minecraftedu.com/worlds/node/27))
+  * Descubrimiento (tipo [Paleontology](http://services.minecraftedu.com/worlds/node/57) o mundos tipo museo)
 
 ### Mecanismos
 
