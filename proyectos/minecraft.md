@@ -27,6 +27,10 @@ permalink: /proyectos/minecraft.html
 * [Obstacle Course](http://services.minecraftedu.com/worlds/node/58): Yincana.
 * [Escape from Everest](http://services.minecraftedu.com/worlds/node/27)
 * [Tutorial World](http://services.minecraftedu.com/worlds/node/26)
+* Opciones:
+  * Mecanismos Redstone
+  * Construcción con recursos limitados
+  * Yincana
 
 ### Mecanismos
 
