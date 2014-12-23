@@ -18,7 +18,7 @@ permalink: /proyectos/minecraft.html
 
 ### Educación
 
-* [Video de educador que usa Minecraft](https///www.youtube.com/watch?v=-mTf3j2koJA)
+* [Video de educador que usa Minecraft](https://www.youtube.com/watch?v=-mTf3j2koJA)
 * [Minecraft Edu](http://minecraftedu.com/)
 * [Minecraft Edu Wiki](http://services.minecraftedu.com/wiki/Main_Page)
 * [Teaching with MinecraftEdu](http://services.minecraftedu.com/wiki/index.php?title=Teaching_with_MinecraftEdu)
@@ -28,6 +28,7 @@ permalink: /proyectos/minecraft.html
 * [Obstacle Course](http://services.minecraftedu.com/worlds/node/58): Yincana.
 * [Escape from Everest](http://services.minecraftedu.com/worlds/node/27)
 * [Tutorial World](http://services.minecraftedu.com/worlds/node/26)
+* [Recursos educativos para Minecraft](http://www.dispersium.es/recursos-educativos-para-minecraft/)
 * Opciones:
   * [Mecanismos Redstone](http://minecraft-es.gamepedia.com/Tutoriales/Mecanismos)
   * Construcción con recursos limitados (como lo que hace [Joel Levin](https://www.youtube.com/watch?v=AJk_js4e6jE))
