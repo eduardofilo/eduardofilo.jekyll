@@ -27,6 +27,7 @@ layout: default
 # Sistemas
 
 * [Raspberry Pi](/sistemas/raspi.html)
+* [ODROID](/sistemas/odroid.html)
 * [UNIX](/sistemas/unix.html)
 * [Ubuntu](/sistemas/ubuntu.html)
 * [Mac OS X](/sistemas/macosx.html)
