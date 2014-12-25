@@ -15,6 +15,7 @@ permalink: /sistemas/raspi.html
 * [PiKISS para Raspberry Pi](http://misapuntesde.com/post.php?id=409): Un puñado de scripts con menú para hacerte la vida más fácil
 * [Java JDK para ARM](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-arm-downloads-2187472.html)
 * [Cylon.js para Raspberry Pi](http://cylonjs.com/documentation/platforms/raspberry-pi/)
+* [BerryBoot](http://www.berryterminal.com/doku.php/berryboot): Menú de arranque que permite arrancar varios sistemas instalados en la propia SD, en un disco duro/pendrive externo o en un almacenamiento en red (NAS).
 
 ## Hardware
 
