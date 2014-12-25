@@ -142,4 +142,5 @@ Medidas de protección:
 
 * Cambiar contraseña predeterminada de usuario `pi` o mejor eliminar la cuenta.
 * Instalar paquete `fail2ban`.
-* Desinstalar paquete `wolfram-engine` que ocupa mucho y no se suele usar.
+* Desinstalar paquete `wolfram-engine` que ocupa mucho y no se suele usar:
+  * `sudo apt-get remove wolfram-engine`
