@@ -36,7 +36,7 @@ Esta es la lista de podcasts que escucho/recomiendo:
 * [Ciencia al cubo](http://www.rtve.es/alacarta/audios/ciencia-al-cubo/) - [Feed RSS](http://www.rtve.es/podcast/radio-5/ciencia-al-cubo/SCIECU.xml)
 * [Psicología con Alfonso](http://psicologiaconalfonso.com/) - [Feed RSS](http://feeds.feedburner.com/PsicologiaConAlfonsoPodcast)
 * [El amuleto de Yendor](http://yendor.es/) - [Feed RSS](http://feeds.feedburner.com/ElAmuletoDeYendor): Cancelado pero mantiene el feed.
-* [Cerveza Gratis](http://cervezagratis.es/) - [Feed RSS](http://feeds.feedburner.com/cervezagratis/OGG)
+* [Cerveza Gratis](http://cervezagratis.es/) - [Feed RSS](http://feeds.feedburner.com/cervezagratis/OGG): [Cancelado](http://cervezagratis.es/2014/12/triste-despedida/) pero mantiene el feed.
 * [Dame la voz](http://blog.damelavoz.es/) - [Feed RSS](http://feeds.feedburner.com/DameLaVoz)
 * [Podcast Soliloquio 2005](http://www.fjromero.com/podcast/) - [Feed RSS](http://www.fjromero.com/podcast/rss.xml): No publica desde hace tiempo.
 * [Podcast La Aldea Irreductible](http://podcast-irreductible.blogspot.com.es/) - [Feed RSS](http://feeds2.feedburner.com/PodcastLaAldeaIrreductible)
