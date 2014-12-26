@@ -58,7 +58,7 @@ Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la dist
     
 9. Como veo que los permisos están muy orientados al acceso por usuario, y no por grupo, averiguo el UID del usuario `www-data` para ajustar ese valor en los ficheros en el NAS. Averiguo el UID así sobre Raspberry:
 
-        edumoreno@raspi-git /var/lib/dokuwiki/data $ id www-data
+        edumoreno@raspi-git ~ $ id www-data
         uid=33(www-data) gid=33(www-data) grupos=33(www-data)
 
 10. Ahora inicio sesión por SSH en el NAS, me voy al directorio que voy a montar en la Raspberry y ajusto el UID de los ficheros que he copiado en el paso 7:
