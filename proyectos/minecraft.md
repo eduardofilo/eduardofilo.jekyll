@@ -68,10 +68,6 @@ permalink: /proyectos/minecraft.html
 ### Comandos para arrancarlo
 
 ```bash
-#Servidor oficial
-sudo java -Xms256M -Xmx496M -jar /home/mine/minecraft_server/minecraft_server.1.8.jar nogui
-
-#Spigot
 sudo java -Xms256M -Xmx496M -jar /home/mine/spigot/spigot.jar nogui
 ```
 
