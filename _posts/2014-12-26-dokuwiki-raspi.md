@@ -11,24 +11,24 @@ Tengo desde hace años un [Dokuwiki][dokuwiki] corriendo en el NAS, pero [el que
 
 Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la distribución porque de [Dokuwiki][dokuwiki] salen continuas ediciones y parches. De esta forma la actualización se hará con un simple `apt-get upgrade`. [Dokuwiki][dokuwiki], en su versión empaquetada para [Raspbian][raspbian], puede correr sobre Apache o sobre [Lighttpd][lighty]. Si instalo directamente `dokuwiki`, el paquete prioriza la dependencia con Apache, pero prefiero utilizar [Lighttpd][lighty] en la Raspberry. Así pues la instalación la hago por etapas para forzar la dependencia con [Lighttpd][lighty]. En otro caso hubiera sido tan sencillo como hacer `apt-get install dokuwiki`.
 
-1. Instalamos [Lighttpd][lighty]:
+1. Instalo [Lighttpd][lighty]:
 
         sudo apt-get install lighttpd
   
-2. Instalamos PHP:
+2. Instalo PHP:
 
         sudo apt-get install php5-common php5-cgi php5
   
-3. Activamos el módulo PHP en [Lighttpd][lighty] y recargamos la configuración de este último:
+3. Activo el módulo PHP en [Lighttpd][lighty] y recargo la configuración de este último:
 
         sudo lighty-enable-mod fastcgi-php
         sudo service lighttpd force-reload
 
-4. Ahora sí instalamos [Dokuwiki][dokuwiki]:
+4. Ahora sí instalo [Dokuwiki][dokuwiki]:
 
         sudo apt-get install dokuwiki
 
-5. Durante la instalación del paquete aparece un diálogo de configuración en el que, aparte de solicitarnos el password del usuario `admin` para [Dokuwiki][dokuwiki], nos preguntará sobre qué servidores HTTP de los dos soportados, queremos que se haga una configuración automática. De nuevo prioriza Apache, es decir, este servidor sale preseleccionado y [Lighttpd][lighty] desactivado. Invertimos la situación.
+5. Durante la instalación del paquete aparece un diálogo de configuración en el que, aparte de solicitar el password del usuario `admin` para [Dokuwiki][dokuwiki], pregunta sobre qué servidores HTTP de los dos soportados, queremos que se haga una configuración automática. De nuevo prioriza Apache, es decir, este servidor sale preseleccionado y [Lighttpd][lighty] desactivado. Invierto la situación.
 6. Doy de alta un recurso compartido en el NAS. No muestro el proceso de esto puesto que es muy distinto en cada NAS. Lo comparto por medio del protocolo NFS.
 7. La instalación predeterminada de [Dokuwiki][dokuwiki] en Raspbian mantiene los ficheros en el directorio `/var/lib/dokuwiki/data`, así que será esto lo que habrá que mantener en el NAS. Me fijo en los permisos de los ficheros de este directorio, puesto que tendremos que respetarlos para que [Dokuwiki][dokuwiki] pueda trabajar. Veo esto:
 
@@ -53,11 +53,11 @@ Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la dist
 
         scp -r /var/lib/dokuwiki/data/* 192.168.1.200:/c/dokuwiki
 
-9. Ahora configuramos en Raspberry el montaje del recurso compartido en el NAS, lo que se hace insertando la siguiente línea en el fichero `/etc/fstab`:
+9. Ahora configuro en Raspberry el montaje del recurso compartido en el NAS, lo que hago insertando la siguiente línea en el fichero `/etc/fstab`:
 
         192.168.1.200:/c/dokuwiki /var/lib/dokuwiki/data nfs rw 0 0
     
-10. Como veo que los permisos están muy orientados al acceso por usuario, y no por grupo, averiguo el UID del usuario `www-data` para ajustar ese valor en los ficheros en el NAS. Averiguo el UID así sobre Raspberry:
+10. Como veo que los permisos están muy orientados al acceso por usuario, y no por grupo, averiguo el UID del usuario `www-data` para ajustar ese valor en los ficheros en el NAS. Lo hago ejecutando sobre Raspberry:
 
         edumoreno@raspi-git ~ $ id www-data
         uid=33(www-data) gid=33(www-data) grupos=33(www-data)
