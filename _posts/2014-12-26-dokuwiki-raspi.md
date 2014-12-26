@@ -48,7 +48,7 @@ Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la dist
         -rw-r--r--  1 www-data root 12093 dic 26 11:39 security.xcf
         drwx------  2 www-data root 16384 dic 26 11:39 tmp
 
-7. Antes de hacer el montaje del directorio remoto desde el NAS hacia la Raspberry, copio todos los ficheros que ha dejado la instalación en Raspberry, al recurso compartido en el NAS. En mi caso, como tengo habilitado el acceso SSH en el NAS, lo hago así (desde la Raspberry):
+7. Antes de hacer el montaje del directorio remoto del NAS hacia la Raspberry, transfiero al primero todos los ficheros que ha dejado la instalación en Raspberry. En mi caso, como tengo habilitado el acceso SSH en el NAS, lo hago así (desde la Raspberry):
 
         scp -r /var/lib/dokuwiki/data/* 192.168.1.200:/c/dokuwiki
 
