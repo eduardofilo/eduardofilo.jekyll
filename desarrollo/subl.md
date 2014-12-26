@@ -32,4 +32,4 @@ Añadir la siguiente línea al `Preferences / Settings - User` (fichero `~/.conf
 
 ## Extensiones
 
-*  [EncodingHelper](https///github.com/SublimeText/EncodingHelper)
+*  [EncodingHelper](https://github.com/SublimeText/EncodingHelper)

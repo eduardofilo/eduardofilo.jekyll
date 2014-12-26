@@ -118,7 +118,7 @@ Concatenar todos los archivos facilmente que tengas en una carpeta:
 pdftk carpeta_con_todos_ficheros/*.pdf cat output fichero_concatenado.pdf
 ```
 
-Tiene muchas mas funcionalidades consultables con –help, pero si quieres, puedes echarle un vistazo a un [articulo de Linux-Magazine “PDF a tope”](https///www.linux-magazine.es/issue/12/PDFTk.pdf).
+Tiene muchas mas funcionalidades consultables con –help, pero si quieres, puedes echarle un vistazo a un [articulo de Linux-Magazine “PDF a tope”](https://www.linux-magazine.es/issue/12/PDFTk.pdf).
 
 ## APOD
 
@@ -322,7 +322,7 @@ Para descargar vídeos desde YouTube, last.fm, Google video, Dailymotion y Vimeo
 ### Enlaces
 
 *  [Cómo descargar vídeos en formato M3U8 (o HLS)](http://blog.tvalacarta.info/2012/10/25/como-descargar-videos-en-formato-m3u8-o-hls/)
-*  [http live streaming player](https///gitorious.org/hls-player#more)
+*  [http live streaming player](https://gitorious.org/hls-player#more)
 
 Las carreras de Formula1 últimamente son emitidas en el formato HLS. Para descargar una carrera empezar haciendo una captura con Wireshark desde el momento en que se le da al Play hasta que se empieza a ver parte del vídeo (esperando que terminen los anuncios). Luego filtrar en Wireshark con la siguiente expresión:
 

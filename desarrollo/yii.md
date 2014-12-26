@@ -60,7 +60,7 @@ permalink: /desarrollo/yii.html
 *  [ejuitimepicker](http://www.yiiframework.com/extension/ejuitimepicker/): This extension is a wrapper for Timepicker addon which adds a timepicker to jQuery UI Datepicker.
 *  [datetimepicker](http://www.yiiframework.com/extension/datetimepicker/): Datetime picker input widget, based on Jui-timepicker-addon.
 *  [Envio email con Emailer](http://www.yiiframeworkenespanol.org/foro/showthread.php?tid=52)
-*  [A module to build dependents dropdown](https///github.com/sensorario/MSensorarioDropdown)
+*  [A module to build dependents dropdown](https://github.com/sensorario/MSensorarioDropdown)
 *  [save-relations-ar-behavior](http://www.yiiframework.com/extension/save-relations-ar-behavior/): Save HasMany and ManyMany relational active records along with the main model.
 
 ## Know How

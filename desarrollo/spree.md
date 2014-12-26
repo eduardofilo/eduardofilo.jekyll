@@ -17,38 +17,38 @@ permalink: /desarrollo/spree.html
 
 ## Hilos interesantes Google Group
 
-*  [Add custom admin controller and use custom code inside controller](https///groups.google.com/forum/?fromgroups=#!topic/spree-user/hZM2vYeBjXA)
-*  [Do something when state order change to completed](https///groups.google.com/forum/?fromgroups=#!topic/spree-user/Y7xG23yz53w)
-*  [Changing /products path and linking to individual products](https///groups.google.com/forum/?fromgroups=#!topic/spree-user/sCo6yycKyjk)
-*  [Upgrading Extensions to Spree 2](https///groups.google.com/forum/?fromgroups#!topic/spree-user/q05nXaxjK14)
-*  [Rich text in product description](https///groups.google.com/forum/?fromgroups#!topic/spree-user/B7wHm-xUZ-Y/vjQ2YpeS2jgJ): Instalación de CKEditor para que se use en todos los texarea de la administración de Spree.
-*  [Remove /t/ from uri](https///groups.google.com/forum/#!topic/spree-user/reB9QRkNkxU)
+*  [Add custom admin controller and use custom code inside controller](https://groups.google.com/forum/?fromgroups=#!topic/spree-user/hZM2vYeBjXA)
+*  [Do something when state order change to completed](https://groups.google.com/forum/?fromgroups=#!topic/spree-user/Y7xG23yz53w)
+*  [Changing /products path and linking to individual products](https://groups.google.com/forum/?fromgroups=#!topic/spree-user/sCo6yycKyjk)
+*  [Upgrading Extensions to Spree 2](https://groups.google.com/forum/?fromgroups#!topic/spree-user/q05nXaxjK14)
+*  [Rich text in product description](https://groups.google.com/forum/?fromgroups#!topic/spree-user/B7wHm-xUZ-Y/vjQ2YpeS2jgJ): Instalación de CKEditor para que se use en todos los texarea de la administración de Spree.
+*  [Remove /t/ from uri](https://groups.google.com/forum/#!topic/spree-user/reB9QRkNkxU)
 
 ## Extensiones interesantes
 
-*  [Static Content](http://spreecommerce.com/extensions/139-static-content): Content management of static pages for Spree. Para páginas como About, Términos legales, etc. (en [Github](https///github.com/spree/spree_static_content)) (!)
+*  [Static Content](http://spreecommerce.com/extensions/139-static-content): Content management of static pages for Spree. Para páginas como About, Términos legales, etc. (en [Github](https://github.com/spree/spree_static_content)) (!)
 *  [Related Products](http://spreecommerce.com/extensions/89-related-products): This extension provides a generic way for you to define different types of relationships between your products, by defining a RelationType for each type of relationship you’d like to maintain. (en [Github](http://github.com/spree/spree_related_products)) (!)
-*  [Spree Variant Options](http://spreecommerce.com/extensions/170-spree-variant-options): Spree Variant Options replaces the radio-button variant selection with groups of option types and values. (en [Github](https///github.com/citrus/spree_variant_options)) (!)
-*  [SpreeEditor](https///github.com/spree/spree_editor): This extension provides an inline rich-text editor for Spree.
-*  [Spree Simple Blog](https///github.com/spree/spree-simple-blog): Adds a simple blog to Spree which works much like [Toto](http://github.com/cloudhead/toto/).
-*  [Spree Reviews](https///github.com/spree/spree_reviews): Straightforward review/rating facility.
-*  [Spree Wishlist](https///github.com/spree/spree_wishlist): The Spree Wishlist extension enables multiple wishlists per user, as well as managing those as public (sharable) and private. It also includes the ability to notify a friend via email of a recommended product. (!)
-*  [Spree Email to Friend](https///github.com/spree/spree_email_to_friend): The Spree Email to Friend extension enables you to send the product reference to your friend via email. (!)
-*  [Google Checkout](https///github.com/railsdog/spree-google-checkout): Users can place order through Google Checkout.
-*  [Spree Sitemaps](https///github.com/stephskardal/spree-sitemaps): This extension creates sitemaps in .html, .txt, and .xml (google sitemap) formats.
-*  [Spree_Videos](http://spreecommerce.com/extensions/198-spree_videos): Display YouTube video(s) on your product page. (en [Github](https///github.com/iloveitaly/Spree-Videos))
-*  [SpreeProductZoom](http://spreecommerce.com/extensions/267-spree_product_zoom): A Spree extension that adds lightbox zoom functionality for product images powered by [fancyBox](http://fancyapps.com/fancybox/). (en [Github](https///github.com/spree/spree_product_zoom))
-*  [Sitemap Generator](http://spreecommerce.com/extensions/187-sitemap-generator): Spree sitemap generator is a sitemap generator based on the [sitemap_generator](http://github.com/kjvarga/sitemap_generator) gem. It adheres to the Sitemap 0.9 protocol specification. (en [Github](https///github.com/joshnuss/spree-sitemap-generator))
-*  [Spree Google Merchant](http://spreecommerce.com/extensions/172-spree-google-merchant): This extension provides a product feed for Google Merchant rather than a file that you have to upload. (en [Github](https///github.com/sebastyuiop/spree_google_merchant))
-*  [spree-magiczoomplus](http://spreecommerce.com/extensions/136-spree-magiczoomplus): Adds [MagicZoomPlus](http://www.magictoolbox.com/magiczoomplus/) to Spree store. (en [Github](https///github.com/hnprashanth/spree-magiczoomplus))
-*  [Spree Social Bookmarks](http://spreecommerce.com/extensions/87-spree-social-bookmarks): This extension allows you to add social bookmarking to your products so your customers can share pages. (en [Github](https///github.com/WSMedia/Spree-Social-Bookmarks))
-*  [Spree Volume Pricing](http://spreecommerce.com/extensions/2-volume-pricing): This extension uses predefined ranges of quantities to determine the price for a particular product variant. (en [Github](https///github.com/spree/spree_volume_pricing))
-*  [Active Shipping](http://spreecommerce.com/extensions/3-active-shipping): Spree calculator that interfaces with USPS, UPS and FedEx via the popular active_shipping plugin. (en [Github](https///github.com/Shopify/active_shipping))
-*  [Payment Methods With Range](http://spreecommerce.com/extensions/78-payment-methods-with-range): This extensions allow declaring payment methods only available for a certain order amount. (en [Github](https///github.com/jpl/spree-payment-methods-with-range))
-*  [Print Invoice](http://spreecommerce.com/extensions/29-print-invoice): Generación de facturas en PDF en el backend. (en [Github](https///github.com/spree/spree_print_invoice))
-*  [Product Assembly](https///github.com/spree/spree-product-assembly): Create a product which is composed of other products.
-*  [SpreeBootstrap](https///github.com/jdutil/spree_bootstrap): This project aims to replace the spree_frontend's use of the skeleton css framework in favor of Twitter Bootstrap.
-*  [SpreeContactUs](https///github.com/jdutil/spree_contact_us): A Rails 3+ Engine providing a basic contact form as a Spree Extension.
+*  [Spree Variant Options](http://spreecommerce.com/extensions/170-spree-variant-options): Spree Variant Options replaces the radio-button variant selection with groups of option types and values. (en [Github](https://github.com/citrus/spree_variant_options)) (!)
+*  [SpreeEditor](https://github.com/spree/spree_editor): This extension provides an inline rich-text editor for Spree.
+*  [Spree Simple Blog](https://github.com/spree/spree-simple-blog): Adds a simple blog to Spree which works much like [Toto](http://github.com/cloudhead/toto/).
+*  [Spree Reviews](https://github.com/spree/spree_reviews): Straightforward review/rating facility.
+*  [Spree Wishlist](https://github.com/spree/spree_wishlist): The Spree Wishlist extension enables multiple wishlists per user, as well as managing those as public (sharable) and private. It also includes the ability to notify a friend via email of a recommended product. (!)
+*  [Spree Email to Friend](https://github.com/spree/spree_email_to_friend): The Spree Email to Friend extension enables you to send the product reference to your friend via email. (!)
+*  [Google Checkout](https://github.com/railsdog/spree-google-checkout): Users can place order through Google Checkout.
+*  [Spree Sitemaps](https://github.com/stephskardal/spree-sitemaps): This extension creates sitemaps in .html, .txt, and .xml (google sitemap) formats.
+*  [Spree_Videos](http://spreecommerce.com/extensions/198-spree_videos): Display YouTube video(s) on your product page. (en [Github](https://github.com/iloveitaly/Spree-Videos))
+*  [SpreeProductZoom](http://spreecommerce.com/extensions/267-spree_product_zoom): A Spree extension that adds lightbox zoom functionality for product images powered by [fancyBox](http://fancyapps.com/fancybox/). (en [Github](https://github.com/spree/spree_product_zoom))
+*  [Sitemap Generator](http://spreecommerce.com/extensions/187-sitemap-generator): Spree sitemap generator is a sitemap generator based on the [sitemap_generator](http://github.com/kjvarga/sitemap_generator) gem. It adheres to the Sitemap 0.9 protocol specification. (en [Github](https://github.com/joshnuss/spree-sitemap-generator))
+*  [Spree Google Merchant](http://spreecommerce.com/extensions/172-spree-google-merchant): This extension provides a product feed for Google Merchant rather than a file that you have to upload. (en [Github](https://github.com/sebastyuiop/spree_google_merchant))
+*  [spree-magiczoomplus](http://spreecommerce.com/extensions/136-spree-magiczoomplus): Adds [MagicZoomPlus](http://www.magictoolbox.com/magiczoomplus/) to Spree store. (en [Github](https://github.com/hnprashanth/spree-magiczoomplus))
+*  [Spree Social Bookmarks](http://spreecommerce.com/extensions/87-spree-social-bookmarks): This extension allows you to add social bookmarking to your products so your customers can share pages. (en [Github](https://github.com/WSMedia/Spree-Social-Bookmarks))
+*  [Spree Volume Pricing](http://spreecommerce.com/extensions/2-volume-pricing): This extension uses predefined ranges of quantities to determine the price for a particular product variant. (en [Github](https://github.com/spree/spree_volume_pricing))
+*  [Active Shipping](http://spreecommerce.com/extensions/3-active-shipping): Spree calculator that interfaces with USPS, UPS and FedEx via the popular active_shipping plugin. (en [Github](https://github.com/Shopify/active_shipping))
+*  [Payment Methods With Range](http://spreecommerce.com/extensions/78-payment-methods-with-range): This extensions allow declaring payment methods only available for a certain order amount. (en [Github](https://github.com/jpl/spree-payment-methods-with-range))
+*  [Print Invoice](http://spreecommerce.com/extensions/29-print-invoice): Generación de facturas en PDF en el backend. (en [Github](https://github.com/spree/spree_print_invoice))
+*  [Product Assembly](https://github.com/spree/spree-product-assembly): Create a product which is composed of other products.
+*  [SpreeBootstrap](https://github.com/jdutil/spree_bootstrap): This project aims to replace the spree_frontend's use of the skeleton css framework in favor of Twitter Bootstrap.
+*  [SpreeContactUs](https://github.com/jdutil/spree_contact_us): A Rails 3+ Engine providing a basic contact form as a Spree Extension.
 
 ## Instalación en Ubuntu
 

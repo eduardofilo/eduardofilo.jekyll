@@ -7,7 +7,7 @@ permalink: /sistemas/appletv.html
 
 ## Enlaces
 
-*  [Backup del disco duro](https///code.google.com/p/atv-bootloader/wiki/ATVBackup)
+*  [Backup del disco duro](https://code.google.com/p/atv-bootloader/wiki/ATVBackup)
 
 ## TVHeadEnd
 
@@ -21,4 +21,4 @@ sudo w_scan -f a -c ES -X
 
 ### Enlaces
 
-*  [Instalación en Ubuntu/Debian](https///tvheadend.org/projects/tvheadend/wiki/AptRepository)
+*  [Instalación en Ubuntu/Debian](https://tvheadend.org/projects/tvheadend/wiki/AptRepository)

@@ -21,14 +21,14 @@ permalink: /varios/links.html
 *  [Cheat Sheets](http://www.digilife.be/quickreferences/quickrefs.htm)
 *  [Cheat Sheets](http://www.bookmarkbliss.com/programming/the-developer-cheat-sheet-compilation/)
 *  [Subversion](http://www.yolinux.com/TUTORIALS/Subversion.html)
-*  [Markdown](https///guides.github.com/features/mastering-markdown/)
+*  [Markdown](https://guides.github.com/features/mastering-markdown/)
 
 ## Útiles
 
 *  [Copy Paste Character](http://copypastecharacter.com/): Para copiar al portapapeles caracteres que no aparecen en nuestro teclado.
 *  [Pastebin](http://pastebin.com/): Para pegar logs y trozos grandes de texto que luego linkar en foros o para pasar a otras personas.
 *  [JSFiddle](http://jsfiddle.net/): Prototipado HTML/CSS/JS.
-*  [Debuggex](https///www.debuggex.com/): Editor de expresiones regulares (recomendado por Carlos Fenollosa).
+*  [Debuggex](https://www.debuggex.com/): Editor de expresiones regulares (recomendado por Carlos Fenollosa).
 
 ## eBooks
 

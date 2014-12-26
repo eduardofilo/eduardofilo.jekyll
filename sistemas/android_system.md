@@ -422,8 +422,8 @@ chmod 0770 sdcard0
 *  Nuestro dispositivo Android
 *  Deberemos ser Root
 *  Dualshock 3 (Sixaxis)
-*  [Sixaxis Compatibility Checker](https///play.google.com/store/apps/details?id=com.dancingpixelstudios.sixaxiscompatibilitychecker)
-*  [Sixaxis Controller](https///play.google.com/store/apps/details?id=com.dancingpixelstudios.sixaxiscontroller)
+*  [Sixaxis Compatibility Checker](https://play.google.com/store/apps/details?id=com.dancingpixelstudios.sixaxiscompatibilitychecker)
+*  [Sixaxis Controller](https://play.google.com/store/apps/details?id=com.dancingpixelstudios.sixaxiscontroller)
 *  SixaxisPairTool, que puedes descargarlo desde [aquí](http://www.mediafire.com/download/p2bl654bw6qn3v6/SixaxisPairToolSetup-0.2.3.exe).
 
 #### Configuración

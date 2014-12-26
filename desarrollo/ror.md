@@ -20,7 +20,7 @@ permalink: /desarrollo/ror.html
 *  [Rails 3 para Windows y Linux Ubuntu (libro en español)](http://r3uw.herokuapp.com/)
 *  [Rails Examples and Tutorials](http://railsapps.github.com/)
 *  [Ruby QuickRef](http://www.zenspider.com/Languages/Ruby/QuickRef.html)
-*  [Rails Tutorial Sublime Text setup](https///github.com/mhartl/rails_tutorial_sublime_text)
+*  [Rails Tutorial Sublime Text setup](https://github.com/mhartl/rails_tutorial_sublime_text)
 *  [Metaprogramming in Ruby: It’s All About the Self](http://yehudakatz.com/2009/11/15/metaprogramming-in-ruby-its-all-about-the-self/)
 *  [Comprobación de entorno de ejecución en código](http://stackoverflow.com/questions/9297446/how-to-use-a-route-helper-method-from-a-file-in-the-lib-directory) (!)
 
@@ -42,10 +42,10 @@ permalink: /desarrollo/ror.html
 ## Módulos interesantes
 
 *  [Devise: Engine de autenticación/autorización](http://devise.plataformatec.com.br/)
-*  [Forem: Engine para implementar un foro](https///github.com/radar/forem#readme)
-*  [carmen-rails](https///github.com/jim/carmen-rails): Seed con datos de los países y las regiones del mundo.
+*  [Forem: Engine para implementar un foro](https://github.com/radar/forem#readme)
+*  [carmen-rails](https://github.com/jim/carmen-rails): Seed con datos de los países y las regiones del mundo.
 *  [RailsCasts #328 Twitter Bootstrap Basics](http://railscasts.com/episodes/328-twitter-bootstrap-basics)
-*  [Twitter Bootstrap Gem](https///github.com/thomas-mcdonald/bootstrap-sass)
+*  [Twitter Bootstrap Gem](https://github.com/thomas-mcdonald/bootstrap-sass)
 *  [FasterCSV](http://fastercsv.rubyforge.org/): Carga y generación de ficheros CSV hacia y desde tablas. [Ejemplo de uso](http://www.funonrails.com/2012/01/csv-file-importexport-in-rails-3.html).
 *  [Entity-Relationship Diagrams for Ruby on Rails](http://rails-erd.rubyforge.org/): Obtiene el esquema de relación entre entidades de una aplicación en base al análisis de sus modelos.
 
@@ -410,7 +410,7 @@ Y abrir la dirección: http://localhost:8808
 
 ### Problema con el encoding de algunas fuentes en UTF-8
 
-Al incorporar el gem [spree_sermepa](https///github.com/picazoH/spree_sermepa) se produjo el problema descrito [aquí](https///github.com/carlhuda/bundler/issues/1570).
+Al incorporar el gem [spree_sermepa](https://github.com/picazoH/spree_sermepa) se produjo el problema descrito [aquí](https://github.com/carlhuda/bundler/issues/1570).
 
 Hay varias formas de solucionarlo. Una es añadir:
 

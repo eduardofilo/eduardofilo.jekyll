@@ -45,8 +45,8 @@ permalink: /proyectos/minecraft.html
 
 * [MCServer](http://mc-server.org/)
 * [Mineserver](http://mineserver.be/)
-* [Descarga servidor oficial](https///minecraft.net/download)
-* [Mirror de Bukkit y Spigot para sortear DMCA](https///savebukkit.org/)
+* [Descarga servidor oficial](https://minecraft.net/download)
+* [Mirror de Bukkit y Spigot para sortear DMCA](https://savebukkit.org/)
 
 ### Configuraciones
 
