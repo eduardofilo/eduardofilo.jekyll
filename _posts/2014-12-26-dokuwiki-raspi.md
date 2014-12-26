@@ -29,7 +29,7 @@ Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la dist
         sudo apt-get install dokuwiki
 
 5. Durante la instalación del paquete aparece un diálogo de configuración en el que, aparte de solicitar el password del usuario `admin` para [Dokuwiki][dokuwiki], pregunta sobre qué servidores HTTP de los dos soportados, queremos que se haga una configuración automática. De nuevo prioriza Apache, es decir, este servidor sale preseleccionado y [Lighttpd][lighty] desactivado. Invierto la situación.
-6. Doy de alta un recurso compartido en el NAS. No muestro el proceso de esto puesto que es muy distinto en cada NAS. Lo comparto por medio del protocolo NFS.
+6. Doy de alta un recurso compartido en el NAS. No muestro el proceso de esto puesto que es muy distinto en cada NAS. Comparto el recurso por medio del protocolo NFS.
 7. La instalación predeterminada de [Dokuwiki][dokuwiki] en Raspbian mantiene los ficheros en el directorio `/var/lib/dokuwiki/data`, así que será esto lo que habrá que mantener en el NAS. Me fijo en los permisos de los ficheros de este directorio, puesto que tendremos que respetarlos para que [Dokuwiki][dokuwiki] pueda trabajar. Veo esto:
 
         edumoreno@raspi-git /var/lib/dokuwiki/data $ ls -l
