@@ -28,8 +28,9 @@ Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la dist
 
         sudo apt-get install dokuwiki
 
-5. Doy de alta un recurso compartido en el NAS. No muestro el proceso de esto puesto que es muy distinto en cada NAS. Lo comparto por medio del protocolo NFS.
-6. La instalación predeterminada de [Dokuwiki][dokuwiki] en Raspbian mantiene los ficheros en el directorio `/var/lib/dokuwiki/data`, así que será esto lo que habrá que mantener en el NAS. Me fijo en los permisos de los ficheros de este directorio, puesto que tendremos que respetarlos para que [Dokuwiki][dokuwiki] pueda trabajar. Veo esto:
+5. Durante la instalación del paquete aparece un diálogo de configuración en el que, aparte de solicitarnos el password del usuario `admin` para [Dokuwiki][dokuwiki], nos preguntará sobre qué servidores HTTP de los dos soportados, queremos que se haga una configuración automática. De nuevo prioriza Apache, es decir, este servidor sale preseleccionado y [Lighttpd][lighty] desactivado. Invertimos la situación.
+6. Doy de alta un recurso compartido en el NAS. No muestro el proceso de esto puesto que es muy distinto en cada NAS. Lo comparto por medio del protocolo NFS.
+7. La instalación predeterminada de [Dokuwiki][dokuwiki] en Raspbian mantiene los ficheros en el directorio `/var/lib/dokuwiki/data`, así que será esto lo que habrá que mantener en el NAS. Me fijo en los permisos de los ficheros de este directorio, puesto que tendremos que respetarlos para que [Dokuwiki][dokuwiki] pueda trabajar. Veo esto:
 
         edumoreno@raspi-git /var/lib/dokuwiki/data $ ls -l
         total 208
@@ -48,24 +49,24 @@ Antes de empezar, un comentario. Voy a utilizar el paquete `dokuwiki` de la dist
         -rw-r--r--  1 www-data root 12093 dic 26 11:39 security.xcf
         drwx------  2 www-data root 16384 dic 26 11:39 tmp
 
-7. Antes de hacer el montaje del directorio remoto del NAS hacia la Raspberry, transfiero al primero todos los ficheros que ha dejado la instalación en Raspberry. En mi caso, como tengo habilitado el acceso SSH en el NAS, lo hago así (desde la Raspberry):
+8. Antes de hacer el montaje del directorio remoto del NAS hacia la Raspberry, transfiero al primero todos los ficheros que ha dejado la instalación en Raspberry. En mi caso, como tengo habilitado el acceso SSH en el NAS, lo hago así (desde la Raspberry):
 
         scp -r /var/lib/dokuwiki/data/* 192.168.1.200:/c/dokuwiki
 
-8. Ahora configuramos en Raspberry el montaje del recurso compartido en el NAS, lo que se hace insertando la siguiente línea en el fichero `/etc/fstab`:
+9. Ahora configuramos en Raspberry el montaje del recurso compartido en el NAS, lo que se hace insertando la siguiente línea en el fichero `/etc/fstab`:
 
         192.168.1.200:/c/dokuwiki /var/lib/dokuwiki/data nfs rw 0 0
     
-9. Como veo que los permisos están muy orientados al acceso por usuario, y no por grupo, averiguo el UID del usuario `www-data` para ajustar ese valor en los ficheros en el NAS. Averiguo el UID así sobre Raspberry:
+10. Como veo que los permisos están muy orientados al acceso por usuario, y no por grupo, averiguo el UID del usuario `www-data` para ajustar ese valor en los ficheros en el NAS. Averiguo el UID así sobre Raspberry:
 
         edumoreno@raspi-git ~ $ id www-data
         uid=33(www-data) gid=33(www-data) grupos=33(www-data)
 
-10. Ahora inicio sesión por SSH en el NAS, me voy al directorio que voy a montar en la Raspberry y ajusto el UID de los ficheros que he copiado en el paso 7:
+11. Ahora inicio sesión por SSH en el NAS, me voy al directorio que voy a montar en la Raspberry y ajusto el UID de los ficheros que he copiado en el paso 7:
 
         chown -R 33 /c/dokuwiki/*
 
-11. Finalmente vuelvo a Raspberry Pi y monto el nuevo directorio:
+12. Finalmente vuelvo a Raspberry Pi y monto el nuevo directorio:
 
         sudo mount -a
 
