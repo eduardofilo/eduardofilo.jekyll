@@ -11,6 +11,7 @@ github_username:  eduardofilo
 
 # Build settings
 timezone: Europe/Madrid
+locale: es
     
 markdown: redcarpet
 
