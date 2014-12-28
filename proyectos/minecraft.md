@@ -177,6 +177,8 @@ worlds:
 * `gamerule doMobSpawning false`: Evita que se generen Mobs (pasivos y enemigos). Util en modo creativo para evitar distracciones.
 * `give <jugador> <elemento> [cantidad] [data] [dataTag]`: Dar un elemento a un jugador.
 * `gamemode <modo> [jugador]`: Asigna el modo de juego a uno o a todos los jugadores de entre los siguientes posibles: `adventure`, `creative`, `survival`
+* `kick <jugador>`: Expulsar a un jugador de la partida.
+* `ban <player>`: Expulsar a un jugador del servidor.
 
 #### Plugins
 
