@@ -15,6 +15,8 @@ permalink: /proyectos/minecraft.html
 * [Minecraft Server Manager](http://msmhq.com/)
 * [How to Run Low-Cost Minecraft on a Raspberry Pi for Block Building on the Cheap](http://www.howtogeek.com/173044/how-to-run-low-cost-minecraft-on-a-raspberry-pi-for-block-building-on-the-cheap/) (!)
 * [MineCraftPi - A Raspberry Pi MineCraft Server Image!](http://everyday-tech.com/minecraftpi-a-raspberry-pi-minecraft-server-image/): Minecraft se arranca automáticamente desde `/etc/rc.local`.
+* [How to 3D print what you build in Minecraft … TUTORIAL WITH VIDEO!](http://blogs.ncs-nj.org/minecraft/2013/12/14/how-to-3d-print-what-you-build-in-minecraft-tutorial-with-video/)
+* [Minecraft Projects](http://www.planetminecraft.com/resources/projects/)
 
 ### Educación
 
@@ -35,6 +37,7 @@ permalink: /proyectos/minecraft.html
   * Yincana (tipo [Obstacle Course](http://services.minecraftedu.com/worlds/node/58))
   * Aventura (tipo [Escape from Everest](http://services.minecraftedu.com/worlds/node/27))
   * Descubrimiento (tipo [Paleontology](http://services.minecraftedu.com/worlds/node/57) o mundos tipo museo)
+  * Construcción de un modelo que luego se imprimirá con la impresora 3D gracias a [Printbot](http://dev.bukkit.org/bukkit-plugins/printbot/).
 
 ### Mecanismos
 
@@ -62,6 +65,7 @@ permalink: /proyectos/minecraft.html
 * [Dynmap](http://dev.bukkit.org/bukkit-plugins/dynmap/): Mapa 2D dinámico.
 * [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
 * [StopRain](http://dev.bukkit.org/bukkit-plugins/stoprain/): Desactiva la lluvia.
+* [Essentials](http://dev.bukkit.org/bukkit-plugins/essentials/)
 
 ## Ejecución Servidor en Raspberry Pi
 
