@@ -18,6 +18,7 @@ permalink: /proyectos/minecraft.html
 * [How to 3D print what you build in Minecraft … TUTORIAL WITH VIDEO!](http://blogs.ncs-nj.org/minecraft/2013/12/14/how-to-3d-print-what-you-build-in-minecraft-tutorial-with-video/)
 * [Minecraft Projects](http://www.planetminecraft.com/resources/projects/)
 * [Guía / Manual del juego Minecraft](http://www.trucoteca.com/guia-minecraft/pc-12340.html)
+* [Minecraft Crafting y Guía de Referencia - La elaboración de recetas, los valores de datos & Pociones](http://diamondboots.com/)
 
 ### Educación
 
