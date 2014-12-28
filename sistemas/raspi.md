@@ -28,6 +28,7 @@ permalink: /sistemas/raspi.html
 
 * [PiMAME](http://pimame.org/): Raspbian con un frontend para lanzar emuladores.
 * [Lakka](http://www.lakka.tv/): Lakka is a lightweight Linux distribution that transforms a credit card sized computer into a full blown emulation console.
+* [RetroPie](http://blog.petrockblock.com/retropie/)
 
 ## Comandos útiles
 
