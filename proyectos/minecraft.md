@@ -176,6 +176,7 @@ worlds:
 * `gamerule doFireTick false`: Evita que se propague el fuego.
 * `gamerule doMobSpawning false`: Evita que se generen Mobs (pasivos y enemigos). Util en modo creativo para evitar distracciones.
 * `give <jugador> <elemento> [cantidad] [data] [dataTag]`: Dar un elemento a un jugador.
+* `gamemode <modo> [jugador]`: Asigna el modo de juego a uno o a todos los jugadores de entre los siguientes posibles: `adventure`, `creative`, `survival`
 
 #### Plugins
 
