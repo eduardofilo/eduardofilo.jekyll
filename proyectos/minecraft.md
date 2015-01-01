@@ -19,6 +19,7 @@ permalink: /proyectos/minecraft.html
 * [Minecraft Projects](http://www.planetminecraft.com/resources/projects/)
 * [Guía / Manual del juego Minecraft](http://www.trucoteca.com/guia-minecraft/pc-12340.html)
 * [Minecraft Crafting y Guía de Referencia - La elaboración de recetas, los valores de datos & Pociones](http://diamondboots.com/)
+* [Mineplex](http://mineplex.net/about): Servidores de juego con reglas adaptadas (Survival con protección de terreno y normas éticas).
 
 ### Educación
 
