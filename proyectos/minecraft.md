@@ -175,7 +175,8 @@ worlds:
 * `weather rain <segundos>`: Activa la lluvia durante los segundos indicados.
 * `weather clear <segundos>`: Desactiva la lluvia/nieve durante los segundos indicados.
 * `gamerule doFireTick false`: Evita que se propague el fuego.
-* `gamerule doMobSpawning false`: Evita que se generen Mobs (pasivos y enemigos). Util en modo creativo para evitar distracciones.
+* `gamerule doMobSpawning false`: Evita que se generen Mobs (pasivos y enemigos). Util para evitar distracciones.
+* `gamerule keepInventory true`: Evita que los jugadores pierdan su inventario al morir.
 * `give <jugador> <elemento> [cantidad] [data] [dataTag]`: Dar un elemento a un jugador.
 * `gamemode <modo> [jugador]`: Asigna el modo de juego a uno o a todos los jugadores de entre los siguientes posibles: `adventure`, `creative`, `survival`
 * `kick <jugador>`: Expulsar a un jugador de la partida.
