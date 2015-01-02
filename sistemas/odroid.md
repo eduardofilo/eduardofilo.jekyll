@@ -11,6 +11,7 @@ permalink: /sistemas/odroid.html
 
 * [ODROID Magazine](http://magazine.odroid.com/)
 * [ODROID Wiki](http://odroid.com/dokuwiki/doku.php?id=en:odroid-c1)
+* [ODROID.in](http://odroid.in/): Imágenes de distintos sistemas.
 
 ### Hardware
 
