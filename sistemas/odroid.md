@@ -42,3 +42,9 @@ $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
 #Restauración:
 $ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
+
+### Control de progreso durante flasheo
+
+```bash
+sudo pkill -USR1 -n -x dd
+```

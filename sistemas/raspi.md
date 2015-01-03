@@ -78,6 +78,12 @@ $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - | split --bytes=2G - Rpi_8gb_backup.
 $ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
+### Control de progreso durante flasheo
+
+```bash
+sudo pkill -USR1 -n -x dd
+```
+
 ### Gestión de la SWAP
 
 Para redimensionar la Swap predeterminada (fichero de 100MB en `/var/swap`):
