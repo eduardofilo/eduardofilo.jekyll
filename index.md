@@ -41,6 +41,7 @@ layout: default
 * [e-mail](/sistemas/email.html)
 * [AppleTV](/sistemas/appletv.html)
 * [MySQL](/sistemas/mysql.html)
+* [Emulación](/sistemas/emulacion.html)
 
 # Cursos
 
