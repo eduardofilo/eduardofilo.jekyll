@@ -41,6 +41,7 @@ permalink: /proyectos/minecraft.html
   * Aventura (tipo [Escape from Everest](http://services.minecraftedu.com/worlds/node/27))
   * Descubrimiento (tipo [Paleontology](http://services.minecraftedu.com/worlds/node/57) o mundos tipo museo)
   * Construcción de un modelo que luego se imprimirá con la impresora 3D gracias a [Printbot](http://dev.bukkit.org/bukkit-plugins/printbot/).
+  * La caza del tesoro. Por ejemplo esconder un objeto valioso en una gruta profunda y complicada. Dar pistas en carteles en forma de acertijos.
 
 ### Mecanismos
 

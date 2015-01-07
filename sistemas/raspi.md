@@ -17,6 +17,7 @@ permalink: /sistemas/raspi.html
 * [Cylon.js para Raspberry Pi](http://cylonjs.com/documentation/platforms/raspberry-pi/)
 * [BerryBoot](http://www.berryterminal.com/doku.php/berryboot): Menú de arranque que permite arrancar varios sistemas instalados en la propia SD, en un disco duro/pendrive externo o en un almacenamiento en red (NAS).
 * [An A to Z Beginners Guide to Installing RetroPie on a Raspberry Pi](http://supernintendopi.wordpress.com/)
+* [How to install Oracle Java 8 in Debian via repository (JDK8)](http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html)
 
 ## Hardware
 
