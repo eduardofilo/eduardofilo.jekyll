@@ -13,8 +13,8 @@ permalink: /desarrollo/ror.html
 *  [Ruby User's Guide](http://www.rubyist.net/~slagell/ruby/index.html)
 *  [Try Ruby](http://tryruby.org/levels/1/challenges/0)
 *  [Aptana Studio (IDE)](http://www.aptana.com/products/radrails)
-*  [Ruby on Rails Screencasts](http://railscasts.com/) (!)
-*  [Ruby on Rails Guides](http://guides.rubyonrails.org/) (!)
+*  [Ruby on Rails Screencasts](http://railscasts.com/) :exclamation:
+*  [Ruby on Rails Guides](http://guides.rubyonrails.org/) :exclamation:
 *  [Ruby Tutorial](http://www.tutorialspoint.com/ruby/index.htm)
 *  [Control de versiones en Gemfile](http://docs.rubygems.org/read/chapter/16)
 *  [Rails 3 para Windows y Linux Ubuntu (libro en español)](http://r3uw.herokuapp.com/)
@@ -22,11 +22,11 @@ permalink: /desarrollo/ror.html
 *  [Ruby QuickRef](http://www.zenspider.com/Languages/Ruby/QuickRef.html)
 *  [Rails Tutorial Sublime Text setup](https://github.com/mhartl/rails_tutorial_sublime_text)
 *  [Metaprogramming in Ruby: It’s All About the Self](http://yehudakatz.com/2009/11/15/metaprogramming-in-ruby-its-all-about-the-self/)
-*  [Comprobación de entorno de ejecución en código](http://stackoverflow.com/questions/9297446/how-to-use-a-route-helper-method-from-a-file-in-the-lib-directory) (!)
+*  [Comprobación de entorno de ejecución en código](http://stackoverflow.com/questions/9297446/how-to-use-a-route-helper-method-from-a-file-in-the-lib-directory) :exclamation:
 
 ## Performance Tunning
 
-*  [Performance Tuning for Phusion Passenger (an Introduction)](http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/) (!)
+*  [Performance Tuning for Phusion Passenger (an Introduction)](http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/) :exclamation:
 *  [Phusion Corporate Blog - Tuning Phusion Passenger’s concurrency settings](http://blog.phusion.nl/2013/03/12/tuning-phusion-passengers-concurrency-settings/)
 *  [Production Rails Tuning with Passenger: PassengerMaxProcesses](http://blog.scoutapp.com/articles/2009/12/08/production-rails-tuning-with-passenger-passengermaxprocesses)
 *  [Passenger tuning for rails application](http://blog.railsupgrade.com/2011/11/passenger-tuning-for-rails-application.html)

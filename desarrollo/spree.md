@@ -10,10 +10,10 @@ permalink: /desarrollo/spree.html
 *  [Getting Started with Spree](http://railscasts.com/episodes/298-getting-started-with-spree)
 *  [Spree 1.1 Deployment on Heroku](http://ruby-journal.com/spree-1-1-stable-deployment-on-heroku/)
 *  [How To: Add A Custom Model to Your Spree App](http://quickleft.com/blog/how-to-add-a-custom-model-to-your-spree-app)
-*  [The Spree API Documentation](http://api.spreecommerce.com/) (!)
+*  [The Spree API Documentation](http://api.spreecommerce.com/) :exclamation:
 *  [How to Optimize Your Spree Store for Search Engines](http://spreecommerce.com/blog/how-to-optimize-your-spree-store-for-search-engines)
 *  [Crear extensión Spree](http://rvalle.es/crear-extension-spree/)
-*  [Tracking E-commerce With Google Analytics](http://spreecommerce.com/blog/ecommerce-tracking-in-spree) (!)
+*  [Tracking E-commerce With Google Analytics](http://spreecommerce.com/blog/ecommerce-tracking-in-spree) :exclamation:
 
 ## Hilos interesantes Google Group
 
@@ -26,14 +26,14 @@ permalink: /desarrollo/spree.html
 
 ## Extensiones interesantes
 
-*  [Static Content](http://spreecommerce.com/extensions/139-static-content): Content management of static pages for Spree. Para páginas como About, Términos legales, etc. (en [Github](https://github.com/spree/spree_static_content)) (!)
-*  [Related Products](http://spreecommerce.com/extensions/89-related-products): This extension provides a generic way for you to define different types of relationships between your products, by defining a RelationType for each type of relationship you’d like to maintain. (en [Github](http://github.com/spree/spree_related_products)) (!)
-*  [Spree Variant Options](http://spreecommerce.com/extensions/170-spree-variant-options): Spree Variant Options replaces the radio-button variant selection with groups of option types and values. (en [Github](https://github.com/citrus/spree_variant_options)) (!)
+*  [Static Content](http://spreecommerce.com/extensions/139-static-content): Content management of static pages for Spree. Para páginas como About, Términos legales, etc. (en [Github](https://github.com/spree/spree_static_content)) :exclamation:
+*  [Related Products](http://spreecommerce.com/extensions/89-related-products): This extension provides a generic way for you to define different types of relationships between your products, by defining a RelationType for each type of relationship you’d like to maintain. (en [Github](http://github.com/spree/spree_related_products)) :exclamation:
+*  [Spree Variant Options](http://spreecommerce.com/extensions/170-spree-variant-options): Spree Variant Options replaces the radio-button variant selection with groups of option types and values. (en [Github](https://github.com/citrus/spree_variant_options)) :exclamation:
 *  [SpreeEditor](https://github.com/spree/spree_editor): This extension provides an inline rich-text editor for Spree.
 *  [Spree Simple Blog](https://github.com/spree/spree-simple-blog): Adds a simple blog to Spree which works much like [Toto](http://github.com/cloudhead/toto/).
 *  [Spree Reviews](https://github.com/spree/spree_reviews): Straightforward review/rating facility.
-*  [Spree Wishlist](https://github.com/spree/spree_wishlist): The Spree Wishlist extension enables multiple wishlists per user, as well as managing those as public (sharable) and private. It also includes the ability to notify a friend via email of a recommended product. (!)
-*  [Spree Email to Friend](https://github.com/spree/spree_email_to_friend): The Spree Email to Friend extension enables you to send the product reference to your friend via email. (!)
+*  [Spree Wishlist](https://github.com/spree/spree_wishlist): The Spree Wishlist extension enables multiple wishlists per user, as well as managing those as public (sharable) and private. It also includes the ability to notify a friend via email of a recommended product. :exclamation:
+*  [Spree Email to Friend](https://github.com/spree/spree_email_to_friend): The Spree Email to Friend extension enables you to send the product reference to your friend via email. :exclamation:
 *  [Google Checkout](https://github.com/railsdog/spree-google-checkout): Users can place order through Google Checkout.
 *  [Spree Sitemaps](https://github.com/stephskardal/spree-sitemaps): This extension creates sitemaps in .html, .txt, and .xml (google sitemap) formats.
 *  [Spree_Videos](http://spreecommerce.com/extensions/198-spree_videos): Display YouTube video(s) on your product page. (en [Github](https://github.com/iloveitaly/Spree-Videos))

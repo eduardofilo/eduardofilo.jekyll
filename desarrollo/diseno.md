@@ -10,7 +10,7 @@ permalink: /desarrollo/diseno.html
 *  [Crystal Clear](http://commons.wikimedia.org/wiki/Crystal_Clear)
 *  [FamFamFam](http://www.famfamfam.com/)
 *  [Free icons search engine - iconlet](http://iconlet.com/)
-*  [Icon Finder](http://www.iconfinder.com/browse) (!)
+*  [Icon Finder](http://www.iconfinder.com/browse) :exclamation:
 *  [ICONS etc](http://icons.mysitemyway.com/)
 
 ## Colección fondos

@@ -7,7 +7,7 @@ permalink: /varios/links.html
 
 ## Tutoriales
 
-*  [Eclipse And Java For Total Beginners](http://eclipsetutorial.sourceforge.net/) (!)
+*  [Eclipse And Java For Total Beginners](http://eclipsetutorial.sourceforge.net/) :exclamation:
 *  [UNIX](http://sc.tamu.edu/help/general/unix/unix.html)
 *  [Redirección de salidas en UNIX](http://sc.tamu.edu/help/general/unix/redirection.html)
 *  [Variables en UNIX](http://sc.tamu.edu/help/general/unix/vars.html)

@@ -16,7 +16,7 @@ permalink: /desarrollo/html.html
 *  [NetRenderer](http://netrenderer.com/): Renderiza una página con distintas versiones del motor de Internet Explorer.
 *  [Análisis de UserAgent](http://www.useragentstring.com/)
 *  [All About Floats](http://css-tricks.com/all-about-floats/): Explica el concepto de Clearfix.
-*  [TheCodePlayer](http://thecodeplayer.com/): Video style walkthroughs showing cool stuff being created from scratch :!:
+*  [TheCodePlayer](http://thecodeplayer.com/): Video style walkthroughs showing cool stuff being created from scratch :exclamation:
 
 ### Componentes
 
@@ -69,5 +69,5 @@ permalink: /desarrollo/html.html
 *  [Recommendations for building smartphone-optimized websites](http://googlewebmastercentral.blogspot.ch/2012/06/recommendations-for-building-smartphone.html)
 *  [Skeleton](http://www.getskeleton.com/)
 *  [Descripción de RD en Xitrus](http://xitrus.es/blog/2/Responsive_Design)
-*  [Screenqueries](http://screenqueri.es/): Simular el funcionamiento de una página en las pantallas de los dispositivos móviles o en cualquier tamaño de pantalla. (!)
+*  [Screenqueries](http://screenqueri.es/): Simular el funcionamiento de una página en las pantallas de los dispositivos móviles o en cualquier tamaño de pantalla. :exclamation:
 *  [Media Queries](http://mediaqueri.es/): Recopilación de responsive designs.

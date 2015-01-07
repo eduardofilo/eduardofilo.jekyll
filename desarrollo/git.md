@@ -9,8 +9,8 @@ permalink: /desarrollo/git.html
 
 *  [Libro Pro Git en español](http://git-scm.com/book/es)
 *  [Cheat Sheat](http://cheat.errtheblog.com/s/git)
-*  [git - la guía sencilla](http://rogerdudler.github.com/git-guide/index.es.html) (!)
-*  [Git Tutorials & Training by Atlassian](http://atlassian.com/git) (!)
+*  [git - la guía sencilla](http://rogerdudler.github.com/git-guide/index.es.html) :exclamation:
+*  [Git Tutorials & Training by Atlassian](http://atlassian.com/git) :exclamation:
 
 ## Comandos básicos
 

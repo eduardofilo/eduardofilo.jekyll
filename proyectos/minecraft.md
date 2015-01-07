@@ -13,7 +13,7 @@ permalink: /proyectos/minecraft.html
 * [Tutorials/Setting up a server](http://minecraft.gamepedia.com/Setting_up_a_server)
 * [Server Commands](http://minecraft.gamepedia.com/Server_commands)
 * [Minecraft Server Manager](http://msmhq.com/)
-* [How to Run Low-Cost Minecraft on a Raspberry Pi for Block Building on the Cheap](http://www.howtogeek.com/173044/how-to-run-low-cost-minecraft-on-a-raspberry-pi-for-block-building-on-the-cheap/) (!)
+* [How to Run Low-Cost Minecraft on a Raspberry Pi for Block Building on the Cheap](http://www.howtogeek.com/173044/how-to-run-low-cost-minecraft-on-a-raspberry-pi-for-block-building-on-the-cheap/) :exclamation:
 * [MineCraftPi - A Raspberry Pi MineCraft Server Image!](http://everyday-tech.com/minecraftpi-a-raspberry-pi-minecraft-server-image/): Minecraft se arranca automáticamente desde `/etc/rc.local`.
 * [How to 3D print what you build in Minecraft … TUTORIAL WITH VIDEO!](http://blogs.ncs-nj.org/minecraft/2013/12/14/how-to-3d-print-what-you-build-in-minecraft-tutorial-with-video/)
 * [Minecraft Projects](http://www.planetminecraft.com/resources/projects/)

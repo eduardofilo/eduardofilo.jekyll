@@ -7,7 +7,7 @@ permalink: /desarrollo/yii.html
 
 ## Enlaces
 
-*  [A probar cuando tenga un error](http://www.yiiframework.com/forum/index.php/topic/13125-solveddrop-down-list/page__view__findpost__p__64258) (!)
+*  [A probar cuando tenga un error](http://www.yiiframework.com/forum/index.php/topic/13125-solveddrop-down-list/page__view__findpost__p__64258) :exclamation:
 *  [Creating a dependent dropdown](http://www.yiiframework.com/wiki/24/)
 *  [Search() & Filter of a relations field through CGridView](http://www.yiiframework.com/forum/index.php/topic/9083-search-filter-of-a-relations-field-through-cgridview/)
 *  [Handling Related Models in Yii Forms](http://www.larryullman.com/2010/08/10/handling-related-models-in-yii-forms/)
@@ -26,11 +26,11 @@ permalink: /desarrollo/yii.html
 *  [Special $variables in CGridView and CListView](http://www.yiiframework.com/wiki/252/special-variables-in-cgridview-and-clistview/)
 *  [Custom Page Size for CGridView](http://www.ramirezcobos.com/2010/11/30/custom-page-size-for-cgridview/)
 *  [Using CButtonColumn to customize buttons in CGridView](http://www.yiiframework.com/wiki/106/using-cbuttoncolumn-to-customize-buttons-in-cgridview/)
-*  [Understanding Virtual Attributes and get/set methods](http://www.yiiframework.com/wiki/167/understanding-virtual-attributes-and-get-set-methods/) (!)
+*  [Understanding Virtual Attributes and get/set methods](http://www.yiiframework.com/wiki/167/understanding-virtual-attributes-and-get-set-methods/) :exclamation:
 *  [Using standard filters in CGridView custom fields](http://www.yiiframework.com/wiki/117/using-standard-filters-in-cgridview-custom-fields/)
-*  [Searching and sorting by related model in CGridView](http://www.yiiframework.com/wiki/281/searching-and-sorting-by-related-model-in-cgridview/) (!)
-*  [Reference: Model rules validation](http://www.yiiframework.com/wiki/56/reference-model-rules-validation) (!)
-*  [Displaying, sorting and filtering HasMany & ManyMany relations in CGridView](http://www.yiiframework.com/wiki/385/displaying-sorting-and-filtering-hasmany-manymany-relations-in-cgridview/) (!)
+*  [Searching and sorting by related model in CGridView](http://www.yiiframework.com/wiki/281/searching-and-sorting-by-related-model-in-cgridview/) :exclamation:
+*  [Reference: Model rules validation](http://www.yiiframework.com/wiki/56/reference-model-rules-validation) :exclamation:
+*  [Displaying, sorting and filtering HasMany & ManyMany relations in CGridView](http://www.yiiframework.com/wiki/385/displaying-sorting-and-filtering-hasmany-manymany-relations-in-cgridview/) :exclamation:
 *  [Tutorial Yii Framework](http://gabrielduarte77.wordpress.com/category/yii-framework/)
     * [1. INSTALANDO YII Y PRIMERA APLICACIÓN](http://gabrielduarte77.wordpress.com/2012/01/25/instalandoyii-2/)
     * [2. CREANDO MODELOS Y CRUD A PARTIR DE UNA BASE DE DATOS](http://gabrielduarte77.wordpress.com/2012/01/25/creandomodelos/)

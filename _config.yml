@@ -26,3 +26,5 @@ kramdown:
   coderay:
     coderay_line_numbers: true
     coderay_css: class
+gems:
+  - jemoji
