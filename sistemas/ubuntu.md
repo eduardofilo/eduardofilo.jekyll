@@ -219,9 +219,9 @@ Por último programar una tarea en cron para ejecutar el script con el usuario a
 
 En el ejemplo se ha puesto como ejemplo el usuario `edumoreno` así como su home.
 
-## Instalar Java
+## Instalar Oracle Java
 
-([Fuente](http://www.guia-ubuntu.org/index.php?title=Java#Desde_la_web_de_Java))
+(Fuentes: [1](http://www.guia-ubuntu.org/index.php?title=Java#Desde_la_web_de_Java) y [2](http://www.webupd8.org/2011/09/how-to-install-oracle-java-7-jdk-in.html))
 
 Movemos la carpeta creada después de la instalación (llamada `jre1.7.0_05` en este ejemplo) a una ruta más apropiada:
 
@@ -256,7 +256,7 @@ Para ver cómo ha quedado el estado de las alternativas:
 update-alternatives --config java
 ```
 
-Hay un PPA para poder instalar el JDK más fácilmente. Se pueden ver las instrucciones [aquí](http://minecraft.gamepedia.com/Setting_up_a_server#Ubuntu).
+Hay un PPA para poder instalar el JDK más fácilmente. Se pueden ver las instrucciones [aquí](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html).
 
 ## Reparación del sistema de archivos cuando se pone en modo "sólo lectura"
 
