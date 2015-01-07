@@ -1,5 +1,6 @@
 # Site settings
 title: Apuntes de eduardofilo
+owner: Eduardo Moreno
 email: hmitsurugi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Apuntes varios sobre algunas de las cosas que necesito recordar,
