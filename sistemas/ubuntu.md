@@ -256,6 +256,18 @@ Para ver cómo ha quedado el estado de las alternativas:
 update-alternatives --config java
 ```
 
+Para ver físicamente cómo han quedado las alternativas relativas a `java`:
+
+```bash
+ls -l /etc/alternatives/java*
+```
+
+Si nos interesa borrar alguna de las alternativas (por ejemplo una para `java`):
+
+```bash
+sudo update-alternatives --remove java /usr/lib/jvm/jdk1.8.0_20/bin/java
+```
+
 Hay un PPA para poder instalar el JDK más fácilmente. Se pueden ver las instrucciones [aquí](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html).
 
 ## Reparación del sistema de archivos cuando se pone en modo "sólo lectura"
