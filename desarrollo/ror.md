@@ -16,7 +16,6 @@ permalink: /desarrollo/ror.html
 *  [Ruby on Rails Screencasts](http://railscasts.com/) :exclamation:
 *  [Ruby on Rails Guides](http://guides.rubyonrails.org/) :exclamation:
 *  [Ruby Tutorial](http://www.tutorialspoint.com/ruby/index.htm)
-*  [Control de versiones en Gemfile](http://docs.rubygems.org/read/chapter/16)
 *  [Rails 3 para Windows y Linux Ubuntu (libro en español)](http://r3uw.herokuapp.com/)
 *  [Rails Examples and Tutorials](http://railsapps.github.com/)
 *  [Ruby QuickRef](http://www.zenspider.com/Languages/Ruby/QuickRef.html)
