@@ -63,15 +63,15 @@ Módulos necesarios:
 ### Creación de proyecto Phonegap
 
 ```bash
-phonegap create 00HolaMundo --name HolaMundo --id es.eduardofilo.hm
+$ phonegap create 00HolaMundo --name HolaMundo --id es.eduardofilo.hm
 ```
 
 ### Compilación y ejecución de proyecto Phonegap
 
 ```bash
-cd 00HolaMundo
-phonegap build android
-phonegap run android
+$ cd 00HolaMundo
+$ phonegap build android
+$ phonegap run android
 ```
 
 En realidad la tarea `run` hace `build`.
@@ -652,7 +652,7 @@ var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, opti
 Para generar un certificado con que firmar las aplicaciones:
 
 ```bash
-keytool -genkey -alias demoiconos -keyalg RSA -validity 20000 -keystore demoiconos.keystore
+$ keytool -genkey -alias demoiconos -keyalg RSA -validity 20000 -keystore demoiconos.keystore
 ```
 
 ### Compilar en Adobe PhoneGap Build
@@ -660,7 +660,7 @@ keytool -genkey -alias demoiconos -keyalg RSA -validity 20000 -keystore demoicon
 Para delegar la construcción del proyecto en el [servicio de compilación de Adobe en la nube](https://build.phonegap.com/):
 
 ```bash
-phonegap remote build android
+$ phonegap remote build android
 ```
 Se puede firmar la aplicación desde Adobe subiendo el fichero keystore que hemos creado antes.
 

@@ -31,20 +31,20 @@ $ sudo odroid-utility.sh
 ### Flasheo de imagen [Ubuntu oficial](http://odroid.com/dokuwiki/doku.php?id=en:c1_release_linux_ubuntu)
 
 ```bash
-xzcat ubuntu-14.04.1lts-lubuntu-odroid-c1-20141211.img.xz | sudo dd of=/dev/mmcblk0 bs=2M
+$ xzcat ubuntu-14.04.1lts-lubuntu-odroid-c1-20141211.img.xz | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Backup de la SD (comprimiendo al vuelo)
 
 ```bash
-#Backup:
+$ #Backup:
 $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
-#Restauración:
+$ #Restauración:
 $ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Control de progreso durante flasheo
 
 ```bash
-sudo pkill -USR1 -n -x dd
+$ sudo pkill -USR1 -n -x dd
 ```

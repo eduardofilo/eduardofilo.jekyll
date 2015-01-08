@@ -14,20 +14,20 @@ permalink: /sistemas/mysql.html
 Instalamos el paquete `mysql-server`:
 
 ```bash
-apt-get install mysql-server
+$ apt-get install mysql-server
 ```
 
 En caso de no haberlo configurado durante la instalación del paquete, ajustar el password de root con el comando:
 
 ```bash
-mysql -u root
+$ mysql -u root
 mysql> SET PASSWORD FOR 'root'@'localhost" = PASSWORD('new_password');
 ```
 
 Por defecto sólo podemos entrar con el usuario root en local. Para permitir el acceso remoto ejecutar el siguiente comando:
 
-```
-mysql -u root -p
+```bash
+$ mysql -u root -p
 mysql> GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
 mysql> FLUSH PRIVILEGES;
 mysql> exit
@@ -492,7 +492,7 @@ El comando equivalente al `bcp` de otros gestores es `mysqlimport`. [Aquí](http
 Un ejemplo de uso sería:
 
 ```bash
-mysqlimport -h localhost -u adw -p -v -L --delete adw keywords.csv
+$ mysqlimport -h localhost -u adw -p -v -L --delete adw keywords.csv
 ```
 
 Para que no de errores hay que guardar el fichero en formato UTF8 (revisar con el comando `od -c fichero.csv` si no hay caracteres extraños al principio). Por defecto se espera el carácter TAB como separador de columnas y el retorno de carro como separador de registros. El fichero será un CSV con las columnas en el mismo orden que la tabla en que se desea cargar los datos. El nombre del fichero sin extensión se debe corresponder con el nombre de la tabla. En el ejemplo anterior, la tabla sería `keywords`.
@@ -515,7 +515,7 @@ FIELDS
 Para que el cliente acepte la opción `LOCAL` debe ser ejecutado con la opción `--local-infile`, por ejemplo:
 
 ```bash
-mysql -h localhost --local-infile -u adw -p adw
+$ mysql -h localhost --local-infile -u adw -p adw
 ```
 
 ## Otras Herramientas
@@ -535,19 +535,19 @@ Muestra las variables del gestor:
 La única forma de solucionar un caso de [tablas de Schrödingers](http://stackoverflow.com/questions/10538908/schrodingers-mysql-table-exists-yet-it-does-not) fue purgando la instalación de MySQL y borrando el directorio de datos:
 
 ```bash
-sudo dpkg --purge mysql-server-5.5 mysql-server-core-5.5 mysql-server
-sudo mv /var/lib/mysql /var/lib/mysql.bak
-sudo apt-get install mysql-server-5.5 mysql-server-core-5.5 mysql-server
+$ sudo dpkg --purge mysql-server-5.5 mysql-server-core-5.5 mysql-server
+$ sudo mv /var/lib/mysql /var/lib/mysql.bak
+$ sudo apt-get install mysql-server-5.5 mysql-server-core-5.5 mysql-server
 ```
 
 Otra forma menos agresiva fue encontrada [aquí](http://www.randombugs.com/linux/crash-innodb-table.html) y consiste en borrar los ficheros siguientes con el servidor parado y luego arrancarlo:
 
 ```bash
-sudo service mysql stop
-sudo rm /var/lib/mysql/ibdata1
-sudo rm /var/lib/mysql/ib_logfile0
-sudo rm /var/lib/mysql/ib_logfile1
-sudo service mysql start
+$ sudo service mysql stop
+$ sudo rm /var/lib/mysql/ibdata1
+$ sudo rm /var/lib/mysql/ib_logfile0
+$ sudo rm /var/lib/mysql/ib_logfile1
+$ sudo service mysql start
 ```
 
 La última vez que sucedió borré todas las tablas. Ver si borrando estos ficheros en cuanto ocurre se restituyen todas las tablas.

@@ -92,13 +92,13 @@ PassengerRuby /usr/bin/ruby1.9.1
 Finalmente hay que habilitar el módulo:
 
 ```bash
-sudo a2enmod passenger
+$ sudo a2enmod passenger
 ```
 
 Y reiniciamos Apache:
 
 ```bash
-sudo service apache2 restart
+$ sudo service apache2 restart
 ```
 
 ### Procedimiento Ubuntu >=13.10
@@ -141,7 +141,7 @@ Los métodos definidos en los módulos Helper (`app/helpers/<controller>_helper.
 Rails 3.1 introdujo el concepto del [asset pipeline](http://guides.rubyonrails.org/asset_pipeline.html). Desafortunadamente esto causa problemas de rendimiento en el entorno de desarrollo. Para mejorarlo se puede utilizar la tarea de precompilador siguiente:
 
 ```bash
-bundle exec rake assets:precompile:nondigest
+$ bundle exec rake assets:precompile:nondigest
 ```
 
 Esto provoca que los cambios en los ficheros asset no sean incluidos automáticamente cuando recargamos la página. Para forzar su refresco hay que volver a ejecutar el comando anterior.
@@ -151,7 +151,7 @@ Esto provoca que los cambios en los ficheros asset no sean incluidos automática
 Rails proporciona la siguiente tarea de precompilador que borrará el directorio `public/assets`, cosa que puede resultar útil antes de un commit.
 
 ```bash
-bundle exec rake assets:clean
+$ bundle exec rake assets:clean
 ```
 
 Esta orden puede solucionar el problema con el `font-awesome`, que en ocasiones se dibuja mal.
@@ -170,13 +170,13 @@ Comandos interesantes relacionados con las versiones de los paquetes y su gesti�
 ### Muestra el mapa de rutas
 
 ```bash
-bundle exec rake routes
+$ bundle exec rake routes
 ```
 
 ### Muestra todas las tareas
 
 ```bash
-bundle exec rake -T
+$ bundle exec rake -T
 ```
 
 ### Instalación de gem
@@ -184,14 +184,14 @@ bundle exec rake -T
 Tras la instalación de un gem generalmente hay que instalar y ejecutar las migraciones de base de datos con los siguientes comandos:
 
 ```bash
-rake railties:install:migrations
-rake db:migrate
+$ rake railties:install:migrations
+$ rake db:migrate
 ```
 
 Para instalar una versión específica de una gem hay que añadir el argumento `--version`, como por ejemplo:
 
 ```bash
-gem install --version '3.0.13' passenger
+$ gem install --version '3.0.13' passenger
 ```
 
 ### Activar modo debug
@@ -199,7 +199,7 @@ gem install --version '3.0.13' passenger
 Instalar primero la gem `debugger`:
 
 ```bash
-sudo gem install debugger
+$ sudo gem install debugger
 ```
 
 Añadir al Gemfile lo siguiente (probablemente sólo sea necesario en el entorno de desarrollo):
@@ -213,20 +213,20 @@ Insertar en el código una llamada a `debugger` en el punto del código donde qu
 Finalmente para arrancar el servidor en modo debug:
 
 ```bash
-bundle exec rails s --debugger
+$ bundle exec rails s --debugger
 ```
 
 Lo anterior sirve para depurar sobre Webrick. Para hacerlo bajo Passenger seguir las instrucciones de este [post](http://chrisadams.me.uk/2009/04/28/how-to-set-up-a-debugger-with-mod_railspassenger/) (con la ayuda de [este otro](http://stackoverflow.com/questions/10678779/debugging-rails-with-passenger-and-apache)). De forma resumida consiste en ejecutar:
 
 ```bash
-cd <app_root>
-sudo gem install ruby-debug19
+$ cd <app_root>
+$ sudo gem install ruby-debug19
 ```
 
 Generar un task con:
 
 ```bash
-bundle exec rails g task myapplication restart
+$ bundle exec rails g task myapplication restart
 ```
 
 Añadir lo siguiente al final del fichero `config/environments/development.rb`:
@@ -243,13 +243,13 @@ end
 Ejecutar:
 
 ```bash
-bundle exec rake myapplication:restart DEBUG=true
+$ bundle exec rake myapplication:restart DEBUG=true
 ```
 
 Y una vez que hagamos una request para que se reinicie la aplicación ejecutar:
 
 ```bash
-rdebug -c
+$ rdebug -c
 ```
 
 ### Generación de un modelo
@@ -257,7 +257,7 @@ rdebug -c
 El siguiente comando creará un modelo para una entidad además de la migration correspondiente en la base de datos:
 
 ```bash
-bundle exec rails g model spree/product_layout name:string view:string description:text
+$ bundle exec rails g model spree/product_layout name:string view:string description:text
 ```
 
 ### Path Helpers
@@ -329,7 +329,7 @@ end
 A continuación generamos un migration para añadir el campo que establece la relación en la tabla que mantiene el modelo Product:
 
 ```bash
-bundle exec rails g migration AddProductLayoutRelationToProducts
+$ bundle exec rails g migration AddProductLayoutRelationToProducts
 ```
 
 Ahora lo editamos para incorporar el campo:
@@ -348,7 +348,7 @@ end
 Finalmente ejecutamos el migrate:
 
 ```bash
-bundle exec rake db:migrate
+$ bundle exec rake db:migrate
 ```
 
 ### Inspeccionar la definición de un método
@@ -376,13 +376,13 @@ helper.method(:tab).source_location
 ### Listar gems instalados
 
 ```bash
-gem list --local
+$ gem list --local
 ```
 
 Si queremos sólo las versiones de una gem, de `rails` por ejemplo:
 
 ```bash
-gem list --local rails
+$ gem list --local rails
 ```
 
 ### Generar el API de rails
@@ -390,9 +390,9 @@ gem list --local rails
 Para tener en local la versión actualizada del API de rails:
 
 ```bash
-rails new dummy_app
-cd dummy_app
-bundle exec rake doc:rails
+$ rails new dummy_app
+$ cd dummy_app
+$ bundle exec rake doc:rails
 ```
 
 Luego mover el subdirectorio `doc/api/index.html` a donde nos interese y borrar la dummy_app.
@@ -402,7 +402,7 @@ Luego mover el subdirectorio `doc/api/index.html` a donde nos interese y borrar 
 Para visualizar la documentación de todas las gems instaladas en el sistema ejecutar:
 
 ```bash
-gem server
+$ gem server
 ```
 
 Y abrir la dirección: http://localhost:8808
@@ -435,7 +435,7 @@ por:
 Tras actualizar a la versión 2.0.3 de Rubygems empecé a tener problemas a la hora de hacer `bundle install`. Aunque me pedía el password de root luego se producían errores de permisos en los directorios donde se almacenan las gems. La solución fue volver a una versión anterior de Rubygems. En concreto la misma que había en ese momento en el servidor de DinaHosting, es decir la 1.8.23. Se hizo con el siguiente comando:
 
 ```bash
-sudo gem update --system 1.8.23
+$ sudo gem update --system 1.8.23
 ```
 
 ### Solución a error "Could not find rake-10.0.4 in any of the sources" con Passenger
@@ -447,7 +447,7 @@ En el alojamiento de DinaHosting, al ejecutar por primera vez una aplicación Ru
 Instalando las gemas en el home del usuario se soluciona el error:
 
 ```bash
-bundle install --deployment
+$ bundle install --deployment
 ```
 
 Esto instala las gem's en el directorio `vendor/bundle`.
@@ -457,19 +457,19 @@ Esto instala las gem's en el directorio `vendor/bundle`.
 Para especificar el entorno en una tarea `rake` añadir al final de la orden `RAILS_ENV=<entorno>`. Por ejemplo para desarrollo:
 
 ```bash
-bundle exec rake routes RAILS_ENV=development
+$ bundle exec rake routes RAILS_ENV=development
 ```
 
 Con el script `rails`, depende. Si se quiere arrancar la consola añadir al final el entorno sin más. Por ejemplo para desarrollo:
 
 ```bash
-bundle exec rails c development
+$ bundle exec rails c development
 ```
 
 Si se quiere arrancar el servidor Webrick añadir el entorno por medio de la opción `-e`. Por ejemplo para desarrollo:
 
 ```bash
-bundle exec rails s -e development
+$ bundle exec rails s -e development
 ```
 
 ### Desinstalación de todas las gems
@@ -477,15 +477,15 @@ bundle exec rails s -e development
 Con el siguiente comando:
 
 ```bash
-gem list | cut -d" " -f1 | xargs gem uninstall -aIx
+$ gem list | cut -d" " -f1 | xargs gem uninstall -aIx
 ```
 
 Posteriormente habrá que volver a instalar Bundler y el resto de gems. Para ello:
 
 ```bash
-sudo gem install bundler
-cd <proyecto>
-bundle install
+$ sudo gem install bundler
+$ cd <proyecto>
+$ bundle install
 ```
 
 ### Plurales/Singulares de resources
@@ -508,13 +508,13 @@ Recurso de tipo colección dentro de un namespace:
 Si tenemos instaladas varias versiones del gem de rails, para forzar que se utilice el script `rails` de una versión concreta, pondremos la versión de la siguiente forma:
 
 ```bash
-rails _3.2.13_ -v
+$ rails _3.2.13_ -v
 ```
 
 De forma que si por ejemplo queremos generar un nuevo proyecto con la versión 3.2.13 haremos:
 
 ```bash
-rails _3.2.13_ new nueva_app
+$ rails _3.2.13_ new nueva_app
 ```
 
 ### Ejecutar una versión concreta de spree
@@ -522,13 +522,13 @@ rails _3.2.13_ new nueva_app
 Si tenemos instaladas varias versiones del gem de spree, para forzar que se utilice el script `spree` de una versión concreta, pondremos la versión de la siguiente forma:
 
 ```bash
-spree _1.3.3_ -v
+$ spree _1.3.3_ -v
 ```
 
 De forma que si por ejemplo queremos hacer la instalación dentro de una aplicación rails nueva con la versión 1.3.3 de Spree haremos:
 
 ```bash
-spree _1.3.3_ install
+$ spree _1.3.3_ install
 ```
 
 ### Diagramas ERD
@@ -538,5 +538,5 @@ A continuación se indica el comando para obtener una serie de diagramas ERD int
 Modelado de producto en Spree:
 
 ```bash
-bundle exec rake erd attributes=foreign_keys only="Spree::Product,Spree::OptionType,Spree::OptionValue,Spree::Variant,Spree::ProductOptionType" title='Productos'
+$ bundle exec rake erd attributes=foreign_keys only="Spree::Product,Spree::OptionType,Spree::OptionValue,Spree::Variant,Spree::ProductOptionType" title='Productos'
 ```

@@ -64,25 +64,25 @@ $ sudo raspi-config
 ### Backup de la SD (comprimiendo al vuelo)
 
 ```bash
-#Backup:
+$ #Backup:
 $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
-#Restauración:
+$ #Restauración:
 $ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Backup de la SD (comprimiendo al vuelo y diviendo en trozos el fichero resultante)
 
 ```bash
-#Backup:
+$ #Backup:
 $ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - | split --bytes=2G - Rpi_8gb_backup.img.gz.part_
-#Restauración:
+$ #Restauración:
 $ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Control de progreso durante flasheo
 
 ```bash
-sudo pkill -USR1 -n -x dd
+$ sudo pkill -USR1 -n -x dd
 ```
 
 ### Gestión de la SWAP
@@ -90,33 +90,33 @@ sudo pkill -USR1 -n -x dd
 Para redimensionar la Swap predeterminada (fichero de 100MB en `/var/swap`):
 
 ```bash
-sudo nano /etc/dphys-swapfile
-sudo dphys-swapfile setup
-sudo dphys-swapfile swapon
+$ sudo nano /etc/dphys-swapfile
+$ sudo dphys-swapfile setup
+$ sudo dphys-swapfile swapon
 ```
 
 Para consultar el estado de la swap:
 
 ```bash
-swapon -s
+$ swapon -s
 ```
 
 Para dejar de usar swap:
 
 ```bash
-sudo swapoff -a
+$ sudo swapoff -a
 ```
 
 Para activar la swap tal y como está definida en ''/etc/fstab'':
 
 ```bash
-sudo swapon -a
+$ sudo swapon -a
 ```
 
 Para activar swap con un fichero en concreto:
 
 ```bash
-sudo swapon /var/swap
+$ sudo swapon /var/swap
 ```
 
 ## Artículos interesantes de [TheMagPi](http://www.themagpi.com/)

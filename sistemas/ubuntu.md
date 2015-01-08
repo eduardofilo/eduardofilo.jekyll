@@ -50,19 +50,19 @@ Apache cambia de versión de 2.2 a 2.4. [Aquí](http://tfountain.co.uk/blog/2013
 * Instalar un [repositorio no oficial](http://medibuntu.org/repository.php) que contiene los codecs:
 
 ```bash
-sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
+$ sudo -E wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
 ```
 
 * Instalar el codificador y los codecs:
 
 ```bash
-sudo aptitude install ffmpeg libavcodec-extra-53
+$ sudo aptitude install ffmpeg libavcodec-extra-53
 ```
 
 * Codificar el video:
 
 ```bash
-ffmpeg -i EspacioMudejar.wmv -s qcif -vcodec h263 -acodec libfaac -ac 1 -ar 8000 -r 25 -ab 32 -strict experimental -y EspacioMudejar.3gp
+$ ffmpeg -i EspacioMudejar.wmv -s qcif -vcodec h263 -acodec libfaac -ac 1 -ar 8000 -r 25 -ab 32 -strict experimental -y EspacioMudejar.3gp
 ```
 
 Las opciones más importantes son:
@@ -76,7 +76,7 @@ Las opciones más importantes son:
 Los ficheros .ape con que se distribuyen algunos CD's se puede convertir a WAV para poder quemarlo a un CD (con un fichero .cue que normalmente acompaña al .ape se puede quemar directamente con el Burn del Mac por ejemplo) instalando el paquete `ffmpeg` y ejecutando el siguiente comando:
 
 ```bash
-ffmpeg -i fichero.ape fichero.wav
+$ ffmpeg -i fichero.ape fichero.wav
 ```
 
 Hay que acordarse de sustituir dentro del fichero .cue la referencia al fichero original .ape por el nuevo .wav.
@@ -86,7 +86,7 @@ Hay que acordarse de sustituir dentro del fichero .cue la referencia al fichero 
 Los ficheros .flac con que se distribuyen algunos CD's se puede convertir a WAV para poder quemarlo a un CD (con un fichero .cue que normalmente acompaña al .flac se puede quemar directamente con el Burn del Mac por ejemplo) instalando el paquete `flac` y ejecutando el siguiente comando:
 
 ```bash
-flac -d fichero.flac
+$ flac -d fichero.flac
 ```
 
 Hay que acordarse de sustituir dentro del fichero .cue la referencia al fichero original .flac por el nuevo .wav.
@@ -96,9 +96,9 @@ Hay que acordarse de sustituir dentro del fichero .cue la referencia al fichero 
 ([fuente 1](http://www.google.com/url?q=http%3A%2F%2Fsuperuser.com%2Fquestions%2F129320%2Fhow-do-i-restore-the-default-applets-to-gnomes-notification-area&sa=D&sntz=1&usg=AFQjCNGUVYnYCoUfrVCGX5tIHc5UWBNeDw); [fuente 2](http://www.google.com/url?q=http%3A%2F%2Fwww.watchingthenet.com%2Frestore-panels-in-ubuntu-back-to-their-default-settings.html&sa=D&sntz=1&usg=AFQjCNHAEFYUaK7ztqIKEgF563uoWWTHBw))
 
 ```bash
-gconftool --recursive-unset /apps/panel
-rm -rf ~/.gconf/apps/panel
-pkill gnome-panel
+$ gconftool --recursive-unset /apps/panel
+$ rm -rf ~/.gconf/apps/panel
+$ pkill gnome-panel
 ```
 
 ## Concatenar PDF's
@@ -106,16 +106,16 @@ pkill gnome-panel
 Con `pdftk` programa en linea de comando para procesar ficheros PDF. Está para casi todas las plataformas.
 
 ```bash
-sudo aptitude search pdftk
+$ sudo aptitude search pdftk
 i pdftk - A useful tool for manipulating PDF documents
 
-sudo aptitude install pdftk
+$ sudo aptitude install pdftk
 ```
 
 Concatenar todos los archivos facilmente que tengas en una carpeta:
 
 ```bash
-pdftk carpeta_con_todos_ficheros/*.pdf cat output fichero_concatenado.pdf
+$ pdftk carpeta_con_todos_ficheros/*.pdf cat output fichero_concatenado.pdf
 ```
 
 Tiene muchas mas funcionalidades consultables con –help, pero si quieres, puedes echarle un vistazo a un [articulo de Linux-Magazine “PDF a tope”](https://www.linux-magazine.es/issue/12/PDFTk.pdf).
@@ -253,19 +253,19 @@ Java HotSpot(TM) 64-Bit Server VM (build 23.1-b03, mixed mode)
 Para ver cómo ha quedado el estado de las alternativas:
 
 ```bash
-update-alternatives --config java
+$ update-alternatives --config java
 ```
 
 Para ver físicamente cómo han quedado las alternativas relativas a `java`:
 
 ```bash
-ls -l /etc/alternatives/java*
+$ ls -l /etc/alternatives/java*
 ```
 
 Si nos interesa borrar alguna de las alternativas (por ejemplo una para `java`):
 
 ```bash
-sudo update-alternatives --remove java /usr/lib/jvm/jdk1.8.0_20/bin/java
+$ sudo update-alternatives --remove java /usr/lib/jvm/jdk1.8.0_20/bin/java
 ```
 
 Hay un PPA para poder instalar el JDK más fácilmente. Se pueden ver las instrucciones [aquí](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html).
@@ -273,7 +273,7 @@ Hay un PPA para poder instalar el JDK más fácilmente. Se pueden ver las instru
 ## Reparación del sistema de archivos cuando se pone en modo "sólo lectura"
 
 ```bash
-sudo fsck
+$ sudo fsck
 ```
 
 ## Descarga de un vídeo incrustado en un reproductor Flash
@@ -301,7 +301,7 @@ rtmp://antena3tvfs.fplive.net/antena3mediateca/mp_series1/f1cms/gestorf1/videos/
 Descargar el stream con el comando "rtmpdump":
 
 ```bash
-rtmpdump -r "rtmp://antena3tvfs.fplive.net/antena3mediateca/mp_series1/f1cms/gestorf1/videos/517/VIDEOS_20130512_1315517.mp4" -o archivo.mp4
+$ rtmpdump -r "rtmp://antena3tvfs.fplive.net/antena3mediateca/mp_series1/f1cms/gestorf1/videos/517/VIDEOS_20130512_1315517.mp4" -o archivo.mp4
 ```
 
 En ocasiones se produce el error siguiente:
@@ -313,7 +313,7 @@ WARNING: Received FLV packet before play()! Ignoring.
 En estos casos utilizar el siguiente comando que separa las dos porciones de la URL:
 
 ```bash
-rtmpdump -r "rtmp://alacarta.aragontelevision.es/vod" -y "mp4:/_archivos/videos/web/15288/15288.mp4" -o archivo.flv
+$ rtmpdump -r "rtmp://alacarta.aragontelevision.es/vod" -y "mp4:/_archivos/videos/web/15288/15288.mp4" -o archivo.flv
 ```
 
 Para vídeos de emisiones en vivo hay que añadir la opción `-v`. Por ejemplo, en una emisión de AragónTV, en la captura Wireshark se localizaron los siguientes elementos:
@@ -324,7 +324,7 @@ Para vídeos de emisiones en vivo hay que añadir la opción `-v`. Por ejemplo, 
 Así pues la URL final será: `rtmp://aragontvlivefs.fplive.net/aragontvlive-live/stream_normal_abt` y el comando de descarga:
 
 ```bash
-rtmpdump -v -r "rtmp://aragontvlivefs.fplive.net/aragontvlive-live/stream_normal_abt" -o archivo.mp4
+$ rtmpdump -v -r "rtmp://aragontvlivefs.fplive.net/aragontvlive-live/stream_normal_abt" -o archivo.mp4
 ```
 
 Para descargar vídeos desde YouTube, last.fm, Google video, Dailymotion y Vimeo se puede utilizar el comando `clive`. [Aquí](http://www.emezeta.com/articulos/10-comandos-interesantes-para-linux) comentan cómo se usa.
@@ -355,8 +355,8 @@ Instalar el cliente de linea de comando de [Handbrake](http://handbrake.fr/downl
 Dependiendo de la extensión habrá que cambiar el `ls` inicial. Los vídeos de salida son MP4, por lo que si la extensión inicial no es esa, habrá que cambiarla en los ficheros finales.
 
 ```bash
-mkdir comp
-ls *.mp4 | awk '{print "HandBrakeCLI -Z Normal -i "$0" -o comp/"$0}' | sh
+$ mkdir comp
+$ ls *.mp4 | awk '{print "HandBrakeCLI -Z Normal -i "$0" -o comp/"$0}' | sh
 ```
 
 ## Resampleado de video con HandBrake
@@ -372,7 +372,7 @@ On the Video tab use Avg Bitrate and use 2500 to 3000 depending if a big action 
 Con el siguiente comando:
 
 ```bash
-ffmpeg -acodec copy -vcodec copy -ss 00:00:00 -t 00:04:09 -i archivo3.mp4 p1.mp4
+$ ffmpeg -acodec copy -vcodec copy -ss 00:00:00 -t 00:04:09 -i archivo3.mp4 p1.mp4
 ```
 
 Donde el valor de la opción -ss es el instante de inicio en hh:mm:ss y el valor de -t es la longitud en hh:mm:ss
@@ -382,13 +382,13 @@ Donde el valor de la opción -ss es el instante de inicio en hh:mm:ss y el valor
 Ajustar a 200 px de ancho manteniendo el ratio:
 
 ```bash
-convert '*.jpg[200x]' resized%03d.png
+$ convert '*.jpg[200x]' resized%03d.png
 ```
 
 Ajustar a 200 px de alto manteniendo el ratio:
 
 ```bash
-convert '*.jpg[x200]' resized%03d.png
+$ convert '*.jpg[x200]' resized%03d.png
 ```
 
 ## Montaje de vídeo StopMotion a partir de fotos
@@ -396,14 +396,14 @@ convert '*.jpg[x200]' resized%03d.png
 Primero redimensionar las imágenes. Por ejemplo a 1080 de alto dentro de un directorio llamado resized:
 
 ```bash
-convert '*.jpg[x1080]' resized/%03d.jpg
+$ convert '*.jpg[x1080]' resized/%03d.jpg
 ```
 
 En ocasiones, si hay varios miles de fotos, se puede llenar la memoria. En este caso hacer la conversión con el siguiente comando, que trata las imágenes una a una:
 
 ```bash
-a=1
-for i in *.jpg; do
+$ a=1
+$ for i in *.jpg; do
   new=$(printf "%04d.jpg" ${a})
   convert ${i}[x1080] resized/${new}
   let a=a+1
@@ -413,20 +413,20 @@ done
 Luego montar el vídeo con el siguiente comando a 25fps:
 
 ```bash
-ffmpeg -r 25 -b 1800 -i "resized/%03d.jpg" "video.mp4"
+$ ffmpeg -r 25 -b 1800 -i "resized/%03d.jpg" "video.mp4"
 ```
 
 También se puede utilizar `avconv` que es un fork de `ffmpeg`:
 
 ```bash
-avconv -r 25 -b 1800 -i "resized/%03d.jpg" "video.mp4"
+$ avconv -r 25 -b 1800 -i "resized/%03d.jpg" "video.mp4"
 ```
 
 Si hay que renombrar previamente las imágenes se puede utilizar el siguiente bucle:
 
 ```bash
-a=1
-for i in *.jpg; do
+$ a=1
+$ for i in *.jpg; do
   new=$(printf "%04d.jpg" ${a})
   mv ${i} ${new}
   let a=a+1
@@ -438,8 +438,8 @@ done
 Ejecutar lo siguiente:
 
 ```bash
-sudo dpkg-reconfigure wireshark-common
-sudo usermod -a -G wireshark <usuario>
+$ sudo dpkg-reconfigure wireshark-common
+$ sudo usermod -a -G wireshark <usuario>
 ```
 
 Reiniciar la sesión.
@@ -455,5 +455,5 @@ Usando `kpartx` explicado [aquí](http://www.forensicswiki.org/wiki/Mounting_Dis
 ## Screencast
 
 ```bash
-avconv -f x11grab -r 25 -s 910x550 -i :0.0 -vcodec huffyuv screencast.avi
+$ avconv -f x11grab -r 25 -s 910x550 -i :0.0 -vcodec huffyuv screencast.avi
 ```

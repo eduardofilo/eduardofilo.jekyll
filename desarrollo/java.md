@@ -10,7 +10,7 @@ permalink: /desarrollo/java.html
 Para re-enlatar un jar que hemos explotado para retocar su contendido, hay que ejecutar el siguiente comando desde el directorio raíz donde descomprimimos el jar original:
 
 ```bash
-jar cvf nombre.jar *
+$ jar cvf nombre.jar *
 ```
 
 ## Contar lineas
@@ -18,7 +18,7 @@ jar cvf nombre.jar *
 Para contar las lineas de un proyecto, lanzar desde la raíz del proyecto ( el directorio src/java de un proyecto NetBeans, por ejemplo):
 
 ```bash
-find . -name "*.java" | xargs wc -l
+$ find . -name "*.java" | xargs wc -l
 ```
 
 ## Iterar un Map

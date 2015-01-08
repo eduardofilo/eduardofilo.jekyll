@@ -83,9 +83,9 @@ Las preferencias ajustadas de esta forma acaban en la base de datos en la tabla 
 Cuando aparezca una nueva versión de Spree y se quiera actualizar hay que proceder como sigue:
 
 ```bash
-bundle update spree
-bundle exec rake railties:install:migrations
-bundle exec rake db:migrate
+$ bundle update spree
+$ bundle exec rake railties:install:migrations
+$ bundle exec rake db:migrate
 ```
 
 ### Tareas "rake"
@@ -103,7 +103,7 @@ El instalador de las últimas versiones no es del todo redondo (al menos en el m
 Ejecutar en consola lo siguiente:
 
 ```bash
-rails new spapp
+$ rails new spapp
 ```
 
 Modificamos la linea de la gem `jquery-rails` poniendo:
@@ -113,8 +113,8 @@ Modificamos la linea de la gem `jquery-rails` poniendo:
 Ejecutamos:
 
 ```bash
-cd spapp
-spree install
+$ cd spapp
+$ spree install
 ```
 
 Decimos "yes" a todas las preguntas. Cuando termine volvemos a modificar Gemfile sustituyendo las versiones de las gems de Spree que ha añadido el script por las siguientes:
@@ -126,7 +126,7 @@ Decimos "yes" a todas las preguntas. Cuando termine volvemos a modificar Gemfile
 Finalmente de nuevo ejecutamos:
 
 ```bash
-bundle install
+$ bundle install
 ```
 
 ### Configuración para enviar correos
@@ -166,7 +166,7 @@ gem 'mail', '2.5.3'
 La última versión de `mail` es la 2.5.4 que será la que normalmente esté instalada. Para hacer el downgrade hay que ejecutar desde el directorio de nuestro proyecto:
 
 ```bash
-bundle update mail
+$ bundle update mail
 ```
 
 En posteriores versiones de las gemas ya funcionaba con la versión 2.5.4 de `mail` por lo que dejó de ser necesario hacer este apaño.
@@ -207,7 +207,7 @@ end
 Si queremos comenzar de nuevo en lo que respecta a la base de datos, se puede hacer fácilmente con el siguiente comando:
 
 ```bash
-bundle exec rake db:reset
+$ bundle exec rake db:reset
 ```
 
 A nivel de ficheros habrá que hacer la limpieza a mano. En el Spree básico, como mínimo habría que borrar el directorio `rails_root/public/spree/products`.

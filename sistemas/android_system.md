@@ -192,10 +192,10 @@ In /system/etc/fast-dormancy/fd_custm_conf.txt replace the 0s with your MNC and 
 #### Solucion al problema de permisos de la memoria interna ([fuente](http://forum.xda-developers.com/showthread.php?t=2794704))
 
 ```bash
-su
-cd /mnt/media_rw
-busybox chown -R 2800:2800 sdcard0
-chmod 0770 sdcard0
+$ su
+# cd /mnt/media_rw
+# busybox chown -R 2800:2800 sdcard0
+# chmod 0770 sdcard0
 ```
 
 ### Sony Xperia U

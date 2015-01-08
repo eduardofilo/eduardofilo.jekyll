@@ -56,16 +56,16 @@ IFS=$SAVEIFS
 En realidad el script anterior hace lo mismo que el simple comando siguiente:
 
 ```bash
-fgrep -rl "[cadena a buscar]" .
+$ fgrep -rl "[cadena a buscar]" .
 ```
 
 ## Ajustes de permisos a ficheros y directorios por separado
 
 ```bash
-# Para los ficheros:
-find . ! -type d -exec chmod 664 {} \;
-# Para los directorios:
-find . -type d -exec chmod 775 {} \;
+$ #Para los ficheros:
+$ find . ! -type d -exec chmod 664 {} \;
+$ #Para los directorios:
+$ find . -type d -exec chmod 775 {} \;
 ```
 
 ## Renombrado de ficheros de mayúsculas a minúsculas
@@ -85,7 +85,7 @@ done
 Para redirigir ambas salidas de un programa (estandar y error) hacer lo siguiente:
 
 ```bash
-COMANDO > FICHERO_O_DISPOSITIVO 2>&1
+$ COMANDO > FICHERO_O_DISPOSITIVO 2>&1
 ```
 
 En [esta página](http://sc.tamu.edu/help/general/unix/redirection.html) se documenta con más detalle este tema.
@@ -113,8 +113,8 @@ En [esta página](http://sc.tamu.edu/help/general/unix/redirection.html) se docu
 Los paquetes de Java 6 (1.6) en Ubuntu tienen problemas a la hora de ajustar los alias en /etc/alternatives cuando antes ha estado instalada otra versión (1.5 por ejemplo). Se puede forzar la generación de los alias mediante las siguientes ordenes:
 
 ```bash
-update-java-alternatives --list
-sudo update-java-alternatives --set [elegir el identificador de la lista que muestra el comando anterior]
+$ update-java-alternatives --list
+$ sudo update-java-alternatives --set [elegir el identificador de la lista que muestra el comando anterior]
 ```
 
 ## Bits SUID, SGID y sticky
@@ -170,7 +170,7 @@ $ chmod 600 ~/.ssh/authorized_keys
 La conexión SSH se realizará indicando el fichero con la clave privada como argumento de la siguiente forma:
 
 ```bash
-ssh -i ~/.ssh/id_rsa user@machine
+$ ssh -i ~/.ssh/id_rsa user@machine
 ```
 
 (Si el nombre del fichero con la clave privada es precisamente el del ejemplo, es decir `id_rsa`, creo que no es necesario indicarlo con la opción `-i`).
@@ -182,19 +182,19 @@ ssh -i ~/.ssh/id_rsa user@machine
 * Vaya al subdirectorio de complementos, situado dentro del directorio de instalación de Mozilla.
 
 ```bash
-	cd `<directorio de instalación de Mozilla>`/plugins  # Normalmente /usr/lib/firefox/plugins
+$ cd `<directorio de instalación de Mozilla>`/plugins  # Normalmente /usr/lib/firefox/plugins
 ```
 
 o
 
 ```bash
-	cd `<home del usuario>`/.mozilla/plugins
+$ cd `<home del usuario>`/.mozilla/plugins
 ```
 
 * En el directorio actual, cree un vínculo simbólico al archivo del JRE ns7/libjavaplugin_oji.so. Escriba:
 
 ```bash
-	ln -s `<directorio de instalación del JRE>`/plugin/i386/ns7/libjavaplugin_oji.so
+$ ln -s `<directorio de instalación del JRE>`/plugin/i386/ns7/libjavaplugin_oji.so
 ```
 
 * Inicie el navegador Mozilla o reinícielo si ya se estaba ejecutando. Tenga en cuenta que, si se está ejecutando algún otro componente de Mozilla (como Messenger, Composer, etc.) deberá también reiniciarlo.
@@ -212,13 +212,13 @@ GNU/Linux nos permite tener varios sistemas de escritorio diferentes instalados 
 Runtime error. The linker hasn't found your libraries. Either they are not installed properly or the linker doesn't know where they are (most probably in `/usr/local/lib`). To get your linker to update its list of libraries type:
 
 ```bash
-ldconfig /usr/local/lib
+$ ldconfig /usr/local/lib
 ```
 
 or as a temporary measure:
 
 ```bash
-export LD_LIBRARY_PATH="/usr/local/lib"
+$ export LD_LIBRARY_PATH="/usr/local/lib"
 ```
 
 ## Compartir ficheros con Samba
@@ -226,7 +226,7 @@ export LD_LIBRARY_PATH="/usr/local/lib"
 Aparte de instalar y configurar Samba (fichero `/etc/samba/smb.conf`) hay que dar de alta los usuarios UNIX que se usarán a través de Samba y asignarles un password para el acceso por el mismo. Esto se hace con el comando:
 
 ```bash
-sudo smbpasswd -a usuario
+$ sudo smbpasswd -a usuario
 ```
 
 ## Migración masiva de usuarios
@@ -363,7 +363,7 @@ Hay que fijarse que la linea anterior normalmente ya aparece en el fichero pero 
 **Importante**: La edición del fichero `/etc/sudoers` sólo se puede hacer con el comando `visudo`. Este comando hay que lanzarlo con `sudo` a su vez, por lo que se hará de la siguiente forma:
 
 ```bash
-sudo visudo
+$ sudo visudo
 ```
 
 ## Proxy HTTP en consola
@@ -371,14 +371,14 @@ sudo visudo
 Setting up proxy at Firefox do not have effects at console, which means your wget, ssh, apt-get, yum etc do not access through the proxy you set at Firfox browser. To setup http proxy at console, you can do as bellow, assume the proxy IP is 219.93.2.113 and port 3128:
 
 ```bash
-export http_proxy='http://219.93.2.113:3128/'
+$ export http_proxy='http://219.93.2.113:3128/'
 ```
 
 Remember, you have to specified http://, and to know more about export, check out HERE.
 To clear your http proxy and use back yours, do this:
 
 ```bash
-export http_proxy=''
+$ export http_proxy=''
 ```
 
 ## Convertir nombres de ficheros de ISO a UTF-8
@@ -386,7 +386,7 @@ export http_proxy=''
 Al migrar una web, o al copiar un sistema de archivos, te puedes encontrar con nombres de ficheros en otras codificaciones de caracteres. Mediante el siguiente comando transformaríamos los nombres de ficheros desde ISO-8869-1 a UTF-8:
 
 ```bash
-convmv -r -f ISO-8859-1 -t UTF-8  --notest *
+$ convmv -r -f ISO-8859-1 -t UTF-8  --notest *
 ```
 
 ## Backup de un FileSystem
@@ -394,13 +394,13 @@ convmv -r -f ISO-8859-1 -t UTF-8  --notest *
 Backup:
 
 ```bash
-dd if=/dev/hdx | gzip > /path/to/image.gz
+$ dd if=/dev/hdx | gzip > /path/to/image.gz
 ```
 
 Restauración:
 
 ```bash
-gzip -dc /path/to/image.gz | dd of=/dev/hdx
+$ gzip -dc /path/to/image.gz | dd of=/dev/hdx
 ```
 
 ## Manipulación de PDFs
@@ -408,19 +408,19 @@ gzip -dc /path/to/image.gz | dd of=/dev/hdx
 División en múltiples ficheros (uno por página):
 
 ```bash
-pdftk largepdfile.pdf burst
+$ pdftk largepdfile.pdf burst
 ```
 
 Fusión de varios ficheros en uno:
 
 ```bash
-pdftk *.pdf cat output onelargepdfile.pdf
+$ pdftk *.pdf cat output onelargepdfile.pdf
 ```
 
 ## Obtener hash MD5 de una cadena
 
 ```bash
-echo -n "<cadena>"|md5sum
+$ echo -n "<cadena>"|md5sum
 ```
 
 ## System + MySQL backup script

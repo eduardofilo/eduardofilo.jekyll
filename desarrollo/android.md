@@ -86,7 +86,7 @@ Solicitar el permiso siguiente:
 Ejemplo de una expresión de filtrado que suprime (silencia) todos los mensajes de log excepto los que tienen el tag "ActivityManager" con una prioridad Info o superior, y los que tienen el tag "MyApp" con una prioridad Debug o superior:
 
 ```bash
-adb logcat ActivityManager:I MyApp:D *:S
+$ adb logcat ActivityManager:I MyApp:D *:S
 ```
 
 Las prioridades de log son:
@@ -104,11 +104,11 @@ Las prioridades de log son:
 Hace un volcado de los datos del sistema. Viene bien para encontrar componentes instalados (Aplicaciones, ContentProvider's, etc.):
 
 ```bash
-adb shell dumpsys
+$ adb shell dumpsys
 ```
 
 ```bash
-adb shell dumpstate
+$ adb shell dumpstate
 ```
 
 ## Buscar CallerID
