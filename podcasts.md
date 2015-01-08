@@ -4,9 +4,11 @@ title: Directorio Podcasts
 permalink: /podcasts.html
 ---
 
+# Directorio de Podcasts
+
 Esta es la lista de podcasts que escucho/recomiendo:
 
-# Español
+## Español
 
 * [GeoCastAway](http://www.geocastaway.com/) - [Feed RSS](http://feeds.feedburner.com/geocastawaypodcast)
 * [Radio Fitness Revolucionario](http://www.fitnessrevolucionario.com/category/radio-fitness-revolucionario/) - [Feed RSS](http://www.ivoox.com/radio-fitness-revolucionario_fg_f1115589_filtro_1.xml)
@@ -46,18 +48,18 @@ Esta es la lista de podcasts que escucho/recomiendo:
 * [Droidcast Android](http://www.droidcast.es/) - [Feed RSS](http://feeds.feedburner.com/droidcast)
 * [A Través del Universo](http://universo.iaa.es/) - [Feed RSS](http://feeds.feedburner.com/ATravesDelUniverso): Cancelado pero mantiene el feed.
 
-# Música
+## Música
 
 * [Brain Damage](http://floydpodcast.com/) - [Feed RSS](http://braindamage.libsyn.com/rss)
 * [Los imprescindibles](http://www.rtve.es/alacarta/audios/los-imprescindibles/) - [Feed RSS](http://www.rtve.es/api/programas/23352/audios.rss)
 
-# Vídeo
+## Vídeo
 
 * [El extraño caso de Henrietta S. Leavitt & Erasmus Cefeido](http://henrietta.iaa.es/) - [Feed RSS](http://henrietta.iaa.es/feed.xml)
 * [Redes](http://www.redesparalaciencia.com/programa-redes) - [Feed RSS](http://www.redesparalaciencia.com/redes.rss)
 * [NASACast Video](http://www.nasa.gov/multimedia/podcasting/#.VJYSXAAA) - [Feed RSS](http://www.nasa.gov/rss/dyn/NASAcast_vodcast.rss)
 
-# Inglés
+## Inglés
 
 * [StarTalk Radio Show by Neil deGrasse Tyson](http://www.startalkradio.net/) - [Feed RSS](http://www.startalkradio.net/feed/shows/)
 * [The Moth Podcast](http://themoth.org/about/programs/the-moth-podcast) - [Feed RSS](http://feeds.feedburner.com/themothpodcast)
