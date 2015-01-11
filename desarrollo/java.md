@@ -5,6 +5,10 @@ permalink: /desarrollo/java.html
 
 # Java
 
+## Enlaces
+
+* [Java Decompiler](http://jd.benow.ca/)
+
 ## Reempaquetar un jar
 
 Para re-enlatar un jar que hemos explotado para retocar su contendido, hay que ejecutar el siguiente comando desde el directorio raíz donde descomprimimos el jar original:
