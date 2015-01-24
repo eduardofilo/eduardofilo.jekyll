@@ -31,6 +31,7 @@ permalink: /sistemas/unix.html
 *  `cat fichero.txt | sed -e 's/ /\n/g'`: Sustituye todos los espacios del fichero por retornos de carro.
 *  `netstat -ntu|grep :80|wc -l`: número de conexiones al servidor HTTP.
 *  `netstat -ntu|grep :21|wc -l`: número de conexiones al servidor FTP.
+*  `netstat -tulanp`: Lista los puertos TCP/UDP abiertos.
 *  `crontab -e`: Añadir un job a cron.
 *  `sudo badblocks /dev/sda > badblocks.txt; sudo fsck -l badblocks.txt /dev/sda`: Bloqueo de sectores defectuosos del disco duro ([fuente](http://tech.chandrahasa.com/2013/06/09/how-to-check-your-hard-disk-for-bad-blocks-in-ubuntu/)).
 *  `sudo blkid`: Lista los dispositivos de bloques (discos) disponibles en el sistema.
