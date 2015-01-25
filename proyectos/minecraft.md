@@ -18,7 +18,7 @@ permalink: /proyectos/minecraft.html
 * [How to 3D print what you build in Minecraft … TUTORIAL WITH VIDEO!](http://blogs.ncs-nj.org/minecraft/2013/12/14/how-to-3d-print-what-you-build-in-minecraft-tutorial-with-video/)
 * [Minecraft Projects](http://www.planetminecraft.com/resources/projects/)
 * [Guía / Manual del juego Minecraft](http://www.trucoteca.com/guia-minecraft/pc-12340.html)
-* [Minecraft Crafting y Guía de Referencia - La elaboración de recetas, los valores de datos & Pociones](http://diamondboots.com/)
+* [Minecraft Crafting y Guía de Referencia - La elaboración de recetas, los valores de datos & Pociones](http://diamondboots.com/) :exclamation:
 * [Mineplex](http://mineplex.net/about): Servidores de juego con reglas adaptadas (Survival con protección de terreno y normas éticas).
 * [Minecraft sobre ARM](http://rogerallen.github.io/jetson/2014/07/31/minecraft-on-jetson-tk1/): Compilación de librerías LWJGL y OpenAL para lanzar Minecraft (completo, no Pocket edition) sobre ARM.
 
