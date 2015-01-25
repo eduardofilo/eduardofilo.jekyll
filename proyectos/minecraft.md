@@ -203,6 +203,19 @@ worlds:
 * `//wand`: Te otorga la herramienta para definir regiones cúbicas o planas.
 * `//walls <material>`: Rellena la región definida con `wand` con el material indicado.
 
+### Bloques que suelen demandar los alumnos
+
+Es útil tener a mano [esta guía](http://diamondboots.com/), aunque tiene el inconveniente de que está en inglés y que parece de una versión distinta a la que solemos usar, porque hay elementos de esta lista que no aparecen en nuestro servidor.
+
+Indico el nombre del elemento en inglés, luego su código y finalmente el nombre del elemento en español:
+
+* LEASH - 420 - Riendas
+* IRON_BARDING - 417 - Armadura de caballo de hierro
+* BOW - 261 - Arco
+* ARROW - 262 - Flechas
+* SADDLE - 329 - Silla de montar
+* FENCE - 85 - Valla
+
 ### Montaje de un mundo plano para talleres
 
 Antes de empezar paramos el servidor. Generamos un mundo nuevo cambiando lo siguiente en `server.properties`:
