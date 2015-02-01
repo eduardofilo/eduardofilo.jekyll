@@ -38,9 +38,9 @@ $ xzcat ubuntu-14.04.1lts-lubuntu-odroid-c1-20141211.img.xz | sudo dd of=/dev/mm
 
 ```bash
 $ #Backup:
-$ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
+$ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > odroid_8gb_backup.img.gz
 $ #Restauración:
-$ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
+$ gunzip odroid_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Control de progreso durante flasheo
