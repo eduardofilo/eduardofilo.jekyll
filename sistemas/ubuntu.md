@@ -472,7 +472,10 @@ Si se necesita definir una variable global se podrá hacer en los ficheros:
 
 * `/etc/environment`
 * `/etc/profile`
+* `/etc/profile.d`
+* `/etc/bashrc` o `/etc/bash.bashrc`
 
 Si es a nivel de usuario se hará en:
 
 * `~/.bashrc`
+* `~/.bash_profile`
