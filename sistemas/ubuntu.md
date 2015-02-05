@@ -465,3 +465,14 @@ $ sudo modprobe <modulo>
 ```
 
 Si se quiere añadir de forma permanente, es decir, de forma automática en el arranque, se incorpora el nombre del módulo al fichero `/etc/modules`
+
+## Ficheros definición variables de entorno
+
+Si se necesita definir una variable global se podrá hacer en los ficheros:
+
+* `/etc/environment`
+* `/etc/profile`
+
+Si es a nivel de usuario se hará en:
+
+* `~/.bashrc`
