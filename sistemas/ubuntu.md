@@ -466,7 +466,13 @@ $ avconv -f x11grab -r 25 -s 910x550 -i :0.0 -vcodec huffyuv screencast.avi
 $ sudo modprobe <modulo>
 ```
 
-Si se quiere añadir de forma permanente, es decir, de forma automática en el arranque, se incorpora el nombre del módulo al fichero `/etc/modules`
+Si se quiere añadir de forma permanente, es decir, de forma automática en el arranque, se incorpora el nombre del módulo al fichero `/etc/modules`.
+
+Cuando el módulo que se carga es un driver de un dispositivo, el kernel envía un evento al subsistema `udev`. La monitorización de estos mensajes se puede hacer teniendo abierto un terminal con el siguiente comando lanzado ([fuente](https://wiki.ubuntu.com/Kernel/Firmware)):
+
+```bash
+$ udevadm monitor --property
+```
 
 ### Listado de módulos
 
