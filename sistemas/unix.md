@@ -37,6 +37,7 @@ permalink: /sistemas/unix.html
 *  `sudo blkid`: Lista los dispositivos de bloques (discos) disponibles en el sistema.
 *  `sudo nmap -PR -sP 192.168.1.0/24`: Descubrir todos los equipos presentes en la red `192.168.1.0`.
 *  `sudo netstat -lp --inet`: Puertos de red abiertos y procesos asociados.
+*  `sudo usermod -a -G groupName userName`: Añade el usuario userName ya existente al grupo groupName.
 
 ## Búqueda de ficheros que contienen una cadena
 
