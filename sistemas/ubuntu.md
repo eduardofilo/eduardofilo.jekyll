@@ -458,13 +458,27 @@ Usando `kpartx` explicado [aquí](http://www.forensicswiki.org/wiki/Mounting_Dis
 $ avconv -f x11grab -r 25 -s 910x550 -i :0.0 -vcodec huffyuv screencast.avi
 ```
 
-## Añadir un módulo al kernel
+## Gestión de módulos
+
+### Añadir un módulo al kernel
 
 ```bash
 $ sudo modprobe <modulo>
 ```
 
 Si se quiere añadir de forma permanente, es decir, de forma automática en el arranque, se incorpora el nombre del módulo al fichero `/etc/modules`
+
+### Listado de módulos
+
+```bash
+$ lsmod
+```
+
+### Información de un módulo
+
+```bash
+$ modinfo <modulo>
+```
 
 ## Ficheros definición variables de entorno
 
