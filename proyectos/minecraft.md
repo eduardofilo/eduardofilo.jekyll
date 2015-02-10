@@ -90,32 +90,32 @@ $ sudo java -Xms256M -Xmx496M -jar /home/mine/spigot/spigot.jar nogui
 #Minecraft server properties
 #Thu Jan 03 16:16:28 WET 2013
 
-white-list=false #Si se activa sólo se permitirá la incorporación a la partida de determinados jugadores
-level-seed=
-view-distance=4
-server-ip=
-allow-nether=false
-enable-query=false #Si se permite obtener información del servidor mediante el protocolo GameSpy4
-hardcore=false
+level-name=world #Determina la carpeta donde se almacena el mundo. Por tanto sirve para cambiar de mundo
 level-type=DEFAULT
-enable-rcon=false
 server-name=Niubit Server
 motd=Raspberry Pi Minecraft server
+max-players=6 #Máximo de jugadores admitidos
+online-mode=false
 spawn-monsters=false #No se generan monstruos
 spawn-npcs=false #No se generan vecinos (villagers)
 spawn-animals=true #Se generan animales
 spawn-protection=16
+generate-structures=true #Determina si se generan estructuras (como ciudades)
 gamemode=1 #Creative
 difficulty=0 #Peaceful
+pvp=false #No se permiten daños entre jugadores
+view-distance=4 #Es una medida del radio de visión que tienen los jugadores. Influye en el rendimiento del servidor
 allow-flight=true #En modo Creative creo que se permite siempre
+allow-nether=false
+white-list=false #Si se activa sólo se permitirá la incorporación a la partida de determinados jugadores
+level-seed=
+server-ip=
+enable-query=false #Si se permite obtener información del servidor mediante el protocolo GameSpy4
+hardcore=false
+enable-rcon=false
 generator-settings=
-level-name=world #Determina la carpeta donde se almacena el mundo. Por tanto sirve para cambiar de mundo
-generate-structures=true #Determina si se generan estructuras (como ciudades)
-online-mode=false
-max-players=6 #Máximo de jugadores admitidos
 server-port=25565
 max-build-height=208 #Altura máxima permitida para construir, aunque el terreno generado puede superarla
-pvp=false #No se permiten daños entre jugadores
 snooper-enabled=false #Si se envían periódicamente datos a snoop.minecraft.net
 op-permission-level=4 #Nivel máximo de permisos de op
 announce-player-achievements=true #Se anuncian los logros obtenidos por los jugadores
