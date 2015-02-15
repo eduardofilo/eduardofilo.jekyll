@@ -205,7 +205,9 @@ worlds:
 ##### WorldEdit
 
 * `//wand`: Te otorga la herramienta para definir regiones cúbicas o planas.
-* `//walls <material>`: Rellena la región definida con `wand` con el material indicado.
+* `//walls <material>`: Construye las 4 paredes del paralelepípedo definido por la selección (dejando el suelo y techo sin construir).
+* `//faces <material>`: Construye las 6 paredes del paralelepípedo definido por la selección.
+* `//set <material>`: Rellena todo el paralelepípedo definido por la selección.
 
 ### Bloques que suelen demandar los alumnos
 
@@ -219,6 +221,8 @@ Indico el nombre del elemento en inglés, luego su código y finalmente el nombr
 * ARROW - 262 - Flechas
 * SADDLE - 329 - Silla de montar
 * FENCE - 85 - Valla
+* DIRT - 3 - Tierra
+* BEDROCK - 7 - Piedra base
 
 ### Montaje de un mundo plano para talleres
 
