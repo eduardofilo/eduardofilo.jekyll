@@ -121,6 +121,9 @@ op-permission-level=4 #Nivel máximo de permisos de op
 announce-player-achievements=true #Se anuncian los logros obtenidos por los jugadores
 debug=false
 force-gamemode=true #Fuerza la configuración del servidor a cada jugador
+resource-pack=
+enable-command-block=false
+player-idle-timeout=0
 ```
 
 *bukkit.yml*
