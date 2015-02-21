@@ -71,6 +71,10 @@ permalink: /proyectos/minecraft.html
 * [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/): Editor de mundos. Comandos [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Documentación [aquí](http://wiki.sk89q.com/wiki/WorldEdit).
 * [StopRain](http://dev.bukkit.org/bukkit-plugins/stoprain/): Desactiva la lluvia.
 * [Essentials](http://dev.bukkit.org/bukkit-plugins/essentials/)
+* [Printbot](http://dev.bukkit.org/bukkit-plugins/printbot/): Impresión 3D de partes de un mundo. Tiene dependencias con los plugins [WorldGuard](http://dev.bukkit.org/bukkit-plugins/worldguard/) y con [WorldEdit](http://dev.bukkit.org/bukkit-plugins/worldedit/). Hay bastante sensibilidad con las versiones. Una combinación que se ha probado que funciona es:
+  * WorldEdit v5.5.8
+  * [WorldGuard v5.9](http://dev.bukkit.org/bukkit-plugins/worldguard/files/40-world-guard-5-9/)
+  * [Printbot v1.5.0](http://dev.bukkit.org/bukkit-plugins/printbot/files/2-printbot-1-5-0/)
 
 ## Ejecución Servidor en Raspberry Pi
 
@@ -204,10 +208,18 @@ worlds:
 
 ##### WorldEdit
 
+Los comandos de WorldEdit sólo se pueden lanzar desde la consola que hay dentro del juego (tecla `T`). Por ese motivo llevan la `/` delante, aunque curiosamente la mayoría de los comandos de WorldEdit llevan una doble `/` en realidad. Para poder utilizar WorldEdit el jugador debe ser operador (comando `op <jugador>` desde consola. Hay que acordarse de quitar el permiso de operador a todos los jugadores para no tener problemas de bloqueo de bloques alrededor del punto de spawn.
+
 * `//wand`: Te otorga la herramienta para definir regiones cúbicas o planas.
 * `//walls <material>`: Construye las 4 paredes del paralelepípedo definido por la selección (dejando el suelo y techo sin construir).
 * `//faces <material>`: Construye las 6 paredes del paralelepípedo definido por la selección.
 * `//set <material>`: Rellena todo el paralelepípedo definido por la selección.
+
+##### Printbot
+
+Para poder utilizar este plugin, necesitamos tener instalados los plugins de WorldEdit y WorldGuard. Los comandos de Printbot sólo se pueden lanzar siendo op.
+
+* `/printselection`: Previamente deberemos haber hecho una selección por medio de WorldEdit. Este comando envía información sobre lo que contenga la selección a los servidores de Printbot y tras un periodo de proceso aparece en la consola del juego una URL que nos permitirá descargar el fichero STL que podremos imprimir con la impresora 3D.
 
 ### Bloques que suelen demandar los alumnos
 
