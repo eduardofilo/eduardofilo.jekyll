@@ -29,6 +29,7 @@ permalink: /sistemas/raspi.html
 * [Using a Console Cable](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable?view=all)
 * [Adaptador Wifi (RTL8188CUS)](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1079)
 * [Adaptador TDT Conceptronic C08-096 (RTL2832)](http://www.amazon.es/Conceptronic-C08-096-receptor-Dvb-T-radio/dp/B003KCKERE)
+* [Receptor infrarrojos](https://energenie4u.co.uk/catalogue/category/PiMote)
 
 ## Distribuciones
 
