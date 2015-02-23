@@ -19,6 +19,7 @@ permalink: /proyectos/minecraft.html
 * [Minecraft Projects](http://www.planetminecraft.com/resources/projects/)
 * [Guía / Manual del juego Minecraft](http://www.trucoteca.com/guia-minecraft/pc-12340.html)
 * [Minecraft Crafting y Guía de Referencia - La elaboración de recetas, los valores de datos & Pociones](http://diamondboots.com/) :exclamation:
+* [Guía de crafteo](http://minecraftporjorge134.weebly.com/guia-de-crafteo.html) :exclamation:
 * [Mineplex](http://mineplex.net/about): Servidores de juego con reglas adaptadas (Survival con protección de terreno y normas éticas).
 * [Minecraft sobre ARM](http://rogerallen.github.io/jetson/2014/07/31/minecraft-on-jetson-tk1/): Compilación de librerías LWJGL y OpenAL para lanzar Minecraft (completo, no Pocket edition) sobre ARM.
 
@@ -221,21 +222,6 @@ Para poder utilizar este plugin, necesitamos tener instalados los plugins de Wor
 
 * `/printselection`: Previamente deberemos haber hecho una selección por medio de WorldEdit. Este comando envía información sobre lo que contenga la selección a los servidores de Printbot y tras un periodo de proceso aparece en la consola del juego una URL que nos permitirá descargar el fichero STL que podremos imprimir con la impresora 3D.
 
-### Bloques que suelen demandar los alumnos
-
-Es útil tener a mano [esta guía](http://diamondboots.com/), aunque tiene el inconveniente de que está en inglés y que parece de una versión distinta a la que solemos usar, porque hay elementos de esta lista que no aparecen en nuestro servidor.
-
-Indico el nombre del elemento en inglés, luego su código y finalmente el nombre del elemento en español:
-
-* LEASH - 420 - Riendas
-* IRON_BARDING - 417 - Armadura de caballo de hierro
-* BOW - 261 - Arco
-* ARROW - 262 - Flechas
-* SADDLE - 329 - Silla de montar
-* FENCE - 85 - Valla
-* DIRT - 3 - Tierra
-* BEDROCK - 7 - Piedra base
-
 ### Montaje de un mundo plano para talleres
 
 Antes de empezar paramos el servidor. Generamos un mundo nuevo cambiando lo siguiente en `server.properties`:
@@ -274,3 +260,24 @@ wb setmsg "Has alcanzado el límite de este mundo." # Ajustamos mensajes
 gamerule doDaylightCycle false # Paramos el reloj
 time set 6000 # Pone el reloj al mediodía # Fijamos el reloj al mediodía
 ```
+
+### Bloques que suelen demandar los alumnos
+
+Es útil tener a mano [esta guía](http://diamondboots.com/), aunque tiene el inconveniente de que está en inglés y que parece de una versión distinta a la que solemos usar, porque hay elementos de esta lista que no aparecen en nuestro servidor.
+
+Indico el nombre del elemento en inglés, luego su código y finalmente el nombre del elemento en español:
+
+* LEASH - 420 - Riendas
+* IRON_BARDING - 417 - Armadura de caballo de hierro
+* BOW - 261 - Arco
+* ARROW - 262 - Flechas
+* SADDLE - 329 - Silla de montar
+* FENCE - 85 - Valla
+* DIRT - 3 - Tierra
+* BEDROCK - 7 - Piedra base
+
+Otras guías en formato gráfico se han sacado de [esta página](http://minecraft.alcachofafilms.es/index.php?threads/id-de-los-objetos-y-bloques.5/):
+
+![Bloques Minecraft](/images/pages/minecraft_blocks.png)
+
+![Bloques Minecraft 2](/images/pages/minecraft_blocks2.png)
