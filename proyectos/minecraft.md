@@ -261,7 +261,7 @@ gamerule doDaylightCycle false # Paramos el reloj
 time set 6000 # Pone el reloj al mediodía # Fijamos el reloj al mediodía
 ```
 
-### Bloques que suelen demandar los alumnos
+### Bloques
 
 Es útil tener a mano [esta guía](http://diamondboots.com/), aunque tiene el inconveniente de que está en inglés y que parece de una versión distinta a la que solemos usar, porque hay elementos de esta lista que no aparecen en nuestro servidor.
 
