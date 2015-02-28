@@ -499,3 +499,9 @@ Si es a nivel de usuario se hará en:
 
 * `~/.bashrc`
 * `~/.bash_profile`
+
+## Poner barras de scroll normales
+
+```bash
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+```
