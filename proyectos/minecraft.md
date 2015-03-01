@@ -22,6 +22,7 @@ permalink: /proyectos/minecraft.html
 * [Guía de crafteo](http://minecraftporjorge134.weebly.com/guia-de-crafteo.html) :exclamation:
 * [Mineplex](http://mineplex.net/about): Servidores de juego con reglas adaptadas (Survival con protección de terreno y normas éticas).
 * [Minecraft sobre ARM](http://rogerallen.github.io/jetson/2014/07/31/minecraft-on-jetson-tk1/): Compilación de librerías LWJGL y OpenAL para lanzar Minecraft (completo, no Pocket edition) sobre ARM.
+* [MineOS: Minecraft hosting improved](http://minecraft.codeemo.com/)
 
 ### Educación
 
@@ -77,12 +78,20 @@ permalink: /proyectos/minecraft.html
   * [WorldGuard v5.9](http://dev.bukkit.org/bukkit-plugins/worldguard/files/40-world-guard-5-9/)
   * [Printbot v1.5.0](http://dev.bukkit.org/bukkit-plugins/printbot/files/2-printbot-1-5-0/)
 
-## Ejecución Servidor en Raspberry Pi
+## Ejecución Servidor en Raspberry Pi y/o ODROID-C1
 
 ### Comandos para arrancarlo
 
+#### Raspberry Pi
+
 ```bash
 $ sudo java -Xms256M -Xmx496M -jar /home/mine/spigot/spigot.jar nogui
+```
+
+#### Raspberry Pi 2 o ODROID-C1
+
+```bash
+$ sudo java -Xms512M -Xmx768M -jar /home/mine/spigot/spigot.jar nogui
 ```
 
 ### Settings aconsejadas
