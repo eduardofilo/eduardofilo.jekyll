@@ -185,7 +185,15 @@ worlds:
 
 ### Comandos útiles
 
-#### Servidor
+#### Terminal Linux
+
+* `chown -R usuario:grupo directorio`: Asigna el usuario y el grupo recursivamente a partir del directorio indicado.
+* `sudo poweroff`: Apagar la máquina.
+* `sudo reboot`: Reiniciar la máquina.
+* `ifconfig eth0`: Datos de TCP/IP del adaptador de red `eth0` (tarjeta de red ethernet; los adaptadores wifi suelen llamarse `wlan0`).
+* `sudo nmap -PR -sP 192.168.1.0/24`: Escanea la red local 192.168.1.0 para encontrar máquinas conectadas a ella.
+
+#### Servidor Minecraft
 
 * `gamerule doDaylightCycle false`: Paramos el reloj.
 * `time set 6000`: Pone el reloj al mediodía # Fijamos el reloj al mediodía.
@@ -290,3 +298,31 @@ Otras guías en formato gráfico se han sacado de [esta página](http://minecraf
 ![Bloques Minecraft](/images/pages/minecraft_blocks.png)
 
 ![Bloques Minecraft 2](/images/pages/minecraft_blocks2.png)
+
+### Instalación MineOS en ODROID-C1
+
+Como requerimiento previo, tendremos que tener instalado el JDK de Java, preferiblemente a partir de la versión 8. Aparte de eso, ejecutar los siguientes comandos:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get -y install screen python-cherrypy3 rdiff-backup git
+$ sudo mkdir -p /usr/games
+$ cd /usr/games
+$ sudo git clone git://github.com/hexparrot/mineos minecraft
+$ cd minecraft
+$ sudo git config core.filemode false
+$ sudo chmod +x server.py mineos_console.py generate-sslcert.sh
+$ sudo ln -s /usr/games/minecraft/mineos_console.py /usr/local/bin/mineos
+$ sudo cp /usr/games/minecraft/init/mineos /etc/init.d/
+$ sudo chmod 744 /etc/init.d/mineos
+$ sudo update-rc.d mineos defaults
+$ sudo cp /usr/games/minecraft/init/minecraft /etc/init.d/
+$ sudo chmod 744 /etc/init.d/minecraft
+$ sudo update-rc.d minecraft defaults
+$ sudo cp /usr/games/minecraft/mineos.conf /etc/
+$ cd /usr/games/minecraft
+$ sudo ./generate-sslcert.sh
+$ sudo service mineos start
+```
+
+A partir de ahora accederemos a la consola web en la dirección: https://ODROID_IP:8080
