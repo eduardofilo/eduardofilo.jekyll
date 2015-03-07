@@ -187,7 +187,7 @@ worlds:
 
 #### Terminal Linux
 
-* `chown -R usuario:grupo directorio`: Asigna el usuario y el grupo recursivamente a partir del directorio indicado.
+* `sudo chown -R usuario:grupo directorio`: Asigna el usuario y el grupo recursivamente a partir del directorio indicado.
 * `sudo poweroff`: Apagar la máquina.
 * `sudo reboot`: Reiniciar la máquina.
 * `ifconfig eth0`: Datos de TCP/IP del adaptador de red `eth0` (tarjeta de red ethernet; los adaptadores wifi suelen llamarse `wlan0`).
