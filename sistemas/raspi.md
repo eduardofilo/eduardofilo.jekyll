@@ -30,6 +30,11 @@ permalink: /sistemas/raspi.html
 * [Adaptador Wifi (RTL8188CUS)](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1079)
 * [Adaptador TDT Conceptronic C08-096 (RTL2832)](http://www.amazon.es/Conceptronic-C08-096-receptor-Dvb-T-radio/dp/B003KCKERE)
 * [Receptor infrarrojos](https://energenie4u.co.uk/catalogue/category/PiMote)
+* [TP4056 DIY 1A Micro USB Li-Ion Battery Charging Board Charger Module](http://www.dx.com/p/tp4056-diy-1a-micro-usb-li-ion-battery-charging-board-charger-module-blue-373990): Cargador de batería.
+* [PowerBoost 500 Charger - Rechargeable 5V Lipo USB Boost](http://www.adafruit.com/product/1944): Alimentación ininterrumpida con batería y gestor de carga.
+* [UA0053 ADAPTADOR LOGILINK USB 2.0 AUDIO 5.1](http://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=255195038&cPath=1295): Adaptador audio USB.
+* [2-Channel 3W PAM8403 Audio Amplifier Board](http://www.dx.com/p/2-channel-3w-pam8403-audio-amplifier-board-red-146300): Amplificador audio 3W.
+* [Stereo 2.8W Class D Audio Amplifier - I2C Control AGC](http://www.adafruit.com/product/1712): Amplificador audio 2.8W con control I2C.
 
 ## Distribuciones
 
