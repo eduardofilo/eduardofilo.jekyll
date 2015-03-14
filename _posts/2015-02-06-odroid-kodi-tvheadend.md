@@ -45,3 +45,5 @@ http://localhost:9981
 Configuration / DVB Inputs / TV Adapters (seleccionamos Micronas DRXD DVB-T) / General / Adapter configuration / Enabled / Save
 
 Configuration / DVB Inputs / TV Adapters (seleccionamos Micronas DRXD DVB-T) / General / Tools / Add DVB Network by location... / Spain / es_Zaragoza
+
+No funciona el adaptador TDT hasta que actualizo el kernel que había quedado en estado kept back. Los paquetes en esa situación se actualizan con `sudo apt-get dist-upgrade`.

@@ -39,6 +39,7 @@ permalink: /sistemas/unix.html
 *  `sudo nmap -PR -sP 192.168.1.0/24`: Descubrir todos los equipos presentes en la red `192.168.1.0`.
 *  `sudo netstat -lp --inet`: Puertos de red abiertos y procesos asociados.
 *  `sudo usermod -a -G groupName userName`: Añade el usuario userName ya existente al grupo groupName.
+*  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
 
 ## Búqueda de ficheros que contienen una cadena
 
