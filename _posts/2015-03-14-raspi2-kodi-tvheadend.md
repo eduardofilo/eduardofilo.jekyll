@@ -119,6 +119,13 @@ La lista de Muxes depende de la provincia en la que nos encontramos. [Aquí](htt
 
 ![TDT Muxes](/images/posts/muxes.png)
 
+Todos ellos se han introducido con los siguientes parámetros:
+
+* Bandwidth: 8MHz
+* Constellation: QAM/64
+* Transmission Mode: 8k
+* Resto de parámetros: AUTO
+
 ### Instalación licencia MPEG-2
 
 Aunque por la arquitectura cliente/servidor de Tvheadend podremos visualizar la señal TDT desde otros dispositivos que tengamos en la misma red (como por ejemplo con nuestro teléfono Android con [esta aplicación](https://play.google.com/store/apps/details?id=org.tvheadend.tvhguide) instalada), si queremos ver la televisión en el propio Kodi, vamos a necesitar adquirir la licencia para utilizar el hardware de decodificación del codec MPEG-2 que hay incluido en el procesador Broadcom 2836 que mueve la Raspberry Pi 2. La licencia tiene un coste de £2.40 Para ello necesitamos primero averiguar el número de serie de la Raspberry. Seguimos estos pasos:
