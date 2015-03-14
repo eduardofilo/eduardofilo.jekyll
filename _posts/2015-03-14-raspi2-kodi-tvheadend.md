@@ -31,7 +31,7 @@ Empezamos con la lista de piezas que vamos a necesitar.
 
 A continuación se indica el proceso de montaje paso a paso. Vamos a dividirlo en cuatro bloques.
 
-### Instalacón OpenELEC
+### Instalación OpenELEC
 
 Las instrucciones que siguen se corresponden a cómo se haría desde un equipo con Linux. En caso de utilizar Windows o MacOSX habrá que buscar las alternativas. Por ejemplo en las [instrucciones oficiales de instalación de OpenELEC](http://wiki.openelec.tv/index.php/HOW-TO:Installing_OpenELEC/Creating_The_Install_Key#tab=DiskImage) sí que se dan instrucciones específicas para cada sistema. La web oficial de Raspberry Pi también tiene una [guía bastante buena](http://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 
