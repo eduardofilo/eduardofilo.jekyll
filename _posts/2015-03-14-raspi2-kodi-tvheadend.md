@@ -7,7 +7,7 @@ published: true
 
 ![KODI Logo](/images/posts/kodi-logo.png)
 
-A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XMBC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
+A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
 
 ## Elementos necesarios
 
