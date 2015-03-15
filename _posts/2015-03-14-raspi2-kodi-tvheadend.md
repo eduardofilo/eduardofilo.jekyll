@@ -96,13 +96,13 @@ Lo siguientes pasos nos permiten activar el sistema de gestión del TDT:
 
 #### Configuración de Tvheadend
 
-Tvheadend tiene arquitectura cliente/servidor. Lo que manipulamos a través de Kodi es la parte cliente. La parte servidora se sirve por TCP/IP a través de los puertos 9981 y 9982. El primer puerto ofrece un interfaz web al que podemos pues entrar con un navegador accediendo a la dirección http://ip-de-raspberry:9981
+Tvheadend tiene arquitectura cliente/servidor. Lo que manipulamos a través de Kodi es la parte cliente. El servicio se sirve por TCP/IP a través de los puertos 9981 y 9982. El segundo puerto ofrece una API que utilizan los clientes gráficos como el de Kodi o las aplicaciones para dispositivos móviles. Así pues en las configuraciones de estos programas habrá que indicar el puerto 9982. El primero ofrece un interfaz web al que podemos pues entrar con un navegador accediendo a la dirección http://ip-de-raspberry:9981
 
 La IP de la raspberry la podremos averiguar acudiendo a la ruta:
 
     Sistema / OpenELEC / Conexiones
 
-Por cierto que ya que estamos en esta ruta, se recomienda editar la conexión y poner una IP fija en el apartado IPv4, ya que como veremos, el interfaz web de Tvheadend es muy potente.
+Por cierto que ya que estamos en esta ruta, se recomienda editar la conexión y poner una IP fija en el apartado IPv4, ya que como veremos, el interfaz web de Tvheadend es muy potente y nos convendrá utilizarlo para algunas tareas. También nos conviene tener una IP fija si vamos a consumir el servicio de televisor desde otros dispositivos como un ordenador (en ese caso utilizaremos el interfaz web) o un dispositivo móvil.
 
 Una vez dentro de la consola web de Tvheadend seguimos los siguientes pasos para activar el decodificador de TDT y añadir los canales:  
 
@@ -113,7 +113,7 @@ Una vez dentro de la consola web de Tvheadend seguimos los siguientes pasos para
     Configuration / DVB Inputs / TV Adapters / Realtek RTL2832 / Parameters / Basic Settings / Networks / (seleccionamos TDT) / Save
     Configuration / DVB Inputs / Services / Map All / Check availability / Map
 
-La lista de Muxes depende de la provincia en la que nos encontremos. [Aquí](http://www.tdt1.com/) por ejemplo podemos encontrar las frecuencias. Los muxes que utilizo en Zaragoza son los siguientes:
+Los muxes o multiplexes son las frecuencias sobre las que viajan empaquetadas los canales y una serie de parámetros de codificación. La tecnología TDT (o DVB-T más propiamente) permite codificar varios canales en una misma frecuencia. Algunos decodificadores de TDT permiten sintonización automática como hacen los televisores, pero el que he elegido para este montaje no. Así, hay que introducir la lista de muxes manualmente. Las frecuencias dependen de la provincia en la que nos encontremos. [Aquí](http://www.tdt1.com/) por ejemplo podemos encontrarlas. Los muxes que utilizo en Zaragoza son los siguientes:
 
 ![TDT Muxes](/images/posts/muxes.png)
 
@@ -123,6 +123,16 @@ Todos ellos se han introducido con los siguientes parámetros:
 * Constellation: QAM/64
 * Transmission Mode: 8k
 * Resto de parámetros: AUTO
+
+Una vez introducidos los muxes, hay que esperar a que el sistema los escanee. El proceso suele tardar un buen rato y se observa su evolución en las columnas `Scan Status` y `Scan Result` del pantallazo anterior. Una vez que veamos que todos los muxes han sido analizados, tenemos que indicar a Tvheadend que mapee los servicios encontrados con canales. Esto lo haremos pulsando el botón `Map All` que se encuentra en la ruta:
+
+    Configuration / DVB Inputs / Services / Map All
+
+Para ordenar la lista de canales, hay que acudir a la siguiente ruta y asignar números correlativos a la columna `Number`:
+
+    Configuration / Channel/EPG / Channels
+
+Cuando hayamos terminado de numerar los canales pulsaremos el botón `Save`.
 
 ### Instalación licencia MPEG-2
 
