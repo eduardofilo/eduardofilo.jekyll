@@ -40,6 +40,7 @@ permalink: /sistemas/unix.html
 *  `sudo netstat -lp --inet`: Puertos de red abiertos y procesos asociados.
 *  `sudo usermod -a -G groupName userName`: Añade el usuario userName ya existente al grupo groupName.
 *  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
+*  `sudo tcpdump -s 0 -i ppp0 -w trafico.pcap`: Captura de tráfico por el interfaz ppp0.
 
 ## Búqueda de ficheros que contienen una cadena
 
