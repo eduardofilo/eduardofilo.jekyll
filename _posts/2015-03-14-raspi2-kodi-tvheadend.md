@@ -71,7 +71,7 @@ Las instrucciones que siguen se corresponden con una instalación desde un equip
 
 Cuando termine el último punto de la sección anterior (tardará más o menos dependiendo de la velocidad de la tarjeta), sacaremos la tarjeta microSD del lector y la insertaremos en la ranura de la Raspberry. Conectamos el cable HDMI entre el televisor y la Raspberry. Conectamos el adaptador TDT y el adaptador Wifi al concentrador USB. Alimentamos el concentrador y enlazamos la entrada del concentrador con una de las entradas USB de la Raspberry. Finalmente alimentamos la Raspberry con un cable USB - microUSB desde el concentrador hacia la Raspberry. El primer arranque de OpenELEC sirve para redimensionar las particiones de la tarjeta microSD para aprovechar toda su capacidad. Al terminar el proceso se reiniciará automáticamente y esta vez sí, terminará apareciendo el interfaz de Kodi.
 
-![Hard](/images/posts/kodi-hard.png)
+![Hard](/images/posts/kodi-hard.jpg)
 
 En la foto sólo vemos el adaptador Wifi y el decodificador TDT, directamente conectados a la Raspberry. Esta configuración se terminó descartando porque la Raspberry tenía problemas de alimentación, aún utilizando un alimentador de 2 Amperios. El elemento que más pico de corriente exige es el decodificador TDT. Los problemas se detectan por un cuadrado de colores que aparece en la esquina superior derecha de la pantalla. Normalmente el sistema no es capaz de arrancar en esta situación (aparecen unos errores en la consola) y lo que es peor se termina corrompiendo el sistema de archivos de la microSD. Con el concentrador USB alimentado se evitan estos problemas.
 
