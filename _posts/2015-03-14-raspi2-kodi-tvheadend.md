@@ -69,7 +69,13 @@ Las instrucciones que siguen se corresponden con una instalación desde un equip
 
 ### Conexión de piezas
 
-Cuando termine el último punto de la sección anterior (tardará más o menos dependiendo de la velocidad de la tarjeta), sacaremos la tarjeta microSD del lector y la insertaremos en la ranura de la Raspberry. Conectamos el cable HDMI entre el televisor y la Raspberry. Conectamos el adaptador TDT y el adaptador Wifi al concentrador USB. Alimentamos el concentrador y enlazamos la entrada del concentrador con una de las entradas USB de la Raspberry. Finalmente alimentamos la Raspberry con un cable USB - microUSB desde el concentrador hacia la Raspberry. El primer arranque de OpenELEC sirve para redimensionar las particiones de la tarjeta microSD para aprovechar toda su capacidad. Al terminar el proceso se reiniciará automáticamente y esta vez sí, terminará apareciendo el interfaz de Kodi. A partir de ahora trabajaremos con Kodi para configurar una serie de cosas.
+Cuando termine el último punto de la sección anterior (tardará más o menos dependiendo de la velocidad de la tarjeta), sacaremos la tarjeta microSD del lector y la insertaremos en la ranura de la Raspberry. Conectamos el cable HDMI entre el televisor y la Raspberry. Conectamos el adaptador TDT y el adaptador Wifi al concentrador USB. Alimentamos el concentrador y enlazamos la entrada del concentrador con una de las entradas USB de la Raspberry. Finalmente alimentamos la Raspberry con un cable USB - microUSB desde el concentrador hacia la Raspberry. El primer arranque de OpenELEC sirve para redimensionar las particiones de la tarjeta microSD para aprovechar toda su capacidad. Al terminar el proceso se reiniciará automáticamente y esta vez sí, terminará apareciendo el interfaz de Kodi.
+
+![Hard](/images/posts/kodi-hard.png)
+
+En la foto sólo vemos el adaptador Wifi y el decodificador TDT, directamente conectados a la Raspberry. Esta configuración se terminó descartando porque la Raspberry tenía problemas de alimentación, aún utilizando un alimentador de 2 Amperios. El elemento que más pico de corriente exige es el decodificador TDT. Los problemas se detectan por un cuadrado de colores que aparece en la esquina superior derecha de la pantalla. Normalmente el sistema no es capaz de arrancar en esta situación (aparecen unos errores en la consola) y lo que es peor se termina corrompiendo el sistema de archivos de la microSD. Con el concentrador USB alimentado se evitan estos problemas.
+
+A partir de ahora trabajaremos con Kodi para configurar una serie de cosas.
 
 ### Configuración Kodi
 
@@ -115,7 +121,7 @@ Una vez dentro de la consola web de Tvheadend seguimos los siguientes pasos para
 
 Los muxes o multiplexes son las frecuencias sobre las que viajan empaquetadas los canales y una serie de parámetros de codificación. La tecnología TDT (o DVB-T más propiamente) permite codificar varios canales en una misma frecuencia. Algunos decodificadores de TDT permiten sintonización automática como hacen los televisores, pero el que he elegido para este montaje no. Así, hay que introducir la lista de muxes manualmente. Las frecuencias dependen de la provincia en la que nos encontremos. [Aquí](http://www.tdt1.com/) por ejemplo podemos encontrarlas. Los muxes que utilizo en Zaragoza son los siguientes:
 
-![TDT Muxes](/images/posts/muxes.png)
+![TDT Muxes](/images/posts/kodi-muxes.png)
 
 Todos ellos se han introducido con los siguientes parámetros:
 
