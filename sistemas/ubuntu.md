@@ -18,6 +18,10 @@ permalink: /sistemas/ubuntu.html
 
 [Help with Ubuntu: Fix slow WiFi in Ubuntu 11.04](http://joeslifewithubuntu.blogspot.com/2011/06/how-to-fix-slow-wifi-in-ubuntu-1104.html)
 
+## Solución problema Wireshark en trusty y utopic
+
+[liboverlay-scrollbar hangs Wireshark](https://bugs.launchpad.net/ubuntu/+source/overlay-scrollbar/+bug/1248400)
+
 ## Actualización de Intrepid a Jaunty
 
 Tras actualizar de Intrepid a Jaunty se observa un empobrecimiento del rendimiento gráfico en equipos con gráficas integradas Intel 945. En las siguientes páginas explican como hacer downgrade al controlador Intel que había en Intrepid:
