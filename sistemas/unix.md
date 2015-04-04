@@ -42,6 +42,38 @@ permalink: /sistemas/unix.html
 *  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
 *  `sudo tcpdump -s 0 -i ppp0 -w trafico.pcap`: Captura de tráfico por el interfaz ppp0.
 
+## Uso básico de `screen`
+
+En [esta cheat sheet](http://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/) se reúnen bastantes comandos útiles. A continuación indico el uso típico:
+
+1. Arrancamos una sesión:
+        shell ~$ screen
+2. Aparece una splashscreen que cerramos pulsando enter y ya podemos trabajar
+3. Lanzamos un comando:
+        screenshell_1 ~$ top
+4. Para cerrar la sesión screen que acabamos de abrir, tan sólo hay que lanzar el comando `exit` (en este ejemplo, parando previamente el comando `top` que habíamos lanzado). Ahora sin embargo pretendemos dejarla abierta, con el comando `top` en ejecución, para volver a ella más adelante. Es lo que se llama un detach (sirve para recordar la tecla que se pulsa al final de la combinación de teclas). Para ello pulsamos la combinación de teclas:
+        "Ctrl-a" "d"
+5. Habremos vuelto a nuestro bash inicial. Cuando en cualquier momento queramos recuperar la sesión screen, lo haremos con el comando:
+        shell ~$ screen -r
+6. Ahora estaremos viendo de nuevo la salida del comando top que habíamos dejado arrancado dentro de la sesión screen. Volvemos a abandonar la sesión sin cerrarla procediendo por tanto como en el paso 4:
+        "Ctrl-a" "d"
+7. De vuelta al bash inicial, vamos a abrir una segunda sesión screen para ver cómo podemos movernos a una u a otra. Arrancamos la sesión como hicimos con la primera:
+        shell ~$ screen
+8. Cerramos la splashscreen y ejecutamos algún comando para reconocer la sesión cuando volvamos a ella. Por ejemplo:
+        screenshell_2 ~$ ping 8.8.8.8
+9. Abandonamos la sesión dejándola abierta:
+        "Ctrl-a" "d"
+10. De vuelta al bash inicial ahora tenemos dos sesiones screen lanzadas. Ahora el comando `screen -r` no se puede lanzar sin especificar el identificador de la sesión tras la opción `-r`. Obtenemos la lista de sesiones con el siguiente comando:
+        shell ~$ screen -list
+        There are screens on:
+            12629.pts-7.eduardo-HP-Folio-13	(04/04/15 13:55:03)	(Detached)
+            12609.pts-7.eduardo-HP-Folio-13	(04/04/15 13:54:51)	(Detached)
+        2 Sockets in /var/run/screen/S-edumoreno.
+11. Ahora, para recuperar una de ella, por ejemplo la más vieja que contenía lanzado el comando `top` incorporaremos el identificador de la sesión tras la opción `-r`:
+        shell ~$ screen -r 12609.pts-7.eduardo-HP-Folio-13
+12. Como se comentaba en el punto 4, para cerrar las sesiones simplemente saldremos con `exit`, aunque también, y sobre todo en caso de que la sesión se quedara bloqueada con algún comando que no se pudiera cerrar, se puede matar la sesión con la siguiente combinación de teclas:
+        "Ctrl-a" "k"
+
 ## Búqueda de ficheros que contienen una cadena
 
 ```bash
