@@ -37,6 +37,13 @@ Teóricamente, el server es: `h-slp.mncXXX.mccYYY.pub.3gppnetwork.org`
 En el puerto: 3425  
 XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo MCC=214 y MNC=19
 
+### OnePlus One
+
+#### Enlaces
+
+* [How to Unlock Bootloader, Install Custom Recovery and Root](https://forums.oneplus.net/threads/guide-oneplus-one-how-to-unlock-bootloader-install-custom-recovery-and-root.64487/)
+* [OxygenOS is here [Installation Guide]](https://forums.oneplus.net/threads/oxygenos-is-here-installation-guide.289398/)
+
 ### NVSBL P4D Sirius
 
 #### Enlaces
