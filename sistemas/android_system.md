@@ -44,6 +44,11 @@ XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo 
 * [How to Unlock Bootloader, Install Custom Recovery and Root](https://forums.oneplus.net/threads/guide-oneplus-one-how-to-unlock-bootloader-install-custom-recovery-and-root.64487/)
 * [OxygenOS is here [Installation Guide]](https://forums.oneplus.net/threads/oxygenos-is-here-installation-guide.289398/)
 
+#### Modos arranque
+
+* Recovery: V- Power
+* Fastboot: V+ Power
+
 ### NVSBL P4D Sirius
 
 #### Enlaces
