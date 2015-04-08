@@ -448,6 +448,12 @@ $ sudo usermod -a -G wireshark <usuario>
 
 Reiniciar la sesión.
 
+## Solucionar el problema con Wireshark en las últimas versiones de Ubuntu
+
+Cuando se inicia una captura, se cuelga Wireshark, emitiendo una serie infinita de errores de GTK en consola. En [esta página](https://bugs.launchpad.net/ubuntu/+source/overlay-scrollbar/+bug/1248400) comentan varios workarrounds. Por ejemplo editando el fichero `/usr/share/applications/wireshark.desktop` y cambiando la línea de ejecución por:
+
+        Exec=env LIBOVERLAY_SCROLLBAR=0 wireshark %f
+
 ## Ficheros implicados en arranque
 
 *  `/etc/rc.local`: This script is executed at the end of each multiuser runlevel.
