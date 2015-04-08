@@ -381,6 +381,12 @@ $ ffmpeg -acodec copy -vcodec copy -ss 00:00:00 -t 00:04:09 -i archivo3.mp4 p1.m
 
 Donde el valor de la opción -ss es el instante de inicio en hh:mm:ss y el valor de -t es la longitud en hh:mm:ss
 
+Desde hace unas versiones de Ubuntu, `ffmpeg` no está disponible. Su sustituto es `avconv`, compatible la mayoría de las veces. No admite sin embargo la opción de copiar el codec de audio y vídeo. Hay que especificarlo. Una lista de encoders soportados se puede obtener ejecutando:
+
+```bash
+$ avconv -encoders
+```
+
 ## Redimensionado de imágenes en lote
 
 Ajustar a 200 px de ancho manteniendo el ratio:
