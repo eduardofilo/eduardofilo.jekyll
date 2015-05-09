@@ -42,6 +42,26 @@ permalink: /sistemas/unix.html
 *  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
 *  `sudo tcpdump -s 0 -i ppp0 -w trafico.pcap`: Captura de tráfico por el interfaz ppp0.
 
+## Alias SSH
+
+Para asimilar un identificador a una pareja user@host, editar el fichero `~/.ssh/config` y añadir un bloque como el siguiente ([fuente](http://collectiveidea.com/blog/archives/2011/02/04/how-to-ssh-aliases/)):
+
+```
+Host example
+  HostName example.com
+  User exampleuser
+```
+
+## Tunel de un puerto remoto por SSH
+
+([Fuente](http://www.revsys.com/writings/quicktips/ssh-tunnel.html)) Para conducir el tráfico hasta un host:puerto remoto canalizándolo por un tunel seguro, se puede utilizar el comando `ssh`. Por ejemplo, vamos a tunelizar una conexión contra el puerto telnet de la máquina remota `telnet.example.com` por medio del usuario `ssh-user` para tenerlo disponible en el puerto 2000 local de nuestra máquina:
+
+```
+ssh -f ssh-user@telnet.example.com -L 2000:telnet.example.com:23 -N
+```
+
+A partir de ahora podremos conectarnos al telnet conectando con `localhost:2000`.
+
 ## Uso básico de `screen`
 
 En [esta cheat sheet](http://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/) se reúnen bastantes comandos útiles. A continuación indico el uso típico:
