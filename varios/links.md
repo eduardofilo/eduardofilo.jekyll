@@ -29,6 +29,7 @@ permalink: /varios/links.html
 *  [Pastebin](http://pastebin.com/): Para pegar logs y trozos grandes de texto que luego linkar en foros o para pasar a otras personas.
 *  [JSFiddle](http://jsfiddle.net/): Prototipado HTML/CSS/JS.
 *  [Debuggex](https://www.debuggex.com/): Editor de expresiones regulares (recomendado por Carlos Fenollosa).
+*  [RegExr](http://regexr.com/): Learn, Build & Test RegEx.
 
 ## eBooks
 
