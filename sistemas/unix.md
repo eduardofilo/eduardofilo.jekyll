@@ -41,6 +41,7 @@ permalink: /sistemas/unix.html
 *  `sudo usermod -a -G groupName userName`: Añade el usuario userName ya existente al grupo groupName.
 *  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
 *  `sudo tcpdump -s 0 -i ppp0 -w trafico.pcap`: Captura de tráfico por el interfaz ppp0.
+*  `iptables -L -n`: Listar reglas iptables.
 
 ## Alias SSH
 
