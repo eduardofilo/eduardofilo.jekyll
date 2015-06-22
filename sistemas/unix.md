@@ -42,6 +42,9 @@ permalink: /sistemas/unix.html
 *  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
 *  `sudo tcpdump -s 0 -i ppp0 -w trafico.pcap`: Captura de tráfico por el interfaz ppp0.
 *  `iptables -L -n`: Listar reglas iptables.
+*  `wget -q -O - url`: Hace la request de la URL sin emitir trazas (-q = no verbose) y redireccionando la response a la salida estándar (-O -).
+*  `route -n`: Muestra la tabla de rutas con IP's en lugar de con nombres.
+*  `cat /etc/resolv.conf`: Muestra el gateway en uso.
 
 ## Alias SSH
 
