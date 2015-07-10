@@ -15,7 +15,7 @@ Acceder al siguiente elemento de las preferencias: "General / Appearence / Color
 
 Acceder al siguiente elemento de las preferencias: "XML / XML FIles / Editor". Seleccionar el elemento "Split multiple attributes each on a new line".
 
-## Colunas admitidas por el indentador automático
+## Columnas admitidas por el indentador automático
 
 Por defecto Eclipse admite 80 columnas de texto cuando se aplica el formateador automático (Comando/Ctrl + Shift + F). Para cambiar este valor hay que acudir a la siguiente ruta en Preferencias:
 
