@@ -43,6 +43,8 @@ XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo 
 
 * [How to Unlock Bootloader, Install Custom Recovery and Root](https://forums.oneplus.net/threads/guide-oneplus-one-how-to-unlock-bootloader-install-custom-recovery-and-root.64487/)
 * [OxygenOS is here [Installation Guide]](https://forums.oneplus.net/threads/oxygenos-is-here-installation-guide.289398/)
+* [OnePlus One Update: Manually Install CyanogenMod OS 12 CM12 [TUTORIAL]](http://www.latintimes.com/oneplus-one-update-manually-install-cyanogenmod-os-12-cm12-tutorial-309788)
+* [Mirrors for official Cyanogen roms and OTA updates](http://forum.xda-developers.com/oneplus-one/general/official-cm11s-roms-ota-updates-t2906746)
 
 #### Modos arranque
 
