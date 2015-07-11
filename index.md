@@ -26,6 +26,7 @@ layout: default
 
 # Sistemas
 
+* [Bus Pirate](/sistemas/bus_pirate.html)
 * [Raspberry Pi](/sistemas/raspi.html)
 * [ODROID](/sistemas/odroid.html)
 * [UNIX](/sistemas/unix.html)
