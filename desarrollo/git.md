@@ -11,6 +11,7 @@ permalink: /desarrollo/git.html
 *  [Cheat Sheat](http://cheat.errtheblog.com/s/git)
 *  [git - la guía sencilla](http://rogerdudler.github.com/git-guide/index.es.html) :exclamation:
 *  [Git Tutorials & Training by Atlassian](http://atlassian.com/git) :exclamation:
+*  [Detached HEAD en Git](http://mundogeek.net/archivos/2015/08/11/detached-head-en-git/)
 
 ## Comandos básicos
 
@@ -216,11 +217,23 @@ $ git merge alta-usuarios
 $ git branch -d alta-usuarios
 ```
 
-Abandonar un branch:
+Abandonar y borrar un branch local:
 
 ```bash
 $ git checkout master
 $ git branch -D alta-usuarios
+```
+
+Borrar un branch remoto. Si después de hacer lo anterior hacemos un git pull la rama local volverá a crearse, ya que seguía estando en el servidor. Esto podemos arreglarlo de la siguiente manera:
+
+```bash
+$ git push origin :alta-usuarios #suponiendo que la rama en el servidor se llama igual que nuestra ex-rama local
+```
+
+o
+
+```bash
+$ git push origin --delete alta-usuarios
 ```
 
 Seleccionar un branch remoto ([fuente](http://git-scm.com/book/ch3-5.html#Tracking-Branches)):
