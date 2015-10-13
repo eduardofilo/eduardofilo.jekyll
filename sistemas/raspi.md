@@ -143,7 +143,7 @@ $ sudo swapon /var/swap
 
 ### SSH
 
-Editar el fichero `/etc/ssh/sshd_config` y modificar/añadir las siguientes líneas ([fuente](http://cuadernodelviaje.blogspot.com.es/2013/01/protegiendo-un-poco-nuestra-raspberry.html)):
+Editar el fichero `/etc/ssh/sshd_config` y modificar/añadir las siguientes líneas ([fuente](http://blog.zoogon.net/2013/01/protegiendo-un-poco-nuestra-raspberry.html)):
 
 ```
 PermitRootLogin no
@@ -156,6 +156,7 @@ Medidas de protección:
 
 * [Top 20 OpenSSH Server Best Security Practices](http://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)
 * [Protege tu servidor casero de ataques externos](http://blog.desdelinux.net/protege-tu-servidor-casero-de-ataques-externos/)
+* [Protegiendo el servidor SSH con fail2ban](http://blog.zoogon.net/2015/02/protegiendo-el-servidor-ssh-con-fail2ban.html)
 
 ### Varios
 
