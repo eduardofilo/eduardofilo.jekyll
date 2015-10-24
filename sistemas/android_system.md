@@ -51,6 +51,19 @@ XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo 
 * Recovery: V- Power
 * Fastboot: V+ Power
 
+#### Flasheo de ROM
+
+Cuando el móvil avise de la disponibilidad de una nueva actualización, si está rooteado se producirá un error durante el arranque al aplicarla. En ese caso hay que obtener la rom completa (no sirven los parches incrementales) e instalar manualmente desde recovery siguiendo estos pasos ([fuente](http://www.droidviews.com/how-to-update-cyanogen-os-12-1-to-yog4pas2ql-on-oneplus-one/)):
+
+1. **Download** the required ROM (full ROM) file for your device from the download section.
+2. Now transfer the ROM into your device’s internal storage. Place the file where you can easily locate it.
+3. Now reboot into **TWRP**. To boot into TWRP, power off your phone and press and hold volume down button and power button at the same time.
+4. It is highly recommended that you perform a **nandroid backup**. To backup your ROM, tap on the backup option and select the following elements: **System, Data, Boot, Recovery, EFS** and swipe the confirmation action to backup.
+5. You can skip this step, but if after the installation system doesn’t boot, try this step. After performing the ROM backup, return to the TWRP main menu and tap the **Wipe** button and select **Advanced Wipe**. Then wipe **Dalvik Cache**, **System**, and **Cache**. (If after the complete process system does not boot, try wiping the Data as well. But its will remove all your data)
+6. Go back to the TWRP main menu again and tap on **Install** option. Navigate to the ROM file and select it.
+7. Swipe the confirmation button to proceed with the installation. The ROM will be installed.
+8. Once installed, **reboot to system**.
+
 ### NVSBL P4D Sirius
 
 #### Enlaces
@@ -193,7 +206,7 @@ Aug 10 2010,17:52:18
 2. hold vol+ and plug usb to boot into fastboot (blu led)
 3. fastboot flash boot boot.img (from cm10 zip)
 4. fastboot reboot
-5. enter recovery, on boot led will be violet for 3'', during this period press vol+ 
+5. enter recovery, on boot led will be violet for 3'', during this period press vol+
 6. flash rom zip
 7. flash gapps zip
 8. wipe
