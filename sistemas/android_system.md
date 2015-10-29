@@ -64,6 +64,18 @@ Cuando el móvil avise de la disponibilidad de una nueva actualización, si est�
 7. Swipe the confirmation button to proceed with the installation. The ROM will be installed.
 8. Once installed, **reboot to system**.
 
+#### Reseteo de estadísticas de batería desde TWRP
+
+1. Cargar la batería hasta el 100%
+2. Arrancar el TWRP recovery
+3. Seguir la ruta: Advanced / File Manager
+4. Ir a la ruta: /data/system/
+5. Pulsar sobre el fichero batterystats.bin
+6. Pulsar Delete
+7. Reiniciar el sistema
+8. Descargar la batería hasta el 2 - 5 %
+9. Volver a cargar la batería hasta el 100%
+
 ### NVSBL P4D Sirius
 
 #### Enlaces
