@@ -93,11 +93,9 @@ Una vez activo conectamos a nuestro punto de acceso siguiendo esta secuencia de 
 
 Lo siguientes pasos nos permiten activar el sistema de gestión del TDT:  
 
-    Sistema / Ajustes / Add-ons / Comprobar actualizaciones
-    Sistema / Ajustes / Add-ons / Conseguir Add-ons / OpenELEC Mediacenter OS Add-ons / Repositorio de Add-ons / Unofficial OpenELEC (RPi2/arm) Add-ons / Instalar
-    Sistema / Ajustes / Add-ons / Comprobar actualizaciones
-    Sistema / Ajustes / Add-ons / Conseguir Add-ons / Todos los Add-ons / Servicios / tvheadend / Instalar
-    Sistema / Ajustes / Add-ons / Add-ons desactivados / Tvheadend HTSP Client / Activar
+    Sistema / Ajustes / Add-ons / Instalar desde repositorio / OpenELEC Mediacenter OS Add-ons / Repositorio de Add-ons / Unofficial OpenELEC (RPi2/arm) Add-ons / Instalar
+    Sistema / Ajustes / Add-ons / Instalar desde repositorio / Todos los repositorios / Servicios / tvheadend / Instalar
+    Sistema / Ajustes / Add-ons / Mis add-ons / Clientes PVR / Tvheadend HTSP Client / Activar
     Sistema / Ajustes / TV en directo / General / Activado
 
 #### Configuración de Tvheadend
