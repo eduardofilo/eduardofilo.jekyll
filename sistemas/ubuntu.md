@@ -401,9 +401,9 @@ Ajustar a 200 px de alto manteniendo el ratio:
 $ convert '*.jpg[x200]' resized%03d.png
 ```
 
-## Montaje de vídeo StopMotion a partir de fotos
+## Redimensionado de fotos en lote
 
-Primero redimensionar las imágenes. Por ejemplo a 1080 de alto dentro de un directorio llamado resized:
+Por ejemplo a 1080 de alto dentro de un directorio llamado resized:
 
 ```bash
 $ convert '*.jpg[x1080]' resized/%03d.jpg
@@ -420,19 +420,9 @@ $ for i in *.jpg; do
 done
 ```
 
-Luego montar el vídeo con el siguiente comando a 25fps:
+## Renombrado de archivos en lote
 
-```bash
-$ ffmpeg -r 25 -b 1800 -i "resized/%03d.jpg" "video.mp4"
-```
-
-También se puede utilizar `avconv` que es un fork de `ffmpeg`:
-
-```bash
-$ avconv -r 25 -b 1800 -i "resized/%03d.jpg" "video.mp4"
-```
-
-Si hay que renombrar previamente las imágenes se puede utilizar el siguiente bucle:
+Por ejemplo una serie de archivos jpg:
 
 ```bash
 $ a=1
@@ -441,6 +431,14 @@ $ for i in *.jpg; do
   mv ${i} ${new}
   let a=a+1
 done
+```
+
+## Montaje de vídeo StopMotion a partir de fotos
+
+A 10fps por ejemplo ([Fuente](http://www.dototot.com/compile-stop-motion-animation-image-sequence-avconv/)):
+
+```bash
+$ avconv -f image2 -r 10 -i %04d.jpg -vf scale=1440:1080,vflip,hflip -r:v 10 -c:v libx264 -qp 0 -preset veryslow -an "video.mkv"
 ```
 
 ## Configurar Wireshark para poder capturar con usuarios no-root
