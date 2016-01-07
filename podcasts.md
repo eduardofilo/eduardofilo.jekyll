@@ -20,7 +20,7 @@ Esta es la lista de podcasts que escucho/recomiendo:
 * [Esta peli ya la he visto](http://estapeliyalahevisto.com/) - [Feed RSS](http://estapeliyalahevisto.com/feed/podcast)
 * [We.Developers](http://wedevelopers.com/) - [Feed RSS](http://feeds.feedburner.com/WeDevelopersPodcast)
 * [Engadget en español](http://es.engadget.com/es-podcasts/el-podcast-de-engadget/) - [Feed RSS](http://es.engadget.com/topics/podcasts/rss.xml)
-* [La Biblioteca de Alejandria](http://noticias21.libsyn.com/) - [Feed RSS](http://noticias21.libsyn.com/rss)
+* [La Biblioteca de Alejandria](http://noticias21.libsyn.com/) - [Feed RSS](http://noticias21.libsyn.com/rss): Abandonado. [Archivo en archive.org](https://archive.org/details/LaBibliotecaDeAlejandria)
 * [Desconéctate Podcast](http://www.desconectate.net/) - [Feed RSS](http://www.desconectate.net/feed/)
 * [A hombros de gigantes](http://www.rtve.es/alacarta/audios/a-hombros-de-gigantes/) - [Feed RSS](http://www.rtve.es/api/programas/1873/audios.rss?nocache=473812500)
 * [El Explicador](http://www.ivoox.com/podcast-el-explicador_sq_f138665_1.html) - [Feed RSS](http://www.ivoox.com/podcast-canal-oficial-enrique-ganem_fg_f138665_filtro_1.xml)
