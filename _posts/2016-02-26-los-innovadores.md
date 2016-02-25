@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Los Innovadores"
-date: 2016-02-26 00:30:00
+date: 2016-02-25 22:30:00
 published: true
 ---
 
