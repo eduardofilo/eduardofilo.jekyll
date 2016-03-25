@@ -95,6 +95,8 @@ Lo siguientes pasos nos permiten activar el sistema de gestión del TDT:
 
     Sistema / Ajustes / Add-ons / Instalar desde repositorio / OpenELEC Add-ons (official) / Repositorio de Add-ons / OpenELEC Add-ons (unofficial) / Instalar
     Sistema / Ajustes / Add-ons / Instalar desde repositorio / Todos los repositorios / Servicios / tvheadend / Instalar
+    Sistema / Ajustes / Add-ons / Instalar desde repositorio / Todos los repositorios / Clientes PVR / Tvheadend HTSP Client / Instalar
+    Sistema / Ajustes / Add-ons / Mis add-ons / Clientes PVR / Tvheadend HTSP Client / Configurar / OK
     Sistema / Ajustes / Add-ons / Mis add-ons / Clientes PVR / Tvheadend HTSP Client / Activar
     Sistema / Ajustes / TV en directo / General / Activado
 
