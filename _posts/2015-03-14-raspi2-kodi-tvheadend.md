@@ -7,7 +7,7 @@ published: true
 
 ![KODI Logo](/images/posts/kodi-logo.png)
 
-A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
+A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/). En la instalación se incluye un adaptador Wifi que no será necesario en caso de tener el router cerca y poder llevar un cable ethernet hasta la Raspberry Pi. De hecho es lo más recomendable ya que será habitual consumir contenidos pesados por red. Si se puede prescindir del adaptador Wifi, seguramente tampoco será necesario el concentrador USB que se colocó por precaución al ver como la Raspberry Pi se quejaba de deficiencias en la alimentación (aparece en pantalla un cuadro de colores arriba a la derecha) al conectar directamente el adaptador Wifi y el TDT.
 
 ## Elementos necesarios
 
@@ -24,7 +24,7 @@ Empezamos con la lista de piezas que vamos a necesitar.
 
 ### Software
 
-* [OpenELEC para Raspberry Pi 2](http://releases.openelec.tv/OpenELEC-RPi2.arm-5.0.6.img.gz?mirrorlist)
+* [OpenELEC para Raspberry Pi 2](http://releases.openelec.tv/OpenELEC-RPi2.arm-6.0.3.tar?mirrorlist)
 * [Licencia MPEG-2](http://www.raspberrypi.com/mpeg-2-license-key/): Necesaria para reproducir la señal TDT.
 
 ## Instalación
@@ -38,7 +38,7 @@ Las instrucciones que siguen se corresponden con una instalación desde un equip
 1. Abrimos un terminal.
 2. Bajamos la imagen de OpenELEC para Raspberry Pi 2:
 
-        $ wget http://releases.openelec.tv/OpenELEC-RPi2.arm-5.0.6.img.gz
+        $ wget http://releases.openelec.tv/OpenELEC-RPi2.arm-6.0.3.img.gz
 
 3. Insertamos la tarjeta microSD en el lector de tarjetas del ordenador.
 4. Averiguamos la ruta del dispositivo de la tarjeta:
@@ -64,7 +64,7 @@ Las instrucciones que siguen se corresponden con una instalación desde un equip
 
 7.  Copiamos a la tarjeta la imagen de OpenELEC bajada en el paso 2:
 
-        $ gunzip OpenELEC-RPi2.arm-5.0.6.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
+        $ gunzip OpenELEC-RPi2.arm-6.0.3.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
         $ sudo sync
 
 ### Conexión de piezas
@@ -93,7 +93,7 @@ Una vez activo conectamos a nuestro punto de acceso siguiendo esta secuencia de 
 
 Lo siguientes pasos nos permiten activar el sistema de gestión del TDT:  
 
-    Sistema / Ajustes / Add-ons / Instalar desde repositorio / OpenELEC Mediacenter OS Add-ons / Repositorio de Add-ons / Unofficial OpenELEC (RPi2/arm) Add-ons / Instalar
+    Sistema / Ajustes / Add-ons / Instalar desde repositorio / OpenELEC Add-ons (official) / Repositorio de Add-ons / OpenELEC Add-ons (unofficial) / Instalar
     Sistema / Ajustes / Add-ons / Instalar desde repositorio / Todos los repositorios / Servicios / tvheadend / Instalar
     Sistema / Ajustes / Add-ons / Mis add-ons / Clientes PVR / Tvheadend HTSP Client / Activar
     Sistema / Ajustes / TV en directo / General / Activado
