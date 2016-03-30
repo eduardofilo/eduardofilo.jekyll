@@ -9,7 +9,14 @@ published: true
 
 (Última actualización: 2016-03-25 16:00)
 
-A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/). En la instalación se incluye un adaptador Wifi que no será necesario en caso de tener el router cerca y poder llevar un cable ethernet hasta la Raspberry Pi. De hecho es lo más recomendable ya que será habitual consumir contenidos pesados por red. Si se puede prescindir del adaptador Wifi, seguramente tampoco será necesario el concentrador USB que se colocó por precaución al ver como la Raspberry Pi se quejaba de deficiencias en la alimentación (aparece en pantalla un cuadro de colores arriba a la derecha) al conectar directamente el adaptador Wifi y el TDT.
+A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
+
+En la instalación se incluye un adaptador Wifi que no será necesario en caso de tener el router cerca y poder llevar un cable ethernet hasta la Raspberry Pi. De hecho es lo más recomendable ya que será habitual consumir contenidos pesados por red. Si se puede prescindir del adaptador Wifi, seguramente tampoco será necesario el concentrador USB que se colocó por precaución al ver como la Raspberry Pi se quejaba de deficiencias en la alimentación (aparece en pantalla un cuadro de colores arriba a la derecha) al conectar directamente el adaptador Wifi y el TDT.
+
+Para el airmouse o teclado/ratón inalámbrico también hay alternativas:
+
+* Aplicaciones para el móvil: [Kore](https://play.google.com/store/apps/details?id=org.xbmc.kore) o [Yatse](https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree)
+* Mando a distancia del TV: Si nuestro TV soporta el protocolo [CEC](http://kodi.wiki/view/CEC), puede comandar Kodi a través del cable HDMI
 
 ## Elementos necesarios
 
@@ -23,6 +30,7 @@ Empezamos con la lista de piezas que vamos a necesitar.
 * Hub USB alimentado: En [Raspipc.es](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1065) o en [Pccomponentes.com](http://www.pccomponentes.com/conceptronic_stylish_hub_4_puertos_usb_2_0_azul.html)
 * Sintonizador TDT USB: En [Pccomponentes.com](http://www.pccomponentes.com/conceptronic_sintonizador_tdt_usb.html) o en [Amazon.es](http://www.amazon.es/Conceptronic-C08-096-receptor-Dvb-T-radio/dp/B003KCKERE)
 * [Cable HDMI](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1115). Vamos a suponer que el televisor donde se va a instalar posee una entrada HDMI de tamaño estándar. En caso contrario necesitaremos el adaptador correspondiente.
+* Airmouse o teclado/ratón inalámbricos: En [Amazon.es](https://www.amazon.es/dp/B017LUBR6W/)
 
 ### Software
 
