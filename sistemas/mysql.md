@@ -44,8 +44,8 @@ También hay que permitir las conexiones remotas a nivel de red comentando la si
     mysql -u <usuario> -h <host> -P <puerto> <database> -p
 
 ```
-$ mysql -u root -p 
-Enter password: 
+$ mysql -u root -p
+Enter password:
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 89 to server version: 4.1.11-Debian_4-log
 
@@ -68,7 +68,7 @@ Query OK, 1 row affected (0.03 sec)
 Cambiar o elegir base de datos a utilizar:
 
 ```sql
-mysql> USE irontec_db; 
+mysql> USE irontec_db;
 Database changed
 ```
 
@@ -193,7 +193,7 @@ mysql> CREATE TABLE clientes (
   -> contacto VARCHAR (40)
   -> ) ENGINE=MyISAM;
 Query OK, 0 rows affected (0.05 sec)
-  
+
 mysql> CREATE TABLE presupuestos (
   -> id_presupuesto INT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   -> empresa INT(8) NOT NULL,
@@ -215,7 +215,7 @@ mysql> CREATE TABLE clientes (
   -> contacto VARCHAR(40)
   -> ) ENGINE=InnoDB;
 Query OK, 0 rows affected (0.10 sec)
-  
+
 mysql> CREATE TABLE presupuestos (
   -> id_presupuesto INT(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   -> empresa INT(8) NOT NULL,
@@ -414,7 +414,7 @@ Después para cada tabla, incomprensiblemente, también tienes que especificar q
 
 Para evitar esto lo que podemos hacer es configurar mysql añadiendo estas líneas en la sección **[mysqld]** de `/etc/mysql/my.cnf`:
 
-	
+
 	# UTF8:
 	skip-character-set-client-handshake
 	collation_server=utf8_unicode_ci
@@ -423,11 +423,11 @@ Para evitar esto lo que podemos hacer es configurar mysql añadiendo estas líne
 
 Si después pedimos un status:
 
-	
+
 	mysql> status
 	--------------
 	mysql  Ver 14.12 Distrib 5.0.51a, for debian-linux-gnu (x86_64) using readline 5.2
-	
+
 	Connection id:          31
 	Current database:
 	Current user:           root@localhost
@@ -444,7 +444,7 @@ Si después pedimos un status:
 	Conn.  characterset:    utf8
 	UNIX socket:            /var/run/mysqld/mysqld.sock
 	Uptime:                 11 min 21 sec
-	
+
 	Threads: 1  Questions: 86  Slow queries: 0  Opens: 23  Flush tables: 1  Open tables: 17  Queries per second avg: 0.126
 	--------------
 
@@ -483,7 +483,7 @@ Para cargar un backup hecho previamente:
 $ mysql -h host --user=root --password=contraseña database < backup_irontec_mysql.sql
 ```
 
-Si se quita la opción `-d` en el volcado se incluirán los datos que contengan las tablas.
+Si se quita la opción `-d` en el volcado se incluirán los datos que contengan las tablas. Para tablas muy grandes, para evitar los bloqueos que se producen durante su respaldo, añadir la opción `--single-transaction`.
 
 ## BCPs
 
@@ -499,7 +499,7 @@ Para que no de errores hay que guardar el fichero en formato UTF8 (revisar con e
 
 Para indicar un separador de campos y registros diferentes se pueden usar las opciones siguientes (ver man):
 
-	
+
 	--fields-terminated-by=..., --fields-enclosed-by=..., --fields-optionally-enclosed-by=..., --fields-escaped-by=..
 
 El mismo efecto se consigue con la siguiente query:
