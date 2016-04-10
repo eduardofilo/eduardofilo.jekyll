@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Un antropólogo en Marte"
-date: 2016-04-10 18:30:00
+date: 2016-04-10 16:30:00
 published: true
 ---
 
