@@ -53,9 +53,7 @@ permalink: /desarrollo/html.html
 ### HTML5
 
 *  [Seis sencillas "buenas prácticas" cuando usemos HTML5](http://www.genbetadev.com/desarrollo-web/seis-sencillas-buenas-practicas-cuando-usemos-html5)
-*  [Cheat sheet Tags](http://www.inmotionhosting.com/infographics/_img/html5_cheat_sheet_tags.png)
-*  [Cheat sheet Event Attributes](http://www.inmotionhosting.com/infographics/_img/html5_cheat_sheet_event_attributes.png)
-*  [Cheat sheet Browser support](http://www.inmotionhosting.com/infographics/_img/html5_cheat_sheet_browser_support.png)
+*  [HTML5 Cheat Sheet](https://www.hivelocity.net/html5/)
 *  [Con IndexedDB puedes almacenar offline una base de datos en un navegador](http://www.genbetadev.com/desarrollo-web/con-indexeddb-puedes-almacenar-offline-una-base-de-datos-en-un-navegador)
 
 ### CSS
