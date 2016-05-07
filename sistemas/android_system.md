@@ -45,6 +45,8 @@ XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo 
 * [OxygenOS is here [Installation Guide]](https://forums.oneplus.net/threads/oxygenos-is-here-installation-guide.289398/)
 * [OnePlus One Update: Manually Install CyanogenMod OS 12 CM12 [TUTORIAL]](http://www.latintimes.com/oneplus-one-update-manually-install-cyanogenmod-os-12-cm12-tutorial-309788)
 * [Mirrors for official Cyanogen roms and OTA updates](http://forum.xda-developers.com/oneplus-one/general/official-cm11s-roms-ota-updates-t2906746)
+* [TWRP for bacon](https://dl.twrp.me/bacon/)
+* [Cyanogem Support](https://cyngn.com/support): Imágenes de fábrica para Oneplus One y el resto de dispositivos que tienen soporte de Cyanogen.
 
 #### Modos arranque
 
