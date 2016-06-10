@@ -43,6 +43,7 @@ layout: default
 * [AppleTV](/sistemas/appletv.html)
 * [MySQL](/sistemas/mysql.html)
 * [Emulación](/sistemas/emulacion.html)
+* [Kodi/OpenELEC](/sistemas/kodi.html)
 
 # Cursos
 
