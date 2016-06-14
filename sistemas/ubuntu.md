@@ -519,3 +519,7 @@ Si es a nivel de usuario se hará en:
 ```bash
 gsettings set com.canonical.desktop.interface scrollbar-mode normal
 ```
+
+## Skype en tray
+
+Instalar los paquetes `sni-qt` y `sni-qt:i386`.
