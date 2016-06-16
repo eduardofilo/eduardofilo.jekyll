@@ -214,7 +214,10 @@ C:\Documents and Settings\All Users\Menú Inicio\Programas\Inicio
 y en Windows 98 será:
 
 ```
-C:\Windows\Menú Inicio\Programas\Inicio 
+C:\Windows\Menú Inicio\Programas\Inicio
 ```
 
 ([Fuente](http://www.trucoswindows.net/explicapro.html))
+
+## Ajustes tras instalación Windows 10
+Recien instalado, Windows 10 trae preconfiguradas unas cuantas cosas que estarían mejor desactivadas. [Aquí](http://www.adslzone.net/2016/06/14/9-cosas-desactivar-windows-10/) tenemos una lista de ajustes a efectuar tras la instalación o actualización.
