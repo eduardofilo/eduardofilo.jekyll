@@ -11,3 +11,12 @@ Si durante las búsquedas, alguno de los canales bloquea el progreso, segurament
     /storage/.kodi/addons/plugin.video.pelisalacarta/channels
 
 Allí localizamos el archivo .xml correspondiente al canal, lo editamos y ponemos a `false` la propiedad `active`.
+
+## Mapeo de teclas del mando a distancia
+En ocasiones alguna de las teclas del mando deja de funcionar. A mi me ha ocurrido varias veces con la tecla Back. Con el tiempo se soluciona solo (algunas veces reiniciar ayuda pero no siempre). Desconozco el mecanismo que estropea el mapeo de esta tecla, pero la solución es modificar el fichero `/storage/.kodi/userdata/keymaps/remote.xml`. En él, dentro de la sección `<keymap><global><remote>`, cuando deja de funcionar la tecla back me encuentro:
+
+    <back>RunScript(special://userdata/keymaps/test.py)</back>
+
+La solución es reponer el valor:
+
+    <back>Back</back>
