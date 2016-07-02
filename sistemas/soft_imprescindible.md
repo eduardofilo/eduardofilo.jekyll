@@ -12,6 +12,7 @@ permalink: /sistemas/soft_imprescindible.html
 ## Linux
 
 *  [GNU Screen](http://phenobarbital.wordpress.com/2013/02/18/linux-usando-gnu-screen/)
+*  [Shotcut](https://www.shotcut.org/): Editor de vídeo.
 
 ## Windows
 *  [CNet Windows Vista Test](http://reviews.cnet.com/4520-3672_7-6671810-1.html): Test online de requerimientos de Vista.
