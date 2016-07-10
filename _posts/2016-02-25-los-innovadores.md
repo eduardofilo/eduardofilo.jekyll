@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Los Innovadores"
+title: "Los Innovadores - Walter Isaacson"
 date: 2016-02-25 22:30:00
 published: true
 ---
