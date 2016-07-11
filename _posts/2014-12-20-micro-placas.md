@@ -19,6 +19,7 @@ A continuación una lista con algunas de las placas de este tipo que se pueden e
 * [Cubieboard](http://cubieboard.org/)
 * [UDOO](http://www.udoo.org/)
 * [ODROID](http://www.hardkernel.com/main/main.php)
+* [Up](http://up-shop.org/)
 
 Hasta ahora los únicos proyectos que he puesto en marcha han sido de computación, es decir, sin componente hardware, que es otro de los usos importantes que se les suelen dar. Han servido para delegar un par de funciones que antes ejecutaba directamente sobre mi PC principal. Concretamente:
 
