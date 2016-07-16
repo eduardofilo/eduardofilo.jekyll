@@ -24,8 +24,8 @@ permalink: /proyectos/minecraft.html
 * [Minecraft sobre ARM](http://rogerallen.github.io/jetson/2014/07/31/minecraft-on-jetson-tk1/): Compilación de librerías LWJGL y OpenAL para lanzar Minecraft (completo, no Pocket edition) sobre ARM.
 * [MineOS: Minecraft hosting improved](http://minecraft.codeemo.com/)
 * [How to setup Minecraft 1.8.9 on RaspPi2](https://www.raspberrypi.org/forums/viewtopic.php?f=78&t=137279)
-* [OptiFine](http://optifine.net/home): Mod para tunear Minecraft en placas poco potentes.
-* [Debian/Ubuntu repository for Games/Emulators/Kernel](http://forum.odroid.com/viewtopic.php?f=52&t=5908&p=47148): Repositorio con versión de Minecraft modificada para funcionar en ARM.
+* [OptiFine](http://optifine.net/home): Mod para tunear Minecraft en placas poco potentes. Instrucciones [aquí](http://magazine.odroid.com/wp-content/uploads/ODROID-Magazine-201607.pdf#page=20).
+* [Debian/Ubuntu repository for Games/Emulators/Kernel](http://forum.odroid.com/viewtopic.php?f=52&t=5908&p=47148): Repositorio con versión de Minecraft modificada para funcionar en ARM. Instrucciones [aquí](http://magazine.odroid.com/wp-content/uploads/ODROID-Magazine-201607.pdf#page=20).
 
 ### Educación
 
