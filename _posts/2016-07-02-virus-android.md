@@ -12,3 +12,7 @@ Dado el diseño de Android y la forma en que los distintos fabricantes lo distri
 Otra situación (como la del caso que se ilustra al principio del vídeo) es que la alerta aparezca mediante una página web en el navegador. Con el diseño minimalista de los navegadores web Android (el que se ve en el vídeo es Chrome), a veces cuesta reconocer que estamos ante una simple página web y no delante de una pantalla del sistema. Esto es lo que parece pretender el diseño del mensaje que se muestra en el vídeo al incluir diseños y logotipos propios de Google. En este caso lo que tendremos que hacer es borrar los datos del navegador, ya que la página de la alerta puede haberse "instalado" (modificando la página de inicio por ejemplo) al haber navegado por algunos sitios (normalmente poco recomendables, otra cosa que conviene minimizar o evitar; en caso de hacerlo se recomienda usar el modo incógnito que incorporan ahora la mayoría de los navegadores).
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/_IvmI-dys6k" frameborder="0" allowfullscreen></iframe>
+
+Enlaces:
+
+* [El Androide Libre - Cómo eliminar ese "virus" que ha aparecido en tu móvil](http://www.elandroidelibre.com/2016/07/eliminar-virus-de-la-bateria-movil.html)
