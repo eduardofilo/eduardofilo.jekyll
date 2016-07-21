@@ -97,6 +97,13 @@ $ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | sudo dd of=/dev/mmcblk0 bs=2M
 $ sudo pkill -USR1 -n -x dd
 ```
 
+Como alternativa se puede instalar el comando `dcfldd` para sustituir a `dd`, con lo que obtendremos una indicación del progreso de la copia. `dcfldd` informa cada 256 bloques escritos por defecto. Para que lo haga con más frecuencia hay que pasarle la opción `statusinterval` de esta forma:
+
+```bash
+$ #Backup:
+$ sudo dcfldd statusinterval=10 if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
+```
+
 ### Gestión de la SWAP
 
 Para redimensionar la Swap predeterminada (fichero de 100MB en `/var/swap`):
