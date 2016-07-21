@@ -485,6 +485,40 @@ Restauración:
 $ gzip -dc /path/to/image.gz | dd of=/dev/hdx
 ```
 
+## Montar un fichero .img
+
+([Fuente](http://www.linuxquestions.org/questions/linux-general-1/how-to-mount-img-file-882386/)). Primero hay que averiguar el offset de la partición que queremos montar:
+
+```
+fdisk -l /ruta/fichero.img
+```
+
+Esto nos mostrará el tamaño del bloque y el bloque de comienzo de la partición. Por ejemplo:
+
+```
+edumoreno@eduardo-HP-Folio-13:~/Descargas$ fdisk -l RetroPie.img
+Disk RetroPie.img: 3,7 GiB, 3965190144 bytes, 7744512 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0xb847d94e
+
+Disposit.     Inicio  Start   Final Sectores  Size Id Tipo
+RetroPie.img1 *        8192  124927   116736   57M  e W95 FAT16 (LBA)
+RetroPie.img2        124928 7744511  7619584  3,6G 83 Linux
+```
+
+El offset se calculará multiplicando el bloque de comienzo por el tamaño de bloque. En el ejemplo, para la segunda partición:
+
+offset = 124928 * 512 = 63963136
+
+Por tanto el comando para montar será:
+
+```
+sudo mount -o loop,offset=63963136 RetroPie.img /mnt/tmp
+```
+
 ## Manipulación de PDFs
 
 División en múltiples ficheros (uno por página):
