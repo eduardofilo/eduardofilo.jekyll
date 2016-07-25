@@ -26,7 +26,7 @@ permalink: /sistemas/android_system.html
 
 #### Modos arranque
 
-* Recovery: Apagado pulsar `Power` mientras se pulsa `Volume-``. Cuando salga el logo de Android tumbado con el triángulo rojo pulsar `Volume+`` mientras se mantiene pulsado `Power`.
+* Recovery: Apagado pulsar `Power` mientras se pulsa `Volume-`. Cuando salga el logo de Android tumbado con el triángulo rojo pulsar `Volume+` mientras se mantiene pulsado `Power`.
 
 ### Geeksphone One
 
