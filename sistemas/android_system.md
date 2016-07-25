@@ -17,6 +17,17 @@ permalink: /sistemas/android_system.html
 
 ## Dispositivos
 
+### Motorola Moto E (XT1021)
+
+#### Enlaces
+
+* [Info Cyanogenmod](http://wiki.cyanogenmod.org/w/Condor_Info)
+* [Downloads Cyanogenmod](https://download.cyanogenmod.org/?device=condor)
+
+#### Modos arranque
+
+* Recovery: Apagado pulsar `Power` mientras se pulsa `Volume-``. Cuando salga el logo de Android tumbado con el triángulo rojo pulsar `Volume+`` mientras se mantiene pulsado `Power`.
+
 ### Geeksphone One
 
 #### Enlaces
