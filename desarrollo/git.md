@@ -171,6 +171,20 @@ Muestra la versión de un fichero en un determinado commit:
 $ git show SHA:FILE
 ```
 
+Crear un tag
+
+```bash
+$ git tag -a tag_id -m "Creación de tag tag_id."
+$ git push --follow-tags
+```
+
+Eliminación de un tag
+
+```bash
+$ git tag -d tag_id
+$ git push origin :refs/tags/tag_id
+```
+
 ## Branches
 
 Creación:
