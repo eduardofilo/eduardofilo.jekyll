@@ -140,6 +140,13 @@ Para activar swap con un fichero en concreto:
 $ sudo swapon /var/swap
 ```
 
+## Pi-top
+
+### Enlaces
+
+* [pi-top-install](https://github.com/rricharz/pi-top-install): Scripts para controlar el hardware del Pi-top (teclas brillo pantalla, power off, etc.) sobre Raspbian oficial.
+* [pi-top-battery-status](https://github.com/rricharz/pi-top-battery-status): Muestra el estado de la batería del Pi-top en Raspbian.
+
 ## Artículos interesantes de [TheMagPi](http://www.themagpi.com/)
 
 * Librería Python para controlar un puerto USB: Página 14 de #3 de TheMagPi
