@@ -72,12 +72,12 @@ Sobre Ubuntu 16.04.
 
 12. Conectar la placa por USB al ordenador.
 
-13. Arrancar gdbserver:
+13. Arrancamos gdbserver:
 
         $ cd ~/git/stlink/build
         $ sudo ./st-util -1
 
-14. Conectar con él desde el directorio donde esté el binario que queremos depurar o ejecutar:
+14. Conectamos con él desde el directorio donde esté el binario que queremos depurar o ejecutar:
 
         $ cd ~/git/STM32-Template/Demo
         $ arm-none-eabi-gdb Demo.elf
