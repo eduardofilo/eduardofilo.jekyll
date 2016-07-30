@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /sistemas/stm32.html
+permalink: /desarrollo/stm32.html
 ---
 
 # STM 32
