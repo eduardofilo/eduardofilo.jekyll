@@ -14,6 +14,7 @@ permalink: /desarrollo/stm32.html
 * [STM32-Template](https://github.com/geoffreymbrown/STM32-Template)
 * [Open source version of the STMicroelectronics Stlink Tools](https://github.com/texane/stlink)
 * [STM32VLDISCOVERY programming tutorial](http://en.radzio.dxp.pl/stm32vldiscovery/)
+* [Programming STM32VLDISCOVERY with Codesourcery and Eclipse](http://en.radzio.dxp.pl/stm32vldiscovery/programming,with,opensource,toolchain,codesourcery,eclipse.html)
 
 ### Preparación entorno desarrollo
 
