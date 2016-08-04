@@ -74,3 +74,5 @@ ST propone varios entornos de desarrollo para trabajar sobre su placa [STM32 VL 
         (gdb) target extended-remote localhost:4242
         (gdb) load
         (gdb) quit
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/P1yi9i1A8K4" frameborder="0" allowfullscreen></iframe>
