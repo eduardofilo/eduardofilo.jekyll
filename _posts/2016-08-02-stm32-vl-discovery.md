@@ -46,7 +46,7 @@ ST propone varios entornos de desarrollo para trabajar sobre su placa [STM32 VL 
 
         $ sudo apt-get install pkg-config intltool build-essential cmake libusb-1.0 libgtk-3-dev
 
-10. Tal y como se explica en el [README del proyecto](https://github.com/texane/stlink) descargado en el paso 7, el interfaz STLINKv1 que utiliza la STM32VLDISCOVERY, tiene ciertos problemas que para evitar hay que desactivar algunos módulos. Para ello ejecutar lo siguiente al principio de una sesión en la que se quiera trabajar con él:
+10. Tal y como se explica en el [README del proyecto](https://github.com/texane/stlink) descargado en el paso 7, el interfaz STLINKv1 que utiliza la STM32VLDISCOVERY, tiene ciertos problemas que para evitar hay que reconfigurar el módulo `usb-storage`. Para ello ejecutar lo siguiente al principio de una sesión en la que se quiera trabajar con él:
 
         $ sudo modprobe -r usb-storage && sudo modprobe usb-storage quirks=483:3744:i
 
