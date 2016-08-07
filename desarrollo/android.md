@@ -5,6 +5,10 @@ permalink: /desarrollo/android.html
 
 # Android
 
+## Documentación clave
+
+* [ID's de los View's](https://developer.android.com/guide/topics/ui/declaring-layout.html#id)
+
 ## Tips varios
 
 *  [Activity restart on rotation Android](http://stackoverflow.com/questions/456211/activity-restart-on-rotation-android)
@@ -55,11 +59,11 @@ permalink: /desarrollo/android.html
 Tu clave es:
 
     0V21y2J7NRVSVKA...5C9Ag
-    
+
 Esta clave es válida para todas las aplicaciones firmadas con el certificado cuya huella dactilar sea:
 
     C2:EC:22:8F:...:56:39
-    
+
 Incluimos un diseño xml de ejemplo para que puedas iniciarte por los senderos de la creación de mapas:
 
 ```xml
@@ -411,7 +415,7 @@ for (ResolveInfo ri : launchers) {
         break;
     }
 }
-        
+
 Intent myIntent = new Intent();
 myIntent.setClassName(packageName, name);
 startActivity(myIntent);
