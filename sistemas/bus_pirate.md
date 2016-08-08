@@ -54,6 +54,11 @@ Select output type:
 
 (1)>2
 Ready
+UART>(0)
+ 0.Macro menu
+ 1.Transparent bridge
+ 2. Live monitor
+ 3.Bridge with flow control
 UART>(1)
 UART bridge
 Reset to exit
