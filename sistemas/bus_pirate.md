@@ -12,7 +12,7 @@ permalink: /sistemas/bus_pirate.html
 ## Conexión
 
 ```bash
-# screen /dev/buspirate 115200 8N1
+$ screen /dev/buspirate 115200 8N1
 ```
 
 ## Adaptador USB-UART
