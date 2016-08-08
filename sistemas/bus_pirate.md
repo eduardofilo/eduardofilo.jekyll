@@ -5,6 +5,9 @@ permalink: /sistemas/bus_pirate.html
 
 # Bus Pirate
 
+## Referencia conexiones
+![SQL Joins](/images/pages/bpv3_csv2.png)
+
 ## Enlaces
 
 * [Bus Pirate - Documentación oficial](http://dangerousprototypes.com/docs/Bus_Pirate/es)
