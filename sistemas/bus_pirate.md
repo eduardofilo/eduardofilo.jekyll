@@ -37,6 +37,7 @@ w/W     PSU (off/ON)            <x>/<x= >/<0>   Usermacro x/assign x/list all
 ## Enlaces
 
 * [Bus Pirate - Documentación oficial](http://dangerousprototypes.com/docs/Bus_Pirate/es)
+* [BusPirate oscilloscope python script](http://hwmayer.blogspot.com.es/2010/09/buspirate-oscilloscope-python-script.html)
 
 ## Conexión
 
