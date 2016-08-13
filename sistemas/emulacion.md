@@ -8,6 +8,7 @@ permalink: /sistemas/emulacion.html
 ## Enlaces
 
 * [Emuladores en OpenELEC](http://misapuntesde.com/post.php?id=502)
+* [Configuración PiGRRL-2](http://apuntes.eduardofilo.es/2016/07/21/PIGRRL-2.html)
 
 ## Empaquetado de ROMs MAME
 
