@@ -15,6 +15,10 @@ permalink: /sistemas/android_system.html
 * [Simple ADB Backup - Full backup without root](http://forum.xda-developers.com/showthread.php?p=36499906)
 * [Desbloquea el bootloader de tu HTC fácilmente con Firewater S-Off](http://www.elandroidelibre.com/2014/02/desbloquea-el-bootloader-de-tu-htc-facilmente-con-firewater-s-off.html)
 
+## Aplicaciones interesantes
+
+* [KK Easy Launcher(Big Launcher)](https://play.google.com/store/apps/details?id=com.big.launcher)
+
 ## Dispositivos
 
 ### Motorola Moto E (XT1021)
