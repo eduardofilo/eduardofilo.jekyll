@@ -5,6 +5,10 @@ permalink: /desarrollo/android.html
 
 # Android
 
+## Entorno
+
+* [Todos los drivers para instalar ADB en Windows sin morir en el intento](http://www.elandroidelibre.com/2016/09/instalar-adb-en-windows.html)
+
 ## Documentación clave
 
 * [ID's de los View's](https://developer.android.com/guide/topics/ui/declaring-layout.html#id)
