@@ -107,14 +107,14 @@ Preparar un servidor:
 ```bash
 $ cd first_app/..
 $ git clone --bare first_app first_app.git
-$ scp -r first_app.git tecnoemporium@tecnoemporium.es:git
+$ scp -r first_app.git usuario@dominio.com:git
 ```
 
 Conectar la copia de trabajo con un servidor:
 
 ```bash
 $ cd first_app
-$ git remote add origin tecnoemporium@tecnoemporium.es:git/first_app.git
+$ git remote add origin usuario@dominio.com:git/first_app.git
 ```
 
 (`origin` es el nombre de la conexión; puede ser cualquier cosa, aunque si se pone otra cosa habrá que especificar el nombre al hacer `push`, ya que `origin` es el nombre de destino predeterminado)
@@ -136,7 +136,7 @@ $ git remote rm origin
 Checkout (remoto):
 
 ```bash
-$ git clone tecnoemporium@tecnoemporium.es:git/first_app.git
+$ git clone usuario@dominio.com:git/first_app.git
 ```
 
 Sincronizar con el servidor remoto:
