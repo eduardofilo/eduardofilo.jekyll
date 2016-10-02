@@ -25,6 +25,16 @@ Para contar las lineas de un proyecto, lanzar desde la raíz del proyecto ( el d
 $ find . -name "*.java" | xargs wc -l
 ```
 
+## Imprimir callstack
+
+Para averiguar la pila de llamadas de funciones que nos permiten llegar a la ejecución del punto que estamos revisando. Viene muy bien cuando la ejecución implica llamadas JNI ya que esa parte del código suele quedar oculta en una librería nativa (.so o .dll).
+
+```java
+for (StackTraceElement ste : Thread.currentThread().getStackTrace()) {
+    Log.w(TAG, ste);
+}
+```
+
 ## Iterar un Map
 
 Para el caso de un `Map<String, String>`:
@@ -93,12 +103,12 @@ En el siguiente ejemplo implementamos un fichero properties de configuración, y
 ###   Nivel de trazas máximo                                 ###
 ###   Salida por consola y fichero                           ###
 ################################################################
-#log4j.rootCategory=DEBUG, LOGFILE, CONSOLE 
+#log4j.rootCategory=DEBUG, LOGFILE, CONSOLE
 
 #log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
 #log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
 #log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
-#log4j.appender.CONSOLE.layout.ConversionPattern=%-5p %c %x - %m%n 
+#log4j.appender.CONSOLE.layout.ConversionPattern=%-5p %c %x - %m%n
 
 ################################################################
 ### Configuración para DESARROLLO, PREPRODUCCION, PRODUCCION ###
