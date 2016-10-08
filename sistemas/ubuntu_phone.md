@@ -5,7 +5,11 @@ permalink: /sistemas/ubuntu_phone.html
 
 # Ubuntu Phone
 
-## Activar SSH:
+## Enlaces
+
+* [Installing Ubuntu](https://developer.ubuntu.com/en/phone/devices/installing-ubuntu-for-devices)
+
+## Activar SSH
 
     sudo service ssh start
     sudo setprop persist.service.ssh true
