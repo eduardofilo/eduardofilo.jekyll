@@ -45,6 +45,7 @@ permalink: /sistemas/unix.html
 *  `wget -q -O - url`: Hace la request de la URL sin emitir trazas (-q = no verbose) y redireccionando la response a la salida estándar (-O -).
 *  `route -n`: Muestra la tabla de rutas con IP's en lugar de con nombres.
 *  `cat /etc/resolv.conf`: Muestra el gateway en uso.
+*  `ldd <binario>`: Indica las librerías que usa el binario.
 
 ## Alias SSH
 
