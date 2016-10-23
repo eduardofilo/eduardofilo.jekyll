@@ -23,7 +23,7 @@ Pues bien, sólo hay que soldar un par de pines a esas dos conexiones:
 
 En esos pines lo ideal sería enchufar un conector de pin hembra doble como éste:
 
-![Raspberry Pi Logo](/images/posts/rpi_sw_5.jpg)
+![Raspberry Pi Logo](/images/posts/rpi_sw_5.png)
 
 Hasta que me haga con él he improvisado la conexión con unos terminales de empalme aplastados:
 
