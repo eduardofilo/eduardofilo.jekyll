@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Interruputor de encendido para Raspberry Pi (que no de apagado)"
-date: 2016-08-13 11:00:00
+date: 2016-10-17 20:00:00
 published: true
 ---
 
