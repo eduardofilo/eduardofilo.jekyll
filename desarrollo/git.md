@@ -185,6 +185,18 @@ $ git tag -d tag_id
 $ git push origin :refs/tags/tag_id
 ```
 
+Eliminación de último commit ([Fuente](http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git))
+
+```bash
+$ git reset --hard HEAD~1
+```
+
+Si el commit ya ha subido al repositorio hacer además:
+
+```bash
+ git push origin HEAD --force
+ ```
+
 ## Branches
 
 Creación:
