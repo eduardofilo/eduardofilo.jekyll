@@ -6,7 +6,7 @@ permalink: /podcasts.html
 
 # Directorio de Podcasts
 
-<iframe width=640>https://lists.pocketcasts.com/07ee6c07-0909-4bf3-885b-0f46a58a3758</iframe>
+<iframe width="640" src="https://lists.pocketcasts.com/07ee6c07-0909-4bf3-885b-0f46a58a3758"></iframe>
 
 Esta es la lista de podcasts que escucho/recomiendo:
 
@@ -30,7 +30,7 @@ Esta es la lista de podcasts que escucho/recomiendo:
 * [El Podcast del Búho](https://elpodcastdelbuho.com/) - [Feed RSS](http://feeds.feedburner.com/elpodcastdelbuho)
 * [Engadget en español](http://es.engadget.com/es-podcasts/el-podcast-de-engadget/) - [Feed RSS](http://es.engadget.com/topics/podcasts/rss.xml)
 * [Esta peli ya la he visto](http://estapeliyalahevisto.com/) - [Feed RSS](http://estapeliyalahevisto.com/feed/podcast)
-* [GeoCastAway | GeoNáufragos](http://www.geocastaway.com/) - [Feed RSS](http://feeds.feedburner.com/geocastawaypodcast)
+* [GeoCastAway](http://www.geocastaway.com/) - [Feed RSS](http://feeds.feedburner.com/geocastawaypodcast)
 * [La fábrica de la ciencia](http://www.ivoox.com/podcast-fabrica-ciencia_sq_f1100722_1.html) - [Feed RSS](http://www.ivoox.com/fabrica-ciencia_fg_f1100722_filtro_1.xml)
 * [El Método](http://elmetodo.fm/) - [Feed RSS](http://feeds.soundcloud.com/users/soundcloud:users:14218261/sounds.rss)
 * [Nadie sabe nada](http://cadenaser.com/programa/nadie_sabe_nada/) - [Feed RSS](http://urotrosfiles.media.streamtheworld.com/otrosfiles/podcasts/488.xml)
@@ -87,7 +87,7 @@ Esta es la lista de podcasts que escucho/recomiendo:
 * [Cerveza Gratis](http://cervezagratis.es/) - [Feed RSS](http://feeds.feedburner.com/cervezagratis/OGG): [Cancelado](http://cervezagratis.es/2014/12/triste-despedida/) pero mantiene el feed.
 * Comunicando podcast - [Feed RSS](http://feeds.feedburner.com/comunicando)
 * [Kafelog](http://www.kafelog.com/) - [Feed RSS](http://feeds.feedburner.com/kafelog)
-* [Linux HispanoPodcast | Noticias, tira, podcast, juegos, Linux y software libre](http://www.linuxhispano.net/podcast/) - [Feed RSS](http://feeds.feedburner.com/ElPodcastDeLinuxHispano)
+* [Linux Hispano Podcast](http://www.linuxhispano.net/podcast/) - [Feed RSS](http://feeds.feedburner.com/ElPodcastDeLinuxHispano)
 * podcastespana2003 - [Feed RSS](http://feeds.feedburner.com/1podcast)
 * [El amuleto de Yendor](http://yendor.es/) - [Feed RSS](http://feeds.feedburner.com/ElAmuletoDeYendor): Cancelado pero mantiene el feed.
 * [Podcast Soliloquio 2005](http://www.fjromero.com/podcast/) - [Feed RSS](http://www.fjromero.com/podcast/rss.xml): No publica desde hace tiempo.
