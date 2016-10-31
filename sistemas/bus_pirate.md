@@ -45,7 +45,7 @@ w/W     PSU (off/ON)            <x>/<x= >/<0>   Usermacro x/assign x/list all
 $ screen /dev/buspirate 115200 8N1
 ```
 
-## Adaptador USB-UART
+## Adaptador USB-UART (modo bridge)
 
 Bus Pirate se puede utilizar como un adaptador USB-UART configurándolo en modo UART y activar el macro de modo transparente. Para ello seguir la siguiente secuencia:
 
@@ -94,3 +94,11 @@ UART bridge
 Reset to exit
 Are you sure? y
 ```
+
+## Adaptador USB-UART (modo debug)
+
+Cuando utilizamos el modo UART en modo debug, tal y como se describe [aquí](http://dangerousprototypes.com/blog/bus-pirate-manual/bus-pirate-uart-guide/), sólo tenemos un buffer de 4 bytes, por lo que es fácil obtener un overrun del mismo. En ese caso, al leer (comando 'r') se nos mostrará el error:
+
+    READ: 0x40 *Bytes dropped*<<<bytes dropped error
+
+En esas situaciones usar el modo transparente o usar el comando 'start' (`[`).
