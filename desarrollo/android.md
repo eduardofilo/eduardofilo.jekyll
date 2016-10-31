@@ -9,6 +9,11 @@ permalink: /desarrollo/android.html
 
 * [Todos los drivers para instalar ADB en Windows sin morir en el intento](http://www.elandroidelibre.com/2016/09/instalar-adb-en-windows.html)
 
+## Compilación AOSP
+
+* [Getting Started: Building Android From Source](http://xda-university.com/as-a-developer/getting-started-building-android-from-source)
+* [How to Build an Android ROM](http://xda-university.com/as-a-developer/introduction-how-an-android-rom-is-built)
+
 ## Documentación clave
 
 * [ID's de los View's](https://developer.android.com/guide/topics/ui/declaring-layout.html#id)
