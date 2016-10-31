@@ -7,11 +7,12 @@ permalink: /desarrollo/git.html
 
 ## Enlaces
 
-*  [Libro Pro Git en español](http://git-scm.com/book/es)
-*  [Cheat Sheat](http://cheat.errtheblog.com/s/git)
-*  [git - la guía sencilla](http://rogerdudler.github.com/git-guide/index.es.html) :exclamation:
-*  [Git Tutorials & Training by Atlassian](http://atlassian.com/git) :exclamation:
-*  [Detached HEAD en Git](http://mundogeek.net/archivos/2015/08/11/detached-head-en-git/)
+* [Libro Pro Git en español](http://git-scm.com/book/es)
+* [Cheat Sheat](http://cheat.errtheblog.com/s/git)
+* [git - la guía sencilla](http://rogerdudler.github.com/git-guide/index.es.html) :exclamation:
+* [Git Tutorials & Training by Atlassian](http://atlassian.com/git) :exclamation:
+* [Detached HEAD en Git](http://mundogeek.net/archivos/2015/08/11/detached-head-en-git/)
+* [Github git tutorial](https://try.github.io/levels/1/challenges/1)
 
 ## Comandos básicos
 
