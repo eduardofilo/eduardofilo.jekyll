@@ -97,7 +97,7 @@ Are you sure? y
 
 ## Adaptador USB-UART (modo debug)
 
-Cuando utilizamos el modo UART en modo debug, tal y como se describe [aquí](http://dangerousprototypes.com/blog/bus-pirate-manual/bus-pirate-uart-guide/), sólo tenemos un buffer de 4 bytes, por lo que es fácil obtener un overrun del mismo. En ese caso, al leer (comando 'r') se nos mostrará el error:
+Cuando utilizamos el modo UART en modo debug, tal y como se describe [aquí](http://dangerousprototypes.com/blog/bus-pirate-manual/bus-pirate-uart-guide/), sólo tenemos un buffer de 4 bytes, por lo que es fácil obtener un overrun del mismo. En ese caso, al leer (comando `r`) se nos mostrará el error:
 
     READ: 0x40 *Bytes dropped*<<<bytes dropped error
 
