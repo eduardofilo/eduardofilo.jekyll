@@ -6,7 +6,7 @@ permalink: /podcasts.html
 
 # Directorio de Podcasts
 
-<iframe width="640" src="https://lists.pocketcasts.com/07ee6c07-0909-4bf3-885b-0f46a58a3758"></iframe>
+<iframe width="800" height="600" src="https://lists.pocketcasts.com/07ee6c07-0909-4bf3-885b-0f46a58a3758"></iframe>
 
 Esta es la lista de podcasts que escucho/recomiendo:
 
