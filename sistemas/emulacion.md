@@ -10,6 +10,7 @@ permalink: /sistemas/emulacion.html
 * [Emuladores en OpenELEC](http://misapuntesde.com/post.php?id=502)
 * [Configuración PiGRRL-2](http://apuntes.eduardofilo.es/2016/07/21/PIGRRL-2.html)
 * [Managing ROMs](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs)
+* [MAME FAQ](http://wiki.mamedev.org/index.php/FAQ:Games): Resuelve dudas sobre peculiaridades de algunos juegos. Por ejemplo sobre el arranque de [Joust](http://wiki.mamedev.org/index.php/FAQ:Games#Joust).
 
 ## Empaquetado de ROMs MAME
 
