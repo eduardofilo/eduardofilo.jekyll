@@ -170,8 +170,8 @@ $ git reset --hard HEAD~1
 Si el commit ya ha subido al repositorio hacer además:
 
 ```bash
- git push origin HEAD --force
- ```
+git push origin HEAD --force
+```
 
 ## Diff's
 
