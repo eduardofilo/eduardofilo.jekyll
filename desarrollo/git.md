@@ -177,10 +177,10 @@ git push origin HEAD --force
 
 Distintos tipos de diff's:
 
-* working vs staging: git diff
-* staging vs snapshot: git diff --staged
-* working vs snapshot: git diff HEAD
-* snapshot vs snapshot: git diff <from_SHA1> <to_SHA1>
+* working vs staging: `git diff`
+* staging vs snapshot: `git diff --staged`
+* working vs snapshot: `git diff HEAD`
+* snapshot vs snapshot: `git diff <from_SHA1> <to_SHA1>`
 
 Ficheros modificados entre dos commits:
 
