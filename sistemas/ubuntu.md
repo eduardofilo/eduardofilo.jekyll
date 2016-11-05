@@ -522,7 +522,7 @@ gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 ## Skype en tray
 
-Instalar los paquetes ~sni-qt~ y ~sni-qt:i386~.
+Instalar los paquetes `sni-qt` y `sni-qt:i386`.
 
 ## Workrave en tray
 
