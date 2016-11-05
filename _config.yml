@@ -18,10 +18,7 @@ markdown: kramdown
 
 kramdown:
   input: GFM
-  use_coderay: true
-  coderay:
-    coderay_line_numbers: true
-    coderay_css: class
+  hard_wrap: false
 gems:
-  - jemoji
-  - jekyll-sitemap
+  - jekyll-coffeescript
+  - jekyll-paginate
