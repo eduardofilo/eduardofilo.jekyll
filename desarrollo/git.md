@@ -13,6 +13,7 @@ permalink: /desarrollo/git.html
 * [Git Tutorials & Training by Atlassian](http://atlassian.com/git) :exclamation:
 * [Detached HEAD en Git](http://mundogeek.net/archivos/2015/08/11/detached-head-en-git/)
 * [Github git tutorial](https://try.github.io/levels/1/challenges/1)
+* [La Parábola de Git @ CAPSiDE HQ](https://www.youtube.com/watch?v=sXudMl5x_5g)
 
 ## Comandos básicos
 
@@ -91,12 +92,6 @@ $ git log --name-status
 $ git log --stat
 ```
 
-Diferencias en ficheros entre dos commits:
-
-```bash
-$ git diff bdfe0ca0a7d69836bb9fe8da741aa7db9a041567 7c3f40a99e3f4860cf2f6327e118fd433e9ec5f6
-```
-
 Rename:
 
 ```bash
@@ -152,26 +147,6 @@ Info (parecido a svn info):
 $ cat .git/config
 ```
 
-Ficheros modificados entre dos commits:
-
-```bash
-$ git diff --name-only SHA1 SHA2
-$ #o
-$ git diff --stat SHA1 SHA2
-```
-
-Diferencias en un fichero entre dos commits:
-
-```bash
-$ git diff SHA1 SHA2 FICHERO
-```
-
-Muestra la versión de un fichero en un determinado commit:
-
-```bash
-$ git show SHA:FILE
-```
-
 Crear un tag
 
 ```bash
@@ -197,6 +172,35 @@ Si el commit ya ha subido al repositorio hacer además:
 ```bash
  git push origin HEAD --force
  ```
+
+## Diff's
+
+Distintos tipos de diff's:
+
+* working vs staging: git diff
+* staging vs snapshot: git diff --staged
+* working vs snapshot: git diff HEAD
+* snapshot vs snapshot: git diff <from_SHA1> <to_SHA1>
+
+Ficheros modificados entre dos commits:
+
+```bash
+$ git diff --name-only SHA1 SHA2
+$ #o
+$ git diff --stat SHA1 SHA2
+```
+
+Diferencias en un fichero entre dos commits:
+
+```bash
+$ git diff SHA1 SHA2 FICHERO
+```
+
+Muestra la versión de un fichero en un determinado commit:
+
+```bash
+$ git show SHA:FILE
+```
 
 ## Branches
 
