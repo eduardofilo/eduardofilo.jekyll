@@ -528,5 +528,7 @@ Instalar los paquetes `sni-qt` y `sni-qt:i386`.
 
 [Fuente](https://sourceforge.net/p/workrave/mailman/message/30722930/)
 
+```
 #!bash
 gsettings set com.canonical.Unity.Panel systray-whitelist "['all']"
+```
