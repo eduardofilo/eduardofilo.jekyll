@@ -46,6 +46,7 @@ layout: default
 * [MySQL](/sistemas/mysql.html)
 * [Emulación](/sistemas/emulacion.html)
 * [Kodi/OpenELEC](/sistemas/kodi.html)
+* [ZX-Uno](/sistemas/zx-uno.html)
 
 # Cursos
 
