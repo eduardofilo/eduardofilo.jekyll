@@ -9,6 +9,8 @@ published: true
 
 (Última actualización: 2016-03-25 16:00)
 
+**Actualización:** A partir de la versión 3 de Raspberry Pi la placa incluye un adaptador Wifi, por lo que no será necesario disponerlo. Si además optamos por no instalar el decodificador TDT también podremos prescindir del concentrador USB. En [este post](/2016/12/06/raspi3-kodi.html) se detallan las instrucciones para esta versión más simplificada del sistema, así como se complementan con una configuración más detallada del propio Kodi.
+
 A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
 
 En la instalación se incluye un adaptador Wifi que no será necesario en caso de tener el router cerca y poder llevar un cable ethernet hasta la Raspberry Pi. De hecho es lo más recomendable ya que será habitual consumir contenidos pesados por red. Si se puede prescindir del adaptador Wifi, seguramente tampoco será necesario el concentrador USB que se colocó por precaución al ver como la Raspberry Pi se quejaba de deficiencias en la alimentación (aparece en pantalla un cuadro de colores arriba a la derecha) al conectar directamente el adaptador Wifi y el TDT.
