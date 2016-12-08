@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Raspberry Pi2 + KODI + Tvheadend"
+title: "Raspberry Pi 2 + KODI + Tvheadend"
 date: 2015-03-14 15:04:00
 published: true
 ---
