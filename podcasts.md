@@ -2,6 +2,7 @@
 layout: default
 title: Directorio Podcasts
 permalink: /podcasts.html
+navbar: true
 ---
 
 # Directorio de Podcasts
