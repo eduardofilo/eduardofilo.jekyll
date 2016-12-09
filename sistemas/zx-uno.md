@@ -15,3 +15,4 @@ permalink: /sistemas/zx-uno.html
 * [INSTRUCCIONES PARA ACTUALIZAR LOS ZX-UNO DEL CROWDFUNDING CON ROMS DE SPECTRUM](http://zxuno.speccy.org/instrucciones.shtml)
 * [I am newbie. Where to start? / Soy novato, ¿por dónde empezar?](http://www.zxuno.com/forum/viewtopic.php?f=27&t=754)
 * Manual de esxDOS: [Parte 1](http://www.vintagenarios.com/manual-esxdos-parte-t1120.html) y [Parte 2](http://www.vintagenarios.com/manual-esxdos-parte-t1122.html)
+* [ZX-Uno FAQ](http://www.ngpaws.com/zxunofaq.html)
