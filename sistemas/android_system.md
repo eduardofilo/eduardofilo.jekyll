@@ -14,6 +14,7 @@ permalink: /sistemas/android_system.html
 * [Como Desrootear tu terminal](http://4ndroid.com/como-desrootear-tu-telefono-androi/)
 * [Simple ADB Backup - Full backup without root](http://forum.xda-developers.com/showthread.php?p=36499906)
 * [Desbloquea el bootloader de tu HTC fácilmente con Firewater S-Off](http://www.elandroidelibre.com/2014/02/desbloquea-el-bootloader-de-tu-htc-facilmente-con-firewater-s-off.html)
+* [Los móviles perfectos a los que instalar CyanogenMod y que te duren muchos años](http://www.elandroidelibre.com/2016/11/telefonos-instalar-cyanogenmod.html)
 
 ## Aplicaciones interesantes
 
