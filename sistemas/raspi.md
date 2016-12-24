@@ -19,6 +19,7 @@ permalink: /sistemas/raspi.html
 * [An A to Z Beginners Guide to Installing RetroPie on a Raspberry Pi](http://supernintendopi.wordpress.com/)
 * [How to install Oracle Java 8 in Debian via repository (JDK8)](http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html)
 * [Adafruit - Learn Raspberry Pi](https://learn.adafruit.com/category/learn-raspberry-pi)
+* [DietPi - Lightweight justice for your SBC](http://dietpi.com/)
 
 ## Hardware
 
