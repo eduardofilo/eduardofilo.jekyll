@@ -272,3 +272,11 @@ Seleccionar un branch remoto ([fuente](http://git-scm.com/book/ch3-5.html#Tracki
 ```bash
 $ git checkout -b fix#3413 origin/fix#3413
 ```
+
+## Stash
+
+Borrado de la lista:
+
+```bash
+$ git stash clear
+```
