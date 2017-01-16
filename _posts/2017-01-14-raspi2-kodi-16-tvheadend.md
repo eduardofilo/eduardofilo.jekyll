@@ -1,23 +1,19 @@
 ---
 layout: post
-title: "Raspberry Pi 2 + KODI + Tvheadend"
-date: 2015-03-14 15:04:00
+title: "Raspberry Pi 3 + KODI 16 + Tvheadend"
+date: 2017-01-14 12:00:00
 published: true
 ---
 
 ![KODI Logo](/images/posts/kodi-logo.png)
 
-(Última actualización: 2016-03-25 16:00)
+*Nota: Si estás usando la versión 6 de OpenELEC que incluye la versión 15 de Kodi, utiliza [este otro post](/2015/03/14/raspi2-kodi-tvheadend.html).*
 
-*Actualización: A partir de la versión 3 de Raspberry Pi la placa incluye un adaptador Wifi, por lo que no será necesario disponerlo. Si además optamos por no instalar el decodificador TDT también podremos prescindir del concentrador USB. En [este post](/2016/12/06/raspi3-kodi.html) se detallan las instrucciones para esta versión más simplificada del sistema, así como se complementan con una configuración más detallada del propio Kodi.*
+A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
 
-*Nota: Si estás usando la versión 7 de OpenELEC que incluye la versión 16 de Kodi, utiliza [este otro post](/2017/01/14/raspi2-kodi-7-tvheadend.html).*
+En caso de tener el router cerca y poder llevar un cable ethernet hasta la Raspberry Pi se recomienda, ya que será habitual consumir contenidos pesados por red.
 
-A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 2](http://www.raspberrypi.org/raspberry-pi-2-on-sale/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
-
-En la instalación se incluye un adaptador Wifi que no será necesario en caso de tener el router cerca y poder llevar un cable ethernet hasta la Raspberry Pi. De hecho es lo más recomendable ya que será habitual consumir contenidos pesados por red. Si se puede prescindir del adaptador Wifi, seguramente tampoco será necesario el concentrador USB que se colocó por precaución al ver como la Raspberry Pi se quejaba de deficiencias en la alimentación (aparece en pantalla un cuadro de colores arriba a la derecha) al conectar directamente el adaptador Wifi y el TDT.
-
-Para el airmouse o teclado/ratón inalámbrico también hay alternativas:
+Para el airmouse o teclado/ratón inalámbrico hay alternativas:
 
 * Aplicaciones para el móvil: [Kore](https://play.google.com/store/apps/details?id=org.xbmc.kore) o [Yatse](https://play.google.com/store/apps/details?id=org.leetzone.android.yatsewidgetfree)
 * Mando a distancia del TV: Si nuestro TV soporta el protocolo [CEC](http://kodi.wiki/view/CEC), puede comandar Kodi a través del cable HDMI
@@ -28,17 +24,15 @@ Empezamos con la lista de piezas que vamos a necesitar.
 
 ### Hardware
 
-* Raspberry Pi 2: En [Raspipc.es](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1210) o en [Cooking-Hacks.com](http://www.cooking-hacks.com/shop/raspberry-pi/raspberry-pi-2-model-b)
+* Raspberry Pi 3: En [Raspipc.es](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1340) o en [Pccomponentes.com](https://www.pccomponentes.com/raspberry-pi-3-modelo-b)
 * Tarjeta microSD: En [Raspipc.es](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1016) o en [Amazon.es](http://www.amazon.es/Samsung-Evo-MB-MP16DA-EU-adaptador/dp/B00J2BU7WO)
-* [Dongle Wifi](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1079)
-* Hub USB alimentado: En [Raspipc.es](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1065) o en [Pccomponentes.com](http://www.pccomponentes.com/conceptronic_stylish_hub_4_puertos_usb_2_0_azul.html)
 * Sintonizador TDT USB: En [Pccomponentes.com](http://www.pccomponentes.com/conceptronic_sintonizador_tdt_usb.html) o en [Amazon.es](http://www.amazon.es/Conceptronic-C08-096-receptor-Dvb-T-radio/dp/B003KCKERE)
 * [Cable HDMI](http://www.raspipc.es/public/home/index.php?ver=tienda&accion=verArticulo&idProducto=1115). Vamos a suponer que el televisor donde se va a instalar posee una entrada HDMI de tamaño estándar. En caso contrario necesitaremos el adaptador correspondiente.
 * Airmouse o teclado/ratón inalámbricos: En [Amazon.es](https://www.amazon.es/dp/B017LUBR6W/)
 
 ### Software
 
-* [OpenELEC para Raspberry Pi 2](http://releases.openelec.tv/OpenELEC-RPi2.arm-6.0.3.tar?mirrorlist)
+* [OpenELEC para Raspberry Pi 2](http://releases.openelec.tv/OpenELEC-RPi2.arm-7.0.1.img.gz)
 * [Licencia MPEG-2](http://www.raspberrypi.com/mpeg-2-license-key/): Necesaria para reproducir la señal TDT.
 
 ## Instalación
@@ -52,7 +46,7 @@ Las instrucciones que siguen se corresponden con una instalación desde un equip
 1. Abrimos un terminal.
 2. Bajamos la imagen de OpenELEC para Raspberry Pi 2:
 
-        $ wget http://releases.openelec.tv/OpenELEC-RPi2.arm-6.0.3.img.gz
+        $ wget http://releases.openelec.tv/OpenELEC-RPi2.arm-7.0.1.img.gz
 
 3. Insertamos la tarjeta microSD en el lector de tarjetas del ordenador.
 4. Averiguamos la ruta del dispositivo de la tarjeta:
@@ -71,23 +65,19 @@ Las instrucciones que siguen se corresponden con una instalación desde un equip
 
 5. La mejor forma de averiguar los dispositivos correctos es ejecutar `df -h` antes y después de insertar la tarjeta. En mi caso aparecen dos particiones sobre el dispositivo `/dev/mmcblk0` (p1 y p2 son el sufijo de las particiones; en algunos lectores de tarjetas nos podría aparecer `/dev/sdb1` y `/dev/sdb2` por ejemplo, lo que indicaría que el dispositivo es `/dev/sdb`).
 
-6. Desmontamos las particiones montadas de la tarjeta:
+6. Desmontamos las particiones montadas de la tarjeta (en el ejemplo son dos, pero en una tarjeta nueva lo normal es que sólo sea una):
 
         $ sudo umount /dev/mmcblk0p1
         $ sudo umount /dev/mmcblk0p2
 
 7.  Copiamos a la tarjeta la imagen de OpenELEC bajada en el paso 2:
 
-        $ gunzip OpenELEC-RPi2.arm-6.0.3.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
+        $ gunzip OpenELEC-RPi2.arm-7.0.1.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
         $ sudo sync
 
 ### Conexión de piezas
 
-Cuando termine el último punto de la sección anterior (tardará más o menos dependiendo de la velocidad de la tarjeta), sacaremos la tarjeta microSD del lector y la insertaremos en la ranura de la Raspberry. Conectamos el cable HDMI entre el televisor y la Raspberry. Conectamos el adaptador TDT y el adaptador Wifi al concentrador USB. Alimentamos el concentrador y enlazamos la entrada del concentrador con una de las entradas USB de la Raspberry. Finalmente alimentamos la Raspberry con un cable USB - microUSB desde el concentrador hacia la Raspberry. El primer arranque de OpenELEC sirve para redimensionar las particiones de la tarjeta microSD para aprovechar toda su capacidad. Al terminar el proceso se reiniciará automáticamente y esta vez sí, terminará apareciendo el interfaz de Kodi.
-
-![Hard](/images/posts/kodi-hard.jpg)
-
-En la foto sólo vemos el adaptador Wifi y el decodificador TDT, directamente conectados a la Raspberry. Esta configuración se terminó descartando porque la Raspberry tenía problemas de alimentación, aún utilizando un alimentador de 2 Amperios. El elemento que más pico de corriente exige es el decodificador TDT. Los problemas se detectan por un cuadrado de colores que aparece en la esquina superior derecha de la pantalla. Normalmente el sistema no es capaz de arrancar en esta situación (aparecen unos errores en la consola) y lo que es peor se termina corrompiendo el sistema de archivos de la microSD. Con el concentrador USB alimentado se evitan estos problemas.
+Cuando termine el último punto de la sección anterior (tardará más o menos dependiendo de la velocidad de la tarjeta), sacaremos la tarjeta microSD del lector y la insertaremos en la ranura de la Raspberry. Conectamos el cable HDMI entre el televisor y la Raspberry. Conectamos el adaptador TDT a uno de los puertos USB de la Raspberry Pi y el cable de antena al propio adaptador. Finalmente alimentamos la Raspberry el típico alimentador microUSB. El primer arranque de OpenELEC sirve para redimensionar las particiones de la tarjeta microSD para aprovechar toda su capacidad. Al terminar el proceso se reiniciará automáticamente y esta vez sí, terminará apareciendo el interfaz de Kodi.
 
 A partir de ahora trabajaremos con Kodi para configurar una serie de cosas.
 
@@ -95,11 +85,7 @@ A partir de ahora trabajaremos con Kodi para configurar una serie de cosas.
 
 El primer arranque muestra un asistente en el que entre otras cosas se selecciona el idioma de los menús, la conexión a internet y si queremos activar los servicios SSH y Samba. Necesitamos activar el primero para poder averiguar más adelante el número de serie de la Raspberry para contratar la licencia MPEG-2.
 
-Una vez terminado el asistente acudimos a la siguiente ruta de los menús para activar el adaptador Wifi:
-
-    Sistema / OpenELEC / Red / Redes inalámbricas / Activo
-
-Una vez activo conectamos a nuestro punto de acceso siguiendo esta secuencia de menús:
+Si vamos a conectar por Wifi y no lo hemos hecho durante el asistente inicial, hay que acudir a la siguiente ruta para conectar a nuestro punto de acceso:
 
     Sistema / OpenELEC / Conexiones / engancho mi AP
 
@@ -110,9 +96,7 @@ Lo siguientes pasos nos permiten activar el sistema de gestión del TDT:
     Sistema / Ajustes / Add-ons / Instalar desde repositorio / OpenELEC Add-ons (official) / Repositorio de Add-ons / OpenELEC Add-ons (unofficial) / Instalar
     Sistema / Ajustes / Add-ons / Instalar desde repositorio / Todos los repositorios / Servicios / tvheadend / Instalar
     Sistema / Ajustes / Add-ons / Instalar desde repositorio / Todos los repositorios / Clientes PVR / Tvheadend HTSP Client / Instalar
-    Sistema / Ajustes / Add-ons / Mis add-ons / Clientes PVR / Tvheadend HTSP Client / Configurar / OK
-    Sistema / Ajustes / Add-ons / Mis add-ons / Clientes PVR / Tvheadend HTSP Client / Activar
-    Sistema / Ajustes / TV en directo / General / Activado
+    Sistema / Ajustes / TV / General / Activado
 
 #### Configuración de Tvheadend
 
@@ -133,13 +117,15 @@ El primero funcionó directamente, pero en el segundo fue necesario modificar un
 
     options smsmdtv default_mode=4
 
-Una vez dentro de la consola web de Tvheadend seguimos los siguientes pasos para activar el decodificador de TDT y añadir los canales:  
+Una vez dentro de la consola web de Tvheadend seguimos los siguientes pasos para activar el decodificador de TDT y añadir los canales:
 
     Configuration / General / Language settings / Available / Spanish; Castilian -> Selected / Save configuration
     Configuration / DVB Inputs / TV Adapters / Realtek RTL2832 / Parameters / Basic Settings / Enabled / Save
     Configuration / DVB Inputs / Networks / Add / Type: DVB-T Network / Network Name: TDT / Create
     Configuration / DVB Inputs / Muxes / Add (ver lista más adelante)
     Configuration / DVB Inputs / TV Adapters / Realtek RTL2832 / Parameters / Basic Settings / Networks / (seleccionamos TDT) / Save
+    Configuration / DVB Inputs / Networks / TDT / Force Scan
+    Configuration / DVB Inputs / Muxes (observar evolución del escaneo)
 
 Los muxes o multiplexes son las frecuencias sobre las que viajan empaquetadas los canales y una serie de parámetros de codificación. La tecnología TDT (o DVB-T más propiamente) permite codificar varios canales en una misma frecuencia. Algunos decodificadores de TDT permiten sintonización automática como hacen los televisores, pero el que he elegido para este montaje no. Así, hay que introducir la lista de muxes manualmente. Las frecuencias dependen de la provincia en la que nos encontremos. [Aquí](http://www.tdt1.com/) por ejemplo podemos encontrarlas. Los muxes que utilizo en Zaragoza son los siguientes:
 
