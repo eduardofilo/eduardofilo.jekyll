@@ -7,7 +7,7 @@ published: true
 
 ![KODI Logo](/images/posts/kodi-logo.png)
 
-*Nota: Si estás usando la versión 6 de OpenELEC que incluye la versión 15 de Kodi, utiliza [este otro post](/2015/03/14/raspi2-kodi-tvheadend.html).*
+*Nota: Este post es una especie de actualización de [este otro](/2015/03/14/raspi2-kodi-tvheadend.html) que correspondía a la versión 6.0.3 de OpenELEC (Kodi 15). Si estás usando esa versión, utiliza [el post anterior](/2015/03/14/raspi2-kodi-tvheadend.html) en lugar de éste.*
 
 A continuación se describe el montaje de un media center ejecutándose sobre [Raspberry Pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) basado en la distribución [OpenELEC](http://openelec.tv/) que implementa de forma muy ligera el software media center [Kodi](http://kodi.tv/) (anteriormente llamado XBMC). Se incorpora un decodificador TDT gestionado con el software [Tvheadend](https://tvheadend.org/).
 
