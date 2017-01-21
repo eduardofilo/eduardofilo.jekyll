@@ -21,6 +21,7 @@ A continuación una lista con algunas de las placas de este tipo que se pueden e
 * [ODROID](http://www.hardkernel.com/main/main.php)
 * [Up](http://up-shop.org/)
 * [Orange Pi](http://www.orangepi.org/orangepipc/)
+* [Asus Tinker Board](http://cpc.farnell.com/asus/90mb0qy1-m0eay0/tinker-board-2gb-1-8ghz-4k-gb/dp/SC14363)
 
 Hasta ahora los únicos proyectos que he puesto en marcha han sido de computación, es decir, sin componente hardware, que es otro de los usos importantes que se les suelen dar. Han servido para delegar un par de funciones que antes ejecutaba directamente sobre mi PC principal. Concretamente:
 
