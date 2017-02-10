@@ -280,3 +280,23 @@ Borrado de la lista:
 ```bash
 $ git stash clear
 ```
+
+## Ignorar cambios de un fichero incluido en el repositorio
+
+([Fuente](http://stackoverflow.com/questions/6317169/using-gitignore-to-ignore-but-not-delete-files)) No se trata de la típica entrada en `.gitignore` dado que los ficheros allí listados se supone que ni siquiera forman parte del repositorio. Se trata de tener una versión del fichero en el repositorio pero luego no queremos actualizarlo. Para ello ejecutar:
+
+```bash
+git update-index --assume-unchanged <file>
+```
+
+Para averiguar los ficheros que estamos ignorando de esta forma:
+
+```bash
+git ls-files -v | grep '^h'
+```
+
+Y si en algún momento queremos recuperar la detección de cambios en el fichero:
+
+```bash
+git update-index --no-assume-unchanged <file>
+```
