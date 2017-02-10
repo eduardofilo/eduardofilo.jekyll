@@ -20,3 +20,8 @@ En ocasiones alguna de las teclas del mando deja de funcionar. A mi me ha ocurri
 La solución es reponer el valor:
 
     <back>Back</back>
+
+## Scrap manual de una serie
+Si al intentar forzar el contenido de una carpeta con una serie, no nos localiza la serie y ésta está dada de alta en TheTVDB (me ocurrió por ejemplo con [Ramón y Cajal](http://thetvdb.com/?tab=series&id=290587&lid=16)), incluir un fichero en la raíz del directorio de la serie con el nombre `tvshow.nfo` y el siguiente contenido ([fuente](http://kodi.wiki/view/NFO_files/TV_shows#Video_.nfo_files_containing_a_URL)):
+
+    http://thetvdb.com/index.php?tab=series&id=290587
