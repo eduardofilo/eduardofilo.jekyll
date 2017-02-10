@@ -5,6 +5,8 @@ permalink: /desarrollo/git.html
 
 # Git
 
+[TOC]
+
 ## Enlaces
 
 * [Libro Pro Git en español](http://git-scm.com/book/es)
