@@ -15,7 +15,7 @@ permalink: /varios/corsa_d.html
 4. Dar contacto (no es necesario arrancar).
 5. Seguir manteniendo pulsado el botón de reset del cuentakilómetros parcial hasta que desaparezca el mensaje InSP.
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Wcw01HP5eSM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Wcw01HP5eSM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><br>
 
 ## Menú oculto de diagnóstico
 
@@ -48,7 +48,7 @@ permalink: /varios/corsa_d.html
         2. Kilómetros desde la última revisión
     14. Salida
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/JTUrgjdHDNA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/JTUrgjdHDNA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><br>
 
 ## Opciones ocultas
 
@@ -72,7 +72,7 @@ Si no se hacen cambios durante 10 segundos se cancelarán los ajustes.
 
 Se supone que estos ajustes se asocian a la llave con que fueron hechos.
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/iRZMUXpH71o?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/iRZMUXpH71o?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><br>
 
 ## Leer los DTC (diagnostic trouble codes)
 
@@ -81,7 +81,7 @@ Se supone que estos ajustes se asocian a la llave con que fueron hechos.
 3. Esperar a que el símbolo del motor se apague.
 4. A partir de ese momento empezará a parpadear indicándonos el código de diagnóstico. Serán cuatro cifras, cada una indicada por un número de parpadeos. El número 0 se representa con 10 parpadeos.
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pnDckgs-eKk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pnDckgs-eKk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><br>
 
 ## Cambio de bombillas fundidas en el display central
 
