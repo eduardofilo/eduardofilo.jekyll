@@ -50,10 +50,6 @@ permalink: /varios/corsa_d.html
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/JTUrgjdHDNA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
-## Cambio de bombillas fundidas en el display central
-
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/N0b_-b636pM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
-
 ## Opciones ocultas
 
 1. Meter la llave pero no girarla, es decir, no dar contacto.
@@ -86,3 +82,7 @@ Se supone que estos ajustes se asocian a la llave con que fueron hechos.
 4. A partir de ese momento empezará a parpadear indicándonos el código de diagnóstico. Serán cuatro cifras, cada una indicada por un número de parpadeos. El número 0 se representa con 10 parpadeos.
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pnDckgs-eKk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
+## Cambio de bombillas fundidas en el display central
+
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/N0b_-b636pM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
