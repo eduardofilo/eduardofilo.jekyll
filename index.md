@@ -63,3 +63,4 @@ layout: default
 * [Enlaces](/varios/links.html)
 * [Inglés](/varios/english.html)
 * [Viajes](/varios/viajes.html)
+* [Opel Corsa D](/varios/corsa_d.html)
