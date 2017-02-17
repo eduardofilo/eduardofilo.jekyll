@@ -12,7 +12,7 @@ permalink: /varios/corsa_d.html
 1. Pisar y mantener el pedal del freno.
 2. Pulsar el botón de reset del cuentakilómetros parcial para que se ilumine el mismo.
 3. Volver a pulsar el botón de reset del cuentakilómetros parcial y mantenerlo esta vez.
-4. Dar contacto.
+4. Dar contacto (no es necesario arrancar).
 5. Seguir manteniendo pulsado el botón de reset del cuentakilómetros parcial hasta que desaparezca el mensaje InSP.
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/Wcw01HP5eSM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
@@ -21,7 +21,7 @@ permalink: /varios/corsa_d.html
 
 ([Fuente](http://mr-fix.info/opel-corsa-d-hidden-diagnostic-menu/)) Muestra algunas estadísticas y valores instantáneos que no se muestran en el display normalmente (como la temperatura del motor o los litros exactos que quedan de combustible):
 
-1. Dar contacto.
+1. Dar contacto (no es necesario arrancar).
 2. Pulsar tres veces la tecla de reset del ordenador de a bordo o del cuentakilómetros parcial.
 3. Pulsar una cuarta vez y mantener 10 segundos la tecla anterior.
 4. Por medio de la misma tecla iremos alternando entre las siguientes visualizaciones en pantalla:
@@ -79,5 +79,10 @@ Se supone que estos ajustes se asocian a la llave con que fueron hechos.
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/iRZMUXpH71o?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 ## Leer los DTC (diagnostic trouble codes)
+
+1. Pisar los pedales de freno y acelerador.
+2. Dar contacto (sin arrancar).
+3. Esperar a que el símbolo del motor se apague.
+4. A partir de ese momento empezará a parpadear indicándonos el código de diagnóstico. Serán cuatro cifras, cada una indicada por un número de parpadeos. El número 0 se representa con 10 parpadeos.
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pnDckgs-eKk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
