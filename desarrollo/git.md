@@ -321,7 +321,7 @@ git checkout <branch>
 git merge temp
 ```
 
-En la [fuente](http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin)) de estas ideas se describe un procedimiento más elaborado para reapuntar el <branch> (`master` en el ejemplo que ponen) a este nuevo branch temporal.
+En la [fuente](http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin) de estas ideas se describe un procedimiento más elaborado para reapuntar el `<branch>` (`master` en el ejemplo que ponen) a este nuevo branch temporal.
 
 ## Cambiar el message del último commit
 
