@@ -62,13 +62,13 @@ permalink: /varios/corsa_d.html
 
 Las opciones disponibles son las siguientes (en mi modelo de 3 puertas no aparece la opción 5):
 
-* P1: Luces de bienvenida: on/off. Enciende las luces delanteras cuando se abre el coche.
+* P1: Luces de bienvenida: on/off. Enciende las luces delanteras cuando al abrir el coche con el mando le damos a abrir una segunda vez.
 * P2: Lavaluneta trasera automático: on/off. Se enciende automáticamente cuando el lavaluneta delantero está activo y se pone la marcha atrás.
-* P3: Intermitentes con un toque: on/off. Para señalizar cómodamente el cambio de carril.
+* P3: Intermitentes con un toque: on/off. Para señalizar cómodamente el cambio de carril (esta opción está activada por defecto).
 * P4: Cierre automático de puertas: on/off. Al pasar de 20 km/h aproximadamente.
 * P5: Cierre separado de puerta de conductor: on/off.
-* P6: Aviso al superar límite de velocidad: on/off.
-* P7: Volumen de los tonos de aviso: 1-5. Volumen del chasquido indicador.
+* P6: Aviso al superar una velocidad determinada en el ajuste: on/off.
+* P7: Volumen de los tonos de aviso: 1-5.
 
 Para aceptar los nuevos ajustes tirar de nuevo de ambas palancas como al principio hasta que se escuche un tono.
 
