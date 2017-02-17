@@ -79,7 +79,7 @@ Se supone que estos ajustes se asocian a la llave con que fueron hechos.
 1. Pisar los pedales de freno y acelerador.
 2. Dar contacto (sin arrancar).
 3. Esperar a que el símbolo del motor se apague.
-4. A partir de ese momento empezará a parpadear indicándonos el código de diagnóstico. Serán cuatro cifras, cada una indicada por un número de parpadeos. El número 0 se representa con 10 parpadeos.
+4. A partir de ese momento empezará a parpadear indicándonos el código de error. Hay que contar los parpadeos. El código consta de 4 dígitos. El dígito 0 se representa con 10 parpadeos.
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pnDckgs-eKk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div><br>
 
