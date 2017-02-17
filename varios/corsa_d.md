@@ -7,7 +7,7 @@ permalink: /varios/corsa_d.html
 
 ## Reset de mensaje InSP
 
-([Fuente](http://mr-fix.info/opel-corsa-d-inspection-reset/))
+([Fuente](http://mr-fix.info/opel-corsa-d-inspection-reset/)) Para borrar el mensaje de inspección en caso de que el taller olvide hacerlo (a mi me ha sucedido una vez):
 
 1. Pisar y mantener el pedal del freno.
 2. Pulsar el botón de reset del cuentakilómetros parcial para que se ilumine el mismo.
@@ -19,34 +19,34 @@ permalink: /varios/corsa_d.html
 
 ## Menú oculto de diagnóstico
 
-([Fuente](http://mr-fix.info/opel-corsa-d-hidden-diagnostic-menu/))
+([Fuente](http://mr-fix.info/opel-corsa-d-hidden-diagnostic-menu/)) Muestra algunas estadísticas y valores instantáneos que no se muestran en el display normalmente (como la temperatura del motor o los litros exactos que quedan de combustible):
 
 1. Dar contacto.
 2. Pulsar tres veces la tecla de reset del ordenador de a bordo o del cuentakilómetros parcial.
 3. Pulsar una cuarta vez y mantener 10 segundos la tecla anterior.
 4. Por medio de la misma tecla iremos alternando entre las siguientes visualizaciones en pantalla:
-    1. HW production version and date.
-    2. SW production version and date.
+    1. Versión del modelo y fecha de fabricación
+    2. Versión del software y fecha de producción
     3. ??? (00 / 000072)
-    4. Vehicle speed and engine RPMs.
-    5. Battery voltage and ??? (24).
+    4. Velocidad y revoluciones
+    5. Voltaje de la batería y ??? (24).
     6. Varios:
-        1. Dashboard backlight
-        2. Coolant temperature
+        1. Nivel de brillo del display
+        2. Temperatura del líquido refrigerante
     7. ??? (100 / L2 129)
     8. ??? (100 / S2 337)
     9. ??? (100 / P2 353)
     10. ??? (100 / t2 463)
-    11. Fuel:
-        1. Fuel level in liters
-        2. Fuel level sensor readings??
+    11. Combustible:
+        1. Nivel en litros
+        2. Lecturas del sensor del depósito??
     12. Consumos:
-        1. Fuel flow
-        2. Instant consum
-    13. Última revisión:
-        1. Number of days from last check
-        2. Miles from last check
-    14. Trip and ODO
+        1. Flujo
+        2. Consumo instantáneo
+    13. Última revisión (en realidad desde que se [resetea el mensaje Insp](#reset-de-mensaje-insp)):
+        1. Número de días desde la última revisión
+        2. Kilómetros desde la última revisión
+    14. Salida
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/JTUrgjdHDNA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
