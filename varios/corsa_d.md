@@ -59,7 +59,7 @@ permalink: /varios/corsa_d.html
 No funciona en todos los modelos. Tal vez en el que tiene el display avanzado, que supongo tendrá más opciones de configuración de serie.
 
 1. Dar contacto.
-2. Pulsar hacia abajo las dos palancas laterales (luces y lavaluneta) durante 3 segundos hasta que se oiga un tono.
+2. Tirar de las dos palancas laterales (luces y lavaluneta) hacia uno durante 3 segundos hasta que se oiga un tono.
 3. Usar la palanca izquierda (luces) arriba y abajo para cambiar de opción y la palanca derecha (lavaluneta) también arriba y abajo para cambiar el valor.
 
 Las opciones disponibles son las siguientes:
