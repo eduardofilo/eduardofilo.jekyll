@@ -300,3 +300,33 @@ Y si en algún momento queremos recuperar la detección de cambios en el fichero
 ```bash
 git update-index --no-assume-unchanged <file>
 ```
+
+## Salir de estado "HEAD detached at"
+
+En este estado básicamente es que HEAD deja de apuntar al final de una rama (secuencia de commits) para apuntar a un commit concreto directamente. La forma de salir es o volver a hacer checkout de cualquier branch si no se quieren conservar los cambios hechos tras recuperar ese commit, o bien crear un branch temporal para commitear esos cambios y ya luego si se desea incorporarlos a la rama de la que nos habíamos descolgado.
+
+A continuación se describen las dos opciones:
+
+* Si no nos importa perder los cambios
+
+```bash
+git checkout <branch>
+```
+
+* Si hay cambios tras hacer el checkout del commit:
+
+```bash
+git checkout -b temp
+git checkout <branch>
+git merge temp
+```
+
+En la [fuente](http://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin)) de estas ideas se describe un procedimiento más elaborado para reapuntar el <branch> (`master` en el ejemplo que ponen) a este nuevo branch temporal.
+
+## Cambiar el message del último commit
+
+([Fuente](https://help.github.com/articles/changing-a-commit-message/)) Esto sirve si aún no hemos propagado el commit hacia otros repositorios remotos:
+
+```bash
+git commit --amend
+```
