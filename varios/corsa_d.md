@@ -29,20 +29,20 @@ permalink: /varios/corsa_d.html
     3. ??? (00 / 000072)
     4. Vehicle speed and engine RPMs.
     5. Battery voltage and ??? (24).
-    6.
+    6. Varios:
         1. Dashboard backlight
         2. Coolant temperature
     7. ??? (100 / L2 129)
     8. ??? (100 / S2 337)
     9. ??? (100 / P2 353)
     10. ??? (100 / t2 463)
-    11.
+    11. Fuel:
         1. Fuel level in liters
         2. Fuel level sensor readings??
-    12.
+    12. Consumos:
         1. Fuel flow
         2. Instant consum
-    13.
+    13. Última revisión:
         1. Number of days from last check
         2. Miles from last check
     14. Trip and ODO
