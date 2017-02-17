@@ -56,23 +56,21 @@ permalink: /varios/corsa_d.html
 
 ## Opciones ocultas
 
-No funciona en todos los modelos. Tal vez en el que tiene el display avanzado, que supongo tendrá más opciones de configuración de serie.
-
-1. Dar contacto.
+1. Meter la llave pero no girarla, es decir, no dar contacto.
 2. Tirar de las dos palancas laterales (luces y lavaluneta) hacia uno durante 3 segundos hasta que se oiga un tono.
 3. Usar la palanca izquierda (luces) arriba y abajo para cambiar de opción y la palanca derecha (lavaluneta) también arriba y abajo para cambiar el valor.
 
-Las opciones disponibles son las siguientes:
+Las opciones disponibles son las siguientes (en mi modelo de 3 puertas no aparece la opción 5):
 
 * P1: Luces de bienvenida: on/off. Enciende las luces delanteras cuando se abre el coche.
 * P2: Lavaluneta trasera automático: on/off. Se enciende automáticamente cuando el lavaluneta delantero está activo y se pone la marcha atrás.
 * P3: Intermitentes con un toque: on/off. Para señalizar cómodamente el cambio de carril.
 * P4: Cierre automático de puertas: on/off. Al pasar de 15 km/h aproximadamente.
-* P5: Cierre separado de puerta de conductor: on/off. One click opens all doors & boot (off)
+* P5: Cierre separado de puerta de conductor: on/off.
 * P6: Aviso al superar límite de velocidad: on/off.
 * P7: Volumen de los tonos de aviso: 1-5. Volumen del chasquido indicador.
 
-Para aceptar los nuevos ajustes pulsar hacia abajo ambas palancas hasta que se escuche un tono.
+Para aceptar los nuevos ajustes tirar de nuevo de ambas palancas como al principio hasta que se escuche un tono.
 
 Si no se hacen cambios durante 10 segundos se cancelarán los ajustes.
 
