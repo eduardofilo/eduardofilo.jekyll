@@ -53,7 +53,7 @@ permalink: /varios/corsa_d.html
 ## Opciones ocultas
 
 1. Meter la llave pero no girarla, es decir, no dar contacto.
-2. Tirar de las dos palancas laterales (luces y lavaluneta) hacia uno durante 3 segundos hasta que se oiga un tono.
+2. Tirar de las dos palancas laterales (luces y lavaluneta) hacia atrás, es decir hacia nosotros, durante 3 segundos hasta que se oiga un tono.
 3. Usar la palanca izquierda (luces) arriba y abajo para cambiar de opción y la palanca derecha (lavaluneta) también arriba y abajo para cambiar el valor.
 
 Las opciones disponibles son las siguientes (en mi modelo de 3 puertas no aparece la opción 5):
