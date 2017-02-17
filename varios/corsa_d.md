@@ -21,9 +21,10 @@ permalink: /varios/corsa_d.html
 
 ([Fuente](http://mr-fix.info/opel-corsa-d-hidden-diagnostic-menu/))
 
-1. Pulsar tres veces la tecla de reset del ordenador de a bordo o del cuentakilómetros parcial.
-2. Pulsar una cuarta vez y mantener 10 segundos la tecla anterior.
-3. Por medio de la misma tecla iremos alternando entre las siguientes visualizaciones en pantalla:
+1. Dar contacto.
+2. Pulsar tres veces la tecla de reset del ordenador de a bordo o del cuentakilómetros parcial.
+3. Pulsar una cuarta vez y mantener 10 segundos la tecla anterior.
+4. Por medio de la misma tecla iremos alternando entre las siguientes visualizaciones en pantalla:
     1. HW production version and date.
     2. SW production version and date.
     3. ??? (00 / 000072)
@@ -54,6 +55,8 @@ permalink: /varios/corsa_d.html
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/N0b_-b636pM?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 ## Opciones ocultas
+
+No funciona en todos los modelos. Tal vez en el que tiene el display avanzado, que supongo tendrá más opciones de configuración de serie.
 
 1. Dar contacto.
 2. Pulsar hacia abajo las dos palancas laterales (luces y lavaluneta) durante 3 segundos hasta que se oiga un tono.
