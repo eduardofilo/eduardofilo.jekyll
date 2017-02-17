@@ -65,7 +65,7 @@ Las opciones disponibles son las siguientes (en mi modelo de 3 puertas no aparec
 * P1: Luces de bienvenida: on/off. Enciende las luces delanteras cuando se abre el coche.
 * P2: Lavaluneta trasera automático: on/off. Se enciende automáticamente cuando el lavaluneta delantero está activo y se pone la marcha atrás.
 * P3: Intermitentes con un toque: on/off. Para señalizar cómodamente el cambio de carril.
-* P4: Cierre automático de puertas: on/off. Al pasar de 15 km/h aproximadamente.
+* P4: Cierre automático de puertas: on/off. Al pasar de 20 km/h aproximadamente.
 * P5: Cierre separado de puerta de conductor: on/off.
 * P6: Aviso al superar límite de velocidad: on/off.
 * P7: Volumen de los tonos de aviso: 1-5. Volumen del chasquido indicador.
