@@ -7,6 +7,8 @@ permalink: /varios/corsa_d.html
 
 ## Reset de mensaje InSP
 
+([Fuente](http://mr-fix.info/opel-corsa-d-inspection-reset/))
+
 1. Pisar y mantener el pedal del freno.
 2. Pulsar el botón de reset del cuentakilómetros parcial para que se ilumine el mismo.
 3. Volver a pulsar el botón de reset del cuentakilómetros parcial y mantenerlo esta vez.
@@ -17,33 +19,35 @@ permalink: /varios/corsa_d.html
 
 ## Menú oculto de diagnóstico
 
+([Fuente](http://mr-fix.info/opel-corsa-d-hidden-diagnostic-menu/))
+
 1. Pulsar tres veces la tecla de reset del ordenador de a bordo o del cuentakilómetros parcial.
 2. Pulsar una cuarta vez y mantener 10 segundos la tecla anterior.
 3. Por medio de la misma tecla iremos alternando entre las siguientes visualizaciones en pantalla:
-    1. date of fabrication
-    2. date and version of soft
-    3. ?
-    4. speedometer and RPM
-    5. battery
+    1. HW production version and date.
+    2. SW production version and date.
+    3. ??? (00 / 000072)
+    4. Vehicle speed and engine RPMs.
+    5. Battery voltage and ??? (24).
     6.
-        a) on bord lightining
-        b) engine temperature
-    7. ?
-    8.?
-    9.?
-    10.?
+        1. Dashboard backlight
+        2. Coolant temperature
+    7. ??? (100 / L2 129)
+    8. ??? (100 / S2 337)
+    9. ??? (100 / P2 353)
+    10. ??? (100 / t2 463)
     11.
-        a) fuel left
-        b) Fuel level sensor readings??
+        1. Fuel level in liters
+        2. Fuel level sensor readings??
     12.
-        a)
-        b) instant consm
+        1. Fuel flow
+        2. Instant consum
     13.
-        a) number of days from last check
-        b) miles from last check
+        1. Number of days from last check
+        2. Miles from last check
     14. Trip and ODO
 
-<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/D_ToRRuhVVQ?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/JTUrgjdHDNA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
 
 ## Cambio de bombillas fundidas en el display central
 
@@ -72,3 +76,7 @@ Si no se hacen cambios durante 10 segundos se cancelarán los ajustes.
 Se supone que estos ajustes se asocian a la llave con que fueron hechos.
 
 <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/iRZMUXpH71o?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+
+## Leer los DTC (diagnostic trouble codes)
+
+<div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/pnDckgs-eKk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
