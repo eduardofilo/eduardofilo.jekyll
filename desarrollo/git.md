@@ -92,6 +92,12 @@ $ git log --name-status
 $ git log --stat
 ```
 
+Log indicando los commits que afectan a un fichero ([fuente](http://stackoverflow.com/questions/3701404/list-all-commits-for-a-specific-file)):
+
+```bash
+$ git log --follow filename
+```
+
 Rename:
 
 ```bash
