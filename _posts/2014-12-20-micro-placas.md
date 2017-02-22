@@ -11,14 +11,14 @@ Llevo un tiempo pendiente del relativamente nuevo mundo de las micro placas, pop
 
 A continuación una lista con algunas de las placas de este tipo que se pueden encontrar:
 
-* [Raspberry Pi](http://www.raspberrypi.org/)
+* [Raspberry Pi](http://www.raspberrypi.org/): [Revista](https://www.raspberrypi.org/magpi/)
 * [Banana Pi](http://www.bananapi.org/p/product.html) y [Banana Pro](http://www.lemaker.org/)
 * [Hummingboard](http://www.solid-run.com/products/hummingboard/)
 * [BeagleBoard](http://beagleboard.org/)
 * [pdDuino](http://www.pcduino.com/)
 * [Cubieboard](http://cubieboard.org/)
 * [UDOO](http://www.udoo.org/)
-* [ODROID](http://www.hardkernel.com/main/main.php)
+* [ODROID](http://www.hardkernel.com/main/main.php): [Revista](http://magazine.odroid.com/)
 * [Up](http://up-shop.org/)
 * [Orange Pi](http://www.orangepi.org/orangepipc/)
 * [C.H.I.P.](https://getchip.com/)
@@ -29,6 +29,8 @@ Hasta ahora los únicos proyectos que he puesto en marcha han sido de computaci�
 
 * Gestor de descargas.
 * Servidor git para proyectos personales privados que no quiera publicar en [GitHub](https://github.com/eduardofilo).
+* Media center con Kodi.
+* [Consola portátil](https://learn.adafruit.com/pigrrl-2/overview).
 
 Raspi consume 3.5W como máximo, así que con ella se puede uno permitir que estos servicios funcionen las 24 horas del día. Ya no sólo por las ventajas que tiene de cara a la factura eléctrica, sino también por evitar "quemar" un caro PC en tareas de proceso puntual pero que requieren alta disponibilidad (se ve muy claro en el caso del servidor [git](http://git-scm.com/)).
 
