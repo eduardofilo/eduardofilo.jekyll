@@ -21,6 +21,7 @@ permalink: /sistemas/raspi.html
 * [Adafruit - Learn Raspberry Pi](https://learn.adafruit.com/category/learn-raspberry-pi)
 * [DietPi - Lightweight justice for your SBC](http://dietpi.com/)
 * [Tutorials - The MagPi MagazineThe MagPi Magazine](https://www.raspberrypi.org/magpi/tutorials/)
+* [Flint OS](https://flintos.io/): Versión de ChromeOS con soporte Android.
 
 ## Hardware
 
