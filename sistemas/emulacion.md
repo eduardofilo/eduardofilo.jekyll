@@ -23,3 +23,16 @@ zip -0 rom.zip *
 ```
 
 El nombre del archivo (en el ejemplo `rom.zip`) es importante para que el emulador reconozca la ROM. También lo obtendremos del fichero `.DAT`.
+
+## Conexión de mando SixAxis en Recalbox
+
+Para que funcione por USB en lugar de por Bluetooth que es como está previsto por defecto, hay que editar el fichero `/recalbox/share/system/recalbox.conf` y cambiar la siguiente propiedad a 0:
+
+    controllers.ps3.enabled=0
+
+Se puede editar entrando por SSH, para lo cual las credenciales predeterminadas son:
+
+* user: root
+* password: recalboxroot
+
+Si se hace montando la SD en el ordenador, el fichero se encuentra en la partición `/dev/mmcblk0p8` que se monta en Ubuntu como `share0` en la ruta `./system/recalbox.conf`.
