@@ -36,3 +36,23 @@ Se puede editar entrando por SSH, para lo cual las credenciales predeterminadas 
 * password: recalboxroot
 
 Si se hace montando la SD en el ordenador, el fichero se encuentra en la partición `/dev/mmcblk0p8` que se monta en Ubuntu como `share0` en la ruta `./system/recalbox.conf`.
+
+## Backup juego PSX
+
+1. Localizar el dispositivo del CD-ROM:
+
+        ```bash
+        sudo cdrdao scanbus
+        ```
+
+2. Hacer el backup (suponemos que el comando anterior indica que el dispositivo es `/dev/sr0`):
+
+        ```bash
+        cdrdao read-cd --device /dev/sr0 --driver generic-mmc-raw --read-raw --datafile nombre_juego.bin nombre_juego.toc
+        ```
+
+Con esto obtendremos dos ficheros. En algunas ocasiones nos puede interesar más el fichero `cue` equivalente al `toc`. En ese caso convertirlo así:
+
+    ```bash
+    toc2cue nombre_juego.toc nombre_juego.cue
+    ```
