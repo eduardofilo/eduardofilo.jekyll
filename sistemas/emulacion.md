@@ -39,13 +39,20 @@ Si se hace montando la SD en el ordenador, el fichero se encuentra en la partici
 
 ## Backup juego PSX
 
-1. Localizar el dispositivo del CD-ROM:
+1. Introducir el disco en la unidad de CD-ROM.
+2. Localizar el dispositivo del CD-ROM:
 
     ```bash
     sudo cdrdao scanbus
     ```
 
-2. Hacer el backup (suponemos que el comando anterior indica que el dispositivo es `/dev/sr0`):
+3. Desmontar el dispositivo sin expulsar el disco (suponemos que el comando anterior indica que el dispositivo es `/dev/sr0`):
+
+    ```bash
+    sudo umount /dev/sr0
+    ```
+
+4. Hacer el backup:
 
     ```bash
     cdrdao read-cd --device /dev/sr0 --driver generic-mmc-raw --read-raw --datafile nombre_juego.bin nombre_juego.toc
