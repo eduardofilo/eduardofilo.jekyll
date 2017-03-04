@@ -41,18 +41,18 @@ Si se hace montando la SD en el ordenador, el fichero se encuentra en la partici
 
 1. Localizar el dispositivo del CD-ROM:
 
-        ```bash
-        sudo cdrdao scanbus
-        ```
+    ```bash
+    sudo cdrdao scanbus
+    ```
 
 2. Hacer el backup (suponemos que el comando anterior indica que el dispositivo es `/dev/sr0`):
 
-        ```bash
-        cdrdao read-cd --device /dev/sr0 --driver generic-mmc-raw --read-raw --datafile nombre_juego.bin nombre_juego.toc
-        ```
+    ```bash
+    cdrdao read-cd --device /dev/sr0 --driver generic-mmc-raw --read-raw --datafile nombre_juego.bin nombre_juego.toc
+    ```
 
 Con esto obtendremos dos ficheros. En algunas ocasiones nos puede interesar más el fichero `cue` equivalente al `toc`. En ese caso convertirlo así:
 
-    ```bash
-    toc2cue nombre_juego.toc nombre_juego.cue
-    ```
+```bash
+toc2cue nombre_juego.toc nombre_juego.cue
+```
