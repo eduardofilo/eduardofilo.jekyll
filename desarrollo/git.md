@@ -287,6 +287,20 @@ Borrado de la lista:
 $ git stash clear
 ```
 
+Guardar y recuperar con nombre ([fuente](http://stackoverflow.com/questions/11269256/how-to-name-and-retrieve-a-stash-by-name-in-git)):
+
+```bash
+# Guardar
+git stash save nombre
+# Listar
+git stash list
+    stash@{0}: On branch: nombre
+# Aplicar
+git stash apply stash@{0}
+# Borrar
+git stash drop stash@{0}
+```
+
 ## Ignorar cambios de un fichero incluido en el repositorio
 
 ([Fuente](http://stackoverflow.com/questions/6317169/using-gitignore-to-ignore-but-not-delete-files)) No se trata de la típica entrada en `.gitignore` dado que los ficheros allí listados se supone que ni siquiera forman parte del repositorio. Se trata de tener una versión del fichero en el repositorio pero luego no queremos actualizarlo. Para ello ejecutar:
