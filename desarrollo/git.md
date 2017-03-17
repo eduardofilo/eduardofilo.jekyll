@@ -49,10 +49,15 @@ $ cd first_app
 $ git init
 ```
 
-Add:
+Add ([fuente](http://stackoverflow.com/questions/572549/difference-between-git-add-a-and-git-add)):
 
 ```bash
+# stages All
+$ git add -A
+# stages new and modified, without deleted
 $ git add .
+# stages modified and deleted, without new
+$ git add -u
 ```
 
 Commit:
@@ -167,7 +172,7 @@ $ git tag -d tag_id
 $ git push origin :refs/tags/tag_id
 ```
 
-Eliminación de último commit ([Fuente](http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git))
+Eliminación de último commit ([fuente](http://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git))
 
 ```bash
 $ git reset --hard HEAD~1
@@ -176,7 +181,13 @@ $ git reset --hard HEAD~1
 Si el commit ya ha subido al repositorio hacer además:
 
 ```bash
-git push origin HEAD --force
+$ git push origin HEAD --force
+```
+
+Para olvidar cambios (incluso commits) hechos en local ([fuente](http://stackoverflow.com/questions/12845507/git-confusion-how-to-revert-local-changes-to-latest-remote-push)):
+
+```bash
+$ git reset --hard origin/master
 ```
 
 ## Diff's
