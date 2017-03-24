@@ -103,6 +103,13 @@ Log indicando los commits que afectan a un fichero ([fuente](http://stackoverflo
 $ git log --follow filename
 ```
 
+Localizar el commit inicial de la rama `branch_name` surgida de `master` ([fuente](
+http://stackoverflow.com/questions/18407526/git-how-to-find-first-commit-of-specific-branch)):
+
+```bash
+$ git log master..branch_name --oneline | tail -1
+```
+
 Rename:
 
 ```bash
