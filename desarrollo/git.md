@@ -319,6 +319,15 @@ git stash apply stash@{0}
 git stash drop stash@{0}
 ```
 
+Ver los cambios que contiene un stash ([fuente](http://stackoverflow.com/questions/10725729/git-see-whats-in-a-stash-without-applying-stash)):
+
+```bash
+# Para ver el contenido del stash más reciente
+git stash show -p
+# Para ver el contenido de un stash en concreto
+git stash show -p stash@{1}
+```
+
 ## Ignorar cambios de un fichero incluido en el repositorio
 
 ([Fuente](http://stackoverflow.com/questions/6317169/using-gitignore-to-ignore-but-not-delete-files)) No se trata de la típica entrada en `.gitignore` dado que los ficheros allí listados se supone que ni siquiera forman parte del repositorio. Se trata de tener una versión del fichero en el repositorio pero luego no queremos actualizarlo. Para ello ejecutar:
