@@ -24,6 +24,7 @@ A continuación una lista con algunas de las placas de este tipo que se pueden e
 * [C.H.I.P.](https://getchip.com/)
 * [LattePanda](http://www.lattepanda.com/)
 * [Asus Tinker Board](http://cpc.farnell.com/asus/90mb0qy1-m0eay0/tinker-board-2gb-1-8ghz-4k-gb/dp/SC14363)
+* [HiKey 960](http://www.96boards.org/product/hikey960/)
 
 Hasta ahora los únicos proyectos que he puesto en marcha han sido de computación, es decir, sin componente hardware, que es otro de los usos importantes que se les suelen dar. Han servido para delegar un par de funciones que antes ejecutaba directamente sobre mi PC principal. Concretamente:
 
