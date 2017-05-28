@@ -624,3 +624,12 @@ else
  rm -f $T
 fi
 ```
+
+## Recuperación de pendrive o tarjeta de memoria corrupta
+
+Con TestDisk/Photorec.
+
+### Enlaces
+
+* [TestDisk Paso A Paso](http://www.cgsecurity.org/wiki/TestDisk_Paso_A_Paso)
+* [How to Recover Data from Corrupt / formatted USB Flash using Photorec](https://linoxide.com/linux-how-to/recovery-data-corrupt-formatted-usb-flash-using-photorec/)
