@@ -143,6 +143,13 @@ Para activar swap con un fichero en concreto:
 $ sudo swapon /var/swap
 ```
 
+### Escaneo de Raspberry Pi's en red
+
+```bash
+$ arp -a | grep b8:27:eb
+$ sudo nmap -PR -sP 192.168.1.0/24 | fgrep -B 2 "Raspberry"
+```
+
 ## Pi-top
 
 ### Enlaces
