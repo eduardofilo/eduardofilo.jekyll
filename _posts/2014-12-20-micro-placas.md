@@ -19,7 +19,7 @@ A continuación una lista con algunas de las placas de este tipo que se pueden e
 * [Cubieboard](http://cubieboard.org/)
 * [UDOO](http://www.udoo.org/)
 * [ODROID](http://www.hardkernel.com/main/main.php): [Revista](http://magazine.odroid.com/)
-* [Up](http://up-shop.org/)
+* [Up](http://up-shop.org/) y [Up core](https://www.kickstarter.com/projects/802007522/up-core-the-smallest-quadcore-x86-single-board-com/description)
 * [Orange Pi](http://www.orangepi.org/orangepipc/)
 * [C.H.I.P.](https://getchip.com/)
 * [LattePanda](http://www.lattepanda.com/)
