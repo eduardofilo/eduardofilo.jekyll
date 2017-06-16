@@ -82,20 +82,20 @@ $ sudo dd if=/dev/mmcblk0 bs=2M | pv | gzip -9 - > Rpi_8gb_backup.img.gz
 $ #Backup sólo de 4GB (si por ejemplo la tarjeta es más grande pero no aprovecha toda la superficie)
 $ sudo dd if=/dev/mmcblk0 bs=2M count=2048 | pv -s 4g | gzip -9 - > Rpi_4gb_backup.img.gz
 $ #Restauración (comprimido con gzip):
-$ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
+$ gunzip Rpi_8gb_backup.img.gz -c | pv | sudo dd of=/dev/mmcblk0 bs=2M
 $ #Restauración (comprimido con xz):
-$ xzcat Rpi_8gb_backup.img.xz | sudo dd of=/dev/mmcblk0 bs=2M
+$ xzcat Rpi_8gb_backup.img.xz | pv | sudo dd of=/dev/mmcblk0 bs=2M
 $ #Restauración (comprimido con zip):
-$ unzip -p Rpi_8gb_backup.zip | sudo dd of=/dev/mmcblk0 bs=2M
+$ unzip -p Rpi_8gb_backup.zip | pv | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Backup de la SD (comprimiendo al vuelo y diviendo en trozos el fichero resultante)
 
 ```bash
 $ #Backup:
-$ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - | split --bytes=2G - Rpi_8gb_backup.img.gz.part_
+$ sudo dd if=/dev/mmcblk0 bs=2M | pv | gzip -9 - | split --bytes=2G - Rpi_8gb_backup.img.gz.part_
 $ #Restauración:
-$ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | sudo dd of=/dev/mmcblk0 bs=2M
+$ cat Rpi_8gb_backup.img.gz.part_* | gunzip -c | pv | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
 ### Control de progreso durante flasheo
