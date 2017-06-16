@@ -78,7 +78,9 @@ $ sudo raspi-config
 
 ```bash
 $ #Backup:
-$ sudo dd if=/dev/mmcblk0 bs=2M | gzip -9 - > Rpi_8gb_backup.img.gz
+$ sudo dd if=/dev/mmcblk0 bs=2M | pv | gzip -9 - > Rpi_8gb_backup.img.gz
+$ #Backup sólo de 4GB (si por ejemplo la tarjeta es más grande pero no aprovecha toda la superficie)
+$ sudo dd if=/dev/mmcblk0 bs=2M count=2048 | pv -s 4g | gzip -9 - > Rpi_4gb_backup.img.gz
 $ #Restauración (comprimido con gzip):
 $ gunzip Rpi_8gb_backup.img.gz -c | sudo dd of=/dev/mmcblk0 bs=2M
 $ #Restauración (comprimido con xz):
