@@ -520,3 +520,15 @@ $ su
 # mount -o remount,ro /system
 # reboot recovery
 ```
+
+### Desinstalar aplicaciones de sistema sin root
+
+[Fuente](https://elandroidelibre.elespanol.com/2017/07/desactiva-cualquier-aplicacion-movil.html)
+
+1. Activa el modo de depuración en tu Android.
+2. Conecta tu Android al ordenador por USB y acepta la clave RSA.
+3. Abre una ventana de comandos y escribe `adb devices` sin las comillas. Tu dispositivo debería detectarse apareciendo a modo de código.
+4. Una vez conectado escribe `adb shell`.
+55. Ahora necesitas eliminar una a una las aplicaciones que desees. Utiliza App Inspector para saber el nombre del paquete.
+6. Pega este código en la ventana de comandos: `pm uninstall -k -user 0 nombre.del.paquete`. Sin las comillas y cambiando “nombre.del.paquete” por el de la aplicación que deseas (Google Chrome es `com.android.chrome`, por ejemplo).
+7. Acepta el comando y si el ordenador te devuelve un `Success` es que se ha eliminado de manera satisfactoria.
