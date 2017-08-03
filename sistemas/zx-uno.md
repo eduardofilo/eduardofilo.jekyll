@@ -18,3 +18,7 @@ permalink: /sistemas/zx-uno.html
 * [ZX-Uno FAQ](http://www.ngpaws.com/zxunofaq.html)
 * [ZX-Uno Wiki](http://www.zxuno.com/wiki/index.php/ZX_Spectrum): Contiene el diagrama de bloques del sistema, la lista de registros, descripción de los modos gráficos disponibles, etc.
 * [Sinclair FAQ Wiki](http://faqwiki.zxnet.co.uk/wiki/Main_Page)
+
+## Comandos
+
+* Huevo de pascua: Pulsar `:` (o SYMBOL SHIFT+Z) durante los 2 primeros segundos tras el arranque o tras hacer master reset (Ctrl-Alt-BkSpace).
