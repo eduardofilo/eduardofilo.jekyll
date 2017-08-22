@@ -48,9 +48,14 @@ ST propone varios entornos de desarrollo para trabajar sobre su placa [STM32 VL 
 
 10. Tal y como se explica en el [README del proyecto](https://github.com/texane/stlink) descargado en el paso 7, el interfaz STLINKv1 que utiliza la STM32VLDISCOVERY, tiene ciertos problemas que para evitar hay que reconfigurar el módulo `usb-storage`. Para ello ejecutar lo siguiente al principio de una sesión en la que se quiera trabajar con él:
 
-        $ sudo modprobe -r usb-storage && sudo modprobe usb-storage quirks=483:3744:i
+        $ sudo modprobe -r usb-storage && sudo modprobe usb-storage quirks=0483:3744:i
 
-11. Compilamos:
+11. Si se quiere hacer permanente el cambio en su lugar, crear el fichero `/etc/modprobe.d/usb-storage.conf` con el siguiente contenido:
+
+        # stlink/v1 ignore mass storage
+        options usb-storage quirks=0483:3744:i
+
+12. Compilamos:
 
         $ cd ~/git/stlink
         $ ./autogen.sh
@@ -60,14 +65,14 @@ ST propone varios entornos de desarrollo para trabajar sobre su placa [STM32 VL 
         $ cmake -DCMAKE_BUILD_TYPE=Debug ..
         $ make
 
-12. Conectar la placa por USB al ordenador.
+13. Conectar la placa por USB al ordenador.
 
-13. Arrancamos gdbserver:
+14. Arrancamos gdbserver:
 
         $ cd ~/git/stlink/build
         $ sudo ./st-util -1
 
-14. Conectamos con él desde el directorio donde esté el binario que queremos depurar o ejecutar:
+15. Conectamos con él desde el directorio donde esté el binario que queremos depurar o ejecutar:
 
         $ cd ~/git/STM32-Template/Demo
         $ arm-none-eabi-gdb Demo.elf
