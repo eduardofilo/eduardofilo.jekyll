@@ -26,6 +26,8 @@ A continuación una lista con algunas de las placas de este tipo que se pueden e
 * [Asus Tinker Board](http://cpc.farnell.com/asus/90mb0qy1-m0eay0/tinker-board-2gb-1-8ghz-4k-gb/dp/SC14363)
 * [HiKey 960](http://www.96boards.org/product/hikey960/)
 * [Rock64 Media Board Computer](https://www.pine64.org/?product=rock64-media-board-computer)
+* [NanoPi K2](http://nanopi.io/nanopi-k2.html)
+* [Khadas VIM](http://khadas.com/vim/)
 
 Hasta ahora los únicos proyectos que he puesto en marcha han sido de computación, es decir, sin componente hardware, que es otro de los usos importantes que se les suelen dar. Han servido para delegar un par de funciones que antes ejecutaba directamente sobre mi PC principal. Concretamente:
 
