@@ -46,6 +46,7 @@ permalink: /sistemas/unix.html
 *  `route -n`: Muestra la tabla de rutas con IP's en lugar de con nombres.
 *  `cat /etc/resolv.conf`: Muestra el gateway en uso.
 *  `ldd <binario>`: Indica las librerías que usa el binario.
+*  `exiftool -AllDates='2010:08:08 15:35:33' -overwrite_original IMG_01.jpg`: Actualiza todas las fechas dentro de la metainformación de un JPG.
 
 ## Alias SSH
 
