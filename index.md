@@ -24,6 +24,7 @@ layout: default
 * [Gestión de Proyectos](/desarrollo/projects.html)
 * [Sublime Text 2](/desarrollo/subl.html)
 * [STM32](/desarrollo/stm32.html)
+* [Vagrant](/desarrollo/vagrant.html)
 
 # Sistemas
 
