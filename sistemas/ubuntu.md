@@ -5,10 +5,9 @@ permalink: /sistemas/ubuntu.html
 
 # Ubuntu
 
-## Gestión de paquetes
+## Aplicaciones interesantes
 
-*  `sudo apt-get autoremove`: Limpieza de paquetes añadidos automáticamente pero que ya no son necesarios.
-
+*  [ReText](https://github.com/retext-project/retext): Editor Markdown.
 
 ## Problemas con GRUB
 
