@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-Cuando se levante por primera el entorno configurado en el `Vagrantfile` se bajará la máquina. Si queremos adelantar este proceso podemoa bajar la máquina con el siguiente comando:
+Cuando se levante por primera el entorno configurado en el `Vagrantfile` se bajará la máquina. Si queremos adelantar este proceso podemos bajar la máquina con el siguiente comando:
 
 ```
 $ vagrant box add ubuntu/xenial64
