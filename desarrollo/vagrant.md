@@ -68,3 +68,28 @@ Si no habíamos arrancado la máquina todavía, el script se ejecutará en el pr
 ```
 $ vagrant reload --provision
 ```
+
+En caso de tener que ejecutar muchos scripts o ser muy grandes, tal vez sea mejor escribirlos en archivos separados que luego se pueden referenciar en el `Vagrantfile` de esta forma (tal y como está en el ejemplo, el script `script.sh` deberá estar en la misma ruta que el `Vagrantfile`):
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+  config.vm.provision :shell, path: "script.sh"
+end
+```
+
+## Redirección de puertos
+
+Aparte del acceso SSH que se consigue fácilmente a través del comando `vagrant ssh` como hemos visto, será habitual que necesitemos otro tipo de accesos por red hacia la máquina virtual. Por ejemplo en el caso de que estemos desarrollando una aplicación web necesitaremos redireccionar el puerto que sirva la máquina virtual. Por ejemplo, si queremos redireccionar el puerto 8000 de la máquina virtual hacia la host, deberemos añadir la siguiente línea al bloque de configuraciones del `Vagrantfile`:
+
+```
+  config.vm.network :forwarded_port, guest: 8000, host: 8000
+```
+
+Tras ello hay que ejecutar `vagrant reload` o `vagrant up` dependiendo de si la máquina virtual está arrancada o parada. En Vagrant hay muchas más posibilidades para configurar la red además del nat que acabamos de hacer. Todas las posibilidades se describen [aquí](https://www.vagrantup.com/docs/networking/).
+
+Nota para Python/Django. En caso de querer acceder al miniservidor que se ejecuta con `python manage.py runserver`, además de la redirección del puerto (precisamente se usa el 8000 de forma predeterminada), tal y como se explica [aquí](https://stackoverflow.com/questions/18157353/connection-reset-when-port-forwarding-with-vagrant), hay que lanzar el miniservidor especificando que se escucha cualquier interfaz de la máquina (por defecto se escucha sólo el interfaz de loopback) ejecutando así:
+
+```
+python manage.py runserver 0.0.0.0:8000
+```
