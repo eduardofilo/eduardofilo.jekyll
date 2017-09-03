@@ -49,7 +49,7 @@ Tal y como se indica en el log del arranque de la máquina (durante el `vagrant 
 
 ## Provisión de componentes
 
-La máquina que hemos instalado (`ubuntu/xenial64`) viene con Python3 preinstalado. Vamos a instalar Django de forma controlada con Vagrant para que pueda reproducir esa instalación de forma automática si creamos este entorno en otro lugar. Para ello escribimos un script que luego integramos en el `Vagrantfile` de la siguiente forma:
+Por ejemplo vamos a configurar la instalación de un entorno Python3/Django. La máquina que hemos instalado (`ubuntu/xenial64`) viene con Python3 preinstalado. Vamos a instalar Django de forma controlada con Vagrant para que pueda reproducir esa instalación de forma automática si creamos este entorno en otro lugar. Para ello escribimos un script que luego integramos en el `Vagrantfile` de la siguiente forma:
 
 ```
 Vagrant.configure("2") do |config|
