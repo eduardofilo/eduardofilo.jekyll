@@ -29,3 +29,11 @@ Desde el directorio donde queremos que se cree ejecutamos:
 ```
 (djangodev) $ django-admin startproject project_dir
 ```
+
+## Creación de aplicación Django
+
+Desde el directorio del proyecto (donde se encuentre el fichero `manage.py`) ejecutamos:
+
+```
+(djangodev) $ python manage.py startapp app_dir
+```

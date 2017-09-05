@@ -40,6 +40,23 @@ $ vagrant up
 $ vagrant ssh
 ```
 
+El comando `vagrant ssh` automatiza una conexión ssh cuyos parámetros manuales se pueden obtener ejecutando el comando `vagrant ssh-config`. Por ejemplo, una conexión manual podría lograrse a partir de los siguientes resultados así:
+
+```
+$ vagrant ssh-config
+Host default
+  HostName 127.0.0.1
+  User ubuntu
+  Port 2222
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /home/edumoreno/git/django_test/.vagrant/machines/default/virtualbox/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+$ ssh -i /home/edumoreno/git/django_test/.vagrant/machines/default/virtualbox/private_key -p 2222 ubuntu@127.0.0.1
+```
+
 Tal y como se indica en el log del arranque de la máquina (durante el `vagrant up`), el directorio del proyecto de la máquina host se monta sobre `/vagrant` de la máquina guest:
 
 ```
