@@ -27,7 +27,7 @@ Cada vez que se quiera adaptar el entorno de la sesión del terminal a este ento
 Desde el directorio donde queremos que se cree ejecutamos:
 
 ```
-(djangodev) $ django-admin startproject project_dir
+(djangodev) $ django-admin startproject project01
 ```
 
 ## Creación de aplicación Django
@@ -35,5 +35,37 @@ Desde el directorio donde queremos que se cree ejecutamos:
 Desde el directorio del proyecto (donde se encuentre el fichero `manage.py`) ejecutamos:
 
 ```
-(djangodev) $ python manage.py startapp app_dir
+(djangodev) $ python manage.py startapp app01
+```
+
+Para incorporar los modelos de la nueva aplicación al mantenimiento automático que proporciona el módulo `admin` de Django, hay que incorporar al fichero `project01/settings.py` lo siguiente en la sección `INSTALLED_APPS`:
+
+```
+INSTALLED_APPS = [
+    'app01.apps.App01Config',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+
+Luego ejecutamos el siguiente comando para generar las migraciones a partir de los modelos definidos en la app:
+
+```
+(djangodev) $ python manage.py makemigrations app01
+```
+
+Finalmente ejecutamos las migraciones propiamente dichas:
+
+```
+(djangodev) $ python manage.py migrate
+```
+
+Para poder utilizar el módulo `admin` de Django, hay que crear al menos un usuario:
+
+```
+(djangodev) $ python manage.py createsuperuser
 ```
