@@ -23,6 +23,10 @@ permalink: /sistemas/raspi.html
 * [Tutorials - The MagPi MagazineThe MagPi Magazine](https://www.raspberrypi.org/magpi/tutorials/)
 * [Flint OS](https://flintos.io/): Versión de ChromeOS con soporte Android.
 
+## Software
+
+* [Pi-Hole](https://pax0r.com/bloquea-publicidad-molesta-con-pi-hole/): DNS que filtra dominios marcados por la comunidad como "molestos" y conseguiremos una navegación mas limpia y rápida.
+
 ## Hardware
 
 * [Lista de hardware verificado](http://elinux.org/RPi_VerifiedPeripherals)
