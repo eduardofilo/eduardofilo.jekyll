@@ -7,7 +7,14 @@ permalink: /desarrollo/python.html
 
 ## Enlaces
 
-*  [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/intro/learning/)
+### Aprendizaje
+
+* [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/intro/learning/)
+
+### Módulos interesantes
+
+* [django-tinymce](https://github.com/aljosa/django-tinymce)
+* [django-autocomplete-light](https://github.com/yourlabs/django-autocomplete-light)
 
 ## Entorno Django
 
