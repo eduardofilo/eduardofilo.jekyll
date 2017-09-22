@@ -18,7 +18,13 @@ permalink: /desarrollo/python.html
 
 ## Entorno Django
 
-Para tener un entorno aislado (sin depender con los paquetes y versiones del sistema), instalar primero `pip` de Python3 (paquete `python3-pip` de Ubuntu). Después ejecutar en terminal:
+Para tener un entorno aislado (sin depender con los paquetes y versiones del sistema), instalar primero `pip` de Python3. Se puede hacer instalando el paquete `python3-pip` de Ubuntu, pero dado que interesa actualizar a la última versión, es mejor instalarlo de forma independiente bajando el script `get-pip.py` de [aquí](https://pip.pypa.io/en/stable/installing/) ejecutándolo así:
+
+```
+$ sudo python3 get-pip.py
+```
+
+Después ejecutar en terminal:
 
 ```
 $ sudo pip3 install virtualenv
