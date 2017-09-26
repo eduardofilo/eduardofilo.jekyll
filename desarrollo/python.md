@@ -10,6 +10,7 @@ permalink: /desarrollo/python.html
 ### Aprendizaje
 
 * [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/intro/learning/)
+* [How to Reset Migrations](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-reset-migrations.html)
 
 ### Módulos interesantes
 
