@@ -73,6 +73,12 @@ Luego ejecutamos el siguiente comando para generar las migraciones a partir de l
 (djangodev) $ python manage.py makemigrations app01
 ```
 
+Una vez generadas las migraciones, si queremos obtener el código SQL a que equivalen hay que ejecutar el comando (en el ejemploo solicitamos el código correspondiente a la migración `0008`):
+
+```
+(djangodev) $ python manage.py sqlmigrate app01 0008
+```
+
 Finalmente ejecutamos las migraciones propiamente dichas:
 
 ```
