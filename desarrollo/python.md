@@ -73,12 +73,6 @@ Luego ejecutamos el siguiente comando para generar las migraciones a partir de l
 (djangodev) $ python manage.py makemigrations app01
 ```
 
-Una vez generadas las migraciones, si queremos obtener el código SQL a que equivalen hay que ejecutar el comando (en el ejemploo solicitamos el código correspondiente a la migración `0008`):
-
-```
-(djangodev) $ python manage.py sqlmigrate app01 0008
-```
-
 Finalmente ejecutamos las migraciones propiamente dichas:
 
 ```
@@ -89,4 +83,30 @@ Para poder utilizar el módulo `admin` de Django, hay que crear al menos un usua
 
 ```
 (djangodev) $ python manage.py createsuperuser
+```
+
+## Gestión de migraciones
+
+Una vez generadas las migraciones, si queremos obtener el código SQL a que equivalen hay que ejecutar el comando (en el ejemploo solicitamos el código correspondiente a la migración `0008`):
+
+```
+(djangodev) $ python manage.py sqlmigrate app01 0008
+```
+
+Para situarnos en un punto concreto de la serie de migraciones (deshaciendo por tanto las posteriores cuyos ficheros se podrán borrar):
+
+```
+(djangodev) $ python manage.py migrate app01 0010
+```
+
+Para mostrar los nombres de todas las migraciones (si no ponemos el nombre al final se muestran las de todo el sitio):
+
+```
+(djangodev) $ python manage.py showmigrations app01
+```
+
+Para deshacer todas las migraciones:
+
+```
+(djangodev) $ python manage.py migrate app01 zero
 ```
