@@ -191,6 +191,7 @@ Medidas de protección:
 * [Top 20 OpenSSH Server Best Security Practices](http://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)
 * [Protege tu servidor casero de ataques externos](http://blog.desdelinux.net/protege-tu-servidor-casero-de-ataques-externos/)
 * [Protegiendo el servidor SSH con fail2ban](http://blog.zoogon.net/2015/02/protegiendo-el-servidor-ssh-con-fail2ban.html)
+* [Pasos para asegurar tu Raspberry Pi frente a posibles amenazas](https://www.redeszone.net/2017/09/14/pasos-asegurar-raspberry-pi-frente-posibles-amenazas/)
 
 ### Varios
 
