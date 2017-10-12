@@ -28,6 +28,22 @@ permalink: /sistemas/android_system.html
 
 * [Cómo evitar que OnePlus recopile información del usuario sin conocimiento](https://www.movilzona.es/2017/10/11/como-evitar-que-oneplus-recopile-informacion-del-usuario-sin-conocimiento/)
 
+#### Eliminación servicio `OnePlus System Service`
+
+Este servicio recopila información privada como [ha reconocido la propia OnePlus](https://www.teknofilo.com/oneplus-responde-a-las-acusaciones-de-espiar-a-sus-usuarios/amp/). La forma de desinstalarlo es abriendo una shell por ADB y ejecutando un comando:
+
+```
+$ ./adb shell
+OnePlus5:/ $ pm uninstall -k --user 0 net.oneplus.odm
+Success
+```
+
+Previamente se recomienda hacer un backup de este paquete por si tras desinstalarlo el sistema queda inestable. Esto lo podemos hacer localizando el directorio del apk con [App Inspector](https://play.google.com/store/apps/details?id=bg.projectoria.appinspector) y lanzando el siguiente comando:
+
+```
+$ ./adb pull <ruta>
+```
+
 ### OnePlus One
 
 #### Enlaces
