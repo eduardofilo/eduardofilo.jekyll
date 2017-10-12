@@ -22,36 +22,11 @@ permalink: /sistemas/android_system.html
 
 ## Dispositivos
 
-### Motorola Moto E (XT1021)
+### OnePlus 5
 
 #### Enlaces
 
-* [Info Cyanogenmod](http://wiki.cyanogenmod.org/w/Condor_Info)
-* [Downloads Cyanogenmod](https://download.cyanogenmod.org/?device=condor)
-
-#### Modos arranque
-
-* Recovery: Apagado pulsar `Power` mientras se pulsa `Volume-`. Cuando salga el logo de Android tumbado con el triángulo rojo pulsar `Volume+` mientras se mantiene pulsado `Power`.
-
-### Geeksphone One
-
-#### Enlaces
-
-* [Reset manual](https://groups.google.com/forum/#!topic/geeksphone/Nj4KXaAhbKE)
-* [Tutorial ROM y Google Apps](https://sites.google.com/site/gappsone/)
-
-#### ROMs
-
-* [SuperAosp 8.6, Rom Basada en Android Open Source Gingerbread](http://forum.geeksphone.com/index.php?topic=1604.0)
-* [CyanogenMod](http://download.cyanogenmod.com/?type=stable&device=one)
-* [RCMod 3.0.4](http://forum.geeksphone.com/index.php?topic=961.0)
-* [RCMod 4.0.0](http://forum.geeksphone.com/index.php?topic=1294.0)
-
-#### Configuración A-GPS
-
-Teóricamente, el server es: `h-slp.mncXXX.mccYYY.pub.3gppnetwork.org`  
-En el puerto: 3425  
-XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo MCC=214 y MNC=19
+* [Cómo evitar que OnePlus recopile información del usuario sin conocimiento](https://www.movilzona.es/2017/10/11/como-evitar-que-oneplus-recopile-informacion-del-usuario-sin-conocimiento/)
 
 ### OnePlus One
 
@@ -93,6 +68,37 @@ Cuando el móvil avise de la disponibilidad de una nueva actualización, si est�
 7. Reiniciar el sistema
 8. Descargar la batería hasta el 2 - 5 %
 9. Volver a cargar la batería hasta el 100%
+
+### Motorola Moto E (XT1021)
+
+#### Enlaces
+
+* [Info Cyanogenmod](http://wiki.cyanogenmod.org/w/Condor_Info)
+* [Downloads Cyanogenmod](https://download.cyanogenmod.org/?device=condor)
+
+#### Modos arranque
+
+* Recovery: Apagado pulsar `Power` mientras se pulsa `Volume-`. Cuando salga el logo de Android tumbado con el triángulo rojo pulsar `Volume+` mientras se mantiene pulsado `Power`.
+
+### Geeksphone One
+
+#### Enlaces
+
+* [Reset manual](https://groups.google.com/forum/#!topic/geeksphone/Nj4KXaAhbKE)
+* [Tutorial ROM y Google Apps](https://sites.google.com/site/gappsone/)
+
+#### ROMs
+
+* [SuperAosp 8.6, Rom Basada en Android Open Source Gingerbread](http://forum.geeksphone.com/index.php?topic=1604.0)
+* [CyanogenMod](http://download.cyanogenmod.com/?type=stable&device=one)
+* [RCMod 3.0.4](http://forum.geeksphone.com/index.php?topic=961.0)
+* [RCMod 4.0.0](http://forum.geeksphone.com/index.php?topic=1294.0)
+
+#### Configuración A-GPS
+
+Teóricamente, el server es: `h-slp.mncXXX.mccYYY.pub.3gppnetwork.org`  
+En el puerto: 3425  
+XXX lo cambias por el MNC de tu operador, e YYY por el MCC. En el caso de Simyo MCC=214 y MNC=19
 
 ### NVSBL P4D Sirius
 
