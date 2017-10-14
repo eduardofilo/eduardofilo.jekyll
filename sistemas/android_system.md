@@ -27,6 +27,7 @@ permalink: /sistemas/android_system.html
 #### Enlaces
 
 * [Cómo evitar que OnePlus recopile información del usuario sin conocimiento](https://www.movilzona.es/2017/10/11/como-evitar-que-oneplus-recopile-informacion-del-usuario-sin-conocimiento/)
+* [Cómo instalar Android Oreo 8.0 en el OnePlus 5](https://amp.andro4all.com/2017/10/instalar-android-oreo-8-0-oneplus-5)
 
 #### Eliminación servicio `OnePlus System Service`
 
