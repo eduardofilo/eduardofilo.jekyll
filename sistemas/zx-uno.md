@@ -27,4 +27,6 @@ permalink: /sistemas/zx-uno.html
 * Soft Reset: Ctrl-Alt-Supr
 * Hard Reset: Ctrl-Alt-Del
 * Configuración: Hard Reset + F2 (Edit)
+* Cambio de Core durante arranque: Caps Lock
+* Cambio de modo de vídeo: Scroll Lock
 * Huevo de pascua: Pulsar `:` (o SYMBOL SHIFT+Z) durante los 2 primeros segundos tras el arranque o tras hacer master reset (Ctrl-Alt-BkSpace).
