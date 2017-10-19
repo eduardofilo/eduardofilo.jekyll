@@ -130,7 +130,7 @@ Para averiguar dónde están los ficheros de Django, ejecutar el siguiente coman
 * [Creando modelos](https://docs.djangoproject.com/es/1.11/intro/tutorial02/#creating-models)
 * [Manipulación del modelo de datos por CLI](https://docs.djangoproject.com/en/1.11/intro/tutorial02/#playing-with-the-api)
 * [Tests](https://docs.djangoproject.com/es/1.11/intro/tutorial05/)
-* [Ficheros estáticos](https://docs.djangoproject.com/es/1.11/intro/tutorial06/)
+* [Ficheros estáticos](https://docs.djangoproject.com/es/1.11/intro/tutorial06/): Inserción de CSS en las vistas.
 * [Modificación representación detalle modelos](https://docs.djangoproject.com/en/1.11/intro/tutorial07/#customize-the-admin-form): fields, fieldsets
 * [Objetos relacionados en detalle modelos](https://docs.djangoproject.com/en/1.11/intro/tutorial07/#adding-related-objects): Inlines
 * [Modificación representación lista modelos](https://docs.djangoproject.com/en/1.11/intro/tutorial07/#customize-the-admin-change-list): list_display, list_filter, search_fields
