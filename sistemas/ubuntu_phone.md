@@ -8,6 +8,8 @@ permalink: /sistemas/ubuntu_phone.html
 ## Enlaces
 
 * [Installing Ubuntu](https://developer.ubuntu.com/en/phone/devices/installing-ubuntu-for-devices)
+* [How to install Android](http://a25.co/ubuntu-phone-how-to-install-android/)
+* [Install Android On BQ Aquaris Ubuntu Phone In Linux](https://itsfoss.com/install-android-ubuntu-phone/)
 
 ## Activar SSH
 

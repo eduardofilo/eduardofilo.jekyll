@@ -55,6 +55,7 @@ $ ./adb pull <ruta>
 * [Mirrors for official Cyanogen roms and OTA updates](http://forum.xda-developers.com/oneplus-one/general/official-cm11s-roms-ota-updates-t2906746)
 * [TWRP for bacon](https://dl.twrp.me/bacon/)
 * [Cyanogem Support](https://cyngn.com/support): Imágenes de fábrica para Oneplus One y el resto de dispositivos que tienen soporte de Cyanogen.
+* [Plasma Mobile on Oneplus One](https://forum.kde.org/viewtopic.php?f=297&t=127502)
 
 #### Modos arranque
 
