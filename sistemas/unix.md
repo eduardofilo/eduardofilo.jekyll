@@ -20,7 +20,6 @@ permalink: /sistemas/unix.html
 *  `strace -e file,process -f [command]`: the -f parameter follows forks -- in case it's not main command but a subshell that you're interested in.
 *  `strace -p [PID]`: Connect to pid PID and start tracing.
 *  `route -n`: Tabla de rutas del sistema.
-*  `netstat -nr`: Tabla de rutas del sistema.
 *  `du -h --max-depth=1 .`: Tamaño de un directorio y sus subdirectorios directos.
 *  `find [directorio] ! -user [usuario] -ls`: Lista los ficheros que NO pertenecen a un usuario.
 *  `badblocks -swv /dev/sda`: Bloquear sectores defectuosos (sustituir `/dev/sda` por el dispositivo que corresponda.
@@ -30,9 +29,11 @@ permalink: /sistemas/unix.html
 *  `cat fichero.txt | awk '{print $5}'`: Imprime la quinta columna (separando por espacios) de cada linea del fichero.
 *  `cat fichero.txt | cut -d' ' -f5`: Imprime la quinta columna (separando por espacios) de cada linea del fichero.
 *  `cat fichero.txt | sed -e 's/ /\n/g'`: Sustituye todos los espacios del fichero por retornos de carro.
+*  `netstat -nr`: Tabla de rutas del sistema.
 *  `netstat -ntu|grep :80|wc -l`: número de conexiones al servidor HTTP.
 *  `netstat -ntu|grep :21|wc -l`: número de conexiones al servidor FTP.
-*  `netstat -tulanp`: Lista los puertos TCP/UDP abiertos.
+*  `netstat -tulanp`: Lista los puertos TCP/UDP abiertos (tanto de servidores como de clientes).
+*  `netstat -tlnp`: Lista los puertos TCP abiertos de los servicios.
 *  `crontab -e`: Añadir un job a cron.
 *  `sudo badblocks /dev/sda > badblocks.txt; sudo fsck -l badblocks.txt /dev/sda`: Bloqueo de sectores defectuosos del disco duro ([fuente](http://tech.chandrahasa.com/2013/06/09/how-to-check-your-hard-disk-for-bad-blocks-in-ubuntu/)).
 *  `sudo blkid`: Lista los dispositivos de bloques (discos) disponibles en el sistema.
