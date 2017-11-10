@@ -49,6 +49,7 @@ permalink: /sistemas/unix.html
 *  `ldd <binario>`: Indica las librerías que usa el binario.
 *  `exiftool -AllDates='2010:08:08 15:35:33' -overwrite_original photo.jpg`: Actualiza todas las fechas dentro de la metainformación de un JPG.
 *  `exiftool -all= photo.jpg`: Borrar toda la metainformación de una foto (por cuestiones de privacidad antes de subirla a un sitio por ejemplo).
+*  `mplayer -vo caca MovieName.avi`: Reproduce un vídeo en consola con ascii. Para verlo en blanco y negro sustituir `caca` por `aa`.
 
 ## Alias SSH
 
