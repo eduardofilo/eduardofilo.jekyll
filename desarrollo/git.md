@@ -377,3 +377,21 @@ En la [fuente](http://stackoverflow.com/questions/5772192/how-can-i-reconcile-de
 ```bash
 git commit --amend
 ```
+
+## gitbook
+
+La utilidad de línea de comando para compilar los libros a `epub` por ejemplo se instala con `npm`:
+
+```
+sudo npm install gitbook-cli -g
+sudo npm install svgexport -g
+```
+
+Una vez disponible, entraremos en el directorio del repositorio que contenga un gitbook y generaremos un epub:
+
+```
+$ cd git/
+$ git clone https://github.com/DjangoGirls/tutorial.git
+$ cd tutorial/es/
+$ gitbook epub ./ ./tutorial.epub
+```
