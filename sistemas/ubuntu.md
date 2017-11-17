@@ -7,7 +7,8 @@ permalink: /sistemas/ubuntu.html
 
 ## Aplicaciones interesantes
 
-*  [ReText](https://github.com/retext-project/retext): Editor Markdown.
+* [ReText](https://github.com/retext-project/retext): Editor Markdown.
+* [Franz](https://meetfranz.com/): [Configuración de icono en GNome](https://gist.github.com/jamiesoncj/756728b3ba7c07d7a90f843400af37bb).
 
 ## Problemas con GRUB
 
