@@ -19,9 +19,18 @@ permalink: /sistemas/raspi.html
 * [An A to Z Beginners Guide to Installing RetroPie on a Raspberry Pi](http://supernintendopi.wordpress.com/)
 * [How to install Oracle Java 8 in Debian via repository (JDK8)](http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html)
 * [Adafruit - Learn Raspberry Pi](https://learn.adafruit.com/category/learn-raspberry-pi)
-* [DietPi - Lightweight justice for your SBC](http://dietpi.com/)
 * [Tutorials - The MagPi MagazineThe MagPi Magazine](https://www.raspberrypi.org/magpi/tutorials/)
+
+## Distribuciones
+
+* [Binary Emotions Slideshow](http://www.binaryemotions.com/digital-signage/raspberry-slideshow/): Slideshow de imágenes/vídeos.
+* [Binary Emotions Digital Signage](http://www.binaryemotions.com/digital-signage/raspberry-digital-signage/): Slideshow de páginas web.
+* [DietPi - Lightweight justice for your SBC](http://dietpi.com/)
 * [Flint OS](https://flintos.io/): Versión de ChromeOS con soporte Android.
+* [PiMAME](http://pimame.org/): Raspbian con un frontend para lanzar emuladores.
+* [Lakka](http://www.lakka.tv/): Lakka is a lightweight Linux distribution that transforms a credit card sized computer into a full blown emulation console.
+* [RetroPie](http://blog.petrockblock.com/retropie/)
+* [batocera.linux](https://batocera-linux.xorhub.com/): Para construir Recalbox.
 
 ## Software
 
@@ -42,12 +51,6 @@ permalink: /sistemas/raspi.html
 * [UA0053 ADAPTADOR LOGILINK USB 2.0 AUDIO 5.1](http://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=255195038&cPath=1295): Adaptador audio USB.
 * [2-Channel 3W PAM8403 Audio Amplifier Board](http://www.dx.com/p/2-channel-3w-pam8403-audio-amplifier-board-red-146300): Amplificador audio 3W.
 * [Stereo 2.8W Class D Audio Amplifier - I2C Control AGC](http://www.adafruit.com/product/1712): Amplificador audio 2.8W con control I2C.
-
-## Distribuciones
-
-* [PiMAME](http://pimame.org/): Raspbian con un frontend para lanzar emuladores.
-* [Lakka](http://www.lakka.tv/): Lakka is a lightweight Linux distribution that transforms a credit card sized computer into a full blown emulation console.
-* [RetroPie](http://blog.petrockblock.com/retropie/)
 
 ## Comandos útiles
 
