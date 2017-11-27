@@ -140,3 +140,7 @@ Para averiguar dónde están los ficheros de Django, ejecutar el siguiente coman
 ## Referencia Django
 
 * [Admin actions](https://docs.djangoproject.com/en/1.11/ref/contrib/admin/actions/): Creación de actions, páginas intermedias al ejecutar actions, gestión de actions.
+
+## filter, list comprehension y generators
+
+[Fuente](https://stackoverflow.com/questions/1205375/filter-by-property). Para filtrar por ejemplo una lista de objetos se pueden utilizar estos tres elementos. Hay que tener en cuenta que `filter` devuelve un iterator. Si por eejemplo sólo queremos el número de elementos habrá que generar una lista o set con él.
