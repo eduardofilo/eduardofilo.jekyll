@@ -19,6 +19,8 @@ permalink: /sistemas/android_system.html
 ## Aplicaciones interesantes
 
 * [KK Easy Launcher(Big Launcher)](https://play.google.com/store/apps/details?id=com.big.launcher)
+* [Files Go](https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files): Ayuda a limpiar el sistema.
+* [SD Maid](https://play.google.com/store/apps/details?id=eu.thedarken.sdm): Ayuda a limpiar el sistema.
 
 ## Dispositivos
 
