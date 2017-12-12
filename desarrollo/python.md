@@ -52,9 +52,10 @@ Cada vez que se quiera adaptar el entorno de la sesión del terminal a este ento
         $ sudo pip3 install virtualenv
         $ python3 /volume1/@appstore/py3k/usr/local/lib/python3.5/site-packages/virtualenv.py --python=`which python3` djangodev
 
-4. Arranco el entorno virtual:
+4. Arranco el entorno virtual e instalo Django:
 
         $ source djangodev/bin/activate
+        (djangodev) $ pip install Django
 
 ## Creación de proyecto Django
 
