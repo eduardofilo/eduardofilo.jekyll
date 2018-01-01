@@ -4,8 +4,7 @@ permalink: /sistemas/3d_printing.html
 ---
 
 # 3D Printing
-
-<iframe src="https://www.youtube.com/embed/LMOrumVvI-s?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/LMOrumVvI-s" frameborder="0" allowfullscreen></iframe>
 
 ## Enlaces
 
