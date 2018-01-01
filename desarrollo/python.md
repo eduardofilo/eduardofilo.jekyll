@@ -37,6 +37,26 @@ $ source djangodev/bin/activate
 
 Cada vez que se quiera adaptar el entorno de la sesión del terminal a este entorno aislado, hay que ejecutar el penúltimo comando anterior (`source`).
 
+## Entorno Django en Synology NAS
+
+1. Instalo módulo Python3 desde el Centro de Paquetes.
+2. Instalo pip en Python3:
+
+        $ wget -nd https://bootstrap.pypa.io/get-pip.py
+        $ python get-pip.py
+        $ cd /usr/local/bin
+        $ sudo ln -s /volume1/@appstore/py3k/usr/local/bin/pip3
+
+3. Instalo virtualenv:
+
+        $ sudo pip3 install virtualenv
+        $ python3 /volume1/@appstore/py3k/usr/local/lib/python3.5/site-packages/virtualenv.py --python=`which python3` djangodev
+
+4. Arranco el entorno virtual e instalo Django:
+
+        $ source djangodev/bin/activate
+        (djangodev) $ pip install Django
+
 ## Creación de proyecto Django
 
 Desde el directorio donde queremos que se cree ejecutamos:
