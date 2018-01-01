@@ -28,6 +28,7 @@ layout: default
 
 # Sistemas
 
+* [3D Printing](/sistemas/3d_printing.html)
 * [Android](/sistemas/android_system.html)
 * [Aplicaciones interesantes](/sistemas/soft_imprescindible.html)
 * [AppleTV](/sistemas/appletv.html)
