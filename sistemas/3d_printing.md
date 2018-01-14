@@ -18,10 +18,10 @@ permalink: /sistemas/3d_printing.html
 * Instalación de 2 MosFET: [Post](http://moderntoil.com/?p=850) y [STLs](https://www.thingiverse.com/thing:2086107)
 * [Como calibrar el control de temperatura PID de la impresora 3D](https://3dinvasion.com/blog/como-calibrar-el-control-de-temperatura-pid-de-la-impresora-3d/)
 
-## Hardware
+## Hardware / Componentes / Repuestos
 
 * [Rodamiento lineal](https://m.banggood.com/es/LM8UU-8mm-Linear-Ball-Bearing-Bush-Steel-for-CNC-Router-Mill-Machine-p-906777.html)
-* [Rodamiento lineal](https://www.amazon.es/dp/B06X6LD76G)
+* [Rodamiento lineal sin bolas](https://www.amazon.es/dp/B06X6LD76G)
 * [Rodamiento lineal largo](https://m.banggood.com/es/LM8LUU-8mm-Long-Type-Linear-Motion-Ball-Bearing-Slide-Bushing-CNC-Part-p-994394.html?rmmds=detail-middle-buytogether-auto)
 * [Enchufe de corriente de entrada](https://www.amazon.es/dp/B00FFY3Q0C)
 * [Alargador lector microSD](https://www.amazon.es/dp/B06XX5GZTG)
@@ -44,10 +44,36 @@ permalink: /sistemas/3d_printing.html
 
 ## Parámetros impresión
 
+### General
+
 * X (Width): 220mm
 * Y (Depth): 220mm
 * Z (Height): 240mm
 * Build plate shape: Rectangular
-* Heater bed: Checked
+* Heated bed: Checked
+* Bed center is 0,0,0: Unchecked
 * Material diameter: 1.75mm
 * Nozzle size: 0.4mm
+
+### Cura 3.1
+
+* `Quality > Layer Height`: 0.2 mm [0.1-0.3] Altura de Capa.
+* `Shell > Wall Thickness`: 1.2 mm [0.8-2.0] Grosor de la piel. Debe ser múltiplo de `Layer Height`.
+* `Shell Top/Bottom Thickness`: 1.2 mm [0.8-2.0] Grosor de la piel superior e inferior. Cuando la densidad de relleno es menor que 20%, se puede producir caída de la capa superior. En ese caso se recomienda un mínimo de 1.2mm.
+* `Infill > Infill Density`: 20 % [0-100] Tanto por ciento de relleno en el interior. Dependerá de la resistencia deseada para la pieza. Si no va a recibir cargas se puede utilizar 10 o incluso 0%.
+* `Speed > Print Speed`: 30 mm/s [10-120] Velocidad de impresión. A menor velocidad más precisión de impresión. No se recomienda pasar de 40-60.
+* `Material > Printing Temperature`: 220 ºC [170 - 230] en PLA; [230-250] en ABS. Temperatura de extrusión del material.
+* `Material > Build Plate Temperature`: 50ºC [40-60] en PLA; [60-90] en ABS. Temperatura de la cama caliente.
+* `Material > Diameter`: 1.75 mm. Diámetro de la entrada del extrusor.
+* `Material > Flow`: 100 %. Sirve para aportar más o menos material si observamos que en las impresiones aparecen bultos o huecos entre las líneas o capas.
+* `Material > Enable Retraction`: Checked. Retrae el hilo cuando el cabezal se tiene que desplazar sin imprimir.
+* `Material > Retraction Distance`: 4.5mm. Cantidad de material recogido durante la retracción.
+* `Material > Retraction Speed`: 40 mm/s. Velocidad de la retracción.
+* `Support > Generate Support`: Checked. Generar soporte para partes en voladizo.
+* `Support > Support Placement`: Everywhere
+    * `Touching Builplate`: Sólo hace soportes en las partes en voladizo sobre la cama.
+    * `Everywhere`: Hace soportes en todas las partes que lo necesiten.
+* `Build Plate Adhesion`: Skirt
+    * `Skirt`: Hace una línea alrededor de la piza en la primera capa. Básicamente sirve para cebar el extrusor.
+    * `Brim`: Hace más amplia la primera capa para aumetar la adhesión a la cama.
+    * `Raft`: Hace una malla alrededor y debajo de la pieza para aumentar la adhesión a la cama. Puede ser difícil de despegar.
