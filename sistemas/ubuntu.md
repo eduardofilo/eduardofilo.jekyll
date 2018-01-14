@@ -10,6 +10,22 @@ permalink: /sistemas/ubuntu.html
 * [ReText](https://github.com/retext-project/retext): Editor Markdown.
 * [Franz](https://meetfranz.com/): [Configuración de icono en GNome](https://gist.github.com/jamiesoncj/756728b3ba7c07d7a90f843400af37bb).
 
+## Problema con aplicaciones root en Wayland
+
+Hay que ejecutar el comando:
+
+    xhost si:localuser:root
+
+Se puede automatizar en el arranque añadiendo el comando en las `Aplicaciones al incio` ([fuente](http://ubuntuhandbook.org/index.php/2017/10/ubuntu-17-10-tip-graphical-apps-doesnt-launch-via-root-sudo-gksu/)).
+
+## Configuración de opción predeterminada en GRUB
+
+[Fuente](https://forums.linuxmint.com/viewtopic.php?t=230650)
+
+1. Editar fichero `/etc/default/grub` y modificar el parámetro `GRUB_DEFAULT` dando el valor `saved` en lugar del valor numérico que encontraremos.
+2. Ejecutar `sudo update-grub`.
+3. Ejecutar `sudo grub-set-default N` siendo N la posición de la entrada del menú de GRUB que queremos que actúe como predeterminada (contando desde 0).
+
 ## Problemas con GRUB
 
 [Reinstalar GRUB 2](http://molinuxaula.pbworks.com/w/page/27409912/Reinstalar%20GRUB%202)
