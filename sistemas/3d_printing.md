@@ -36,7 +36,7 @@ permalink: /sistemas/3d_printing.html
 * [Soporte para las herramientas](https://www.thingiverse.com/thing:1539675)
 * [Conectores en ventiladores](https://www.youtube.com/watch?v=53idlnO-D-0)
 * [Alargador lector microSD](https://www.youtube.com/watch?v=UjbZNyR9wSI)
-* [MosFET exterior](https://www.youtube.com/watch?v=r77z5vjibOI)
+* [MOSFET exterior](https://www.youtube.com/watch?v=r77z5vjibOI)
 * [Soldar conector cama caliente](https://www.youtube.com/watch?v=rIALeyU7qAA)
 * Refuerzos eje X: [v1](https://www.youtube.com/watch?v=r9TOwpRwL_I) y [v2](https://www.thingiverse.com/thing:2189694)
 * [Interruptor y ventilador de fuente](https://www.youtube.com/watch?v=BCvEKxvmbHo)
