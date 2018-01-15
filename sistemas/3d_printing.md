@@ -29,6 +29,7 @@ permalink: /sistemas/3d_printing.html
 * [Módulo MOSFET](https://www.amazon.es/dp/B071XQZ576)
 * [Módulo MOSFET](https://www.amazon.es/dp/B071XHN284)
 * [Sensor de posición inductivo](https://www.amazon.es/dp/B01G6P102E)
+* Cinta de carrocero especial impresoras: [Amazon](https://www.amazon.es/dp/B071X4216X), [Banggood](https://www.banggood.com/es/50mmx50m-50mm-Wide-3D-Printer-Blue-Tape-Reprap-Bed-Tape-Masking-Tape-For-3D-Printer-Parts-p-1103934.html)
 
 ## Mejoras Anet A8
 
@@ -42,7 +43,7 @@ permalink: /sistemas/3d_printing.html
 * [Interruptor y ventilador de fuente](https://www.youtube.com/watch?v=BCvEKxvmbHo)
 * [Ventilador de placa base](https://www.youtube.com/watch?v=1sY4XBeMPWU)
 
-## Parámetros impresión
+## Parámetros impresión Anet A8
 
 ### General
 
