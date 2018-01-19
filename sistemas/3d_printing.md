@@ -17,9 +17,13 @@ permalink: /sistemas/3d_printing.html
 * [Firmware alternativo](https://linuxgnublog.org/es/lidiando-con-mi-impresora-3d-anet-a8-firmware/)
 * Instalación de 2 MosFET: [Post](http://moderntoil.com/?p=850) y [STLs](https://www.thingiverse.com/thing:2086107)
 * [Como calibrar el control de temperatura PID de la impresora 3D](https://3dinvasion.com/blog/como-calibrar-el-control-de-temperatura-pid-de-la-impresora-3d/)
+* [Cómo montar Hot End sin romperlo](https://trello.com/c/5oH3E8Zq)
+* [Cómo modificar home en XY (ajustar extrusor offset). Y el máximo recorrido](https://trello.com/c/UhpHpQVa)
+* [Actualizar el firmware a partir de un fichero HEX](https://trello.com/c/dDkEJXeN)
 
 ## Hardware / Componentes / Repuestos
 
+* [Repuestos Anet A8](https://www.mastoner.com/index.php?main_page=advanced_search_result&search_in_description=1&keyword=boquilla-extrusor-0.2+or+boquilla-extrusor-0.3+or+boquilla-extrusor-0.4+or+boquilla-extrusor-0.5+or+rodamiento-604ZZ-anet+or+interruptor-final-carrera-anet+or+termistor-3d-anet+or+ventilador-capa-anet+or+polea-anet+or++rodamiento-LM8UU-anet+or+ventilador-hotend-anet+or+correa-anet+or+hot-end-anet+or+pantalla-botones-anet+or+hotbed-anet+or+SL42STH40-1684A+or+fuente-alimentacion-anet+or+auto-level-anet+or+pantalla-lcd-anet+or+placa-v1.0-anet+or+extrusor-anet-a8+or+05BQFIL027+or+05BQFIL026+or+F000063+or+F000079+or+F000080+or+F000083+or+GARGANTA-MK8-3D+or+teflon-flexible-3d+or+calentador-ceramico-anet+or+engranaje-36-dientes-3d+or+laca-nelly-3d+or+KAPTON-TAPE+or+engranaje-impulsor-anet+or+disipador-anet-3d+or+bloque-calefactor-anet-3d+or+papel-adhesivo-anet+or+papel-adhesivo-anet+or+varilla-m8-220mm+or+varilla-m8-220mm+or+TUERCA-LATON-M8+or+TUERCA-LATON-M8+or+hot-end-anet++or+LCD2004+or+SL42STH40-1684A+or+hot-end-anet++or+fuente-alimentacion-anet+or+LCD12864-anet+or+LCD12864-anet+or+placa-v2.0-anet+or+placa-v2.0-anet+or+FIL-CARBONO+or+ABS-BK+or+ABS-WHITE+or+SILKY-G+or+FIL-WOOD+or+PLA-WHITE&brand=22&model=5573&serie=266)
 * [Rodamiento lineal](https://m.banggood.com/es/LM8UU-8mm-Linear-Ball-Bearing-Bush-Steel-for-CNC-Router-Mill-Machine-p-906777.html)
 * [Rodamiento lineal sin bolas](https://www.amazon.es/dp/B06X6LD76G)
 * [Rodamiento lineal largo](https://m.banggood.com/es/LM8LUU-8mm-Long-Type-Linear-Motion-Ball-Bearing-Slide-Bushing-CNC-Part-p-994394.html?rmmds=detail-middle-buytogether-auto)
@@ -80,7 +84,7 @@ permalink: /sistemas/3d_printing.html
     * `Off`: Desplazamientos en línea recta.
     * `All`: Desplaza siempre por zonas impresas.
     * `No Skin`: Desplaza por el interior de las piezas, evitando la superficie.
-* `Travel > Z Hop When Retracted`: Marcado. Levanta un poco el extrusor cuando se inicia un desplazamiento para evitar colisiones con las partes ya impresas.
+* `Travel > Z Hop When Retracted`: Desmarcado. Levanta un poco el extrusor cuando se inicia un desplazamiento para evitar colisiones con las partes ya impresas. Tras probarlo compruebo que en la Anet A8 deja muchos hilos.
 * `Cooling > Enable Print Cooling`: Activa el ventilador de la boquilla del extrusor.
     * Marcado: En PLA.
     * Desmarcado: En ABS.
