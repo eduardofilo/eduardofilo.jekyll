@@ -64,6 +64,7 @@ layout: default
 
 # Varios
 
+* [Electrónica](/varios/electronica.html)
 * [Enlaces](/varios/links.html)
 * [Inglés](/varios/english.html)
 * [Opel Corsa D](/varios/corsa_d.html)
