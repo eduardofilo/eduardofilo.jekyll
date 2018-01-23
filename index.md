@@ -20,7 +20,6 @@ layout: default
 * [Python](/desarrollo/python.html)
 * [Ruby on Rails](/desarrollo/ror.html)
 * [Spree](/desarrollo/spree.html)
-* [STM32](/desarrollo/stm32.html)
 * [Sublime Text 2](/desarrollo/subl.html)
 * [SVN](/desarrollo/svn.html)
 * [Vagrant](/desarrollo/vagrant.html)
@@ -68,4 +67,5 @@ layout: default
 * [Enlaces](/varios/links.html)
 * [Inglés](/varios/english.html)
 * [Opel Corsa D](/varios/corsa_d.html)
+* [STM32](/desarrollo/stm32.html)
 * [Viajes](/varios/viajes.html)
