@@ -49,6 +49,7 @@ layout: default
 * [Ubuntu](/sistemas/ubuntu.html)
 * [UNIX](/sistemas/unix.html)
 * [Windows](/sistemas/trucos_windows.html)
+* [ZX Spectrum](/sistemas/zx-spectrum.html)
 * [ZX-Uno](/sistemas/zx-uno.html)
 
 # Cursos
