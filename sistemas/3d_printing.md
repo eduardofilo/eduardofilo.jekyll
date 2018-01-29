@@ -39,6 +39,17 @@ permalink: /sistemas/3d_printing.html
 * [Módulo MOSFET](https://www.amazon.es/dp/B071XHN284)
 * [Sensor de posición inductivo](https://www.amazon.es/dp/B01G6P102E)
 * Cinta de carrocero especial impresoras: [Amazon](https://www.amazon.es/dp/B071X4216X), [Banggood](https://www.banggood.com/es/50mmx50m-50mm-Wide-3D-Printer-Blue-Tape-Reprap-Bed-Tape-Masking-Tape-For-3D-Printer-Parts-p-1103934.html)
+* [Nozzles en medidas 0.2, 0.3 y 0.4 mm](https://www.gearbest.com/3d-printer-parts/pp_540278.html). También sueltos: [0.2mm](https://www.gearbest.com/3d-printer-parts/pp_639460.html), [0.3](https://www.gearbest.com/3d-printer-parts/pp_228289.html) y [0.4](https://www.gearbest.com/3d-printer-parts/pp_639462.html).
+* [Núcleo calentador extrusor](https://www.gearbest.com/3d-printer-parts/pp_436482.html)
+* [Bloque de aluminio soporte del extrusor, el núcleo calentador y el termistor](https://www.gearbest.com/3d-printer-parts/pp_228302.html)
+* [Termistor](https://www.gearbest.com/3d-printer-parts/pp_228653.html)
+* [Tubo conductor filamento al extrusor con teflón](https://www.gearbest.com/3d-printer-parts/pp_540280.html?lkid=10838817)
+* [Engranaje impulsor filamento](https://www.gearbest.com/3d-printer-parts/pp_226199.html)
+* [Ventilador de capa](https://www.gearbest.com/3d-printer-parts/pp_540285.html)
+* [Ventilador de extrusor](https://www.gearbest.com/3d-printer-parts/pp_268308.html)
+* [Correa ejes X e Y](https://www.gearbest.com/3d-printer-parts/pp_540279.html)
+* [Cristal para cama caliente](https://www.amazon.es/dp/B00QM4LUN4)
+* [Motor paso a paso](https://www.gearbest.com/3d-printer-parts/pp_540282.html)
 
 ## Mejoras Anet A8
 
