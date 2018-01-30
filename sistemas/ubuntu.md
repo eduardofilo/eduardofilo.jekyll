@@ -9,6 +9,7 @@ permalink: /sistemas/ubuntu.html
 
 * [ReText](https://github.com/retext-project/retext): Editor Markdown.
 * [Franz](https://meetfranz.com/): [Configuración de icono en GNome](https://gist.github.com/jamiesoncj/756728b3ba7c07d7a90f843400af37bb).
+* [App Grid](http://www.appgrid.org/): Repositorio de aplicaciones.
 
 ## Problema con aplicaciones root en Wayland
 
