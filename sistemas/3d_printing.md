@@ -82,7 +82,8 @@ permalink: /sistemas/3d_printing.html
 * `Quality > Initial Layer Height`: 0.2 mm [0.1-0.3] Altura de la capa inicial. Una capa inicial más final mejora la adherencia a la cama.
 * `Quality > Initial Layer Line Width`: 100 %. Permite aumentar ligeramente la anchura de las líneas de la primera capa para aumentar la adherencia a la cama. Básicamente inyecta un poco más de material.
 * `Shell > Wall Thickness`: 1.2 mm [0.8-2.0] Grosor de la piel. Debe ser múltiplo de `Layer Height`.
-* `Shell Top/Bottom Thickness`: 1.2 mm [0.8-2.0] Grosor de la piel superior e inferior. Cuando la densidad de relleno es menor que 20%, se puede producir caída de la capa superior. En ese caso se recomienda un mínimo de 1.2mm.
+* `Shell > Top/Bottom Thickness`: 1.2 mm [0.8-2.0] Grosor de la piel superior e inferior. Cuando la densidad de relleno es menor que 20%, se puede producir caída de la capa superior. En ese caso se recomienda un mínimo de 1.2mm.
+* `Shell > Horizontal Expansion`: 0 mm. Expansión o contracción en el plano XY para ajustar la tolerancia entre piezas que tienen que encajar, por ejemplo agujeros y pasadores. Valores negativos contraen (por tanto se aplicarán a los pasadores) y positivos expanden (por tanto a los agujeros). Con una expansión de 0.1mm será suficiente la mayoría de las veces.
 * `Infill > Infill Density`: 20 % [0-100] Tanto por ciento de relleno en el interior. Dependerá de la resistencia deseada para la pieza. Si no va a recibir cargas se puede utilizar 10 o incluso 0%.
 * `Material > Printing Temperature`: 220 ºC [170 - 230] en PLA; [230-250] en ABS. Temperatura de extrusión del material.
 * `Material > Build Plate Temperature`: 50ºC [40-60] en PLA; [60-90] en ABS. Temperatura de la cama caliente.
