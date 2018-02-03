@@ -17,6 +17,8 @@ permalink: /sistemas/3d_printing.html
 * [Firmware alternativo](https://linuxgnublog.org/es/lidiando-con-mi-impresora-3d-anet-a8-firmware/)
 * Instalación de 2 MosFET: [Post](http://moderntoil.com/?p=850) y [STLs](https://www.thingiverse.com/thing:2086107)
 * [Como calibrar el control de temperatura PID de la impresora 3D](https://3dinvasion.com/blog/como-calibrar-el-control-de-temperatura-pid-de-la-impresora-3d/)
+* [Calibración de pasos del motor del extrusor](https://3dinvasion.com/blog/calibracion-de-pasos-del-motor-del-extrusor/)
+* [Calibración del Extrusion Multiplier – Anchura de impresión](https://3dinvasion.com/blog/calibracion-extrusion-multiplier-anchura-de-impresion/)
 * [Cómo montar Hot End sin romperlo](https://trello.com/c/5oH3E8Zq)
 * [Cómo modificar home en XY (ajustar extrusor offset). Y el máximo recorrido](https://trello.com/c/UhpHpQVa)
 * [Actualizar el firmware a partir de un fichero HEX](https://trello.com/c/dDkEJXeN)
