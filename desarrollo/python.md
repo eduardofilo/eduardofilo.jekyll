@@ -3,7 +3,7 @@ layout: default
 permalink: /desarrollo/python.html
 ---
 
-# Python
+# Python/Django
 
 ## Enlaces
 

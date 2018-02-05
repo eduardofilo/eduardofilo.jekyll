@@ -17,7 +17,7 @@ layout: default
 * [JavaScript](/desarrollo/javascript.html)
 * [Joomla](/desarrollo/joomla.html)
 * [PHP](/desarrollo/php.html)
-* [Python](/desarrollo/python.html)
+* [Python/Django](/desarrollo/python.html)
 * [Ruby on Rails](/desarrollo/ror.html)
 * [Spree](/desarrollo/spree.html)
 * [Sublime Text 2](/desarrollo/subl.html)
