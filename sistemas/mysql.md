@@ -471,13 +471,19 @@ Para cargar un backup hecho previamente:
 $ mysql -h host --user=root --password=contraseña < backup_irontec_mysql.sql
 ```
 
-Backup de una base de datos (database):
+Backup de una base de datos (`database`):
 
 ```bash
 $ mysqldump --opt -d -h host --user=root --password=contraseña database > backup_irontec_mysql.sql
 ```
 
-Para cargar un backup hecho previamente:
+Backup de una lista de tablas (`t1`, `t2`) de una base de datos (`database`):
+
+```bash
+$ mysqldump --opt -d -h host --user=root --password=contraseña database t1 t2 > backup_irontec_mysql.sql
+```
+
+Para cargar un backup hecho previamente sobre una base de datos concreta:
 
 ```bash
 $ mysql -h host --user=root --password=contraseña database < backup_irontec_mysql.sql
