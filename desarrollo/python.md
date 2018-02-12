@@ -105,6 +105,34 @@ Para poder utilizar el módulo `admin` de Django, hay que crear al menos un usua
 (djangodev) $ python manage.py createsuperuser
 ```
 
+## Personalización del modelo User
+
+Es recomendable cuando se empieza un proyecto, sustituir la gestión del modelo User por uno propio, ya que si se quiere hacer más adelante con la aplicación ya en marcha, es muy complicada la migración entre tablas.
+
+Creamos el modelo así:
+
+```python
+from django.contrib.auth.models import AbstractUser
+
+class User(AbstractUser):
+    pass
+```
+
+Y lo activamos definiendo la siguiente propiedad en el fichero `settings.py`:
+
+    AUTH_USER_MODEL = 'app01.User'
+
+Si no queremos perder los formularios especiales de la aplicación `admin` para el modelo original, además hay que personalizar la clase `UserAdmin` de la siguiente forma:
+
+```python
+from django.contrib.auth.admin import UserAdmin
+
+class MyUserAdmin(UserAdmin):
+    model = User
+
+admin.site.register(User, MyUserAdmin)
+```
+
 ## Gestión de migraciones
 
 Una vez generadas las migraciones, si queremos obtener el código SQL a que equivalen hay que ejecutar el comando (en el ejemploo solicitamos el código correspondiente a la migración `0008`):
