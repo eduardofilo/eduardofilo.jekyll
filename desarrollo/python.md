@@ -162,6 +162,20 @@ Para deshacer todas las migraciones:
 (djangodev) $ python manage.py migrate app01 zero
 ```
 
+## Formateo de cadenas
+
+* Con tuplas (no se puede cambiar el orden de los parámetros):
+
+    ```python
+    "%s parte de %s la cadena" % (var1, var2)
+    ```
+
+* Con diccionario (se puede cambiar el orden de los parámetros):
+
+    ```python
+    "%(par1)s parte de %(par2)s la cadena" % {'par1': var1, 'par2': var2}
+    ```
+
 ## Directorio instalación Django
 
 Para averiguar dónde están los ficheros de Django, ejecutar el siguiente comando:
