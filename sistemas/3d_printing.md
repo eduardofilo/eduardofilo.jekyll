@@ -17,11 +17,12 @@ permalink: /sistemas/3d_printing.html
 * [Firmware alternativo](https://linuxgnublog.org/es/lidiando-con-mi-impresora-3d-anet-a8-firmware/)
 * Instalación de 2 MosFET: [Post](http://moderntoil.com/?p=850) y [STLs](https://www.thingiverse.com/thing:2086107)
 * [Como calibrar el control de temperatura PID de la impresora 3D](https://3dinvasion.com/blog/como-calibrar-el-control-de-temperatura-pid-de-la-impresora-3d/)
-* [Calibración de pasos del motor del extrusor](https://3dinvasion.com/blog/calibracion-de-pasos-del-motor-del-extrusor/)
+* [Calibración de pasos del motor del extrusor](https://3dinvasion.com/blog/calibracion-de-pasos-del-motor-del-extrusor/). Instrucciones para realizarlo en Anet A8 [aquí](https://trello.com/c/CTfWYtQk/120-ajustar-pasos-del-extrusor-anet-con-pronterface).
 * [Calibración del Extrusion Multiplier – Anchura de impresión](https://3dinvasion.com/blog/calibracion-extrusion-multiplier-anchura-de-impresion/)
 * [Cómo montar Hot End sin romperlo](https://trello.com/c/5oH3E8Zq)
 * [Cómo modificar home en XY (ajustar extrusor offset). Y el máximo recorrido](https://trello.com/c/UhpHpQVa)
 * [Actualizar el firmware a partir de un fichero HEX](https://trello.com/c/dDkEJXeN)
+* [Montura para extrusor E3D](https://www.thingiverse.com/thing:1824307)
 
 ## Filamento
 
@@ -40,6 +41,7 @@ permalink: /sistemas/3d_printing.html
 * [Módulo MOSFET](https://www.amazon.es/dp/B071XQZ576)
 * [Módulo MOSFET](https://www.amazon.es/dp/B071XHN284)
 * [Sensor de posición inductivo](https://www.amazon.es/dp/B01G6P102E)
+* [Sensor de posición capacitivo](https://es.aliexpress.com/item/LJC18A3-H-Z-BX-Approach-Sensor-Cylindrical-Capacitive-Proximity-Switch-NPN-6-36V/32653431451.html?spm=2114.13010608.0.0.m6zDPE) (mejor si se pone cristal a la cama)
 * Cinta de carrocero especial impresoras: [Amazon](https://www.amazon.es/dp/B071X4216X), [Banggood](https://www.banggood.com/es/50mmx50m-50mm-Wide-3D-Printer-Blue-Tape-Reprap-Bed-Tape-Masking-Tape-For-3D-Printer-Parts-p-1103934.html)
 * [Nozzles en medidas 0.2, 0.3 y 0.4 mm](https://www.gearbest.com/3d-printer-parts/pp_540278.html). También sueltos: [0.2mm](https://www.gearbest.com/3d-printer-parts/pp_639460.html), [0.3](https://www.gearbest.com/3d-printer-parts/pp_228289.html) y [0.4](https://www.gearbest.com/3d-printer-parts/pp_639462.html).
 * [Núcleo calentador extrusor](https://www.gearbest.com/3d-printer-parts/pp_436482.html)
@@ -64,6 +66,10 @@ permalink: /sistemas/3d_printing.html
 * Refuerzos eje X: [v1](https://www.youtube.com/watch?v=r9TOwpRwL_I) y [v2](https://www.thingiverse.com/thing:2189694)
 * [Interruptor y ventilador de fuente](https://www.youtube.com/watch?v=BCvEKxvmbHo)
 * [Ventilador de placa base](https://www.youtube.com/watch?v=1sY4XBeMPWU)
+
+## Piezas de la propia impresora
+
+* [X Motor mount](https://www.thingiverse.com/thing:1428253)
 
 ## Parámetros impresión Anet A8
 
