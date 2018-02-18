@@ -61,8 +61,8 @@ $ ./adb pull <ruta>
 
 #### Modos arranque
 
-* Recovery: V- Power
-* Fastboot: V+ Power
+* Recovery: `V-` + `Power`
+* Fastboot: `V+` + `Power`
 
 #### Flasheo de ROM
 
@@ -88,6 +88,23 @@ Cuando el móvil avise de la disponibilidad de una nueva actualización, si est�
 7. Reiniciar el sistema
 8. Descargar la batería hasta el 2 - 5 %
 9. Volver a cargar la batería hasta el 100%
+
+#### Instalación LineageOS
+
+([Fuente](https://wiki.lineageos.org/devices/bacon/install))
+
+1. Si no está ya, instalar el recovery [TWRP](https://dl.twrp.me/bacon/) siguiendo [estas instrucciones](https://wiki.lineageos.org/devices/bacon/install#installing-a-custom-recovery-using-fastboot-1).
+2. Descargar de [aquí](https://download.lineageos.org/bacon).
+    * Opcionalmente bajar las [GApps](https://wiki.lineageos.org/gapps.html) en edición ARM.
+3. Copiar los ficheros al directorio `/sdcard` (en caso de haber perdido la partición de almacenamiento interno por haber instalado UBPorts por ejemplo, copiar los ficheros a un pendrive y pincharlo con un adaptador OTG; el pendrive se verá como `/sdcard` desde el Recovery).
+4. Arrancar en modo Recovery (`V-` + `Power`).
+5. Seleccionar `Wipe` y después `Advanced Wipe`.
+6. Seleccionar las particiones `Cache`, `System` y `Data` y después `Swipe to Wipe`.
+7. Vuelve al menú principal y selecciona `Install`.
+8. Navega a `/sdcard` y seleciona el .zip de LineageOS.
+9. Sigue las instrucciones en pantalla.
+10. (Opcional) Instala el resto de paquetes. Si se van a instalar las GApps, hay que hacerlo antes del primer arranque.
+11. Vuelve al menú principal y selecciona `Reboot`, y después `System`.
 
 ### Motorola Moto E (XT1021)
 
