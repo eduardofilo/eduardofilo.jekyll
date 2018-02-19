@@ -224,6 +224,37 @@ Para averiguar dónde están los ficheros de Django, ejecutar el siguiente coman
 * [filter, list comprehension y generators](https://stackoverflow.com/questions/1205375/filter-by-property). Para filtrar por ejemplo una lista de objetos se pueden utilizar estos tres elementos. Hay que tener en cuenta que `filter` devuelve un iterator. Si por eejemplo sólo queremos el número de elementos habrá que generar una lista o set con él.
 * [How to Extend Django User Model](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#abstractuser). [Este](https://stackoverflow.com/questions/30495979/django-1-8-multiple-custom-user-types) artículo es un ejemplo del caso 4.
 
+## Uso de Class Views
+
+### Básicas
+
+Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/)
+
+#### TemplateView
+
+La más sencilla. Sólo necesita definir `template_name` apuntando a la plantilla. Para añadir datos al contexto (esto funciona en todas las view classes) se puede definir la función `get_context_data` (ver ejemplo e apartado `Passing variables to the template` [aquí](https://hellowebbooks.com/news/introduction-to-class-based-views/))
+
+#### RedirectView
+
+Se puede usar tal cual para definir redirecciones en los ficheros `url.py`. Por ejemplo:
+
+python```
+urlpatterns = [
+    url(r'^$', RedirectView.as_view(url=reverse_lazy('admin:index'))),
+    ...
+]
+```
+
+Pero también se puede heredar de ella para por ejemplo hacer una vista "proxy" para actualizar un contador de visitas a otra vista, como el ejemplo que hay [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/#redirectview).
+
+### Genéricas
+
+Son las que generan formularios genéricos en base al modelo para la colección de objetos de un modelo y para su edición/creación. Documentadas [aquí](https://docs.djangoproject.com/en/1.11/ref/class-based-views/generic-display/).
+
+### Genéricas para edición
+
+Permiten personalizar las vistas típicas del mantenimiento de un modelo (creación, actualización y borrado). Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/generic-editing/).
+
 ## Snippets
 
 * Colección de objetos: `Unidad.objects.all()`
