@@ -228,11 +228,11 @@ Para averiguar dónde están los ficheros de Django, ejecutar el siguiente coman
 
 ### Básicas
 
-Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/)
+Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/).
 
 #### TemplateView
 
-La más sencilla. Sólo necesita definir `template_name` apuntando a la plantilla. Para añadir datos al contexto (esto funciona en todas las view classes) se puede definir la función `get_context_data` (ver ejemplo e apartado `Passing variables to the template` [aquí](https://hellowebbooks.com/news/introduction-to-class-based-views/))
+La más sencilla. Sólo necesita definir la propiedad `template_name` apuntando a la plantilla. Para añadir datos al contexto (esto funciona en todas las view classes) se puede definir la función `get_context_data` (ver ejemplo e apartado `Passing variables to the template` [aquí](https://hellowebbooks.com/news/introduction-to-class-based-views/))
 
 #### RedirectView
 
@@ -247,13 +247,51 @@ urlpatterns = [
 
 Pero también se puede heredar de ella para por ejemplo hacer una vista "proxy" para actualizar un contador de visitas a otra vista, como el ejemplo que hay [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/#redirectview).
 
-### Genéricas
+### Genéricas para visualización de modelos
 
-Son las que generan formularios genéricos en base al modelo para la colección de objetos de un modelo y para su edición/creación. Documentadas [aquí](https://docs.djangoproject.com/en/1.11/ref/class-based-views/generic-display/).
+Son las diseñadas para generar listados y vistas de detalle de un modelo. Son más adecuadas para visualización, como la que se haría por ejemplo en un blog. Documentadas [aquí](https://docs.djangoproject.com/en/1.11/ref/class-based-views/generic-display/).
 
-### Genéricas para edición
+En las dos clases de este tipo, sólo se necesita definir la propiedad `model`.
+
+#### DetailView
+
+La plantilla se define por convención añadiendo `_detail.html` al nombre del modelo. Dentro de la plantilla, el objeto que se quiere representar aparece en la variable de contexto `object`.
+
+#### ListView
+
+La plantilla se define por convención añadiendo `_list.html` al nombre del modelo. Dentro de la plantilla, la colección de objetos que se quiere representar aparece en la variable de contexto `object_list`.
+
+### Genéricas para edición de modelos
 
 Permiten personalizar las vistas típicas del mantenimiento de un modelo (creación, actualización y borrado). Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/generic-editing/).
+
+#### FormView
+
+Gestiona la vista con un formulario genérico. Si se produce error en la validación, vuelve a cargar la misma URL con los campos rellenos e información sobre los errores; Si se supera la validación se redirije a otra URL. En el contexto de la plantilla tendremos el formulario bajo la variable `form`.
+
+Necesita definir las propiedades siguientes:
+
+* `form_class`: Clase formulario.
+* `success_url`: URL a la que se redirije en caso de superar la validación.
+* `template_name`: Plantilla.
+
+También es interesante definir el método siguiente:
+
+* `form_valid`: Se ejecutará cuando el formulario se valide correctamente. Obtendremos los datos del formulario del diccionario `self.form.cleaned_data`.
+
+Ver ejemplos [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/generic-editing/#formview) y en apartado `Now for a FormView` de [aquí](https://hellowebbooks.com/news/introduction-to-class-based-views/).
+
+#### CreateView
+
+Para la creación de un modelo.
+
+#### UpdateView
+
+Para la actualización de un modelo.
+
+#### DeleteView
+
+Para el borrado de un modelo.
 
 ## Snippets
 
