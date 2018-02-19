@@ -238,7 +238,7 @@ La más sencilla. Sólo necesita definir `template_name` apuntando a la plantill
 
 Se puede usar tal cual para definir redirecciones en los ficheros `url.py`. Por ejemplo:
 
-python```
+```python
 urlpatterns = [
     url(r'^$', RedirectView.as_view(url=reverse_lazy('admin:index'))),
     ...
