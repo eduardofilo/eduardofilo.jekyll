@@ -296,4 +296,4 @@ Para el borrado de un modelo.
 ## Snippets
 
 * Colección de objetos: `Unidad.objects.all()`
-* Colección filtrada de objetos: `actividad.objects.filter(fecha__year=2017)`
+* Colección filtrada de objetos: `Actividad.objects.filter(fecha__year=2017)`
