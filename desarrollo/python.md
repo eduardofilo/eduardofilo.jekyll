@@ -336,3 +336,9 @@ Y dentro de la función donde queramos emitir algo al log:
 ```python
 logger.debug('lo que sea')
 ```
+
+Si sólo queremos imprimir en consola una traza rápida, es más fácil escribiendo simplemente:
+
+```python
+print('lo que sea', file=sys.stderr)
+```
