@@ -297,3 +297,42 @@ Para el borrado de un modelo.
 
 * Colección de objetos: `Unidad.objects.all()`
 * Colección filtrada de objetos: `Actividad.objects.filter(fecha__year=2017)`
+
+## Logging
+
+Configurar un logger en el fichero de settings correspondiente añadiendo esto:
+
+```
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'log': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+En el módulo donde queramos obtener log, añadir al principio lo siguiente:
+
+```python
+import logging
+
+logger = logging.getLogger('log')
+```
+
+Y dentro de la función donde queramos emitir algo al log:
+
+```python
+logger.debug('lo que sea')
+```
