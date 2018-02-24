@@ -224,7 +224,121 @@ Para averiguar dónde están los ficheros de Django, ejecutar el siguiente coman
 * [filter, list comprehension y generators](https://stackoverflow.com/questions/1205375/filter-by-property). Para filtrar por ejemplo una lista de objetos se pueden utilizar estos tres elementos. Hay que tener en cuenta que `filter` devuelve un iterator. Si por eejemplo sólo queremos el número de elementos habrá que generar una lista o set con él.
 * [How to Extend Django User Model](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#abstractuser). [Este](https://stackoverflow.com/questions/30495979/django-1-8-multiple-custom-user-types) artículo es un ejemplo del caso 4.
 
+## Uso de Class Views
+
+### Básicas
+
+Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/).
+
+#### TemplateView
+
+La más sencilla. Sólo necesita definir la propiedad `template_name` apuntando a la plantilla. Para añadir datos al contexto (esto funciona en todas las view classes) se puede definir la función `get_context_data` (ver ejemplo e apartado `Passing variables to the template` [aquí](https://hellowebbooks.com/news/introduction-to-class-based-views/))
+
+#### RedirectView
+
+Se puede usar tal cual para definir redirecciones en los ficheros `url.py`. Por ejemplo:
+
+```python
+urlpatterns = [
+    url(r'^$', RedirectView.as_view(url=reverse_lazy('admin:index'))),
+    ...
+]
+```
+
+Pero también se puede heredar de ella para por ejemplo hacer una vista "proxy" para actualizar un contador de visitas a otra vista, como el ejemplo que hay [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/base/#redirectview).
+
+### Genéricas para visualización de modelos
+
+Son las diseñadas para generar listados y vistas de detalle de un modelo. Son más adecuadas para visualización, como la que se haría por ejemplo en un blog. Documentadas [aquí](https://docs.djangoproject.com/en/1.11/ref/class-based-views/generic-display/).
+
+En las dos clases de este tipo, sólo se necesita definir la propiedad `model`.
+
+#### DetailView
+
+La plantilla se define por convención añadiendo `_detail.html` al nombre del modelo. Dentro de la plantilla, el objeto que se quiere representar aparece en la variable de contexto `object`.
+
+#### ListView
+
+La plantilla se define por convención añadiendo `_list.html` al nombre del modelo. Dentro de la plantilla, la colección de objetos que se quiere representar aparece en la variable de contexto `object_list`.
+
+### Genéricas para edición de modelos
+
+Permiten personalizar las vistas típicas del mantenimiento de un modelo (creación, actualización y borrado). Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/generic-editing/).
+
+#### FormView
+
+Gestiona la vista con un formulario genérico. Si se produce error en la validación, vuelve a cargar la misma URL con los campos rellenos e información sobre los errores; Si se supera la validación se redirije a otra URL. En el contexto de la plantilla tendremos el formulario bajo la variable `form`.
+
+Necesita definir las propiedades siguientes:
+
+* `form_class`: Clase formulario.
+* `success_url`: URL a la que se redirije en caso de superar la validación.
+* `template_name`: Plantilla.
+
+También es interesante definir el método siguiente:
+
+* `form_valid`: Se ejecutará cuando el formulario se valide correctamente. Obtendremos los datos del formulario del diccionario `self.form.cleaned_data`.
+
+Ver ejemplos [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/generic-editing/#formview) y en apartado `Now for a FormView` de [aquí](https://hellowebbooks.com/news/introduction-to-class-based-views/).
+
+#### CreateView
+
+Para la creación de un modelo.
+
+#### UpdateView
+
+Para la actualización de un modelo.
+
+#### DeleteView
+
+Para el borrado de un modelo.
+
 ## Snippets
 
 * Colección de objetos: `Unidad.objects.all()`
-* Colección filtrada de objetos: `actividad.objects.filter(fecha__year=2017)`
+* Colección filtrada de objetos: `Actividad.objects.filter(fecha__year=2017)`
+
+## Logging
+
+Configurar un logger en el fichero de settings correspondiente añadiendo esto:
+
+```
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+        },
+    },
+    'loggers': {
+        'log': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+```
+
+En el módulo donde queramos obtener log, añadir al principio lo siguiente:
+
+```python
+import logging
+
+logger = logging.getLogger('log')
+```
+
+Y dentro de la función donde queramos emitir algo al log:
+
+```python
+logger.debug('lo que sea')
+```
+
+Si sólo queremos imprimir en consola una traza rápida, es más fácil escribiendo simplemente:
+
+```python
+print('lo que sea', file=sys.stderr)
+```
