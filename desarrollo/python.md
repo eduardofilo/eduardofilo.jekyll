@@ -265,6 +265,23 @@ La plantilla se define por convención añadiendo `_list.html` al nombre del mod
 
 Permiten personalizar las vistas típicas del mantenimiento de un modelo (creación, actualización y borrado). Documentadas [aquí](https://docs.djangoproject.com/es/1.11/ref/class-based-views/generic-editing/).
 
+En cualquiera de las cuatro siguientes clases, en la plantilla incluiremos los tags HTML para el formulario (no se generan automáticamente porque la página podría contener varios formularios o por si no estamos generando HTML). Se suele hacer algo así:
+
+```html
+<form action="" method="post">{% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Save" />
+</form>
+```
+
+El tag para el formulario tiene tres variantes:
+
+* `{{ form.as_p }}`: Cada campo del formulario se genera como un `<p>`.
+* `{{ form.as_table }}`: Cada campo del formulario se genera como una fila de una tabla.
+* `{{ form.as_ul }}`: Cada campo del formulario se genera como una lista sin numerar.
+
+Para máximo control siempre podemos generar cada campo del formulario por separado o incluso escribir el formulario completo a mano (ver documentación [Working with forms](https://docs.djangoproject.com/es/1.11/topics/forms/)).
+
 #### FormView
 
 Gestiona la vista con un formulario genérico. Si se produce error en la validación, vuelve a cargar la misma URL con los campos rellenos e información sobre los errores; Si se supera la validación se redirije a otra URL. En el contexto de la plantilla tendremos el formulario bajo la variable `form`.
@@ -295,8 +312,8 @@ Para el borrado de un modelo.
 
 ## Snippets
 
-* Colección de objetos: `Unidad.objects.all()`
-* Colección filtrada de objetos: `Actividad.objects.filter(fecha__year=2017)`
+* Colección completa de objetos de un modelo: `Unidad.objects.all()`
+* Colección filtrada de objetos de un modelo: `Actividad.objects.filter(fecha__year=2017)`
 
 ## Logging
 
