@@ -267,7 +267,7 @@ Permiten personalizar las vistas típicas del mantenimiento de un modelo (creaci
 
 En cualquiera de las cuatro siguientes clases, en la plantilla incluiremos los tags HTML para el formulario (no se generan automáticamente porque la página podría contener varios formularios o por si no estamos generando HTML). Se suele hacer algo así:
 
-```html
+```
 <form action="" method="post">{% csrf_token %}
     {{ form }}
     <input type="submit" value="Save" />
