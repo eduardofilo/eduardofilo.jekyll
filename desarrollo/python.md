@@ -313,6 +313,7 @@ Para el borrado de un modelo.
 ## Snippets
 
 * Colección completa de objetos de un modelo: `Unidad.objects.all()`
+* Colección completa de objetos de un modelo ordenada: `Unidad.objects.all().order_by('nombre')`
 * Colección filtrada de objetos de un modelo: `Actividad.objects.filter(fecha__year=2017)`
 * Instancia concreta de un objeto: `Unidad.objects.get(pk=3)`
 
