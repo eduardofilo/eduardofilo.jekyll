@@ -314,6 +314,7 @@ Para el borrado de un modelo.
 
 * Colección completa de objetos de un modelo: `Unidad.objects.all()`
 * Colección filtrada de objetos de un modelo: `Actividad.objects.filter(fecha__year=2017)`
+* Instancia concreta de un objeto: `Unidad.objects.get(pk=3)`
 
 ## Logging
 
