@@ -69,13 +69,25 @@ permalink: /sistemas/3d_printing.html
 * [Alargador lector microSD](https://www.youtube.com/watch?v=UjbZNyR9wSI)
 * [MOSFET exterior](https://www.youtube.com/watch?v=r77z5vjibOI)
 * [Soldar conector cama caliente](https://www.youtube.com/watch?v=rIALeyU7qAA)
-* Refuerzos eje X: [v1](https://www.youtube.com/watch?v=r9TOwpRwL_I) y [v2](https://www.thingiverse.com/thing:2189694)
+* Refuerzos eje X: [v1](https://www.youtube.com/watch?v=r9TOwpRwL_I) y [v2](https://www.thingiverse.com/thing:2189694).
 * [Interruptor y ventilador de fuente](https://www.youtube.com/watch?v=BCvEKxvmbHo)
 * [Ventilador de placa base](https://www.youtube.com/watch?v=1sY4XBeMPWU)
+* Soporte para bobina de filamento: [Barras 1](https://www.thingiverse.com/thing:2162266) o [Barras 2](https://www.thingiverse.com/thing:1505075) y [Eje](https://www.thingiverse.com/thing:767317).
+* [Final de carrera Z ajustable](https://www.thingiverse.com/thing:2050229)
+* [Mejoras en tornillos nivelado de cama](https://www.thingiverse.com/thing:2350276)
+* [Base para doble MOSFET](https://www.thingiverse.com/thing:2086107): [Guía de montaje](http://moderntoil.com/?p=850).
+* [Acceso rápido a engranaje motor extrusor](https://www.thingiverse.com/thing:2037833)
+* [Tensor eje X](https://www.thingiverse.com/thing:1669312)
+* Tensor eje Y: [v1](https://www.thingiverse.com/thing:2149867) o [v2](https://www.thingiverse.com/thing:2747511)
 
 ## Piezas de la propia impresora
 
 * [X Motor mount](https://www.thingiverse.com/thing:1428253)
+
+## Octoprint
+
+* [Control your Anet A8 3D Printer using Octoprint on Raspberry Pi Zero W, direct UART connection](http://lokspace.eu/control-your-anet-a8-3d-printer-using-octoprint-on-raspberry-pi-zero-with-sdio-wifi-addon-direct-uart-connection-and-still-have-one-free-usb/)
+* Control remoto para tu impresora 3D con Raspberry Pi: [Parte 1](https://lisergio.wordpress.com/2016/03/28/control-remoto-para-tu-impresora-3d-con-raspberry-pi-1a-parte/) y [Parte 2](https://lisergio.wordpress.com/2016/04/02/control-remoto-para-tu-impresora-3d-con-raspberry-pi-2a-parte/).
 
 ## Parámetros impresión Anet A8
 
@@ -90,7 +102,7 @@ permalink: /sistemas/3d_printing.html
 * Material diameter: 1.75mm
 * Nozzle size: 0.4mm
 
-### Cura 3.1
+### Cura 3.2
 
 * `Quality > Layer Height`: 0.2 mm [0.1-0.3] Altura de Capa.
 * `Quality > Initial Layer Height`: 0.2 mm [0.1-0.3] Altura de la capa inicial. Una capa inicial más final mejora la adherencia a la cama.
