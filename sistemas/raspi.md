@@ -68,13 +68,6 @@ Oct 16 13:15:23 raspi-git noip2[2217]: v2.1.9 daemon started with NAT enabled
 Oct 16 13:15:25 raspi-git noip2[2217]: eduardofilo.no-ip.biz was already set to 88.19.216.95.
 ```
 
-### Upgrade de Raspbian
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade -y
-```
-
 ### Utilidad de configuración
 
 ```bash
@@ -202,3 +195,25 @@ Medidas de protección:
 * Instalar paquete `fail2ban`.
 * Desinstalar paquete `wolfram-engine` que ocupa mucho y no se suele usar:
   * `sudo apt-get remove wolfram-engine`
+
+## Configuración headless
+
+### Activación de SSH
+
+Crear un fichero vacío con nombre `ssh` en partición boot.
+
+### Conexión a punto de acceso Wifi
+
+Crear un fichero con nombre `wpa_supplicant.conf` en partición boot con el siguiente contenido:
+
+```
+country=ES
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="<el_ssid>"
+    psk="<el_pwd>"
+    key_mgmt=WPA-PSK
+}
+```
