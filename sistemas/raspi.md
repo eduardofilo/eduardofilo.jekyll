@@ -217,3 +217,14 @@ network={
     key_mgmt=WPA-PSK
 }
 ```
+
+### IP estática
+
+Primero averiguamos el nombre del interfaz al que queremos poner la IP estática consultando `ifconfig`. Luego editamos `/etc/dhcpcd.conf` y al final añadimos:
+
+```
+interface <nombre_interfaz>
+static ip_address=<ip>/24
+static routers=<gateway>
+static domain_name_servers=<dns>
+```
