@@ -310,6 +310,12 @@ Para la actualización de un modelo.
 
 Para el borrado de un modelo.
 
+### Empaquetadas
+
+#### FilterView
+
+Es una especie de ListView con filtros. Ver documentación [aquí](https://django-filter.readthedocs.io/en/master/guide/usage.html).
+
 ## Snippets
 
 * Colección completa de objetos de un modelo: `Unidad.objects.all()`
