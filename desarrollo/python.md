@@ -323,6 +323,51 @@ Es una especie de ListView con filtros. Ver documentación [aquí](https://djang
 * Colección filtrada de objetos de un modelo: `Actividad.objects.filter(fecha__year=2017)`
 * Instancia concreta de un objeto: `Unidad.objects.get(pk=3)`
 
+### Filtro en ListView
+
+```python
+# urls.py
+from django.conf.urls import url
+from . import views
+
+app_name = 'lms'
+urlpatterns = [
+    url(r'^asistencia/(?P<pk>\d+)/grupo/(?P<admin>\w+)/$', views.AsistenciaGrupoView.as_view(), name='asistencia_grupo')
+]
+
+
+# views.py
+class AsistenciaGrupoView(generic.ListView):
+    template_name = 'lms/asistencia_grupo.html'
+
+    def get_queryset(self):
+        semanas = int(self.request.GET.get('semanas', '12'))
+        return Jornada.objects.filter(grupo__id=self.kwargs['pk'], fecha__gte=datetime.today() - timedelta(weeks=semanas)).order_by('fecha')
+
+    def get_context_data(self, **kwargs):
+        context = super(AsistenciaGrupoView, self).get_context_data(**kwargs)
+        # Lista de semanas que mostraremos en el combo para filtrar
+        context['lista_semanas'] = [(4, 1),
+                                    (8, 2)]
+        # Parámetro de filtrado del querystring (12 semanas como valor predeterminado)
+        context['semanas'] = int(self.request.GET.get('semanas', '12'))
+        # Valor del PK del grupo recogido de la URL
+        context['pk'] = self.kwargs['pk']
+
+        return context
+
+
+# template
+    <form method="get" action="{% url 'lms:asistencia_grupo' pk %}">
+        <label for="semanas_id">Meses</label>
+        <select class="form-control" name="semanas" id="semanas_id" onchange='if(this.value != 0) { this.form.submit(); }'>
+            {% for v, d in lista_semanas %}
+            <option value="{{ v }}"{% if semanas == v %} selected='selected'{% endif %}>{{ d }}</option>
+            {% endfor %}
+        </select>
+    </form>
+```
+
 ## Logging
 
 Configurar un logger en el fichero de settings correspondiente añadiendo esto:
