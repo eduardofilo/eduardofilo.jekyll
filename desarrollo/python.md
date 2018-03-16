@@ -361,9 +361,9 @@ class AsistenciaGrupoView(generic.ListView):
     <form method="get" action="{{ "{% url 'lms:asistencia_grupo' pk " }}%}">
         <label for="semanas_id">Meses</label>
         <select class="form-control" name="semanas" id="semanas_id" onchange='if(this.value != 0) { this.form.submit(); }'>
-            {% for v, d in lista_semanas %}
+            {{ "{% for v, d in lista_semanas " }}%}
             <option value="{{ v }}"{% if semanas == v %} selected='selected'{% endif %}>{{ d }}</option>
-            {% endfor %}
+            {{ "{% endfor " }}%}
         </select>
     </form>
 ```
