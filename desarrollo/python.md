@@ -358,7 +358,7 @@ class AsistenciaGrupoView(generic.ListView):
 
 
 # template
-    <form method="get" action="{% url 'lms:asistencia_grupo' pk %}">
+    <form method="get" action="{{ "{% url 'lms:asistencia_grupo' pk " }}%}">
         <label for="semanas_id">Meses</label>
         <select class="form-control" name="semanas" id="semanas_id" onchange='if(this.value != 0) { this.form.submit(); }'>
             {% for v, d in lista_semanas %}

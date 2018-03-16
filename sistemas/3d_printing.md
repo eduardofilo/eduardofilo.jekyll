@@ -88,6 +88,7 @@ permalink: /sistemas/3d_printing.html
 
 * [Control your Anet A8 3D Printer using Octoprint on Raspberry Pi Zero W, direct UART connection](http://lokspace.eu/control-your-anet-a8-3d-printer-using-octoprint-on-raspberry-pi-zero-with-sdio-wifi-addon-direct-uart-connection-and-still-have-one-free-usb/)
 * Control remoto para tu impresora 3D con Raspberry Pi: [Parte 1](https://lisergio.wordpress.com/2016/03/28/control-remoto-para-tu-impresora-3d-con-raspberry-pi-1a-parte/) y [Parte 2](https://lisergio.wordpress.com/2016/04/02/control-remoto-para-tu-impresora-3d-con-raspberry-pi-2a-parte/).
+* [Setup on a Raspberry Pi running Raspbian](https://github.com/foosel/OctoPrint/wiki/Setup-on-a-Raspberry-Pi-running-Raspbian)
 
 ## Parámetros impresión Anet A8
 

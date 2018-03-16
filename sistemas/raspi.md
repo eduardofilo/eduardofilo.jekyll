@@ -20,6 +20,8 @@ permalink: /sistemas/raspi.html
 * [How to install Oracle Java 8 in Debian via repository (JDK8)](http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html)
 * [Adafruit - Learn Raspberry Pi](https://learn.adafruit.com/category/learn-raspberry-pi)
 * [Tutorials - The MagPi MagazineThe MagPi Magazine](https://www.raspberrypi.org/magpi/tutorials/)
+* [Read-Only Raspberry Pi](https://learn.adafruit.com/read-only-raspberry-pi/)
+* [Read-only Raspberry PI with Jessie](https://petr.io/en/blog/2015/11/09/read-only-raspberry-pi-with-jessie/)
 
 ## Distribuciones
 
