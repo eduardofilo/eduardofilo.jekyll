@@ -37,6 +37,7 @@ permalink: /sistemas/raspi.html
 ## Software
 
 * [Pi-Hole](https://pax0r.com/bloquea-publicidad-molesta-con-pi-hole/): DNS que filtra dominios marcados por la comunidad como "molestos" y conseguiremos una navegación mas limpia y rápida.
+* [PiVPN](http://www.pivpn.io/)
 
 ## Hardware
 
