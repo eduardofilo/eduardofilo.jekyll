@@ -64,6 +64,7 @@ layout: default
 
 # Varios
 
+* [Bicicleta](/varios/bici.html)
 * [Electrónica](/varios/electronica.html)
 * [Enlaces](/varios/links.html)
 * [Inglés](/varios/english.html)
