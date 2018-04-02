@@ -14,4 +14,4 @@ permalink: /varios/bici.html
 ### Hub BWR-3
 
 * [Servicing Sturmey-Archer 3-Speed Hubs](https://www.sheldonbrown.com/sturmey-archer_3-spd.html)
-* [Mantnimiento - Vídeo](https://www.youtube.com/watch?v=6e9lomR9NMs)
+* [Brompton Sturmey Archer Internal Gear Hub Re-grease Maintenance - Vídeo](https://www.youtube.com/watch?v=ar-FybQgKmI)
