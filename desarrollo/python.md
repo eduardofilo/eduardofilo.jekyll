@@ -421,3 +421,34 @@ print('lo que sea', file=sys.stderr)
 ```bash
 $ pip install Django==1.11.6
 ```
+
+## Pienv
+
+### Enlaces
+
+* [How to manage your Python projects with Pipenv](https://robots.thoughtbot.com/how-to-manage-your-python-projects-with-pipenv)
+
+### Instalación
+
+```bash
+$ pip install pipenv
+```
+
+### Creación de entorno con versión específica de Python y de paquetes
+
+1. Bajamos la versión `source` de [aquí](https://www.python.org/downloads/source/).
+2. Descomprimimos y entramos en el directorio.
+3. Compilamos:
+
+        $ ./configure --disable-ipv6
+        $ make
+        $ make test
+        $ sudo make install
+
+4. Creamos el entorno:
+
+        $ cd directorio_proyecto
+        $ pipenv install --python ~/Python-3.5.2/bin/python3
+        $ pipenv install Django==1.11.12
+        $ pipenv install _resto_de_paquetes_
+        $ pipenv shell
