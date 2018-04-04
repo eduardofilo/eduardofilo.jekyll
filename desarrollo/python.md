@@ -413,3 +413,11 @@ Si sólo queremos imprimir en consola una traza rápida, es más fácil escribie
 ```python
 print('lo que sea', file=sys.stderr)
 ```
+
+## pip
+
+### Instalación versión específica
+
+```bash
+$ pip install Django==1.11.6
+```
