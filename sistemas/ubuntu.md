@@ -11,6 +11,11 @@ permalink: /sistemas/ubuntu.html
 * [Franz](https://meetfranz.com/): [Configuración de icono en GNome](https://gist.github.com/jamiesoncj/756728b3ba7c07d7a90f843400af37bb).
 * [App Grid](http://www.appgrid.org/): Repositorio de aplicaciones.
 
+## Servicios interesantes
+
+* [KodExplorer](https://github.com/kalcaddle/KODExplorer)
+* [Gitea](https://gitea.io/en-us/)
+
 ## Problema con aplicaciones root en Wayland
 
 Hay que ejecutar el comando:
