@@ -37,7 +37,7 @@ permalink: /sistemas/unix.html
 *  `crontab -e`: Añadir un job a cron.
 *  `sudo badblocks /dev/sda > badblocks.txt; sudo fsck -l badblocks.txt /dev/sda`: Bloqueo de sectores defectuosos del disco duro ([fuente](http://tech.chandrahasa.com/2013/06/09/how-to-check-your-hard-disk-for-bad-blocks-in-ubuntu/)).
 *  `sudo blkid`: Lista los dispositivos de bloques (discos) disponibles en el sistema.
-*  `sudo nmap -PR -sP 192.168.1.0/24`: Descubrir todos los equipos presentes en la red `192.168.1.0`.
+*  `sudo nmap -sP 192.168.1.0/24`: Descubrir todos los equipos presentes en la red `192.168.1.0`.
 *  `sudo netstat -lp --inet`: Puertos de red abiertos y procesos asociados.
 *  `sudo usermod -a -G groupName userName`: Añade el usuario userName ya existente al grupo groupName.
 *  `sudo dd if=/dev/zero of=/dev/mmcblk0`: Formateo de una tarjeta de memoria (en realidad vale para cualquier dispositivo de almacenamiento).
