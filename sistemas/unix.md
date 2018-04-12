@@ -51,6 +51,7 @@ permalink: /sistemas/unix.html
 *  `exiftool -all= photo.jpg`: Borrar toda la metainformación de una foto (por cuestiones de privacidad antes de subirla a un sitio por ejemplo).
 *  `mplayer -vo caca MovieName.avi`: Reproduce un vídeo en consola con ascii. Para verlo en blanco y negro sustituir `caca` por `aa`.
 *  `sudo traceroute -4T -p 22 192.168.1.203`: Comprobar la traza hasta alcanzar un determinado puerto en una determinada máquina.
+*  `dig @8.8.8.8 -t any eduardofilo.es`: Query DNS de los registros de cualquier tipo a través del servidor `8.8.8.8` al dominio `eduardofilo.es`.
 
 ## Alias SSH
 
