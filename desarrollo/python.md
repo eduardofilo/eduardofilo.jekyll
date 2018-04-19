@@ -373,6 +373,8 @@ class AsistenciaGrupoView(generic.ListView):
 
 ## Logging
 
+### Log a fichero
+
 Configurar un logger en el fichero de settings correspondiente añadiendo esto:
 
 ```
@@ -410,10 +412,40 @@ Y dentro de la función donde queramos emitir algo al log:
 logger.debug('lo que sea')
 ```
 
+### Log a consola
+
 Si sólo queremos imprimir en consola una traza rápida, es más fácil escribiendo simplemente:
 
 ```python
 print('lo que sea', file=sys.stderr)
+```
+
+### Traza de queries a consola
+
+Configurar el siguiente logger en el fichero de settings correspondiente:
+
+```
+LOGGING = {
+    'version': 1,
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        }
+    },
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+        }
+    },
+    'loggers': {
+        'django.db.backends': {
+            'level': 'DEBUG',
+            'handlers': ['console'],
+        }
+    }
+}
 ```
 
 ## pip
