@@ -12,11 +12,13 @@ permalink: /desarrollo/python.html
 * [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/intro/learning/)
 * [Alter model to add “through” relationship to order a ManytoMany field](https://stackoverflow.com/questions/26348260/alter-model-to-add-through-relationship-to-order-a-manytomany-field-django-1)
 * [How to Reset Migrations](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-reset-migrations.html)
+* [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
 
 ### Módulos interesantes
 
 * [django-tinymce](https://github.com/aljosa/django-tinymce)
 * [django-autocomplete-light](https://github.com/yourlabs/django-autocomplete-light)
+* [wesome Django](http://awesome-django.com/): A curated list of awesome Django apps, projects and resources.
 
 ## Entorno Django
 
