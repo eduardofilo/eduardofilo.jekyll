@@ -271,7 +271,7 @@ En cualquiera de las cuatro siguientes clases, en la plantilla incluiremos los t
 
 ```
 <form action="" method="post">{{ "{% csrf_token " }}%}
-    {{ "{{ form }}" }}
+    {{ "{{ form" }}}}
     <input type="submit" value="Save" />
 </form>
 ```
