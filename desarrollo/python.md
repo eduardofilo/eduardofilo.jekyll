@@ -271,16 +271,16 @@ En cualquiera de las cuatro siguientes clases, en la plantilla incluiremos los t
 
 ```
 <form action="" method="post">{{ "{% csrf_token " }}%}
-    {{ "{{ form" }}}}
+    {{ "{{ form " }}}}
     <input type="submit" value="Save" />
 </form>
 ```
 
 El tag para el formulario tiene tres variantes:
 
-* `{{ form.as_p }}`: Cada campo del formulario se genera como un `<p>`.
-* `{{ form.as_table }}`: Cada campo del formulario se genera como una fila de una tabla.
-* `{{ form.as_ul }}`: Cada campo del formulario se genera como una lista sin numerar.
+* `{{ "{{ form.as_p " }}}}`: Cada campo del formulario se genera como un `<p>`.
+* `{{ "{{ form.as_table " }}}}`: Cada campo del formulario se genera como una fila de una tabla.
+* `{{ "{{ form.as_ul " }}}}`: Cada campo del formulario se genera como una lista sin numerar.
 
 Para máximo control siempre podemos generar cada campo del formulario por separado o incluso escribir el formulario completo a mano (ver documentación [Working with forms](https://docs.djangoproject.com/es/1.11/topics/forms/)).
 
