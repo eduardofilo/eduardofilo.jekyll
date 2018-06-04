@@ -323,6 +323,7 @@ Es una especie de ListView con filtros. Ver documentación [aquí](https://djang
 * Colección completa de objetos de un modelo: `Unidad.objects.all()`
 * Colección completa de objetos de un modelo ordenada: `Unidad.objects.all().order_by('nombre')`
 * Colección filtrada de objetos de un modelo: `Actividad.objects.filter(fecha__year=2017)`
+* Filtro OR (es necesario hacer `from django.db.models import Q`): `GrupoUnidades.objects.filter(Q(pausada=True) | Q(fecha_fin__isnull=False))`
 * Instancia concreta de un objeto: `Unidad.objects.get(pk=3)`
 * Servidor HTTP en el directorio actual: `python -m SimpleHTTPServer 8080`
 
