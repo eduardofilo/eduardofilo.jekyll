@@ -236,6 +236,8 @@ Los comandos de WorldEdit sólo se pueden lanzar desde la consola que hay dentro
 * `//faces <material>`: Construye las 6 paredes del paralelepípedo definido por la selección.
 * `//set <material>`: Rellena todo el paralelepípedo definido por la selección.
 
+La documentación de WorldEdit está [aquí](http://wiki.sk89q.com/wiki/WorldEdit/Reference). Versión imprimible [aquí](https://github.com/sk89q/WorldEdit-Reference/releases/download/rev6/worldedit_ref_rev6.pdf).
+
 ##### Printbot
 
 Para poder utilizar este plugin, necesitamos tener instalados los plugins de WorldEdit y WorldGuard. Los comandos de Printbot sólo se pueden lanzar siendo op.
