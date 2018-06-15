@@ -194,7 +194,7 @@ worlds:
 * `sudo poweroff`: Apagar la máquina.
 * `sudo reboot`: Reiniciar la máquina.
 * `ifconfig eth0`: Datos de TCP/IP del adaptador de red `eth0` (tarjeta de red ethernet; los adaptadores wifi suelen llamarse `wlan0`).
-* `sudo nmap -PR -sP 192.168.1.0/24`: Escanea la red local 192.168.1.0 para encontrar máquinas conectadas a ella.
+* `sudo nmap -sP 192.168.1.0/24`: Escanea la red local 192.168.1.0 para encontrar máquinas conectadas a ella.
 
 #### Servidor Minecraft
 
