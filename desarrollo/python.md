@@ -606,11 +606,11 @@ $ pip install pipenv
 
 Los contenidos estáticos se servirán desde uno y otro entorno de la siguiente forma:
 
-        <!-- in a Django template -->
-        <img src="{{ "{% static 'logo.png' " }}%}">
+    <!-- in a Django template -->
+    <img src="{{ "{% static 'logo.png' " }}%}">
 
-        <!-- in a Vue component -->
-        <img src="~__STATIC__/logo.png">
+    <!-- in a Vue component -->
+    <img src="~__STATIC__/logo.png">
 
 Finalmente, para servir los contenidos cliente en desarrollo hay que ejecutar:
 
