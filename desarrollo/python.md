@@ -495,6 +495,9 @@ $ pip install pipenv
 
 * [Django + webpack + Vue.js - setting up a new project that's easy to develop and deploy (part 1)](https://ariera.github.io/2017/09/26/django-webpack-vue-js-setting-up-a-new-project-that-s-easy-to-develop-and-deploy-part-1.html)
 * [Using Webpack transparently with Django + hot reloading React components as a bonus](https://owais.lone.pw/blog/webpack-plus-reactjs-and-django/)
+* [webpack-bundle-tracker](https://github.com/owais/webpack-bundle-tracker)
+* [django-webpack-loader](https://github.com/owais/django-webpack-loader)
+* [django-vue-webpack](https://github.com/longtranista/django-vue-webpack): A boilerplate of using Django as backend framework, Vue js and webpack as the frontend setup.
 
 ### Procedimiento
 
