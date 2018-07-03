@@ -552,36 +552,36 @@ $ pip install pipenv
 
     * Configuración webpack:
 
-        // ./config/index.js
-        module.exports = {
-          build: {
-            assetsRoot: path.resolve(__dirname, '../dist/'),
-            assetsSubDirectory: '',
-            assetsPublicPath: '/static/',
-            // ...
-          },
-          dev: {
-            assetsPublicPath: 'http://localhost:8080/',
-            // ...
-          }
-        }
+            // ./config/index.js
+            module.exports = {
+              build: {
+                assetsRoot: path.resolve(__dirname, '../dist/'),
+                assetsSubDirectory: '',
+                assetsPublicPath: '/static/',
+                // ...
+              },
+              dev: {
+                assetsPublicPath: 'http://localhost:8080/',
+                // ...
+              }
+            }
 
     * Configuración Django:
 
-        # ./vue_test/settings.py
-        STATICFILES_DIRS = (
-            os.path.join(BASE_DIR, 'dist'),
-            os.path.join(BASE_DIR, 'static'),
-        )
-        STATIC_ROOT = os.path.join(BASE_DIR, 'public')
-        STATIC_URL = '/static/'
+            # ./vue_test/settings.py
+            STATICFILES_DIRS = (
+                os.path.join(BASE_DIR, 'dist'),
+                os.path.join(BASE_DIR, 'static'),
+            )
+            STATIC_ROOT = os.path.join(BASE_DIR, 'public')
+            STATIC_URL = '/static/'
 
-        WEBPACK_LOADER = {
-            'DEFAULT': {
-                'BUNDLE_DIR_NAME': '',
-                'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+            WEBPACK_LOADER = {
+                'DEFAULT': {
+                    'BUNDLE_DIR_NAME': '',
+                    'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+                }
             }
-        }
 
 9. Configuración webpack para que resuelva los ficheros estáticos desde `/static`:
 
