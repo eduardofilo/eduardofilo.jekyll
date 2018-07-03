@@ -489,7 +489,7 @@ $ pip install pipenv
         $ pipenv install _resto_de_paquetes_
         $ pipenv shell
 
-## Usando Webpack para construir el frontend (PROVISIONAL)
+## Usando Webpack para construir el frontend
 
 ### Enlaces:
 
