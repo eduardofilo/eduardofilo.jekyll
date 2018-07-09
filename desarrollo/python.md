@@ -498,6 +498,7 @@ $ pip install pipenv
 * [webpack-bundle-tracker](https://github.com/owais/webpack-bundle-tracker)
 * [django-webpack-loader](https://github.com/owais/django-webpack-loader)
 * [django-vue-webpack](https://github.com/longtranista/django-vue-webpack): A boilerplate of using Django as backend framework, Vue js and webpack as the frontend setup.
+* [Building Modern Applications with Django, Vue.js and Auth0: Part 2](https://www.techiediaries.com/django-vuejs-auth0/)
 
 ### Procedimiento
 
