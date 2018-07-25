@@ -106,6 +106,8 @@ permalink: /sistemas/3d_printing.html
 
 ### Cura 3.4
 
+Los ficheros de configuración de las distintas versiones se encuentran en la ruta (Linux) `~/.config/cura`.
+
 * `Quality > Layer Height`: 0.2 mm [0.1-0.3] Altura de Capa.
 * `Quality > Initial Layer Height`: 0.2 mm [0.1-0.3] Altura de la capa inicial. Una capa inicial más final mejora la adherencia a la cama.
 * `Quality > Initial Layer Line Width`: 100 %. Permite aumentar ligeramente la anchura de las líneas de la primera capa para aumentar la adherencia a la cama. Básicamente inyecta un poco más de material.
