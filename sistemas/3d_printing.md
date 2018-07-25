@@ -104,7 +104,7 @@ permalink: /sistemas/3d_printing.html
 * Material diameter: 1.75mm
 * Nozzle size: 0.4mm
 
-### Cura 3.2
+### Cura 3.4
 
 * `Quality > Layer Height`: 0.2 mm [0.1-0.3] Altura de Capa.
 * `Quality > Initial Layer Height`: 0.2 mm [0.1-0.3] Altura de la capa inicial. Una capa inicial más final mejora la adherencia a la cama.
@@ -143,8 +143,36 @@ permalink: /sistemas/3d_printing.html
 * `Support > Support Placement`: Everywhere
     * `Touching Builplate`: Sólo hace soportes en las partes en voladizo sobre la cama.
     * `Everywhere`: Hace soportes en todas las partes que lo necesiten.
-* `Build Plate Adhesion`: Skirt
+* `Build Plate Adhesion Type`: Skirt
     * `Skirt`: Hace una línea alrededor de la piza en la primera capa. Básicamente sirve para cebar el extrusor.
     * `Brim`: Hace más amplia la primera capa para aumetar la adhesión a la cama.
     * `Raft`: Hace una malla alrededor y debajo de la pieza para aumentar la adhesión a la cama. Puede ser difícil de despegar.
 * `Special Modes`: All at Once. Usar siempre esta opción.
+* `Experimental > Tree Support`: Hace soportes ramificados.
+
+### Más habituales
+
+Los parámetros que casi siempre merece la pena revisar entre distintas impresiones son:
+
+* `Quality > Layer Height`: 0.2 mm [0.1-0.3] Altura de Capa.
+* `Quality > Initial Layer Height`: 0.2 mm [0.1-0.3] Altura de la capa inicial. Una capa inicial más final mejora la adherencia a la cama.
+* `Shell > Horizontal Expansion`: 0 mm. Expansión o contracción en el plano XY para ajustar la tolerancia entre piezas que tienen que encajar, por ejemplo agujeros y pasadores. Valores negativos contraen (por tanto se aplicarán a los pasadores) y positivos expanden (por tanto a los agujeros). Con una expansión de 0.1mm será suficiente la mayoría de las veces.
+* `Infill > Infill Density`: 20 % [0-100] Tanto por ciento de relleno en el interior. Dependerá de la resistencia deseada para la pieza. Si no va a recibir cargas se puede utilizar 10 o incluso 0%.
+* `Material > Printing Temperature`: 220 ºC [170 - 230] en PLA; [230-250] en ABS. Temperatura de extrusión del material.
+* `Material > Build Plate Temperature`: 50ºC [40-60] en PLA; [60-90] en ABS. Temperatura de la cama caliente.
+* `Travel > Combing Mode`: Realiza los desplazamientos sobre superficies ya impresas para evitar retracción o que gotee el extrusor.
+    * `Off`: Desplazamientos en línea recta.
+    * `All`: Desplaza siempre por zonas impresas.
+    * `No Skin`: Desplaza por el interior de las piezas, evitando la superficie.
+* `Cooling > Enable Print Cooling`: Activa el ventilador de la boquilla del extrusor.
+    * Marcado: En PLA.
+    * Desmarcado: En ABS.
+* `Support > Generate Support`: Marcado. Generar soporte para partes en voladizo.
+* `Support > Support Placement`: Everywhere
+    * `Touching Builplate`: Sólo hace soportes en las partes en voladizo sobre la cama.
+    * `Everywhere`: Hace soportes en todas las partes que lo necesiten.
+* `Build Plate Adhesion`: Skirt
+    * `Skirt`: Hace una línea alrededor de la piza en la primera capa. Básicamente sirve para cebar el extrusor.
+    * `Brim`: Hace más amplia la primera capa para aumetar la adhesión a la cama.
+    * `Raft`: Hace una malla alrededor y debajo de la pieza para aumentar la adhesión a la cama. Puede ser difícil de despegar.
+* `Experimental > Tree Support`: Hace soportes ramificados.
