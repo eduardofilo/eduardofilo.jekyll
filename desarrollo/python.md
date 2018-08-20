@@ -472,16 +472,21 @@ $ pip install pipenv
 
 ### Creación de entorno con versión específica de Python y de paquetes
 
-1. Bajamos la versión `source` de [aquí](https://www.python.org/downloads/source/).
-2. Descomprimimos y entramos en el directorio.
-3. Compilamos:
+1. Instalar algunos paquetes necesarios:
 
-        $ ./configure --disable-ipv6
+        $ sudo apt-get install build-essential checkinstall
+        $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+
+2. Bajamos la versión `source` de [aquí](https://www.python.org/downloads/source/).
+3. Descomprimimos y entramos en el directorio.
+4. Compilamos:
+
+        $ ./configure --disable-ipv6 --prefix=~/Python-3.5.2
         $ make
         $ make test
-        $ sudo make install
+        $ make install
 
-4. Creamos el entorno:
+5. Creamos el entorno:
 
         $ cd directorio_proyecto
         $ pipenv install --python ~/Python-3.5.2/bin/python3
