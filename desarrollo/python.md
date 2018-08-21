@@ -480,20 +480,20 @@ $ pip install pipenv
 2. Bajamos la versión `source` de [aquí](https://www.python.org/downloads/source/).
 3. Descomprimimos:
 
-        $ tar -xzvf Python-3.5.2.tgz
+        $ tar -xzvf Python-3.6.6.tgz
 
 4. Renombramos el directorio de las fuentes para no confundirlo con el de los binarios:
 
-        $ mv Python-3.5.2 Python-3.5.2_src
+        $ mv Python-3.6.5 Python-3.6.5_src
 
 5. Creamos el directorio para los binarios:
 
-        $ mkdir Python-3.5.2
+        $ mkdir Python-3.6.5
 
 6. Entramos en el directorio de las fuentes y compilamos:
 
-        $ cd /home/usuario/Python-3.5.2_src
-        $ ./configure --disable-ipv6 --prefix=/home/usuario/Python-3.5.2
+        $ cd /home/usuario/Python-3.6.5_src
+        $ ./configure --disable-ipv6 --prefix=/home/usuario/Python-3.6.5
         $ make
         $ make test
         $ make install
@@ -501,7 +501,7 @@ $ pip install pipenv
 7. Creamos el entorno:
 
         $ cd directorio_proyecto
-        $ pipenv install --python /home/usuario/Python-3.5.2/bin/python3
+        $ pipenv install --python /home/usuario/Python-3.6.5/bin/python3
         $ pipenv install Django==1.11.12
         $ pipenv install _resto_de_paquetes_
         $ pipenv shell
