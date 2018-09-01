@@ -34,6 +34,7 @@ permalink: /sistemas/3d_printing.html
 ## Filamento
 
 * [FlexiSMART](http://www.fffworld.com/flexismart/)
+* [SmartMaterials3D](https://smartmaterials3d.com/en/home/86-smartfil-abs-silver.html#/size-750g/shoes_size-1_75mm): ABS con aditivos para evitar warping y cracking.
 
 ## Hardware / Componentes / Repuestos
 
