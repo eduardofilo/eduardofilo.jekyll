@@ -7,6 +7,8 @@ published: false
 
 # Octoprint en Anet A8
 
+Siguiendo [esta guía](https://discourse.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337).
+
 2018-03-10 21:34:53,951 - serial.log is currently not enabled, you can enable it via Settings > Serial Connection > Log communication to serial.log
 
 G28
