@@ -35,6 +35,7 @@ permalink: /sistemas/3d_printing.html
 
 * [FlexiSMART](http://www.fffworld.com/flexismart/)
 * [SmartMaterials3D](https://smartmaterials3d.com/en/home/86-smartfil-abs-silver.html#/size-750g/shoes_size-1_75mm): ABS con aditivos para evitar warping y cracking.
+* [Sakata3D PLA Ingeo 3D870](https://sakata3d.com/gb/hr-pla-870/58-pla-ingeo-3d870-black.html): Similares características al ABS sin sus inconvenientes ([Análisis](https://www.hwlibre.com/analizamos-el-pla-3d850-y-3d870-del-fabricante-espanol-sakata3d/)).
 
 ## Hardware / Componentes / Repuestos
 
