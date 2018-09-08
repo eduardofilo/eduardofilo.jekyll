@@ -22,9 +22,10 @@ wait
 wait
 
 
-# Disable BT
+# Desactivación de BT y activación de puerto serie
 https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
 
+Por medio de `raspi-config` desactivar el terminal asociado al puerto serie físico y habilitar el puerto (pregunta las dos cosas dentro de la misma opción `Interfacing options > Serial`).
 
 
 # Instalación plugin M84 Motors Off
