@@ -27,11 +27,18 @@ https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial
 
 Por medio de `raspi-config` desactivar el terminal asociado al puerto serie físico y habilitar el puerto (pregunta las dos cosas dentro de la misma opción `Interfacing options > Serial`).
 
+# Configuración cámara
+
+* [How can I change mjpg-streamer parameters on OctoPi?](https://discourse.octoprint.org/t/how-can-i-change-mjpg-streamer-parameters-on-octopi/203)
+* [Webcams known to work](https://github.com/foosel/OctoPrint/wiki/Webcams-known-to-work)
+* [Available mjpg-streamer configuration options](https://discourse.octoprint.org/t/available-mjpg-streamer-configuration-options/1106)
 
 # Instalación plugin M84 Motors Off
-# https://plugins.octoprint.org/plugins/m84motoff/
-cd ~/OctoPrint
-./venv/bin/pip install "https://github.com/ntoff/Octoprint-M84MotOff/archive/master.zip"
+
+https://plugins.octoprint.org/plugins/m84motoff/
+
+    cd ~/OctoPrint
+    ./venv/bin/pip install "https://github.com/ntoff/Octoprint-M84MotOff/archive/master.zip"
 
 # G-code
 http://marlinfw.org/meta/gcode/
@@ -43,3 +50,4 @@ https://play.google.com/store/apps/details?id=fr.yochi76.printoid.phones.trial
 # Plugins intalados:
 M84 Motors Off
 TouchUI
+DisplayLayerProgress
