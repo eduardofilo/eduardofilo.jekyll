@@ -328,7 +328,7 @@ Es una especie de ListView con filtros. Ver documentación [aquí](https://djang
 * Servidor HTTP en el directorio actual: `python -m SimpleHTTPServer 8080`
 * Retorno seguro del primer elemento de una lista: `return (get_list()[:1] or [None])[0]`
 * Template filters:
-    * Valor predeterminado: `{{ elemento_de_context|default_if_none:"Valor predeterminado" }}`
+    * Valor predeterminado: `{{ "{{ elemento_de_context|default_if_none:"Valor predeterminado" " }}}}`
 
 ### Filtro en ListView
 
