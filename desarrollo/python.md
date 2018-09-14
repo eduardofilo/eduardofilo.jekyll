@@ -327,6 +327,7 @@ Es una especie de ListView con filtros. Ver documentación [aquí](https://djang
 * Instancia concreta de un objeto: `Unidad.objects.get(pk=3)`
 * Servidor HTTP en el directorio actual: `python -m SimpleHTTPServer 8080`
 * Retorno seguro del primer elemento de una lista: `return (get_list()[:1] or [None])[0]`
+* Convertir un set en un list ordenado: `una_lista = sorted(un_set, key=lambda x: x.position)`
 * Template filters:
     * Valor predeterminado: `{{ "{{ elemento_de_context|default_if_none:'Valor predeterminado' " }}}}`
 
