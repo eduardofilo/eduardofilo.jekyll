@@ -12,6 +12,12 @@ La siguiente sentencia serializa en forma de JSON cualquier objeto. Es muy útil
 alert(JSON.stringify(object));
 ```
 
+Es más limpio escribir en la consola del navegador. Aquí por ejemplo se muestra el objeto `data` de una instancia Vue.js:
+
+```javascript
+console.log(JSON.stringify(vm._data));
+```
+
 ## NPM
 Uso básico del gestor de paquetes de [Node.js](https://www.npmjs.com/).
 
