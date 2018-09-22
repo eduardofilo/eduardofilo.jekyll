@@ -238,18 +238,14 @@ static domain_name_servers=<dns>
 
 #### SunFounder Wiki
 
-* http://wiki.sunfounder.cc/index.php?title=Replace_HDMI_cable_tutorial
-* http://wiki.sunfounder.cc/index.php?title=Replace_power_USB_cable_tutorial
-* http://wiki.sunfounder.cc/index.php?title=The_touch_screen_does_not_work_properly_FAQ
-* http://wiki.sunfounder.cc/index.php?title=Install_the_fan_for_Raspad
-
-#### Back cover
-
-* https://www.thingiverse.com/thing:3074407
+* [Replace HDMI cable tutorial](http://wiki.sunfounder.cc/index.php?title=Replace_HDMI_cable_tutorial)
+* [Replace power USB cable tutorial](http://wiki.sunfounder.cc/index.php?title=Replace_power_USB_cable_tutorial)
+* [The touch screen does not work properly FAQ](http://wiki.sunfounder.cc/index.php?title=The_touch_screen_does_not_work_properly_FAQ)
+* [Install the fan for Raspad](http://wiki.sunfounder.cc/index.php?title=Install_the_fan_for_Raspad): [STL's alternativos](https://www.thingiverse.com/thing:3074407).
 
 #### Instalación de Android
 
-* https://howtoraspberrypi.com/install-android-raspberry-pi/
+* [Install Android on his Raspberry Pi](https://howtoraspberrypi.com/install-android-raspberry-pi/)
 
 #### Calibración de pantalla
 
@@ -257,7 +253,7 @@ static domain_name_servers=<dns>
 
 #### Clic derecho
 
-* https://maker-tutorials.com/en/raspberry-ri-touch-screen-setup-right-click-with-twofing/
+* [Raspberry Ri Touch Screen setup right click with twofing – Raspbian Jessie](https://maker-tutorials.com/en/raspberry-ri-touch-screen-setup-right-click-with-twofing/)
 
 ### Configuración
 
@@ -265,4 +261,4 @@ El equipo recién instalado lleva un firmware bastante deficiente en el digitali
 
 Sobre una instalación [Raspbian](https://downloads.raspberrypi.org/raspbian_latest) normal instalar los siguientes paquetes:
 
-* matchbox-keyboard
+* `matchbox-keyboard`
