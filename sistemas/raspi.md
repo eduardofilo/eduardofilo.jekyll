@@ -257,7 +257,7 @@ static domain_name_servers=<dns>
 
 ### Configuración
 
-#### Sistema base:
+#### Sistema base
 
 [Raspbian](https://downloads.raspberrypi.org/raspbian_latest)
 
