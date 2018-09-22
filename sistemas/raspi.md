@@ -236,24 +236,24 @@ static domain_name_servers=<dns>
 
 ### Enlaces
 
-#### SunFounder Wiki
+* SunFounder Wiki
 
-* [Replace HDMI cable tutorial](http://wiki.sunfounder.cc/index.php?title=Replace_HDMI_cable_tutorial)
-* [Replace power USB cable tutorial](http://wiki.sunfounder.cc/index.php?title=Replace_power_USB_cable_tutorial)
-* [The touch screen does not work properly FAQ](http://wiki.sunfounder.cc/index.php?title=The_touch_screen_does_not_work_properly_FAQ)
-* [Install the fan for Raspad](http://wiki.sunfounder.cc/index.php?title=Install_the_fan_for_Raspad): [STL's alternativos](https://www.thingiverse.com/thing:3074407).
+    * [Replace HDMI cable tutorial](http://wiki.sunfounder.cc/index.php?title=Replace_HDMI_cable_tutorial)
+    * [Replace power USB cable tutorial](http://wiki.sunfounder.cc/index.php?title=Replace_power_USB_cable_tutorial)
+    * [The touch screen does not work properly FAQ](http://wiki.sunfounder.cc/index.php?title=The_touch_screen_does_not_work_properly_FAQ)
+    * [Install the fan for Raspad](http://wiki.sunfounder.cc/index.php?title=Install_the_fan_for_Raspad): [STL's alternativos](https://www.thingiverse.com/thing:3074407).
 
-#### Instalación de Android
+* Instalación de Android
 
-* [Install Android on his Raspberry Pi](https://howtoraspberrypi.com/install-android-raspberry-pi/)
+    * [Install Android on his Raspberry Pi](https://howtoraspberrypi.com/install-android-raspberry-pi/)
 
-#### Calibración de pantalla
+* Calibración de pantalla
 
-* https://www.facebook.com/groups/192987478051513/permalink/233950007288593/
+    * [https://www.facebook.com/groups/192987478051513/permalink/233950007288593/](https://www.facebook.com/groups/192987478051513/permalink/233950007288593/)
 
-#### Clic derecho
+* Clic derecho
 
-* [Raspberry Ri Touch Screen setup right click with twofing – Raspbian Jessie](https://maker-tutorials.com/en/raspberry-ri-touch-screen-setup-right-click-with-twofing/)
+    * [Raspberry Ri Touch Screen setup right click with twofing – Raspbian Jessie](https://maker-tutorials.com/en/raspberry-ri-touch-screen-setup-right-click-with-twofing/)
 
 ### Configuración
 
