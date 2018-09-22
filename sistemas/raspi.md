@@ -231,3 +231,38 @@ static ip_address=<ip>/24
 static routers=<gateway>
 static domain_name_servers=<dns>
 ```
+
+## Raspad
+
+### Enlaces
+
+#### SunFounder Wiki
+
+* http://wiki.sunfounder.cc/index.php?title=Replace_HDMI_cable_tutorial
+* http://wiki.sunfounder.cc/index.php?title=Replace_power_USB_cable_tutorial
+* http://wiki.sunfounder.cc/index.php?title=The_touch_screen_does_not_work_properly_FAQ
+* http://wiki.sunfounder.cc/index.php?title=Install_the_fan_for_Raspad
+
+#### Back cover
+
+* https://www.thingiverse.com/thing:3074407
+
+#### Instalación de Android
+
+* https://howtoraspberrypi.com/install-android-raspberry-pi/
+
+#### Calibración de pantalla
+
+* https://www.facebook.com/groups/192987478051513/permalink/233950007288593/
+
+#### Clic derecho
+
+* https://maker-tutorials.com/en/raspberry-ri-touch-screen-setup-right-click-with-twofing/
+
+### Configuración
+
+El equipo recién instalado lleva un firmware bastante deficiente en el digitalizador táctil de la pantalla. Hay que actualizarlo siguiendo los pasos del siguiente artículo del wiki de SunFounder: [The touch screen does not work properly FAQ](http://wiki.sunfounder.cc/index.php?title=The_touch_screen_does_not_work_properly_FAQ)
+
+Sobre una instalación [Raspbian](https://downloads.raspberrypi.org/raspbian_latest) normal instalar los siguientes paquetes:
+
+* matchbox-keyboard
