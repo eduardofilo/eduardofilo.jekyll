@@ -108,7 +108,7 @@ Dispositivo    Inicio Comienzo    Final Sectores Tamaño Id Tipo
 /dev/mmcblk0p2           98304 15550463 15452160   7,4G 83 Linux
 ```
 
-Aquí vemos que cada sector ocupa 512 bytes. Nos fijamos en el último sector utilizado que en este caso es 15452160. Multiplicando este sector por el tamaño del sector (y sumando 1 al número de sectores por si empiezan a contar en 0) obtendremos el número de bytes que tendremos que copiar. Como el block size que vamos a utilizar es 2MB tendremos que truncar por lo alto (también servirá de medida de seguidad). Los cálculos en este caso resultarían:
+Aquí vemos que cada sector ocupa 512 bytes. Nos fijamos en el último sector utilizado que en este caso es 15550463. Multiplicando este sector por el tamaño del sector (y sumando 1 al número de sectores por si empiezan a contar en 0) obtendremos el número de bytes que tendremos que copiar. Como el block size que vamos a utilizar es 2MB tendremos que truncar por lo alto (también servirá de medida de seguidad). Los cálculos en este caso resultarían:
 
     (15550463 + 1) (sector) * 512 (Byte/sector) / 1024 (Byte/KB) / 1024 (KB/MB) / 2 (MB/bloque) = 3796,5 bloques
 
