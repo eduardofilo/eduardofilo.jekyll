@@ -92,6 +92,28 @@ $ #Restauración (comprimido con zip):
 $ unzip -p Rpi_8gb_backup.zip | pv | sudo dd of=/dev/mmcblk0 bs=2M
 ```
 
+Para hacer un backup parcial los cálculos se harían así. Primero sacamos los datos de la estructura de la tarjeta con `fdisk`:
+
+```bash
+$ sudo fdisk -l /dev/mmcblk0
+Disco /dev/mmcblk0: 14,4 GiB, 15502147584 bytes, 30277632 sectores
+Unidades: sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico/físico): 512 bytes / 512 bytes
+Tamaño de E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Tipo de etiqueta de disco: dos
+Identificador del disco: 0xa125a0dc
+
+Dispositivo    Inicio Comienzo    Final Sectores Tamaño Id Tipo
+/dev/mmcblk0p1            8192    96663    88472  43,2M  c W95 FAT32 (LBA)
+/dev/mmcblk0p2           98304 15550463 15452160   7,4G 83 Linux
+```
+
+Aquí vemos que cada sector ocupa 512 bytes. Nos fijamos en el último sector utilizado que en este caso es 15452160. Multiplicando este sector por el tamaño del sector (y sumando 1 al número de sectores por si empiezan a contar en 0) obtendremos el número de bytes que tendremos que copiar. Como el block size que vamos a utilizar es 2MB tendremos que truncar por lo alto (también servirá de medida de seguidad). Los cálculos en este caso resultarían:
+
+    (15550463 + 1) (sector) * 512 (Byte/sector) / 1024 (Byte/KB) / 1024 (KB/MB) / 2 (MB/bloque) = 3796,5 bloques
+
+Por tanto en este caso copiaremos 3797 bloques para cubrir esos 15550464 sectores.
+
 ### Backup de la SD (comprimiendo al vuelo y diviendo en trozos el fichero resultante)
 
 ```bash
