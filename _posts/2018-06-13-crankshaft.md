@@ -181,6 +181,18 @@ La electrónica del micrófono comprado está en el conector USB, lo que lo hace
 
 ![Micrófono](/images/posts/crankshaft_mic2.jpg)
 
+El resultado de la primera versión del marco (todavía sin el LED que incorporé al cambiar el circuito de alimentación) puede verse a continuación. Es conveniente imprimir a 0,1mm de capa debido al ángulo tan pequeño que tienen las capas superiores del marco (por la extraña forma de la consola del Corsa en esa zona).
+
+![Resultado PLA](/images/posts/crankshaft_resultado.jpg)
+
+Por último, comentar que la primera versión del marco impresa en PLA se derritió una tarde que el coche quedó aparcado al sol.
+
+![Marco derretido](/images/posts/crankshaft_derretido.jpg)
+
+La solución consistió en imprimir el ABS. Fue mucho más difícil de imprimir, pero ciertamente el ABS tiene ventajas como poder lijar la pieza (y así hacer desaparecer el estriado del cambio de capa) y por supuesto resistir sin problemas el calor que se acumula al exponer el coche al sol durante horas. El resultado de la segunda versión en ABS lijado.
+
+![Resultado ABS](/images/posts/crankshaft_resultado2.jpg)
+
 ## Compras
 
 -Relé: https://es.aliexpress.com/item/12V-30-40-A-Amp-5-Pin-5P-Automotive-Harness-Car-Auto-Relay-Socket-5-Wire/32569903186.html
