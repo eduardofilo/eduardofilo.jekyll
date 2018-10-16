@@ -13,6 +13,7 @@ permalink: /desarrollo/python.html
 * [Alter model to add “through” relationship to order a ManytoMany field](https://stackoverflow.com/questions/26348260/alter-model-to-add-through-relationship-to-order-a-manytomany-field-django-1)
 * [How to Reset Migrations](https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-reset-migrations.html)
 * [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
+* [Django data migration when changing a field to ManyToMany](https://stackoverflow.com/questions/2224410/django-data-migration-when-changing-a-field-to-manytomany?rq=1)
 
 ### Módulos interesantes
 
@@ -162,6 +163,12 @@ Para deshacer todas las migraciones:
 
 ```
 (djangodev) $ python manage.py migrate app01 zero
+```
+
+Para crear una migración vacía que podremos utilizar para hacer transferencias de datos (ver ejemplo [aquí](https://stackoverflow.com/questions/2224410/django-data-migration-when-changing-a-field-to-manytomany?rq=1)):
+
+```
+(djangodev) $ python manage.py makemigrations app01 --empty
 ```
 
 ## Formateo de cadenas
