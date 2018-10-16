@@ -21,12 +21,13 @@ La pantalla consiste en la oficial táctil de 7" de la fundación Raspberry Pi q
 * Tarjeta microSD
 * LED
 * Resistencia 220 Ohm
+* 4x Tornillo M3x10
 
 ## Preparación sistema
 
 El sistema que cargaremos en la tarjeta microSD va a ser una versión especial de Raspbian con el paquete [OpenAuto](https://github.com/f1xpl/openauto) preinstalado que se llama Crankshaft y cuya imágen puede descargarse de [aquí](https://github.com/opencardev/crankshaft/releases). Transferimos la imagen a la microSD con un programa como [Etcher](https://etcher.io/).
 
-## Retirando el radio
+## Retirando el radio CD
 
 Esto es lo que vamos a perder:
 
@@ -141,7 +142,7 @@ En el listado anterior hemos indicado los pines del GPIO de Raspberry con su nom
 
 ## Montaje de pantalla y Raspberry
 
-La pantalla que utilizaremos tiene un soporte para la Raspberry Pi. Atornillaremos los separadores y colocaremos el cable de cinta que une la pantalla con el conector Display de la Raspberry. Falta colocar unos cables de pin para alimentar y comunicar la pantalla con la Raspberry. Para evitar desconexiones por las vibraciones de la marcha del coche, en lugar de utilizar cables de pin preparé un pequeño cable con un par de tiras de pin hembra (una simple para el lado de la pantalla y otra doble para el lado de la Raspberry). El resultado tiene este aspecto:
+La pantalla que utilizaremos tiene un soporte para la Raspberry Pi en la parte trasera. Atornillaremos los separadores y colocaremos el cable de cinta que une la pantalla con el conector Display de la Raspberry. Falta colocar unos cables de pin para alimentar y comunicar la pantalla con la Raspberry. Para evitar desconexiones por las vibraciones de la marcha del coche, en lugar de utilizar cables de pin preparé un pequeño cable con un par de tiras de pin hembra (una simple para el lado de la pantalla y otra doble para el lado de la Raspberry). El resultado tiene este aspecto:
 
 ![Cable pantalla](/images/posts/crankshaft_cable_pantalla1.jpg)
 
@@ -158,11 +159,27 @@ En el listado anterior hemos indicado los pines del GPIO de Raspberry con su nú
 
 ## Sujección pantalla a consola coche
 
-Para fijar el conjunto pantalla-Raspberry al hueco de la consola dejado por el radio CD, utilizaremos unas piezas impresas en 3D. El enlace para descargar los STL's (y .scad por si se quieren modificar) es el siguiente:
+Para fijar el conjunto pantalla-Raspberry al hueco de la consola dejado por el radio CD, utilizaremos unas piezas impresas en 3D. El enlace para descargar los STL's (y scad por si se quieren modificar) es el siguiente:
 
+@@@@@@@@@@@@@@@@@@@@@@
 
+Básicamente son dos piezas, la que fija la pantalla al hueco y un marco para que el conjunto se integre estéticamente en la consola del coche. La pieza que fija la pantalla se ha dividido en varias para facilitar su impresión sin necesidad de soportes. Una vez aplicada a la pantalla queda así:
 
 ![Soporte pantalla](/images/posts/crankshaft_soporte_pantalla.jpg)
+
+Los tornillos utilizados son M3x10.
+
+La pieza soporte queda fija en el hueco por las 3 lengüetas superiores y la inferior más larga. La forma de extraer el conjunto es introducir una espátula como las que se utilizan para untar la mantequilla por el hueco que hay cerca de la lengüeta inferior. Haciendo palanca de manera que la lengüeta se desenganche, y haciendo bascular el conjunto desde abajo, debería ser posible sacar la pantalla y su soporte.
+
+A ambos lados del soporte y cerca del borde superior, quedan dos huecos por los que podremos sacar los cables del micrófono y el LED.
+
+![Hueco soporte](/images/posts/crankshaft_hueco_soporte.jpg)
+
+La electrónica del micrófono comprado está en el conector USB, lo que lo hace aparatoso y grande. Para evitar que el cable chocase con la pared interior del hueco, se modificó la salida del cable para hacerla acodada. Además se cortó el cable que sólo necesitamos que tenga unos 20cm.
+
+![Micrófono](/images/posts/crankshaft_mic1.jpg)
+
+![Micrófono](/images/posts/crankshaft_mic2.jpg)
 
 ## Compras
 
