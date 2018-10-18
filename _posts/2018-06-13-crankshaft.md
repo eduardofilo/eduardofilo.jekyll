@@ -163,16 +163,12 @@ En el listado anterior hemos indicado los pines del GPIO de Raspberry con su nú
 Se describe a continuación el conjunto de conexiones que haremos entre todos los componentes justo antes de hacer la sujección final de la pantalla que se describe en el apartado siguiente:
 
 1. Conexión del Car Switch a las tomas de alimentación del coche tal y como hemos comentado en el apartado correspondiente:
-
     * Toma 12V constantes
     * Toma 12V contacto
     * Toma de masa
-
 2. Conexión de pines entre Car Switch y Raspberry Pi también descrito antes:
-
     * Car Switch: IN <-> GPIO24 :Raspberry
     * Car Switch: OUT <-> GPIO23 :Raspberry
-
 3. Conector JST de alimentación de Raspberry Pi.
 4. Micrófono USB conectado a Raspberry Pi.
 5. Cable micro USB (o type-C en mi caso) conectado a Raspberry Pi y que pasaremos por el interior de la consola para poder conectar el móvil en la zona de la bandeja sujeta vasos que hay delante de la palanca de marchas.
