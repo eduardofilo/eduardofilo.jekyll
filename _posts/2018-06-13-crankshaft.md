@@ -9,7 +9,7 @@ published: true
 
 Se describe a continuación el montaje de una Raspberry Pi con pantalla táctil de 7" en la consola de un Opel Corsa modelo D (2012), en sustitución del radio CD que llevaba de serie.
 
-La pantalla consiste en la oficial táctil de 7" de la fundación Raspberry Pi que tiene aproximadamente las medidas del hueco 2DIN que deja el radio CD del coche. Para su sujección en el hueco de la radio se crean un par de piezas que se imprimen con una impresora 3D.
+La pantalla consiste en la oficial táctil de 7" de la fundación Raspberry Pi que tiene aproximadamente las medidas del hueco 2DIN que deja el radio CD del coche. Para su sujección en el hueco de la radio se crean un par de piezas que se fabrican con una impresora 3D.
 
 ## Componentes
 
