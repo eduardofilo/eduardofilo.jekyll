@@ -22,6 +22,7 @@ La pantalla consiste en la oficial táctil de 7" de la fundación Raspberry Pi q
 * LED
 * Resistencia 220 Ohm
 * 4x Tornillo M3x10
+* [Piezas plásticas de sujección impresas en 3D](https://www.thingiverse.com/thing:3162930)
 
 ## Preparación sistema
 
