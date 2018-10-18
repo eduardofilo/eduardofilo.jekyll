@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Crankshaft - AndroidAuto sobre Raspberry Pi"
-date: 2018-06-13 22:30:00
-published: false
+date: 2018-10-18 22:30:00
+published: true
 ---
 
 ![Crankshaft](/images/posts/crankshaft.jpg)
@@ -157,19 +157,36 @@ El pineado es como sigue:
 
 En el listado anterior hemos indicado los pines del GPIO de Raspberry con su número, no con su nombre (al contrario de cuando hemos descrito los cables de pin que comunican con Car Switch).
 
+## Cableado
+
+Se describe a continuación el conjunto de conexiones que haremos entre todos los componentes justo antes de hacer la sujección final de la pantalla que se describe en el apartado siguiente:
+
+1. Conexión del Car Switch a las tomas de alimentación del coche tal y como hemos comentado en el apartado correspondiente:
+
+    * Toma 12V constantes
+    * Toma 12V contacto
+    * Toma de masa
+
+2. Conexión de pines entre Car Switch y Raspberry Pi también descrito antes:
+
+    * Car Switch: IN <-> GPIO24 :Raspberry
+    * Car Switch: OUT <-> GPIO23 :Raspberry
+
+3. Conector JST de alimentación de Raspberry Pi.
+4. Micrófono USB conectado a Raspberry Pi.
+5. Cable micro USB (o type-C en mi caso) conectado a Raspberry Pi y que pasaremos por el interior de la consola para poder conectar el móvil en la zona de la bandeja sujeta vasos que hay delante de la palanca de marchas.
+
 ## Sujección pantalla a consola coche
 
 Para fijar el conjunto pantalla-Raspberry al hueco de la consola dejado por el radio CD, utilizaremos unas piezas impresas en 3D. El enlace para descargar los STL's (y scad por si se quieren modificar) es el siguiente:
 
 @@@@@@@@@@@@@@@@@@@@@@
 
-Básicamente son dos piezas, la que fija la pantalla al hueco y un marco para que el conjunto se integre estéticamente en la consola del coche. La pieza que fija la pantalla se ha dividido en varias para facilitar su impresión sin necesidad de soportes. Una vez aplicada a la pantalla queda así:
+Básicamente son dos piezas, la que fija la pantalla al hueco y un marco para esconder los huecos que quedan alrededor de la pantalla y para que el conjunto se integre estéticamente en la consola del coche. Hay dos versiones de la pieza que fija la pantalla, una completa y otra dividida en varias para facilitar su impresión sin necesidad de soportes. Una vez aplicada a la pantalla queda así:
 
 ![Soporte pantalla](/images/posts/crankshaft_soporte_pantalla.jpg)
 
-Los tornillos utilizados son M3x10.
-
-La pieza soporte queda fija en el hueco por las 3 lengüetas superiores y la inferior más larga. La forma de extraer el conjunto es introducir una espátula como las que se utilizan para untar la mantequilla por el hueco que hay cerca de la lengüeta inferior. Haciendo palanca de manera que la lengüeta se desenganche, y haciendo bascular el conjunto desde abajo, debería ser posible sacar la pantalla y su soporte.
+Los tornillos utilizados son M3x10. La pieza soporte queda fija en el hueco por las 3 lengüetas superiores y la inferior más larga. La forma de extraer el conjunto es introducir una espátula como las que se utilizan para untar la mantequilla por el hueco que hay cerca de la lengüeta inferior. Haciendo palanca de manera que la lengüeta se desenganche, y haciendo bascular el conjunto desde abajo, debería ser posible sacar la pantalla y su soporte.
 
 A ambos lados del soporte y cerca del borde superior, quedan dos huecos por los que podremos sacar los cables del micrófono y el LED.
 
@@ -193,18 +210,4 @@ La solución consistió en imprimir el ABS. Fue mucho más difícil de imprimir,
 
 ![Resultado ABS](/images/posts/crankshaft_resultado2.jpg)
 
-## Compras
-
--Relé: https://es.aliexpress.com/item/12V-30-40-A-Amp-5-Pin-5P-Automotive-Harness-Car-Auto-Relay-Socket-5-Wire/32569903186.html
--Regulador tensión: https://es.aliexpress.com/item/MP1584EN-ultra-small-DC-DC-3A-power-step-down-adjustable-module-Buck-Converter-24V-turn-12v/32382698190.html
--Marco: https://es.aliexpress.com/item/Doble-Din-Facia-para-Opel-Astra-Antara-Corsa-Zafira-Radio-DVD-est-reo-CD-Panel-Dash/32849366982.html
-
-## Personalización pantalla de conexión
-
-Hay que poner un fichero PNG con nombre `wallpaper.png` en el directorio `crankshaft` de la partición `boot`. La imagen tiene que tener la misma resolución de la pantalla. En el caso de la pantalla oficial de Raspberry 7" utilizada en este tutorial, la resolución es: 800x480px.
-
-## Ajustes
-
-[Guía](https://drive.google.com/file/d/1plZ0zGBW0fsMs5uB2fiXDqz25OhxYzOo/view)
-
-Los ajustes en forma de fichero de configuración (que corresponden con los que se pueden modificar en modo gráfico) están en el fichero `openauto.ini` dentro del directorio `crankshaft` de la partición `boot`.
+Se ofrecen dos versiones del marco, una en una pieza y otra en dos que luego habrá que pegar, ya que es una pieza ancha que puede no entrar en muchas camas de impresoras 3D (como fue mi caso). La sujección del marco se hará por medio de unos pocos puntos de cinta de doble cara.
