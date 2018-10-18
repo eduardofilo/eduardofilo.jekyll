@@ -34,7 +34,7 @@ Esto es lo que vamos a perder:
 
 ![Opel Radio CD](/images/posts/crankshaft_opel_radio_cd.jpg)
 
-Para extraerlo necesitamos la herramienta que se incluye en la lista de componentes, que se introduce por los agujeros que hay a ambos lados (en la foto, los del lado izquierdo están tapados por el control remoto del manos libres Parrot y el tag NFC de Xperia). El radio CD saldrá limpiamente salvo por los cables de la antena y el conector principal que tendremos que desconectar.
+Para extraerlo necesitamos la herramienta que se incluye en la lista de componentes, que se introduce por los agujeros que hay a ambos lados (en la foto, los del lado izquierdo están tapados por el control remoto del manos libres y el tag NFC). El radio CD saldrá limpiamente salvo por los cables de la antena y el conector principal que tendremos que desconectar.
 
 ## Circuito de alimentación
 
