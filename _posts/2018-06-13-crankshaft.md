@@ -203,7 +203,7 @@ Por último, comentar que la primera versión del marco impresa en PLA se derrit
 
 ![Marco derretido](/images/posts/crankshaft_derretido.jpg)
 
-La solución consistió en imprimir el ABS. Fue mucho más difícil de imprimir, pero ciertamente el ABS tiene ventajas como poder lijar la pieza (y así hacer desaparecer el estriado del cambio de capa) y por supuesto resistir sin problemas el calor que se acumula al exponer el coche al sol durante horas. El resultado de la segunda versión en ABS lijado.
+La solución consistió en imprimir el ABS. Fue mucho más difícil de imprimir, pero ciertamente este material tiene ventajas como poder lijar la pieza (y así hacer desaparecer el estriado del cambio de capa) y por supuesto resistir sin problemas el calor que se acumula al exponer el coche al sol durante horas. El resultado de la segunda versión en ABS lijado.
 
 ![Resultado ABS](/images/posts/crankshaft_resultado2.jpg)
 
