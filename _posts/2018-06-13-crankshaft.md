@@ -20,7 +20,7 @@ La pantalla consiste en la oficial táctil de 7" de la fundación Raspberry Pi q
 * [Circuito de alimentación](https://www.mausberrycircuits.com/collections/frontpage/products/3a-car-supply-switch-1)
 * Tarjeta microSD
 * LED
-* Resistencia 220 Ohm
+* Resistencia 220Ω
 * 4x Tornillo M3x10
 * [Piezas plásticas de sujección impresas en 3D](https://www.thingiverse.com/thing:3162930)
 
