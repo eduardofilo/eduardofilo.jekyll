@@ -38,7 +38,7 @@ Para extraerlo necesitamos la herramienta que se incluye en la lista de componen
 
 ## Circuito de alimentación
 
-La correcta alimentación de la Raspberry Pi a partir de la batería del coche supone uno de los problemas más complejos de resolver en este proyecto. Más adelante planteamos los puntos conflictivos. Empezaremos localizando en el conector del radio CD los terminales de masa (GND), +12V constantes y de +12V asociados al contacto. Para empezar el terminal de +12V asociados al contacto no parece estar presente en el conector del radio CD.
+La correcta alimentación de la Raspberry Pi a partir de la batería del coche supone uno de los problemas más complejos de resolver en este proyecto. Más adelante planteamos los puntos conflictivos. Empezaremos localizando en el conector del radio CD los terminales de masa (GND), +12V constantes y de +12V asociados al contacto. Para empezar el terminal de +12V asociados al contacto no parece estar presente.
 
 ![Conector Radio CD](/images/posts/crankshaft_conector_radio_cd.jpg)
 
