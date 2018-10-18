@@ -180,7 +180,7 @@ Se describe a continuación el conjunto de conexiones que haremos entre todos lo
 
 Para fijar el conjunto pantalla-Raspberry al hueco de la consola dejado por el radio CD, utilizaremos unas piezas impresas en 3D. El enlace para descargar los STL's (y scad por si se quieren modificar) es el siguiente:
 
-@@@@@@@@@@@@@@@@@@@@@@
+https://www.thingiverse.com/thing:3162930
 
 Básicamente son dos piezas, la que fija la pantalla al hueco y un marco para esconder los huecos que quedan alrededor de la pantalla y para que el conjunto se integre estéticamente en la consola del coche. Hay dos versiones de la pieza que fija la pantalla, una completa y otra dividida en varias para facilitar su impresión sin necesidad de soportes. Una vez aplicada a la pantalla queda así:
 
