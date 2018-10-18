@@ -141,7 +141,7 @@ En el listado anterior hemos indicado los pines del GPIO de Raspberry con su nom
 
 ![Raspberry Pi GPIO Layout Model B+](/images/posts/Raspberry-Pi-GPIO-Layout-Model-B-Plus.png)
 
-## Montaje de pantalla y Raspberry
+## Montaje de Raspberry Pi sobre pantalla
 
 La pantalla que utilizaremos tiene un soporte para la Raspberry Pi en la parte trasera. Atornillaremos los separadores y colocaremos el cable de cinta que une la pantalla con el conector Display de la Raspberry. Falta colocar unos cables de pin para alimentar y comunicar la pantalla con la Raspberry. Para evitar desconexiones por las vibraciones de la marcha del coche, en lugar de utilizar cables de pin preparé un pequeño cable con un par de tiras de pin hembra (una simple para el lado de la pantalla y otra doble para el lado de la Raspberry). El resultado tiene este aspecto:
 
