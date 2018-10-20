@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Octoprint en Anet A8"
-date: 2018-06-13 22:40:00
-published: false
+date: 2018-10-20 21:30:00
+published: true
 ---
 
 ![Octoprint](/images/posts/octoprint.jpg)
