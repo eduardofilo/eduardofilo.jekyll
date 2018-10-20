@@ -51,9 +51,13 @@ Como vemos los puentes deben apuntar hacia el rótulo BLE. Seguramente se design
 
 Sólo queda localizar en el conector J3 los pines del puerto serie del microcontrolador recien redirijidos y los de alimentación (5V y GND). En este punto podríamos conectar la Raspberry Pi con simples cables de pin, pero dada la cercanía en el GPIO de la Raspberry Pi del puerto serie y de los terminales de alimentación, me decidí a preparar una pequeña placa adaptadora para el conector J3 de la PCB de la impresora.
 
-El conector J3 de la impresora tiene el siguiente pineado según el esquemático:
+El conector J3 de la impresora según el [esquemático](/images/posts/octoprint_ANET3D_Board_Schematic.png) tiene el siguiente pineado:
 
-![Conector J3](/images/posts/octoprint_j3.png)
+![Esquemático Conector J3](/images/posts/octoprint_j3.png)
+
+De nuevo es necesario orientar el conector correctamente para interpretar el esquemático. Para evitar confusiones se indica a continuación la numeración de los pines sobre el conector:
+
+![Pines Conector J3](/images/posts/octoprint_conector_j3.jpg)
 
 ## Desactivación de BT y activación de puerto serie
 https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
