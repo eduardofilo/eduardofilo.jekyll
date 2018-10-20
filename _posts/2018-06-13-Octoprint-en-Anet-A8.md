@@ -59,6 +59,29 @@ De nuevo es necesario orientar el conector correctamente para interpretar el esq
 
 ![Pines Conector J3](/images/posts/octoprint_conector_j3.jpg)
 
+La conexión de estos pines con los del GPIO de la Raspberry Pi será así:
+
+* `J3: 1 (J3_TX) <-> PIN#10 (GPIO15 UART0_RXD) :Raspberry`
+* `J3: 2 (J3_RX) <-> PIN#08 (GPIO14 UART0_TXD) :Raspberry`
+* `J3: 4 (+5V)   <-> PIN#04 (5V)               :Raspberry`
+* `J3: 8 (GND)   <-> PIN#06 (Ground)           :Raspberry`
+
+![Raspberry Pi GPIO Layout Model B+](/images/posts/Raspberry-Pi-GPIO-Layout-Model-B-Plus.png)
+
+El adaptador realizado es el siguiente:
+
+![Adaptador J3-GPIO](/images/posts/octoprint_adaptador1.jpg)
+
+![Adaptador J3-GPIO](/images/posts/octoprint_adaptador2.jpg)
+
+A continuación se puede ver soldado sobre la Raspberry:
+
+![Adaptador J3-Raspberry](/images/posts/octoprint_adaptador_raspberry1.jpg)
+
+![Adaptador J3-Raspberry](/images/posts/octoprint_adaptador_raspberry2.jpg)
+
+![Adaptador J3-Raspberry](/images/posts/octoprint_adaptador_raspberry3.jpg)
+
 ## Desactivación de BT y activación de puerto serie
 https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
 
