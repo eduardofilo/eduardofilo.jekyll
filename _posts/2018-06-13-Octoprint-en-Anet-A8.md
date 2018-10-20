@@ -15,9 +15,9 @@ Aunque es posible [instalar manualmente Octoprint](https://discourse.octoprint.o
 
 ## Modelo de Raspberry Pi elegido
 
-A pesar de que la utilización de una Raspberry Pi Zero no está recomendada por problemas de rendimiento que pueden terminar afectando a las impresiones, en mi experiencia no he sufrido ningún percance y la forma y bajo consumo de la Raspberry Pi Zero, lo que permite alimentarla desde la misma fuente de la impresora, resulta perfecta para esta instalación.
+A pesar de que la utilización de una Raspberry Pi Zero no está recomendada por problemas de rendimiento que pueden terminar afectando a las impresiones, en mi experiencia no he sufrido ningún percance y la forma y bajo consumo de la Raspberry Pi Zero (que permite alimentarla desde la misma fuente de la impresora) resulta perfecta para esta instalación.
 
-Sospecho que los posibles problemas están vinculados al uso de la webcam. Eligiendo la cámara adecuada (que soporte MJPG de forma nativa) y no abusando del vídeo en streaming creo que se deja un margen de seguridad adecuado para poder aprovechar las ventajas de la versión Zero W de la Raspberry Pi.
+Sospecho que los posibles problemas están relacionados con el uso de la webcam. Eligiendo la cámara adecuada (que soporte MJPG de forma nativa) y no abusando del vídeo en streaming creo que se deja un margen de seguridad adecuado para poder aprovechar las ventajas de la versión Zero W de la Raspberry Pi.
 
 ## Conexión serie entre Anet A8 y Raspberry Pi
 
@@ -124,3 +124,9 @@ Tras esto podremos volver a la ventana principal y seleccionar dicho puerto en e
 ![Octoprint Connection](/images/posts/octoprint_connection.png)
 
 Tras pulsar el botón Connect oiremos cómo la impresora reacciona (al menos en la mía el ventilador de capa se revoluciona unos segundos, aunque también puede suceder por el firmware que tengo instalado) y ya podremos empezar a utilizar Octoprint.
+
+## Webcam
+
+Un complemento muy bueno para Octoprint es una webcam para poder hacer un mejor seguimiento de las impresiones. Tras haber probado con una webcam convencional conectada por USB (aquí se ve una de las ventajas de haberlo dejado libre al conectar la Raspberry a la impresora), me di cuenta de que la cámara oficial de Raspberry se puede encontrar barata (4€) y resulta más adecuada. Adquiriendo [dicha cámara](https://es.aliexpress.com/item/Free-Shipping-5MP-New-Raspberry-pi-2-Camera-Module-Board-REV-1-3-5MP-Webcam-Video/32522482332.html) junto con la versión del [cable especial para Raspberry Pi Zero](https://es.aliexpress.com/item/Raspberry-Pi-Zero-Camera-Cable-16-cm-30-cm-FFC-Cable-for-RPI-Zero-Pi0-Raspberry/32820301186.html), se puede montar fácilmente al chasis de la impresora. En concreto para la Anet A8 se diseña esta pequeña pieza:
+
+https://www.thingiverse.com/thing:3142521
