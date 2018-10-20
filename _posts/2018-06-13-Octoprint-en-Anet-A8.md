@@ -27,7 +27,7 @@ Estudiando el [esquemático de la placa](/images/posts/octoprint_ANET3D_Board_Sc
 
 ![Puerto serie](/images/posts/octoprint_puerto_serie.png)
 
-Podemos ver cómo el puerto serie del microcontrolador (pines AOFI y AIFO) está puenteado al chip CH340G (U6) por medio de un par de resistencias de 0Ω que actúan como puente. Tendremos que retirar de la placa dichas resistencias R52 y R53.
+Podemos ver cómo el puerto serie del microcontrolador (pines `AOFI` y `AIFO`) está puenteado al chip CH340G (U6) por medio de un par de resistencias de 0Ω que actúan como puente. Tendremos que retirar de la placa dichas resistencias R52 y R53.
 
 Una vez hecho, soldaremos unos pines en la ubicación J8 de la placa (al menos la mía venía con los agujeros en la PCB sin los pines soldados). En esta [foto de alta resolución de la placa](/images/posts/octoprint_hires_pcb.jpg) podemos ver bien tanto la ubicación de los puentes J8 como las resistencias que hay que retirar:
 
@@ -70,7 +70,7 @@ La conexión de estos pines con los del GPIO de la Raspberry Pi será así:
 
 Puede generar confusión ver que las conexiones entre ambos conectores son TX-TX y RX-RX, cuando las conexiones TX y RX deben cruzarse. La confusión viene de que en el conector J3 lo que se indica es a dónde se debe conectar y no el terminal del puerto serie del microcontrolador. Si tiramos del hilo en el esquemático vemos que por ejemplo el pin 1 del conector J3 sigue la secuencia:
 
-J3_TX - AIFO - RXD0
+    J3_TX - AIFO - RXD0
 
 Por tanto en realidad sí estamos cruzando las señales.
 
@@ -113,13 +113,9 @@ Allí acudiremos a la sección `Interfacing options > Serial` y responderemos de
 
 Reiniciaremos y ya podremos pasar a trabajar sobre la consola web de Octoprint a la que accederemos abriendo en un navegador la IP de la Raspberry.
 
-https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
-
-Por medio de `raspi-config` desactivar el terminal asociado al puerto serie físico y habilitar el puerto (pregunta las dos cosas dentro de la misma opción `Interfacing options > Serial`).
-
 ## Configuración conexión en Octoprint
 
-Por defecto Octoprint espera encontrar a la impresora en un puerto USB de la Raspberry. Al haber cambiado a un puerto serie convencional, tenemos que ayudarle a encontrarlo. Para ello acudimos a Settings (llave inglesa) de Octoprint y en la sección `Serial Connection` añadimos lo siguiente en el cuadro Additional serial ports:
+Por defecto Octoprint espera encontrar la impresora en un puerto USB de la Raspberry. Al haber cambiado a un puerto serie convencional, tenemos que ayudarle a encontrarlo. Para ello acudimos a Settings (llave inglesa) de Octoprint y en la sección `Serial Connection` añadimos lo siguiente en el cuadro `Additional serial ports`:
 
     /dev/ttyAMA0
 
@@ -135,4 +131,4 @@ Tras pulsar el botón Connect oiremos cómo la impresora reacciona (al menos en 
 
 Un complemento muy bueno para Octoprint es una webcam para poder hacer un mejor seguimiento de las impresiones. Tras haber probado con una webcam convencional conectada por USB (aquí se ve una de las ventajas de haberlo dejado libre al conectar la Raspberry a la impresora), me di cuenta de que la cámara oficial de Raspberry se puede encontrar barata (4€) y resulta más adecuada. Adquiriendo [dicha cámara](https://es.aliexpress.com/item/Free-Shipping-5MP-New-Raspberry-pi-2-Camera-Module-Board-REV-1-3-5MP-Webcam-Video/32522482332.html) junto con la versión del [cable especial para Raspberry Pi Zero](https://es.aliexpress.com/item/Raspberry-Pi-Zero-Camera-Cable-16-cm-30-cm-FFC-Cable-for-RPI-Zero-Pi0-Raspberry/32820301186.html), se puede montar fácilmente al chasis de la impresora. En concreto para la Anet A8 se diseña esta pequeña pieza:
 
-https://www.thingiverse.com/thing:3142521
+[https://www.thingiverse.com/thing:3142521](https://www.thingiverse.com/thing:3142521)
