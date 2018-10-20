@@ -22,6 +22,8 @@ La pantalla consiste en la oficial táctil de 7" de la fundación Raspberry Pi q
 * LED
 * Resistencia 220Ω
 * 4x Tornillo M3x10
+* [Cable con conector JST](https://es.aliexpress.com/store/product/2-10Pairs-100-150mm-2-Pin-Connector-JST-Plug-Cable-Male-Female-For-RC-BEC-Battery/1994020_32870752993.html)
+* [Cables de pin hembra-hembra](https://es.aliexpress.com/item/Electrical-Durable-Cables-40pcs-20cm-2-54mm-1p-1p-Pin-Female-to-Female-Color-Breadboard-Cable/32697942452.html)
 * [Piezas plásticas de sujección impresas en 3D](https://www.thingiverse.com/thing:3162930)
 
 ## Preparación sistema
