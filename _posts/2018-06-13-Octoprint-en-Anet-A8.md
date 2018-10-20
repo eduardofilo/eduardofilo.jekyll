@@ -5,21 +5,27 @@ date: 2018-06-13 22:40:00
 published: false
 ---
 
-# Octoprint en Anet A8
+![Octoprint](/images/posts/octoprint.jpg)
 
-Siguiendo [esta guía](https://discourse.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337).
+Instalación de Raspberry Pi sobre impresora 3D Anet A8 para ejecutar Octoprint.
 
-2018-03-10 21:34:53,951 - serial.log is currently not enabled, you can enable it via Settings > Serial Connection > Log communication to serial.log
+## Imágen de sistema
 
-G28
+Aunque es posible [instalar manualmente Octoprint](https://discourse.octoprint.org/t/setting-up-octoprint-on-a-raspberry-pi-running-raspbian/2337) sobre una instalación Raspbian estándar, existe una [imágen para grabar directamente sobre la tarjeta microSD llamada OctoPi](https://octoprint.org/download/). Dado que la Raspberry Pi y por tanto su sistema se va dedicar exclusivamente para esta función, se prefiere esta alternativa.
+
+## Modelo de Raspberry Pi elegido
+
+A pesar de que la utilización de una Raspberry Pi Zero no está recomendada por problemas de rendimiento que pueden terminar afectando a las impresiones, en mi experiencia no he sufrido ningún percance y la forma y bajo consumo de la Raspberry Pi Zero, lo que permite alimentarla desde la misma fuente de la impresora, resulta perfecta para esta instalación.
+
+Sospecho que los posibles problemas están vinculados al uso de la webcam. Eligiendo la cámara adecuada (que soporte MJPG de forma nativa) y no abusando del vídeo en streaming creo que se deja un margen de seguridad adecuado para poder aprovechar las ventajas de la versión Zero W de la Raspberry Pi.
+
+## Conexión serie entre Anet A8 y Raspberry Pi
+
+Octoprint se comunica con la impresora por medio de una conexión serie. Esta conexión puede fácilmente establecerse a través de USB. De hecho el puerto serie del microcontrolador Atmel que gobierna la impresora está puenteado a un adaptador serie/USB que hay sobre la placa (CH340G). Utilizar esta conexión USB resulta muy aparatoso por el tipo de conectores que implica, así que se ha preferido liberar el puerto serie del microcontrolador para poder utilizarlo directamente.
+
+Estudiando el [esquemático de la placa]((/images/posts/octoprint_ANET3D_Board_Schematic.png)) se ve que estas partes son las implicadas en este asunto:
 
 
-start
-Info:Brown out Reset
-Info: 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-Free RAM:12337
-wait
-wait
 
 
 # Desactivación de BT y activación de puerto serie
