@@ -25,35 +25,34 @@ Octoprint se comunica con la impresora por medio de una conexión serie. Esta co
 
 Estudiando el [esquemático de la placa](/images/posts/octoprint_ANET3D_Board_Schematic.png) se ve que estas partes son las implicadas en este asunto:
 
+![Octoprint Puerto serie](/images/posts/octoprint_puerto_serie.png)
 
-
-
-# Desactivación de BT y activación de puerto serie
+## Desactivación de BT y activación de puerto serie
 https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
 
 Por medio de `raspi-config` desactivar el terminal asociado al puerto serie físico y habilitar el puerto (pregunta las dos cosas dentro de la misma opción `Interfacing options > Serial`).
 
-# Configuración cámara
+## Configuración cámara
 
 * [How can I change mjpg-streamer parameters on OctoPi?](https://discourse.octoprint.org/t/how-can-i-change-mjpg-streamer-parameters-on-octopi/203)
 * [Webcams known to work](https://github.com/foosel/OctoPrint/wiki/Webcams-known-to-work)
 * [Available mjpg-streamer configuration options](https://discourse.octoprint.org/t/available-mjpg-streamer-configuration-options/1106)
 
-# Instalación plugin M84 Motors Off
+## Instalación plugin M84 Motors Off
 
 https://plugins.octoprint.org/plugins/m84motoff/
 
     cd ~/OctoPrint
     ./venv/bin/pip install "https://github.com/ntoff/Octoprint-M84MotOff/archive/master.zip"
 
-# G-code
+## G-code
 http://marlinfw.org/meta/gcode/
 
-# Apps
+## Apps
 https://play.google.com/store/apps/details?id=com.kabacon.octoremote
 https://play.google.com/store/apps/details?id=fr.yochi76.printoid.phones.trial
 
-# Plugins intalados:
+## Plugins intalados:
 M84 Motors Off
 TouchUI
 DisplayLayerProgress
