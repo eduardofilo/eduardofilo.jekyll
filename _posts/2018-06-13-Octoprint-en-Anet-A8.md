@@ -23,9 +23,15 @@ Sospecho que los posibles problemas están vinculados al uso de la webcam. Eligi
 
 Octoprint se comunica con la impresora por medio de una conexión serie. Esta conexión puede fácilmente establecerse a través de USB. De hecho el puerto serie del microcontrolador Atmel que gobierna la impresora está puenteado a un adaptador serie/USB que hay sobre la placa (CH340G). Utilizar esta conexión USB resulta muy aparatoso por el tipo de conectores que implica, así que se ha preferido liberar el puerto serie del microcontrolador para poder utilizarlo directamente.
 
-Estudiando el [esquemático de la placa](/images/posts/octoprint_ANET3D_Board_Schematic.png) se ve que estas partes son las implicadas en este asunto:
+Estudiando el [esquemático de la placa](/images/posts/octoprint_ANET3D_Board_Schematic.png) se ve que estas partes son las implicadas en este asunto (se han marcado en azul las partes de interés):
 
-![Octoprint Puerto serie](/images/posts/octoprint_puerto_serie.png)
+![Puerto serie](/images/posts/octoprint_puerto_serie.png)
+
+Podemos ver cómo el puerto serie del microcontrolador (pines AOFI y AIFO) están puenteadas al chip CH340G (U6) por medio de un par de resistencias de 0Ω que actúan como puente. Tendremos que retirar de la placa dichas resistencias R52 y R53.
+
+Una vez hecho, soldaremos unos pines en la ubicación J8 de la placa (al menos la mía venía con los agujeros en la PCB sin los pines soldados). En esta [foto de alta resolución de la placa](/images/posts/octoprint_hires_pcb.jpg) podemos ver bien tanto la ubicación de los puentes J8 como las resistencias que hay que retirar:
+
+![Sección de la PCB](/images/posts/octoprint_hires_pcb_subsection.jpg)
 
 ## Desactivación de BT y activación de puerto serie
 https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
