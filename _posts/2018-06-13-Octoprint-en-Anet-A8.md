@@ -23,7 +23,7 @@ Sospecho que los posibles problemas están vinculados al uso de la webcam. Eligi
 
 Octoprint se comunica con la impresora por medio de una conexión serie. Esta conexión puede fácilmente establecerse a través de USB. De hecho el puerto serie del microcontrolador Atmel que gobierna la impresora está puenteado a un adaptador serie/USB que hay sobre la placa (CH340G). Utilizar esta conexión USB resulta muy aparatoso por el tipo de conectores que implica, así que se ha preferido liberar el puerto serie del microcontrolador para poder utilizarlo directamente.
 
-Estudiando el [esquemático de la placa]((/images/posts/octoprint_ANET3D_Board_Schematic.png)) se ve que estas partes son las implicadas en este asunto:
+Estudiando el [esquemático de la placa](/images/posts/octoprint_ANET3D_Board_Schematic.png) se ve que estas partes son las implicadas en este asunto:
 
 
 
