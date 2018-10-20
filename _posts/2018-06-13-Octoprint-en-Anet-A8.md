@@ -82,32 +82,45 @@ A continuación se puede ver soldado sobre la Raspberry:
 
 ![Adaptador J3-Raspberry](/images/posts/octoprint_adaptador_raspberry3.jpg)
 
+Finalmente montado sobre la PCB de la impresora queda así:
+
+![Raspberry sobre PCB impresora](/images/posts/octoprint.jpg)
+
 ## Desactivación de BT y activación de puerto serie
+
+La Raspberry Pi Zero W (en Raspberry Pi 3 sucede lo mismo) trae un adaptador Bluetooth que tanto en la distribución Raspbian como en la imágen OctoPi utilizada está conectado precisamente a los pines #08 y #10 a los que hemos conectado el puerto serie de la impresora. Antes de continuar necesitamos liberar esta conexión. Para ello debemos editar el fichero `config.txt` que hay en la partición `boot` y añadir (al final por ejemplo) lo siguiente:
+
+```
+dtoverlay=pi3-miniuart-bt
+```
+
+Esto podemos hacerlo sin necesidad de arrancar el sistema, montando la microSD en el ordenador. Para el siguiente paso sí necesitamos arrancar el sistema de la tarjeta en la Raspberry. Una vez estemos en la consola (por SSH o conectando una pantalla/teclado/ratón de alguna manera), ejecutaremos:
+
+```
+sudo raspi-config
+```
+
+Allí acudiremos a la sección `Interfacing options > Serial` y responderemos de la siguiente forma a las dos preguntas que nos hará:
+
+* Would you like a login shell to be accessible over serial? -> No
+* Would you like the serial port hardware to be enabled?     -> Yes
+
+Reiniciaremos y ya podremos pasar a trabajar sobre la consola web de Octoprint a la que accederemos abriendo en un navegador la IP de la Raspberry.
+
 https://www.abelectronics.co.uk/kb/article/1035/raspberry-pi-3-and-zero-w-serial-port-usage
 
 Por medio de `raspi-config` desactivar el terminal asociado al puerto serie físico y habilitar el puerto (pregunta las dos cosas dentro de la misma opción `Interfacing options > Serial`).
 
-## Configuración cámara
+## Configuración conexión en Octoprint
 
-* [How can I change mjpg-streamer parameters on OctoPi?](https://discourse.octoprint.org/t/how-can-i-change-mjpg-streamer-parameters-on-octopi/203)
-* [Webcams known to work](https://github.com/foosel/OctoPrint/wiki/Webcams-known-to-work)
-* [Available mjpg-streamer configuration options](https://discourse.octoprint.org/t/available-mjpg-streamer-configuration-options/1106)
+Por defecto Octoprint espera encontrar a la impresora en un puerto USB de la Raspberry. Al haber cambiado a un puerto serie convencional, tenemos que ayudarle a encontrarlo. Para ello acudimos a Settings (llave inglesa) de Octoprint y en la sección `Serial Connection` añadimos lo siguiente en el cuadro Additional serial ports:
 
-## Instalación plugin M84 Motors Off
+    /dev/ttyAMA0
 
-https://plugins.octoprint.org/plugins/m84motoff/
+![Octoprint Settings](/images/posts/octoprint_settings.png)
 
-    cd ~/OctoPrint
-    ./venv/bin/pip install "https://github.com/ntoff/Octoprint-M84MotOff/archive/master.zip"
+Tras esto podremos volver a la ventana principal y seleccionar dicho puerto en el apartado Connection:
 
-## G-code
-http://marlinfw.org/meta/gcode/
+![Octoprint Connection](/images/posts/octoprint_connection.png)
 
-## Apps
-https://play.google.com/store/apps/details?id=com.kabacon.octoremote
-https://play.google.com/store/apps/details?id=fr.yochi76.printoid.phones.trial
-
-## Plugins intalados:
-M84 Motors Off
-TouchUI
-DisplayLayerProgress
+Tras pulsar el botón Connect oiremos cómo la impresora reacciona (al menos en la mía el ventilador de capa se revoluciona unos segundos, aunque también puede suceder por el firmware que tengo instalado) y ya podremos empezar a utilizar Octoprint.
