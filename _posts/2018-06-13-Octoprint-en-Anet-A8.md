@@ -61,12 +61,18 @@ De nuevo es necesario orientar el conector correctamente para interpretar el esq
 
 La conexión de estos pines con los del GPIO de la Raspberry Pi será así:
 
-* `J3: 1 (J3_TX) <-> PIN#10 (GPIO15 UART0_RXD) :Raspberry`
-* `J3: 2 (J3_RX) <-> PIN#08 (GPIO14 UART0_TXD) :Raspberry`
+* `J3: 1 (J3_TX) <-> PIN#08 (GPIO14 UART0_TXD) :Raspberry`
+* `J3: 2 (J3_RX) <-> PIN#10 (GPIO15 UART0_RXD) :Raspberry`
 * `J3: 4 (+5V)   <-> PIN#04 (5V)               :Raspberry`
 * `J3: 8 (GND)   <-> PIN#06 (Ground)           :Raspberry`
 
 ![Raspberry Pi GPIO Layout Model B+](/images/posts/Raspberry-Pi-GPIO-Layout-Model-B-Plus.png)
+
+Puede generar confusión ver que las conexiones entre ambos conectores son TX-TX y RX-RX, cuando las conexiones TX y RX deben cruzarse. La confusión viene de que en el conector J3 lo que se indica es a dónde se debe conectar y no el terminal del puerto serie del microcontrolador. Si tiramos del hilo en el esquemático vemos que por ejemplo el pin 1 del conector J3 sigue la secuencia:
+
+J3_TX - AIFO - RXD0
+
+Por tanto en realidad sí estamos cruzando las señales.
 
 El adaptador realizado es el siguiente:
 
