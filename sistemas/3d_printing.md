@@ -108,7 +108,7 @@ permalink: /sistemas/3d_printing.html
 
 ### Cura 3.4
 
-Los ficheros de configuración de las distintas versiones se encuentran en la ruta (Linux) `~/.config/cura`.
+Los ficheros de preferencias de las distintas versiones se encuentran en la ruta (Linux) `~/.config/cura` y los de settings en `~/.local/share/cura`. ([Fuente](https://github.com/Ultimaker/Cura/wiki/Cura-Preferences-and-Settings-Locations))
 
 * `Quality > Layer Height`: 0.2 mm [0.1-0.3] Altura de Capa.
 * `Quality > Initial Layer Height`: 0.2 mm [0.1-0.3] Altura de la capa inicial. Una capa inicial más final mejora la adherencia a la cama.
