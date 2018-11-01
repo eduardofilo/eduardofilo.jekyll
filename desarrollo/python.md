@@ -326,6 +326,11 @@ Para el borrado de un modelo.
 
 Es una especie de ListView con filtros. Ver documentación [aquí](https://django-filter.readthedocs.io/en/master/guide/usage.html).
 
+## Idioms
+
+* Retorno seguro del primer elemento de una lista: `return (get_list()[:1] or [None])[0]`
+* Acceso seguro al atributo de un objeto: `getattr(object, name[, default])` La función [getattr](https://docs.python.org/3/library/functions.html#getattr) nos permite indicar un valor predeterminado si un objeto no tiene el atributo que buscamos. Funciona también si el objeto es None, lo que nos permite acceder de forma segura a un objeto cuando no sabemos si existe.
+
 ## Snippets
 
 * Colección completa de objetos de un modelo: `Unidad.objects.all()`
@@ -334,7 +339,6 @@ Es una especie de ListView con filtros. Ver documentación [aquí](https://djang
 * Filtro OR (es necesario hacer `from django.db.models import Q`): `GrupoUnidades.objects.filter(Q(pausada=True) | Q(fecha_fin__isnull=False))`
 * Instancia concreta de un objeto: `Unidad.objects.get(pk=3)`
 * Servidor HTTP en el directorio actual: `python -m SimpleHTTPServer 8080`
-* Retorno seguro del primer elemento de una lista: `return (get_list()[:1] or [None])[0]`
 * Convertir un set en un list ordenado: `una_lista = sorted(un_set, key=lambda x: x.position)`
 * Template filters:
     * Valor predeterminado: `{{ "{{ elemento_de_context|default_if_none:'Valor predeterminado' " }}}}`
