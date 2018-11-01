@@ -478,7 +478,7 @@ $ pip install Django==1.11.6
 ### Instalación
 
 ```bash
-$ pip install pipenv
+$ sudo -H pip install pipenv
 ```
 
 ### Creación de entorno con versión específica de Python y de paquetes
