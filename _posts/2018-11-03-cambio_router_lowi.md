@@ -5,7 +5,7 @@ date: 2018-11-03 18:00:00
 published: false
 ---
 
-Conversión del sitio de Jekyll a MkDocs.
+Sustitución de router Lowi por Xiaomi MiWiFi 3G con OpenWRT.
 
 ## Enlaces
 
