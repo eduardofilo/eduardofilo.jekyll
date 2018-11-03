@@ -46,17 +46,17 @@ Sustitución de router Lowi por Xiaomi MiWiFi 3G con OpenWRT.
     * MTU [68-1500]: 1492
     * Idle Time (sec): 0
     * Obtain DNS Servers automatically: Sí
-12. En el nuevo router introducimos estos datos. En un OpenWRT sería en la sección `Red > Interfaces > WAN > Editar`. Introducimos los siguientes valores:
-    * Protocolo: PPPeE
-    * Nombre de usuario PAP/CHAP: El obtenido del parámetro `InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.2.Username` de la captura.
-    * Contraseña PAP/CHAP: El obtenido del parámetro `InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.2.Password` de la captura.
-    * A partir de aquí los parámetros están en `Configuración avanzada`.
-    * Umbral de fracaso en eco LCP: 5
-    * Intervalo de eco LCP: 10
-    * Ignorar MTU: 1492
-13. Finalmente acudir a la sección `Red > Switch` para poner el VLAN ID 24 necesario para la conexión. Concretamente dejar la tabla que allí vemos de la siguiente forma:
+12. En el nuevo router introducimos estos datos. En un OpenWRT sería en la sección `Network > Interfaces > WAN > Edit`. Introducimos los siguientes valores:
+    * Protocol: `PPPeE`
+    * PAP/CHAP username: El obtenido del parámetro `InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.2.Username` de la captura.
+    * PAP/CHAP password: El obtenido del parámetro `InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.2.Password` de la captura.
+    * A partir de aquí los parámetros están en `Advanced Settings`.
+    * LCP echo failure threshold: `5`
+    * LCP echo interval: `10`
+    * Override MTU: `1492`
+13. Finalmente acudir a la sección `Network > Switch` para poner el VLAN ID 24 necesario para la conexión. Concretamente dejar la tabla que allí vemos de la siguiente forma:
 
 | VLAN ID | CPU (eth0) | LAN 1      | LAN 2      | WAN     |
 |---------|------------|------------|------------|---------|
-| 1       | marcado    | desmarcado | desmarcado | parado  |
-| 24      | marcado    | parado     | parado     | marcado |
+| 1       | tagged     | untagged   | untagged   | off     |
+| 24      | tagged     | off        | off        | tagged  |
