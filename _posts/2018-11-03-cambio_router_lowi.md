@@ -61,4 +61,4 @@ Conversión del sitio de Jekyll a MkDocs.
 | VLAN ID | CPU (eth0) | LAN 1      | LAN 2      | WAN     |
 |---------|------------|------------|------------|---------|
 | 1       | marcado    | desmarcado | desmarcado | parado  |
-| 24      |            | parado     | parado     | Ignorar |
+| 24      | marcado    | parado     | parado     | marcado |
