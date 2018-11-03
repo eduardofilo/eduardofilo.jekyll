@@ -14,6 +14,7 @@ permalink: /desarrollo/git.html
 * [Detached HEAD en Git](http://mundogeek.net/archivos/2015/08/11/detached-head-en-git/)
 * [Github git tutorial](https://try.github.io/levels/1/challenges/1)
 * [La Parábola de Git @ CAPSiDE HQ](https://www.youtube.com/watch?v=sXudMl5x_5g)
+* [Lleva Git al próximo nivel con Git Flow](http://mundogeek.net/archivos/2018/10/31/lleva-git-al-proximo-nivel-con-git-flow/)
 
 ## Comandos básicos
 
