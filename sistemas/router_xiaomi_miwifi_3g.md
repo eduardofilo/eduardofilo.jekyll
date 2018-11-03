@@ -20,10 +20,12 @@ Siguiendo [este artículo](https://elblogdelazaro.gitlab.io/articles/openwrt-act
 4. Pulsar el botón `Flash image...`.
 5. En la siguiente página confirmar el flasheo comprobando si se quiere los checksums.
 6. Cuando termine el proceso habremos perdido el paquete Luci. Instalarlo conectando por SSH y ejecutando los siguientes comandos:
+
         # opkg update
         # opkg install luci
         # opkg install luci-ssl
         # /etc/init.d/uhttpd start
         # /etc/init.d/uhttpd enable
 7. Si se desea la interfaz en español (no se aconseja), instalar también:
+
         # opkg install luci-i18n-base-es
