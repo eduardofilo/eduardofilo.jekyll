@@ -11,8 +11,6 @@ Sustitución de router Lowi por Xiaomi MiWiFi 3G con OpenWRT.
 
 * [Cambiar Router Lowi H 500-S por otro](https://bandaancha.eu/foros/cambiar-router-lowi-h-500-s-otro-1729084)
 * [Como conseguir admin del router Sercomm H500-s de Vodafone después de la telecarga](https://bandaancha.eu/articulos/conseguir-admin-router-sercomm-h500-s-9602)
-* [Serie de artículos de Carlos Monge sobre OpenWRT instalado en Xiaomi MiWiFi 3G](https://elblogdelazaro.gitlab.io//tags/#openwrt)
-* [Hilo del foro OpenWRT sobre el Xiaomi MiWiFi 3G router](https://forum.openwrt.org/t/xiaomi-wifi-router-3g/5377)
 
 ## Procedimiento
 

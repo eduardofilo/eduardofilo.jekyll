@@ -45,6 +45,7 @@ layout: default
 * [Office](/sistemas/office.html)
 * [Raspberry Pi](/sistemas/raspi.html)
 * [Redes](/sistemas/redes.html)
+* [Router Xiaomi MiWiFi 3G](/sistemas/router_xiaomi.html)
 * [Ubuntu Phone](/sistemas/ubuntu_phone.html)
 * [Ubuntu](/sistemas/ubuntu.html)
 * [UNIX](/sistemas/unix.html)
