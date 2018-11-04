@@ -21,7 +21,7 @@ Siguiendo [este artículo](https://elblogdelazaro.gitlab.io/articles/openwrt-act
 3. En la sección `Flash new firmware image` pulsar el botón `Examinar...` y seleccionar el fichero .tar bajado en el punto anterior.
 4. Pulsar el botón `Flash image...`.
 5. En la siguiente página confirmar el flasheo comprobando si se quiere los checksums.
-6. Cuando termine el proceso habremos perdido el paquete Luci. Instalarlo conectando por SSH y ejecutando los siguientes comandos:
+6. Cuando termine el proceso habremos perdido los paquetes adicionales. Instalarlos conectando por SSH y ejecutando los siguientes comandos:
 
         # opkg update
         # opkg install luci
