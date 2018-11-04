@@ -9,6 +9,7 @@ permalink: /sistemas/router_xiaomi.html
 
 * [Serie de artículos de Carlos Monge sobre OpenWRT instalado en Xiaomi MiWiFi 3G](https://elblogdelazaro.gitlab.io//tags/#openwrt)
 * [Hilo del foro OpenWRT sobre el Xiaomi MiWiFi 3G router](https://forum.openwrt.org/t/xiaomi-wifi-router-3g/5377)
+* [Página del router en OpenWRT](https://openwrt.org/toh/xiaomi/mir3g): Incluye instrucciones para debrick.
 
 ## Actualización firmware
 
