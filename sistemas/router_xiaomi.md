@@ -14,7 +14,9 @@ permalink: /sistemas/router_xiaomi.html
 
 Siguiendo [este artículo](https://elblogdelazaro.gitlab.io/articles/openwrt-actualizar-firmware/):
 
-1. Bajar el paquete pinchando el enlace tras el rótulo `Firmware OpenWrt snapshot Upgrade URL` en la [página de soporte del router en OpenWRT](https://openwrt.org/toh/hwdata/xiaomi/xiaomi_miwifi_3g).
+1. Bajar el paquete pinchando uno de los enlaces siguientes según si se desea la versión de desarrollo o la estable de la [página de soporte del router en OpenWRT](https://openwrt.org/toh/hwdata/xiaomi/xiaomi_miwifi_3g):
+    * Estable: Firmware OpenWrt Upgrade URL
+    * Desarrollo: Firmware OpenWrt snapshot Upgrade URL
 2. En el interfaz web (Luci) acudir a la ruta `System > Backup / Flash Firmware`.
 3. En la sección `Flash new firmware image` pulsar el botón `Examinar...` y seleccionar el fichero .tar bajado en el punto anterior.
 4. Pulsar el botón `Flash image...`.
