@@ -15,6 +15,7 @@ permalink: /desarrollo/git.html
 * [Github git tutorial](https://try.github.io/levels/1/challenges/1)
 * [La Parábola de Git @ CAPSiDE HQ](https://www.youtube.com/watch?v=sXudMl5x_5g)
 * [Lleva Git al próximo nivel con Git Flow](http://mundogeek.net/archivos/2018/10/31/lleva-git-al-proximo-nivel-con-git-flow/)
+* [git-flow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html)
 
 ## Comandos básicos
 
