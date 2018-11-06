@@ -7,6 +7,10 @@ permalink: /desarrollo/python.html
 
 ## Enlaces
 
+### Cheatsheet
+
+* [Classy Class-Based Views](https://ccbv.co.uk/projects/Django/1.11/): Detailed descriptions, with full methods and attributes, for each of Django's class-based generic views.
+
 ### Aprendizaje
 
 * [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/intro/learning/)
