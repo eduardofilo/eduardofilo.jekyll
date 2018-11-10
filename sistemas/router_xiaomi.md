@@ -11,6 +11,7 @@ permalink: /sistemas/router_xiaomi.html
 * [Página del router en OpenWRT](https://openwrt.org/toh/xiaomi/mir3g): Incluye instrucciones para debrick.
 * [Xiaomi WiFi Router 3G](https://forum.openwrt.org/t/xiaomi-wifi-router-3g/5377): Hilo del foro OpenWRT sobre el Xiaomi MiWiFi 3G router.
 * [Xiaomi Wifi Router 3G - 18.06.X / feedback and help](https://forum.openwrt.org/t/xiaomi-wifi-router-3g-18-06-x-feedback-and-help/19840): Hilo del foro OpenWRT sobre el firmware 18.06 en el Xiaomi MiWiFi 3G router.
+* [Things to do after installing Linux LEDE 17.01](https://tutorials.technology/tutorials/44-things-to-do-after-installing-linux-LEDE-17_01.html)
 
 ## Actualización firmware
 
@@ -73,3 +74,10 @@ Siguiendo [este artículo](https://elblogdelazaro.gitlab.io/articles/openwrt-act
     3. Ejecutar el comando `visudo` y añadir la siguiente línea bajo la correspondiente a root:
 
             miusuario ALL=(ALL) ALL
+
+4. Desactivar ping:
+
+    1. En Luci ir a la ruta `Network > Firewall`
+    2. Abrir la solapa `Traffic Rules`
+    3. Desactivar las reglas (desmarcando el check) `Allow-Ping`, `Allow-ICMPv6-Input` y `Allow-ICMPv6-Forward`
+    4. Pulsar el botón `Save & Apply` abajo a la derecha
