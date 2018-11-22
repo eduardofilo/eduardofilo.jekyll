@@ -19,6 +19,7 @@ permalink: /desarrollo/python.html
 * [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/index.html)
 * [Django data migration when changing a field to ManyToMany](https://stackoverflow.com/questions/2224410/django-data-migration-when-changing-a-field-to-manytomany?rq=1): Cuando queremos cambiar de un modelo ForeignKey a ManyToMany.
 * [Alter model to add “through” relationship to order a ManytoMany field](https://stackoverflow.com/questions/26348260/alter-model-to-add-through-relationship-to-order-a-manytomany-field-django-1): Cuando queremos cambiar la tabla intermedia automática a una gestionada con un modelo propio.
+* [Django Inline formsets example](https://medium.com/@adandan01/django-inline-formsets-example-mybook-420cc4b6225d)
 
 ### Módulos interesantes
 
