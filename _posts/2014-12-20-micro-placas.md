@@ -30,6 +30,7 @@ A continuación una lista con algunas de las placas de este tipo que se pueden e
 * [Khadas VIM](http://khadas.com/vim/)
 * [La Frite](https://www.kickstarter.com/projects/librecomputer/la-frite-open-source-fries/description#)
 * [Le Potato](https://www.kickstarter.com/projects/librecomputer/libre-computer-board-next-gen-4k-sbc-dev-board-for?ref=user_menu)
+* [RockPi](http://rockpi.org/)
 
 Hasta ahora los únicos proyectos que he puesto en marcha han sido de computación, es decir, sin componente hardware, que es otro de los usos importantes que se les suelen dar. Han servido para delegar un par de funciones que antes ejecutaba directamente sobre mi PC principal. Concretamente:
 
