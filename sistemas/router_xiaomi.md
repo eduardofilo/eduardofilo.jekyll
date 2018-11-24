@@ -81,3 +81,66 @@ Siguiendo [este artículo](https://elblogdelazaro.gitlab.io/articles/openwrt-act
     2. Abrir la solapa `Traffic Rules`
     3. Desactivar las reglas (desmarcando el check) `Allow-Ping`, `Allow-ICMPv6-Input` y `Allow-ICMPv6-Forward`
     4. Pulsar el botón `Save & Apply` abajo a la derecha
+
+## Configuración de ProtonVPN
+
+Siguiendo [esta guía](https://stitchroads.blogspot.com/2017/11/how-to-setup-protonvpn-openvpn-on.html).
+
+Antes de empezar es recomendable hacer un backup de la configuración del router por si es necesario volver a empezar.
+
+1. Instalación de paquetes (el comando siguiente instala además los siguientes paquetes dependientes `kmod-tun liblzo zlib libopenssl`):
+
+        $ sudo opkg install luci-app-openvpn openvpn-openssl
+
+2. Creamos un nuevo interface para lo que en Luci vamos a `Network > Interfaces`.
+3. Pulsamos el botón `Add new interface...`.
+4. En el formulario que aparece rellenamos los siguientes campos:
+
+    * `Name of the new interface`: openvpn
+    * `Protocol of the new interface`: Unmanaged
+    * `Cover the following interface`: Custom Interface: "tun0"
+
+5. Pulsar el botón `Submit`.
+6. Seleccionar la pestaña `Advanced Settings`.
+7. Marcar la opción `Bring up on boot`.
+8. Seleccionar la pestaña `Firewall Settings`.
+9. En el desplegable `Create / Assign firewall-zone` crear una zona con nombre `vpn`.
+10. Pulsar el botón `Save & Apply`.
+11. Ir a la sección `Network > Firewall`.
+12. Los siguientes cambios son muy sensibles, por lo que muestro un pantallazo del estado de las zonas antes de los cambios:
+
+![firewall-zones](/images/pages/firewall-zones.png)
+
+13. En la zona `wan` cambiar `Input` y `Forward` a `drop` y desmarcar los checks `Masquerading` y `MSS clamping`.
+14. En la zona `vpn` cambiar `Input` y `Forward` a `drop` y marcar los checks `Masquerading` y `MSS clamping`.
+15. Pulsar el botón `Save & Apply`.
+16. Pulsar el botón `Edit` de la zona `lan`.
+17. En la sección `Inter-Zone Forwarding` abrir el desplegable `Allow forward to destination zones` y marcar la sección `vpn` y desmarcar `wan`.
+
+![forward-to-destination](/images/pages/forward-to-destination.png)
+
+18. Pulsar el botón `Save & Apply`
+19. Pantallazo de cómo deberían de quedar las zonas:
+
+![firewall-zones](/images/pages/firewall-zones_end.png)
+
+20. Descargar el perfil `.ovpn` deseado de la sección "Downloads" de nuestro perfil en ProtonVPN seleccionando como plataforma `Router` y protocolo `UDP`. Vamos a suponer que el fichero se llama `is-es-01.protonvpn.com.udp.ovpn`.
+21. Editar el fichero y modificar la línea que contiene el parámetro `auth-user-pass` dejándola como sigue:
+
+        auth-user-pass '/etc/openvpn/protonvpn/auth'
+
+22. Transferir el fichero descargado al router y situarlo en la ruta `/etc/openvpn/protonvpn` (habrá que crear el directorio `protonvpn`).
+23. Ir a la sección "Account" de nuestro perfil en ProtonVPN y tomar nota de los valores de "OpenVPN/IKEv2 Username" y "OpenVPN/IKEv2 Password".
+24. Crear en el router el fichero `/etc/openvpn/protonvpn/auth`, editarlo y escribir en la primera línea el username anterior y en la segunda el password.
+25. Editar en el router el fichero `/etc/config/openvpn` y añadir las siguientes líneas:
+
+        config openvpn 'protonvpn'
+            option config '/etc/openvpn/protonvpn/is-es-01.protonvpn.com.udp.ovpn'
+            option enabled '1'
+
+26. Reiniciar el servicio openvpn en el router:
+
+        $ sudo /etc/init.d/openvpn restart
+
+27. Ir a `Network > Interfaces > LAN` y en el parámetro `Use custom DNS servers` dejar únicamente la IP `10.8.8.1` (en caso de utilizar OpenVPN por protocolo TCP usar `10.7.7.1` en su lugar).
+28. Pulsar el botón `Save & Apply`.
