@@ -13,3 +13,5 @@ permalink: /varios/suenyo.html
 * [3M PELTOR Kit de higiene para Orejeras Optime III, HY54 - Amazon](https://www.amazon.es/dp/B000VDUV6E)
 * [beeswift HY54 Peltor optime 3 Higiene Kit PR - Amazon](https://www.amazon.es/dp/B01GJYO6A0)
 * [Itian Ultra Thin auriculares, Soft lana orejeras auriculares más cómodos para dormir](https://www.amazon.es/dp/B074RFVWVN)
+* [Ultra Soft Foam Earplugs](https://www.amazon.com/dp/B0051U7W32)
+* [Tapones para los oídos de silicona SleepDreamz (4 pares)](https://www.amazon.es/dp/B07CYVWPZD)
