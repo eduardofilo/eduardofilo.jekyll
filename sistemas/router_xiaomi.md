@@ -109,7 +109,7 @@ Antes de empezar es recomendable hacer un backup de la configuración del router
 11. Ir a la sección `Network > Firewall`.
 12. Los siguientes cambios son muy sensibles, por lo que muestro un pantallazo del estado de las zonas antes de los cambios:
 
-        ![firewall-zones](/images/pages/firewall-zones.png)
+    ![firewall-zones](/images/pages/firewall-zones.png)
 
 13. En la zona `wan` cambiar `Input` y `Forward` a `drop` y desmarcar los checks `Masquerading` y `MSS clamping`.
 14. En la zona `vpn` cambiar `Input` y `Forward` a `drop` y marcar los checks `Masquerading` y `MSS clamping`.
