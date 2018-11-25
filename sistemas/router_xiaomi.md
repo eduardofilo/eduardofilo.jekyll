@@ -144,3 +144,5 @@ Antes de empezar es recomendable hacer un backup de la configuración del router
 
 27. Ir a `Network > Interfaces > LAN` y en el parámetro `Use custom DNS servers` dejar únicamente la IP `10.8.8.1` (en caso de utilizar OpenVPN por protocolo TCP usar `10.7.7.1` en su lugar).
 28. Pulsar el botón `Save & Apply`.
+
+Para mantener acceso desde el exterior de la red, estudiar [este artículo](https://www.reddit.com/r/ProtonVPN/comments/7npcjd/newbie_to_vpn_trying_to_use_rdp/).
