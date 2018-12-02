@@ -82,6 +82,19 @@ Siguiendo [este artículo](https://elblogdelazaro.gitlab.io/articles/openwrt-act
     3. Desactivar las reglas (desmarcando el check) `Allow-Ping`, `Allow-ICMPv6-Input` y `Allow-ICMPv6-Forward`
     4. Pulsar el botón `Save & Apply` abajo a la derecha
 
+5. Bloquear la publicidad desde el fichero hosts:
+
+    1. Iniciar sesión SSH.
+    2. Hacer backup de fichero hosts:
+
+            $ sudo cp /etc/hosts /etc/hosts.bkp
+
+    3. Editar crontab de root con comando `sudo crontab -e` y añadir la siguiente línea:
+
+            0 */12 * * * wget -O /etc/hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews/hosts; cat /etc/hosts.bkp >> /etc/hosts
+
+    4. Hay varias configuraciones posibles para el fichero hosts descritas [aquí](https://github.com/StevenBlack/hosts).
+
 ## Configuración de ProtonVPN
 
 Siguiendo [esta guía](https://stitchroads.blogspot.com/2017/11/how-to-setup-protonvpn-openvpn-on.html).
