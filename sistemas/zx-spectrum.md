@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /sistemas/zx-uno.html
+permalink: /sistemas/zx-spectrum.html
 ---
 
 # ZX Spectrum

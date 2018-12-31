@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /varios/english.html
+permalink: /varios/electronica.html
 ---
 
 # Electrónica
